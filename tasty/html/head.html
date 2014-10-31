@@ -1,0 +1,20 @@
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta charset="UTF-8" />
+<meta name="format-detection" content="telephone=no">
+<title>{% block title %}{{ page_title }}{% endblock %}</title>
+
+{{ store | canonical_tags(slug, path) }}
+{{ settings | meta_tags(slug, path) }}
+{{ store | ogp_tags(page_title) }}
+
+{{ css.base() }}
+
+{{ settings.bootstrap_css_path | asset_url | stylesheet_tag }}
+{{ 'css/bootstrap.min.css' | asset_url | stylesheet_tag }}
+{{ settings.css_path | asset_url | stylesheet_tag }}
+{% if settings.favicon %}
+{{ settings.favicon | asset_url | icon_tag }}
+{% endif %}
+
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />

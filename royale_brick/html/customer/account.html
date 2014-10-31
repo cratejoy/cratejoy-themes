@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="form-feedback">
+	{%- if result -%}
+	<p>
+	{{ result }}
+	</p>
+	{%- endif -%}
+</div>
+
+<div class="headline-container">
+	<div class="headline">
+		<div class="container">
+			<h2>Update your information</h2>
+		</div>
+	</div>
+</div>
+
+<div class="container form-container my-account">	
+	<div class="row">
+		<div class="col-lg-4">
+			{{ customer_helper.show_subscription_info(vertical=True, btn_class="btn-primary") }}
+		</div>
+		<div class="col-lg-8">
+			{{ customer_helper.show_basic_account_info(btn_class="btn-primary") }}
+			{{ customer_helper.show_shipping_address_info(btn_class="btn-primary") }}
+			{{ customer_helper.show_payment_info(btn_class="btn-primary") }}
+		</div>
+	</div>
+</div>
+{% endblock %}

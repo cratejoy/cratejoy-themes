@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="form-feedback">
+	{%- if result -%}
+	<p>
+	{{ result }}
+	</p>
+	{%- endif -%}
+</div>
+
+<div class="headline-container">
+	<div class="headline">
+		<div class="container">
+			<h2>Update your information</h2>
+		</div>
+	</div>
+</div>
+
+<div class="container error-container my-account">
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			{% for message in messages %}
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="alert alert-danger">
+							{{ message | safe }}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+</div>
+
+<div class="container form-container my-account">
+	<div class="row">	
+		<div class="col-lg-8 col-lg-offset-2">
+			{{ customer_helper.edit_basic_account_info(btn_class="btn-primary") }}
+			{{ customer_helper.edit_payment_info(btn_class="btn-primary") }}
+			{{ customer_helper.edit_address_info(btn_class="btn-primary") }}
+		</div>
+	</div>
+</div>
+{% endblock %}

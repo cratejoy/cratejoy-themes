@@ -1,0 +1,15 @@
+<!-- product_loop is the jinja for loop variable -->
+<!-- The following code snippet determines bootstrap column widths -->
+{% if product_loop.length in [2,8] %}
+    {% set col_width = 'col-sm-6' %}
+{% elif product_loop.length in [4] %}
+    {% set col_width = 'col-sm-6 col-lg-3' %}
+{% elif product_loop.length in [3,5,6,7] %}
+    {% set col_width = 'col-sm-4' %}
+{% endif %}
+<div class="plan text-center col-centered col-xs-10 col-xs-offset-0 col-sm-offset-0 {{ col_width }}">
+  <section class="box-selector box-subscribe">
+    <h3 class="subheading secondary-grp" data-barley="product.{{ product.id }}.name" data-barley-editor="simple">{{ product.name | safe }}</h3>
+    <a href="{{ product | product_subscribe_url(gift=gift) }}" type="button" data-barley="product.{{ product.id }}.sub_button_text" data-barley-editor="linkedit" class="btn btn-default alt-button-grp">SUBSCRIBE</a>
+  </section>
+</div>

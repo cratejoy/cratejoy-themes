@@ -1,0 +1,195 @@
+.theme-4 {
+
+  /* Buttons */
+  /* Form */
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url("{{ 'fonts/Lato-Light.eot' | asset_url }}");
+  src: url("{{ 'fonts/Lato-Light.eot' | asset_url }}?#iefix") format('embedded-opentype'), url("{{ 'fonts/Lato-Light.woff' | asset_url }}") format('woff'), url("{{ 'fonts/Lato-Light.ttf' | asset_url }}") format('truetype'), url("{{ 'fonts/Lato-Light.svg' | asset_url }}#Lato-Light") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("{{ 'fonts/Lato-Regular.eot' | asset_url }}");
+  src: url("{{ 'fonts/Lato-Regular.eot' | asset_url }}?#iefix") format('embedded-opentype'), url("{{ 'fonts/Lato-Regular.woff' | asset_url }}") format('woff'), url("{{ 'fonts/Lato-Regular.ttf' | asset_url }}") format('truetype'), url("{{ 'fonts/Lato-Regular.svg' | asset_url }}#Lato-Regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("{{ 'fonts/Lato-Bold.eot' | asset_url }}");
+  src: url("{{ 'fonts/Lato-Bold.eot' | asset_url }}?#iefix") format('embedded-opentype'), url("{{ 'fonts/Lato-Bold.woff' | asset_url }}") format('woff'), url("{{ 'fonts/Lato-Bold.ttf' | asset_url }}") format('truetype'), url("{{ 'fonts/Lato-Bold.svg' | asset_url }}#Lato-Bold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AndaleMono-Regular';
+  src: url("{{ 'fonts/AndaleMono-Regular.eot' | asset_url }}");
+  src: url("{{ 'fonts/AndaleMono-Regular.eot' | asset_url }}?#iefix") format('embedded-opentype'), url("{{ 'fonts/AndaleMono-Regular.woff' | asset_url }}") format('woff'), url("{{ 'fonts/AndaleMono-Regular.ttf' | asset_url }}") format('truetype'), url("{{ 'fonts/AndaleMono-Regular.svg' | asset_url }}#AndaleMono-Regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LucidaGrande-Regular';
+  src: url("{{'fonts/LucidaGrande-Regular.eot' | asset_url }}");
+  src: url("{{'/fonts/LucidaGrande-Regular.eot' | asset_url }}?#iefix") format('embedded-opentype'), url("{{ 'fonts/LucidaGrande-Regular.ttf' | asset_url }}") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.theme-4 body {
+  font-family: {{ settings.face_body }};
+  color: {{ settings.color_dark_body_text }};
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.theme-4 .pagecontent, .theme-4 .slidepanel {
+  background-color: {{ settings.color_content_background }};
+}
+.theme-4 .content p a {
+    color: {{ settings.color_button }};
+}
+.theme-4 .content p {
+  color: {{ settings.color_light_body_text }};
+}
+.theme-4 h2 a {
+	  text-decoration: none !important;
+}
+.theme-4 h1 {
+  font-size: 70px;
+  letter-spacing: 2.33px;
+
+  color: {{ settings.color_large_heading }};
+  font-family: {{ settings.face_large_heading }};
+}
+.theme-4 h2 {
+  font-size: 32px;
+  letter-spacing: 2px;
+
+  color: {{ settings.color_secondary_heading }};
+  font-family: {{ settings.face_secondary_heading }};
+}
+.theme-4 h3 {
+  font-size: 21px;
+  letter-spacing: 1.5px;
+}
+.theme-4 h4 {
+  font-size: 15px;
+  letter-spacing: 1.25px;
+
+  color: {{ settings.color_secondary_heading }};
+  font-family: {{ settings.face_secondary_heading }};
+}
+.theme-4 .sheader .navigation {
+  font-family: {{ settings.face_main }};
+}
+.theme-4 .sheader .navigation a {
+  border-color: {{ settings.color_dark_nav_text }};
+  color: {{ settings.color_dark_nav_text }};
+}
+.theme-4 .sheader .navigation .dropdown-menu a {
+  color: {{ settings.color_dark_nav_text }} !important;
+}
+.theme-4 .sheader.header-expanded .navigation a {
+  border-color: {{ settings.color_light_nav_text }};
+  color: {{ settings.color_light_nav_text }};
+}
+.theme-4 .sheader.header-expanded .navigation .dropdown-menu a {
+  color: {{ settings.color_light_nav_text }} !important;
+}
+.theme-4 .sheader div.heading.logo {
+    color: {{ settings.color_logo }} !important;
+    font-family: {{ settings.face_logo }};
+}
+.theme-4 .sheader a.logo_link {
+    text-decoration: none;
+}
+.theme-4 .sidebar-offcanvas {
+  background: {{ settings.color_cart_background }};
+  color: {{ settings.color_cart_text }} !important;
+}
+.theme-4 .sidebar-offcanvas .heading {
+  font-family: {{ settings.face_secondary_heading }};
+  color: {{ settings.color_cart_text }} !important;
+}
+.theme-4 .sidebar-offcanvas .subheading {
+  color: {{ settings.color_cart_text }} !important;
+}
+.theme-4 .shopping-cart .total .strong {
+  font-family: {{ settings.face_small_heading }};
+}
+.theme-4 .sidebar-offcanvas .close {
+  color: {{ settings.color_cart_text }};
+}
+.theme-4 .progressbar .step .point {
+  background: {{ settings.color_disabled }};
+}
+.theme-4 .progressbar .step .title {
+  color: {{ settings.color_disabled }};
+  font-family: {{ settings.face_small_heading }};
+  font-size: 14px;
+}
+.theme-4 .progressbar .step.active .point {
+  background: {{ settings.color_button }};
+}
+.theme-4 .progressbar .step.active .title {
+  color: {{ settings.color_small_heading }};
+  font-size: 18px;
+  font-family: {{ settings.face_small_heading }};
+  z-index: 1;
+}
+.theme-4 .sfooter {
+  font-family: {{ settings.face_footer }};
+  color: {{ settings.color_footer_text }};
+  font-size: 11px;
+}
+.theme-4 .subheading {
+  color: {{ settings.color_small_heading }};
+  font-family: {{ settings.face_small_heading }};
+}
+.theme-4 .btn {
+  font-family: {{ settings.face_button }};
+  border-color: {{ settings.color_button_text }};
+  color: {{ settings.color_button_text }};
+}
+.theme-4 .btn.btn-primary {
+  background: {{ settings.color_button }};
+  border-color: {{ settings.color_button }};
+}
+.theme-4 .btn.btn-primary:hover {
+  background-color: {{ settings.color_button_hover }};
+}
+.theme-4 .btn.btn-small {
+  font-size: 12px;
+  font-family: {{ settings.face_button }};
+}
+.theme-4 .btn.btn-default:hover {
+  background: {{ settings.color_button }};
+  border-color: {{ settings.color_button }};
+}
+.theme-4 .cform .form-control {
+  border-color: {{ settings.color_button }};
+  font-family: {{ settings.face_form_input }};
+  background: rgba(66, 69, 74, 0.2);
+}
+.theme-4 .cform input {
+  color: {{ settings.color_form_text }};
+}
+.theme-4 .cform .form-control::-moz-placeholder {
+  color: #bbb;
+  opacity: 1;
+}
+.theme-4 .cform .form-control:-ms-input-placeholder {
+  color: #bbb;
+}
+.theme-4 .cform .form-control::-webkit-input-placeholder {
+  color: #bbb;
+}
+.theme-4 #checkout_form {
+  font-size: 14px;
+}
+.icon-circle:before {
+ content: none;
+}

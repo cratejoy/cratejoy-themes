@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<div class="headline-container">
+	<div class="headline">
+		<div class="container">
+			<div data-barley="about_title" data-barley-editor="plus" class="heading">
+				<h2>{{ settings.about_title | safe}}</h2>
+			</div>
+		</div>
+		<div class="paragraph" data-barley="about_subtitle" data-barley-editor="advanced">
+			{{ settings.about_sub_heading | safe}}
+		</div>
+	</div>
+</div>
+
+<div class="form-container container">
+	<div data-barley="about_body" data-barley-editor="advanced">{{ settings.about_body | safe }}</div>
+</div>
+{% endblock %}

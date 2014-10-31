@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="fpanel text-center invert">
+  <div class="container">
+    <h1 class="heading large-grp" data-barley="sub_heading_title" data-barley-editor="simple">Subscribe</h1>
+    <p class="body-grp" data-barley="sub_heading_content" data-barley-editor="simple">Subscribe today to start bringing some awesome into your life. Each Royale Crate will leave you feeling like royalty!</p>
+    <div id="subscriber">
+        {% include "subscribe_flow/progress_bar.html" %}
+        <hr>
+        <!-- Wrapper for slides -->
+        <div>
+          {% if stage == "product" %}
+            <div class="row row-centered">
+            {% for product in store.visible_subscription_products %}
+              {% set product_loop = loop %}
+              {% include "subscribe_flow/product_grid_item.html" %}
+            {% endfor %}
+            </div>
+          {% elif stage == "variants" %}
+            <div class="row row-centered">
+            {% for value in possible_values %}
+              {% set variant_loop = loop %}
+              {% include "subscribe_flow/variant_grid_item.html" %}
+            {% endfor %}
+            </div>
+          {% elif stage == "terms" %}
+            <div class="row row-centered">
+            {% set num_enabled_terms = instance.calc_num_enabled_terms() %}
+            {% for term_price in instance.term_prices %}
+              <!-- Only show enabled terms -->
+              {% if term_price.term.enabled %}
+                {% set term_loop = loop %}
+                {% include "subscribe_flow/term_grid_item.html" %}
+              {% endif %}
+              {% endfor %}
+            </div>
+          {% elif stage == "upsell" %}
+            <h1 class="heading h-section text-center" data-barley="sub_upsell_heading" data-barley-editor="simple">Choose a Bonus</h1>
+            <div class="row row-centered">
+            {% include "subscribe_flow/upsell_grid_item.html" %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+  </div>
+</div>
+{% endblock %}

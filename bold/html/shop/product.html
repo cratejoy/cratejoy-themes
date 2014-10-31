@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+
+{#<div class="headline-container">
+	<div class="headline">
+		<div class="container">
+			<div data-barley="product.{{product.id}}.title" data-barley-editor="plus" class="heading">
+				<h2>{{ product.name | safe }}</h2>
+			</div>
+		</div>
+	</div>
+</div> #}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<div class="row">
+
+  		<div class="col-md-6">
+  			{% if product.images %}
+				{{ product.images[0].url | img_tag(css_class="product-image", alt=product.name) }}
+            {% else %}
+          		{{ '/images/placeholder.png' | asset_url | img_tag(css_class="product-image", alt=product.name) }}
+			{% endif %}
+            <ul class="product-thumbnails">
+			{% for image in product.images[1:] %}
+				<li>
+					<a href="{{ image.url }}" class="current" title="">
+						{{ image.url | img_tag(width=56, height=56) }}
+					</a>
+				</li>
+			{% endfor %}
+          	</ul>
+      	</div>
+      	<div class="col-md-6">
+          <div class="row">
+			  <form action="/cart/add" method="POST" class="simple-form form-horizontal ">
+				 <input type="hidden" name="product_id" value="{{ product.id }}"/>
+				 <input type="hidden" name="product_name" value="{{ product.name }}"/>
+
+				 <h2 data-barley="product.{{product.id}}.name" data-barley-editor="simple" class="product-ecom-name">
+					 {{ product.name | safe }}
+				 </h2>
+
+				 <h3 class="price">{{ product.calc_min_ecom_price() | currency }}</h3>
+
+				 <fieldset class="product-options">
+					 {% if product.variants %}
+					 {# Variant selection can be presented a lot of different ways, single step or multi step
+						This is a simple and commonly used pattern seen in big commerce, shopify, woo, etc
+					 #}
+						 {% for variant in product.variants %}
+							 <div class="control-group">
+								 <label class="col-md-4" data-barley="variant_type.{{ variant.id }}.name" data-barley-editor="simple">{{ variant.name }}</label>
+								 <div class="controls col-md-8">
+									 <select name="variant:{{ variant.name }}">
+										{% for value in variant.values %}
+										<option value="{{ value.value }}">{{ value.value }}</option>
+										{% endfor %}
+									 </select>
+								 </div>
+								 <span data-barley="variant_type.{{ variant.id }}.description" data-barley-editor="simple">{{ variant.description }}</span>
+							</div>
+						 {% endfor %}
+					 {% endif %}
+
+					 <div class="control-group">
+						 <label class="col-md-4" data-barley="product_quantity_selector_label" data-barley-editor="simple">Quantity</label>
+						 <div class="controls col-md-8">
+							 <select name="quantity">
+								 {% for x in range(1,11) %}
+								 <option {% if x == 1 %}selected{% endif %}>{{ x }}</option>
+								 {% endfor %}
+							 </select>
+						 </div>
+					 </div>
+
+					 <div class="control-group">
+						 <div class="col-md-12">
+							 <button type="submit" class="btn submit-button ecom-add">Add to Cart</button>
+						 </div>
+					 </div>
+			   </fieldset>
+          	</form>
+
+			<h3>Description</h3>
+	          <div class="form-container product-description">
+			  	{{ product.description | safe }}
+        	  </div>
+
+          </div>
+      </div>
+  </div>
+  </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,56 @@
+<footer class="bs-footer" role="contentinfo">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div data-barley="footer_contact_us_title" data-barley-editor="plus" class="heading">
+					<h3>Contact Us</h3>
+				</div>
+				<div class="paragraph" data-barley="footer_call_us_text" data-barley-editor="advanced">Call us at: {{ settings.contact_phone | default('123-456-7890', True) }}</div>
+				<div class="paragraph"><a href="mailto:{{ store.settings.support_email }}" data-barley="footer_support_email_link" data-barley-editor="link">{{ store.settings.support_email }}</a></div>
+			</div>
+			<div class="col-md-4">
+
+				<div data-barley="footer_follow_us_title" data-barley-editor="plus" class="heading">
+					<h3>Follow Us</h3>
+				</div>
+				<div class="social-media-container">
+				 <a href="{{ settings.facebook_url }}" target="_blank" data-barley="footer_link_facebook" data-barley-editor="link"> <div class="social-media facebook-icon">&nbsp;</div></a>
+				 <a href="{{ settings.twitter_url }}" target="_blank" data-barley="footer_link_twitter" data-barley-editor="link"> <div class="social-media twitter-icon">&nbsp;</div></a>
+				  <a href="{{ settings.pinterest_url }}" target="_blank" data-barley="footer_link_pinterest" data-barley-editor="link"> <div class="social-media pinterest-icon">&nbsp;</div></a>
+				  <a href="{{ settings.instagram_url }}" target="_blank" data-barley="footer_link_instagram" data-barley-editor="link"> <div class="social-media instagram-icon">&nbsp;</div></a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				{% if settings.has('mc_list_id') and settings.mc_list_id %}
+				<div class="heading" data-barley="footer_mc_title" data-barley-editor="plus">
+					<h3>Keep In Touch</h3>
+				</div>
+				<form action="/customer/list_subscribe" method="POST">
+					<input class="text-input" type="text" name="email" placeholder="Enter Email Address">
+					<input type="hidden" name="list_id" value="{{ settings.mc_list_id }}" />
+					<input class="submit-button" type="submit" value="Submit">
+				</form>
+                {% else %}
+                <div class="cta">
+					<a class="getstarted-button" href="/subscribe" data-barley="footer_cta_btn" data-barley-editor="linkedit">Subscribe</a>
+                </div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+    <div class="sub-footer">
+      <div class="copyright" data-barley="ftr_copyright" data-barley-editor="simple">
+        &copy; 2014, All Rights Reserved.
+      </div>
+      <div class="powered-by-cratejoy">
+        <a href="http://www.cratejoy.com"><img src="{{ 'images/powered_by_cratejoy.png' | asset_url }}" alt="Cratejoy"></a>
+      </div>
+      <div class="clear">
+      </div>
+    </div>
+</footer>
+
+{{ js.base() }}
+{{ 'js/jquery-1.11.1.min.js' | asset_url | javascript_tag }}
+{{ 'js/bootstrap.min.js' | asset_url | javascript_tag }}
+{{ 'js/shop.js' | asset_url | javascript_tag }}

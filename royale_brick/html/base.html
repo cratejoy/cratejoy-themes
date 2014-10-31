@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html class="{% block page_class %}{% endblock %}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% block title %} {{ page_title }} {% endblock %}</title>
+
+  {{ store | canonical_tags(slug, path) }}
+  {{ settings | meta_tags(slug, path) }}
+  {{ store | ogp_tags(page_title) }}
+
+  {{ css.base() }}
+  {{ 'css/bootstrap.css' | asset_url | stylesheet_tag }}
+  {{ 'css/fontawesome.css' | asset_url | stylesheet_tag }}
+  {{ 'css/style.css' | asset_url | stylesheet_tag }}
+
+  <!-- Change your favicon location here if desired -->
+  {{ 'images/favicon.ico' | asset_url | icon_tag }}
+
+  {% set cart = active_cart() %}
+  {{ settings.header_code | safe}}
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="body-grp">
+  <div class="viewport">
+    <div class="row-offcanvas row-offcanvas-right">
+      <div class="pagecontent">
+        <!-- HEADER -->
+        <header class="sheader {% block header_class %}{% endblock %}">
+          <div class="container">
+            {% block header_content %}
+            <div class="navigation">
+              <div class="col-sm-6 col-sm-push-6 clearfix">
+                <a class="link-cart nav-link-grp button-text-grp" data-toggle="offcanvas show-menu">Cart ({{ (cart.products | length ) + (cart.gifts | length) }})</a>
+                {% if guest %}
+                  <a href="/customer/login" class="btn btn-small btn-default login alt-button-grp">Login</a>
+                {% else %}
+                  <ul class="nav navbar-right">
+                  <li class="dropdown">
+                  <a href="#" class="dropdown-toggle nav-link-grp" data-toggle="dropdown">{{ customer.name }} <b class="caret"></b></a> 
+                  <ul class="dropdown-menu">
+                      <li><a href="/customer/account">Preferences</a></li>
+                      <li><a href="/customer/logout">Sign Out</a></li>
+                  </ul>
+                  </li>
+                  </ul>
+                {% endif %}
+              </div>
+              <div class="col-sm-6 col-sm-pull-6">
+                <a class="logo logo-grp" href="/" >
+                    <div data-barley="brand_logo" data-barley-editor="logo">
+                        <span>{{ store.name }}</span>
+                    </div>
+                </a>
+              </div>
+            </div>
+            {% endblock %}
+          </div>
+        </header>
+        <!-- /HEADER -->
+
+        {% block page_content %}
+        {% endblock %}
+
+        <!-- FOOTER -->
+        <footer class="sfooter footer-grp">
+          <div class="container">
+            <div class="row">
+              <div class="socials col-sm-4 col-sm-pull-4 col-sm-push-4">
+                <a href="#" class="icon-circle" data-barley="ftr_fb_link" data-barley-editor="linkedit"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="icon-circle" data-barley="ftr_insta_link" data-barley-editor="linkedit"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="icon-circle" data-barley="ftr_twtr_link" data-barley-editor="linkedit"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="icon-circle" data-barley="ftr_pint_link" data-barley-editor="linkedit"><i class="fa fa-pinterest"></i></a>
+              </div>
+              <div class="copyright col-sm-4 col-sm-pull-4" data-barley="ftr_copyright" data-barley-editor="simple">
+                &copy; 2014, All Rights Reserved.
+              </div>
+              <div class="creators col-sm-4">
+                <a href="http://www.cratejoy.com"><img src="{{ 'images/powered_by_cratejoy.png' | asset_url }}" alt="Cratejoy"></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- /FOOTER -->
+
+      </div> <!-- /.page -->
+
+      <div class="sidebar-offcanvas cart-grp" id="slidebar" role="navigation">
+        {% include "components/slidebar_cart.html"%}
+      </div><!-- /.slidebar -->
+    </div><!--/row-->
+  </div><!--/.container-->
+
+  <script src="{{ 'js/jquery-1.11.1.min.js' | asset_url }}"></script>
+  <script src="{{ 'js/bootstrap.min.js' | asset_url }}"></script>
+  <script src="{{ 'js/offcanvas.js' | asset_url }}"></script>
+
+  {{ ga.base() }}
+  {{ js.base() }}
+
+  <!-- Any page specific javascript can be included in your child templates in a page_javascript block -->
+  {% block page_javascript %}
+  {% endblock %}
+
+  {{ settings.footer_code | safe}}
+</body>
+</html> 

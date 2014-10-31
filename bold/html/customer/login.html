@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+
+<div class="headline-container">
+	<div class="headline">
+		<div class="container">
+			<div class="heading" data-barley="login_title" data-barley-editor="plus">
+				<h2>Log in</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="form-container container">
+<div class="col-sm-6 col-sm-offset-3">
+    {%- if result -%}
+      <div class="form-feedback">
+        <p>
+          {{ result }}
+        </p>
+      </div>
+    {%- endif -%}
+    <form action="/customer/login" class="simple-form form-horizontal" method="post" accept-charset="utf-8">
+		<fieldset>
+
+			<div class="control-group">
+				<label data-barley="login_label_email" data-barley-editor="simple">Email</label>
+				<div class="controls">
+					<input id="email" name="email" type="email" placeholder="Email address" class="input-xlarge" required="">
+
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label data-barley="login_label_password" data-barley-editor="simple">Your password</label>
+				<div class="controls">
+					<input id="inputPassword" name="password" type="password" placeholder="Password" class="input-xlarge" required="">
+
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label for="submit"></label>
+				<div class="controls">
+					<button id="submit" name="submit" class="btn submit-button">Log In</button>
+				</div>
+				<a href="/customer/forgot_password" class="col-lg-6 forgot-signup" data-barley="login_forgotpassword" data-barley-editor="link">Forgot Password?</a>
+          </div>
+
+		</fieldset>
+	</form>
+</div>
+</div>
+{% endblock %}
+

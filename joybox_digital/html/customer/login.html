@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block page_class %}page-login{% endblock %}
+
+{% block header_class %}header-expanded{% endblock %}
+{% block header_bg_img %}data-width="1437" data-height="763" data-barley="index_bg_img" data-barley-editor="bgimage" style="background-image: url('{{ 'images/banner-expanded-theme-3.jpg' | asset_url }}');"{% endblock %}
+{% block header_content %}
+  {{ super() }}
+<section class="content">
+  <h1 class="heading h-section" data-barley="login_heading" data-barley-editor="simple">Account Login</h1>
+  <div class="row">
+    <div class="col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+        {%- if result -%}
+          <div class="form-feedback login-feedback">
+              <div>
+              {{ result }}
+              </div>
+          </div>
+        {%- endif -%}
+      <p><span data-barley="login_no_account_1" data-barley-editor="simple">Don’t have an account?</span> <a href="/subscribe" data-barley="login_no_account_link" data-barley-editor="linkedit">Subscribe</a><span data-barley="login_no_account_2" data-barley-editor="simple"> to sign up!</span></p>
+      <form role="form" class="cform" action="/customer/login" method="post" accept-charset="utf-8">
+        <div class="form-group">
+          <label for="email" class="sr-only" data-barley="login_label_email" data-barley-editor="simple">Email Address</label>
+          <input type="email" name="email" class="form-control input-lg" id="email" placeholder="Email address">
+        </div>
+        <div class="form-group">
+          <label for="password" class="sr-only" data-barley="login_label_password" data-barley-editor="simple">Password</label>
+          <input type="password" class="form-control input-lg" id="inputPassword" name="password" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary fullsize" data-barley="login_submit_btn" data-barley-editor="simple">LOGIN TO YOUR ACCOUNT</button>
+      </form>
+      <p><a href="/customer/forgot_password" data-barley="login_forgot_password" data-barley-editor="linkedit">Forgot Password?</a></p>
+    </div>
+  </div>
+</section>
+{% endblock %}

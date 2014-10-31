@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% macro ship_option(product) %}
+	{% if product.ship_option == "pricedin" %}
+		<p class="sml-text">FREE Shipping</p>
+	{% elif product.ship_option == "flat" %}
+		<p class="sml-text">{{ product.flat_ship_price | currency }} Shipping</p>
+	{% else %}
+		<p class="sml-text"></p>
+	{% endif %}
+{% endmacro %}
+
+{%- macro cell_div(per_page) -%}
+    {% if per_page % 4 == 0 and per_page != 4 %}
+	<div class="col-md-3">
+	{% elif per_page % 3 == 0 %}
+	<div class="col-md-4">
+	{% elif per_page % 2 == 0 %}
+	<div class="col-md-6">
+    {% else %}
+    <div class="col-md-3">  
+	{% endif %}
+{%- endmacro -%}
+
+{%- macro product_cell(per_page, product)  -%}
+	{{ cell_div(per_page) }}
+
+		<div class="promo-border">
+	        <h2 data-barley="product.{{ product.id }}.name" data-barley-editor="simple"><a href="{{ product | product_ecom_url }}">{{ product.name | safe}}</a></h2>
+			<div class="product_image_container" data-barley="product.{{ product.id }}.img" data-barley-editor="image-logo">
+				<a href="{{ product | product_ecom_url }}">
+				{% if product.images %}
+					{{ product.images[0].url | img_tag(css_class="product_image") }}
+				{% else %}
+					{{ settings.product_placeholder_img | asset_url | img_tag(css_class="product_image") }}
+				{% endif %}
+				</a>
+			</div>
+
+            {% set min = product.calc_min_ecom_price() %}
+			{% set max = product.calc_max_ecom_price() %}
+
+			{% if max == min %}
+				<p data-barley="product.{{ product.id }}.ecom_price" data-barley-editor="text">{{ min | currency }}</p>
+			{% else %}
+				<p>{{ min | currency }} - {{ max | currency }}</p>
+			{% endif %}
+
+			{{ ship_option(product) }}
+			<div class="select-button-container ecom">
+                {% if product.instances | length == 1 %}
+				<form action="/cart/add" method="POST">
+					<input type="hidden" name="product_id" value="{{ product.id }}"/>
+					<input type="hidden" name="quantity" value="1"/>
+					<button class="primary-button" type="submit">Add To Cart</button>
+				</form>
+	            {% else %}
+                <a class="primary-button" href="{{ product | product_ecom_url }}">Choose Options</a>
+                {% endif %}
+			</div>
+		</div>
+	</div>
+{%- endmacro -%}
+
+{% block page_content %}
+<div role="main">
+	<div class="headline-container">
+		<div class="headline">
+			<div class="container">
+				<div class="row">	
+						<div class="step col-md-12 selected last-step">
+							<div class='step-arrow'></div>
+                          <p data-barley="headline_step_product_title" data-barley-editor="simple">{{ category if category else 'All' }} Products</p>
+							<div class='step-arrow end'></div>
+						</div>
+				</div>
+			</div>
+   		</div>
+	</div>
+
+	<div class="headline-container">
+		<div class="headline copy">
+			<div class="container">
+				<div class="shop_headline heading" data-barley="shop_product_heading" data-barley-editor="plus">
+					<h2>{{ settings.shop_heading | safe }}</h2>
+				</div>
+				<div class="paragraph shop_subheading" data-barley="shop_product_subheading" data-barley-editor="advanced">
+                  {{ settings.shop_subheading | safe }}
+              </div>
+			</div>
+		</div>
+	</div>
+
+    {% paginate store.shop_products(category) by 4, page %}
+		<div class="subscription-options theme2-bg">
+			<div class="container">
+				<div class="row promos2">
+					{% for product in paged_items %}
+						{{ product_cell(4, product) }}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		{{ navigation }}
+    {% endpaginate %}
+</div>
+
+{% endblock %}

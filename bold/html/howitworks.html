@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<div role="main">
+	<div class="headline-container">
+		<div class="headline">
+			<div class="container">
+				<div data-barley="hiw_title" data-barley-editor="plus" class="heading">
+					<h2>{{ settings.hiw_title | safe }}</h2>
+				</div>
+				<div class="paragraph" data-barley="hiw_sub_heading" data-barley-editor="advanced">{{ settings.hiw_sub_heading | safe }}</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-promos">
+		<div class="container">	  
+			<div class="row promos hiw-promos">
+				<div class="col-md-4">
+					<div class="promo-border">
+						<div data-barley="hiw_step1_title" data-barley-editor="plus" class="heading">
+							<h2>Step 1</h2>
+						</div>
+						<div class="promo-img" style="background-image: url('{{ settings.promo1_img | asset_url }}');" data-barley="hiw_promo1_img" data-barley-editor="bgimage" data-width="75" data-height="87">&nbsp;
+						</div>
+						<div class="paragraph" data-barley="hiw_step1_subtitle" data-barley-editor="advanced">{{ settings.step1_title | safe }}</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="promo-border">
+						<div data-barley="hiw_step2_title" data-barley-editor="plus" class="heading">
+							<h2>Step 2</h2>
+						</div>
+						<div class="promo-img" style="background-image: url('{{ settings.promo2_img | asset_url }}');" data-barley="hiw_promo2_img" data-barley-editor="bgimage" data-width="75" data-height="65">&nbsp;
+						</div>
+						<div class="paragraph" data-barley="hiw_step2_subtitle" data-barley-editor="advanced">{{ settings.step2_title | safe }}</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="promo-border">
+						<div data-barley="hiw_step3_title" data-barley-editor="plus" class="heading">
+							<h2>Step 3</h2>
+						</div>
+						<div class="promo-img" style="background-image: url('{{ settings.promo3_img | asset_url }}');" data-barley="hiw_promo3_img" data-barley-editor="bgimage" data-width="75" data-height="60">&nbsp;
+						</div>
+						<div class="paragraph" data-barley="hiw_step3_subtitle" data-barley-editor="advanced">{{ settings.step3_title | safe }}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 how-it-works" data-barley-editor="advanced" data-barley="hiw_body">
+				{{ settings.hiw_body | safe }}
+			</div>
+			<div class="col-md-4">
+				<div class="hiw-side-promo">
+					<div class="hiw-side-promo-inside">
+						<div class="heading" data-barley="hiw_promo_title" data-barley-editor="plus">
+							<h3>{{ settings.hiw_promo_title | safe }}</h3>
+						</div>
+						<div class="paragraph" data-barley="hiw_promo_body" data-barley-editor="advanced">{{ settings.hiw_promo_body | safe }}</div>
+						<div class="cta">
+							<a href="/subscribe" class="sml-start-button" data-barley="hiw_promo_cta" data-barley-editor="linkedit">Get Started</a>
+						</div>
+						<br/><br/>
+						<br/><br/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

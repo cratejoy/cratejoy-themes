@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+{{ customer_helper.order_page("Thank you!") }}
+
+{% endblock %}
+
+{% block page_javascript %}
+{{ ga.ecommerce() }}
+{% endblock %}

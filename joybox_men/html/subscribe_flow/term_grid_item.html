@@ -1,0 +1,22 @@
+<!-- The following code snippet determines bootstrap column widths -->
+{% if num_enabled_terms in [2,8] %}
+    {% set col_width = 'col-sm-6' %}
+{% elif num_enabled_terms in [4] %}
+    {% set col_width = 'col-sm-6 col-lg-3' %}
+{% elif num_enabled_terms in [3,5,6,7] %}
+    {% set col_width = 'col-sm-4' %}
+{% endif %}
+
+{% set term = term_price.term %}
+<div class="col-centered col-xs-10 col-xs-offset-0 col-sm-offset-0 {{ col_width }}">
+  <section class="box-choose subscribe">
+    <figure>
+      <div class="product_image_container" data-barley="term.{{ term.id }}.img" data-barley-editor="image-logo">
+          {{ ('images/term' ~ term_loop.index ~ '.png') | asset_url | img_tag(css_class="img-responsive center-block") }}
+      </div>
+    </figure>
+    <h4 class="subheading" data-barley="term.{{ term.id }}.name" data-barley-editor="simple">{{ term_price.term.name | safe }}</h4>
+    <h2 class="heading price" data-barley="term_price.{{ term_price.id }}.price" data-barley-editor="simple" class="price">{{ term_price.price | currency }}</h2>
+    <a type="button" class="btn btn-primary fullsize" href="{{ product | product_subscribe_url(chosen_values, term_price.term, gift=gift) }}" data-barley="{{ term_price.id }}.sub_button_text" data-barley-editor="linkedit">SUBSCRIBE</a>
+  </section>
+</div>

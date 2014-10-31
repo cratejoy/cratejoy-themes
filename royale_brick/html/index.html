@@ -1,0 +1,62 @@
+<!-- If you're looking for the shared template that contains -->
+<!-- the header and footer, look in html/base.html -->
+{% extends "base.html" %}
+
+{% block page_class %}page-home{% endblock %}
+{% block header_class %}header-expanded slidepanel top{% endblock %}
+{% block header_content %}
+  {{ super() }}
+  <section class="content">
+    <h1 class="heading h-section large-grp" data-barley="idx_heading" data-barley-editor="simple">Simply Royale</h1>
+    <p class="body-grp" data-barley="idx_heading_content" data-barley-editor="simple">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat eros sit amet dui vestibulum ornare. Integer ac egestas sem.</p>
+    <div class="row">
+      <div class="col-lg-2 col-lg-offset-4 col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+        <a href="/subscribe/" type="button" class="button-grp btn btn-primary fullsize mb-15" data-barley="idx_sub_cta" data-barley-editor="linkedit">SUBSCRIBE</a>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+        <a href="/subscribe/gift/" type="button" class="alt-button-grp btn btn-default fullsize" data-barley="idx_gift_cta" data-barley-editor="linkedit">GIVE A GIFT</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block page_content %}
+<div id="panel-bottom" class="slidepanel bottom content-grp">
+  <div class="fpanel">
+    <div class="container">
+      <h3 class="heading h-section text-center secondary-grp" data-barley="idx_hiw_heading" data-barley-editor="simple">How does it work?</h3>
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="row">
+            <section class="box-choose col-sm-4">
+              <figure><div data-barley="idx_hiw_step_1_img" data-barley-editor="image" data-width="62" data-height="61"><img src="{{ 'images/Step1-icon-orange.png' | asset_url }}"/></div></figure>
+              <h4 class="subheading small-grp" data-barley="idx_hiw_step_1" data-barley-editor="simple">Choose your box</h4>
+              <span class="fa fa-long-arrow-right arrow hidden-xs"></span>
+              <span class="fa fa-long-arrow-down arrow visible-xs"></span>
+            </section>
+            <section class="box-choose col-sm-4">
+              <figure><div data-barley="idx_hiw_step_2_img" data-barley-editor="image" data-width="70" data-height="62"><img src="{{ 'images/Step2-icon-orange.png' | asset_url }}"/></div></figure>
+              <h4 class="subheading small-grp" data-barley="idx_hiw_step_2" data-barley-editor="simple">Choose your plan</h4>
+              <span class="fa fa-long-arrow-right arrow hidden-xs"></span>
+              <span class="fa fa-long-arrow-down arrow visible-xs"></span>
+            </section>
+            <section class="box-choose col-sm-4">
+              <figure><div data-barley="idx_hiw_step_3_img" data-barley-editor="image" data-width="61" data-height="61"><img src="{{ 'images/Step3-icon-orange.png' | asset_url }}"/></div></figure>
+              <h4 class="subheading small-grp" data-barley="idx_hiw_step_3" data-barley-editor="simple">Enjoy monthly crates!</h4>
+            </section>
+          </div>
+          <hr><br>
+          <p class="text-center body-grp" data-barley="idx_footer_content" data-barley-editor="simple">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat eros sit amet dui vestibulum ornare. Integer ac egestas sem. Nunc elit elit, euismod a eleifend nec, ultrices eget tellus. Nunc mauris eros, scelerisque et egestas vitae, vestibulum eget lacus. Nam pretium eleifend auctor. Ut mattis viverra orci vel rhoncus. Mauris non condimentum turpis. Nullam consequat quam eget augue aliquet gravida.</p>    
+          <br><br>
+          <div class="row">
+            <div class="col-lg-4 col-lg-offset-4 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
+              <a href="/subscribe/" type="button"  class="button-grp btn btn-primary fullsize" data-barley="idx_footer_sub_cta" data-barley-editor="linkedit">SUBSCRIBE</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.fpanel -->
+</div><!-- /.slidepanel -->
+{% endblock %}

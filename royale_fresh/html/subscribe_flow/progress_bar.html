@@ -1,0 +1,22 @@
+{% if stage == "product" %}
+  <div class="row">
+    <div class="progressbar button-text-grp col-lg-6 col-lg-offset-3 col-sm-10 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+      <div class="step first active">1</div>
+      <div class="step second">2</div>
+      <div class="step third">3</div>
+    </div>
+  </div>
+{% else %}
+  {% set ns = (steps | length) %}
+  {% set left_percent_increment = 100 // ns %}
+  {% set current_left_percent = 0 %}
+  <div class="row">
+    <div class="progressbar col-lg-6 col-lg-offset-3 col-sm-10 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+      <div class="step first">1</div>
+      {% for key, val in steps %}
+        {% set current_left_percent = current_left_percent + left_percent_increment %}
+        <div class="step {% if loop.index == cur_step %}active{% endif %}" style="left: {{ current_left_percent }}%;">{{ loop.index + 1 }}</div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

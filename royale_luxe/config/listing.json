@@ -1,0 +1,27 @@
+{
+  "theme_name": "Royale Luxe",
+  "version": 2,
+  "author_name": "Cratejoy",
+  "author_email": "support@cratejoy.com",
+  "author_url": "http://www.cratejoy.com",
+  "docs_url": "http://www.cratejoy.com",
+  "price": 0,
+  "short_desc": "Elegant, rich theme with multi-step subscribe flow.",
+  "long_desc": "Royale Luxe is most popular with jewelry designers and luxury servers. Royale Luxe offers a high quality design with a unique homepage. Impress consumers with elegance.",
+  "features": [
+    "Fully responsive using Bootstrap 3",
+    "Slide-out cart function",
+    "Multi-step subscribe flow",
+    "Supports multiple products & variants",
+    "Versatile high-quality illustrations"
+  ],
+  "support_info": "This theme is developed and supported by Cratejoy. Any theme modifications will not be supported. For inquiries or issues, contact support@cratejoy.com.",
+  "category": "basic",
+  "preview_url": "",
+  "images": ["images/style.jpg"],
+  "styles": {
+    "Royale": {
+      "images": ["images/style.jpg"]
+    }
+  }
+}
