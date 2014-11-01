@@ -37,9 +37,9 @@
 			{% set max = product.calc_max_price() %}
 
 			{% if max == min %}
-				<p data-barley="product.{{ product.id }}.price" data-barley-editor="text">{{ min | currency }}</p>
+				<p data-barley="product.{{ product.id }}.price" data-barley-editor="text" class="small-heading-grp">{{ min | currency }}</p>
 			{% else %}
-				<p>{{ min | currency }} - {{ max | currency }}</p>
+				<p class="small-heading-grp">{{ min | currency }} - {{ max | currency }}</p>
 			{% endif %}
 
 			{{ ship_option(product) }}
@@ -67,9 +67,9 @@
 			{% set max = product.calc_max_price(variant, values=chosen_values + [value]) %}
 
 			{% if max == min %}
-				<p data-barley="{{ product | product_editor_id('price', chosen_values + [value]) }}" data-barley-editor="simple">{{ min | currency }}</p>
+				<p class="small-heading-grp" data-barley="{{ product | product_editor_id('price', chosen_values + [value]) }}" data-barley-editor="simple">{{ min | currency }}</p>
 			{% else %}
-				<p>{{ min | currency }} - {{ max | currency }}</p>
+				<p class="small-heading-grp">{{ min | currency }} - {{ max | currency }}</p>
 			{% endif %}
 
 			<p class="sml-text"></p>
@@ -92,7 +92,7 @@
 				</div>
 
 				<p class="sml-promo-text sml-sub-text">{{ term.description | safe }}</p>
-				<p data-barley="term_price.{{ term_price.id }}.price" data-barley-editor="simple">{{ term_price.price | currency }}</p>
+				<p class="small-heading-grp" data-barley="term_price.{{ term_price.id }}.price" data-barley-editor="simple">{{ term_price.price | currency }}</p>
 				{{ ship_option(product) }}
 				<div class="select-button-container">
 					<a class="primary-button" href="{{ product | product_subscribe_url(chosen_values, term_price.term, gift=gift) }}">Select</a>

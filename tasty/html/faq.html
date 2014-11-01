@@ -5,19 +5,16 @@
 <div class="headline-container">
 	<div class="headline">
 		<div class="container">
-			<div class="heading" data-barley="faq_title" data-barley-editor="plus">
+			<div class="heading large-heading-inverted-grp" data-barley="faq_title" data-barley-editor="plus">
 				<h2>{{ settings.faq_title | safe }}</h2>
 			</div>
 		</div>
-		<div class="paragraph" data-barley="faq_subtitle" data-barley-editor="advanced">{{ settings.faq_sub_heading | safe }}</div>
+		<div class="paragraph small-heading-inverted-grp" data-barley="faq_subtitle" data-barley-editor="advanced">{{ settings.faq_sub_heading | safe }}</div>
 	</div>
 </div>
 
-<div class="form-container container">
-	
+<div class="form-container container body-grp">
 	<div data-barley="faq_body" data-barley-editor="advanced">{{ settings.faq_body | safe }}</div>
-
-
 </div>
 {% endblock %}
 

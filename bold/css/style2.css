@@ -65,11 +65,11 @@ i, em{
 }
 
 a{
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 }
 
 a:hover{
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 }
 
 /* End of Meyer Reset CSS */
@@ -105,7 +105,7 @@ a:hover{
 
 body {
 	background-color: #FFF;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 }
 
 .sml-promo-text {
@@ -121,18 +121,18 @@ body {
 }
 
 .utility-nav a {
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_small_text }};
 	font-weight: 700;
 	text-transform: uppercase;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_small_text }};
 	font-size: 10px;
 }
 
 .utility-nav span {
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	font-weight: 300;
 	text-transform: uppercase;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 	margin-left: 5px;
 	margin-right: 5px;
 	font-size: 11px;
@@ -144,7 +144,7 @@ body {
 }
 
 .navbar-toggle {
-	background-color: {{ settings.color_text }};
+	background-color: {{ settings.color_body_text }};
 
 }
 
@@ -154,10 +154,10 @@ body {
 }
 
 .navbar-collapse ul li a {
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_secondary_button_text }};
 	text-transform: uppercase;
 	font-size: 14px;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_secondary_button_text }};
 	font-weight: 900;
 	height: 22px;
 	padding-bottom: 22px;
@@ -168,12 +168,12 @@ body {
 
 .navbar-collapse ul li a:hover {
 	background-color: transparent;
-	border-bottom: 3px solid {{ settings.color_main }};
+	border-bottom: 3px solid {{ settings.color_secondary_button_hover }};
 }
 
 .on-state {
 	background-color: transparent!important;
-	border-bottom: 3px solid {{ settings.color_text }}!important;
+	border-bottom: 3px solid {{ settings.color_body_text }}!important;
 }
 
 .navbar-static-top {
@@ -196,19 +196,14 @@ body {
 	padding-right: 0;
 	line-height: 42px;
 	padding-bottom: 0;
-	font-family: {{ settings.face_accent }};
-	color: {{ settings.color_main }};
-}
-
-.bs-header .navbar-brand a {
-	font-family: {{ settings.face_main }};
-	color: {{ settings.color_text }};
+	font-family: {{ settings.face_logo }};
+	color: {{ settings.color_logo }};
 }
 
 .banner-container {
 	width: 100%;
 	height: 500px;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 }
 
 .banner-container .heading {
@@ -217,8 +212,8 @@ body {
 }
 
 .banner-container .heading h1 {
-	font-family: {{ settings.face_accent }};
-    color: {{ settings.color_banner_text }};
+	font-family: {{ settings.face_large_heading }};
+    color: {{ settings.color_large_heading_light }};
     font-size: 48px;
     line-height:71px;
 }
@@ -255,7 +250,7 @@ h4 {
 	font-size: 18px;
 	font-weight: 300;
 	font-family: {{ settings.face_main }};
-    color: {{ settings.color_banner_text }};
+    color: {{ settings.color_light_body_text }};
 	margin-top: 25px;
 	margin-bottom: 40px;
 }
@@ -265,9 +260,9 @@ h4 {
 }
 
 .cta a {
-	color: #FFF;
+	color: {{ settings.color_button_text }};
 	text-transform: uppercase;
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_button_text }};
 	font-size: 17px;
 	font-weight: 300;
 	padding: 15px 42px 13px 42px;
@@ -277,18 +272,19 @@ h4 {
 
 .cta a:hover {
 	text-decoration: none;
-	background-color: {{ settings.color_main_button_hover }};
-	color: #FFF;
+	background-color: {{ settings.color_button_hover }};
+	color: {{ settings.color_button_text }};
 }
 
 .cta .getstarted-button {
-	background-color: {{ settings.color_main }};
+	background-color: {{ settings.color_button }};
+	color: {{ settings.color_button_text }};
 }
 
 .cta .gift-button {
-	background-color: {{ settings.color_text }};
+	background-color: {{ settings.color_button }};
 	margin-left: 30px;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_button_text }};
 }
 
 .intro-container {
@@ -301,17 +297,17 @@ h4 {
 .intro-container h3,
 .intro-container h4 {
 	text-align: center;
-	color: {{ settings.color_main }};
-	font-family: {{ settings.face_accent }};
+	color: {{ settings.color_large_heading }};
+	font-family: {{ settings.face_large_heading }};
 	margin-bottom: 10px;
 	font-weight: 900;
 }
 
 .intro-container .paragraph {
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	font-size: 18px;
 	font-weight: 300;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 	text-align: center;
 	line-height: 30px;
 	width: 80%;
@@ -327,9 +323,9 @@ h4 {
 }
 
 .main-promos .heading {
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_secondary_heading }};
 	font-weight: 900;
-	color: {{ settings.color_main }};
+	color: {{ settings.color_secondary_heading }};
 	text-align: center;
 	padding-top: 40px;
 }
@@ -337,8 +333,8 @@ h4 {
 .main-promos .paragraph {
 	text-align: center;
 	padding-top: 8px;
-	font-family: {{ settings.face_main }};
-	color: {{ settings.color_text }};
+	font-family: {{ settings.face_small_heading }};
+	color: {{ settings.color_small_heading }};
 	font-size: 16px;
 	font-weight: 300;
 }
@@ -373,10 +369,13 @@ h4 {
 }
 
 .promo-border h1,
-.promo-border h2,
+.promo-border h2 {
+	font-family: {{ settings.face_secondary_heading }};
+}
+
 .promo-border h3,
 .promo-border h4 {
-    font-family: {{ settings.face_accent }};
+    font-family: {{ settings.face_small_heading }};
 }
 
 .promo-border:hover .remove-product-button {
@@ -420,19 +419,24 @@ h4 {
 
 .seenin-logos-container .heading {
 	margin-top: 15px;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_small_heading }};
+	font-family: {{ settings.face_small_heading }};
 	text-align: center;
 	margin-bottom: 65px;
 }
 
 footer {
-	background-color: {{ settings.color_main }};
-	color: #FFF;
+	background-color: {{ settings.color_footer_background }};
+	color: {{ settings.color_footer_text }};
 }
 
 footer .heading {
 	text-align: center;
 	margin-bottom: 10px;
+}
+
+footer .heading h3 {
+	color: {{ settings.color_small_heading_light }};
 }
 
 footer .row {
@@ -442,7 +446,7 @@ footer .row {
 
 footer .paragraph {
 	color: #FFF;
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	text-align: center;
 	font-size: 13px;
 	font-weight: 300;
@@ -510,7 +514,7 @@ footer form {
 .text-input {
 	width: 180px;
 	border: 1px solid #FFF;
-	background-color: {{ settings.color_main }};
+	background-color: {{ settings.color_body_text }};
 	float: left;
 	height: 27px;
 	margin-top: 5px;
@@ -537,26 +541,26 @@ footer form {
 }
 
 .submit-button {
-	background-color: {{ settings.color_main }};
+	background-color: {{ settings.color_button }};
 	border: none;
 	float: left;
-	color: #FFF;
+	color: {{ settings.color_button_text }};
 	margin-top: 5px;
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	text-transform: uppercase;
 	font-size: 11px;
 	font-weight: 700;
 }
 
 .submit-button:hover {
-	background-color: {{ settings.color_main_button_hover }};
+	background-color: {{ settings.color_button_hover }};
 	color: #FFF;
 }
 
 footer input {
 	padding-left: 5px;
 	color: #FFF;
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	font-size: 12px;
 }
 
@@ -577,11 +581,11 @@ footer input {
 
 .sub-footer {
     margin-top: -15px;
-    background-color: {{ settings.color_main }};
 }
+
 .sub-footer .copyright {
-    font-family: {{ settings.face_main }};
-    color: #FFF;
+    font-family: {{ settings.face_small_text }};
+    color: {{ settings.color_small_text_light }};
     font-size: 11px;
     float:left;
     padding-top:50px;
@@ -600,20 +604,20 @@ footer input {
 }
 
 .form-container {
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	padding: 30px 0;
 }
 
 .simple-form {
 	background-color: #FFF;
-    border: 2px solid {{ settings.color_main }};
+    border: 2px solid {{ settings.color_form_border }};
 	padding: 28px;
 	width: 100%;
 	margin-bottom: 30px;
 }
 
 .simple-form h3 {
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 	float: left;
 	clear: left;
 	width: 100%;
@@ -621,21 +625,21 @@ footer input {
 }
 
 label {
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	font-size: 14px;
 	font-weight: 300;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 	margin-bottom: 10px;
 	margin-top: 20px;
 }
 
 input {
-	font-family: {{ settings.face_main }};
-	color: {{ settings.color_text }};
+	font-family: {{ settings.face_form_input_text }};
+	color: {{ settings.color_form_input_text }};
 	font-size: 14px;
 	font-weight: 300;
 	padding-left: 5px;
-	border: 1px solid {{ settings.color_text }};
+	border: 1px solid {{ settings.color_form_input_text }};
 }
 
 .simple-form input {
@@ -649,10 +653,10 @@ input {
   	line-height: 31px;
     font-size: 18px;
     text-align: center;
-    color: {{ settings.color_text }};
-  	font-family: {{ settings.face_main }};
+    color: {{ settings.color_body_text }};
+	font-family: {{ settings.face_body_text }};
     background-color: #FFF;
-    border: 2px solid {{ settings.color_main }};
+    border: 2px solid {{ settings.color_form_border }};
 }
 
 /*----------------------SUBSCRIPTION PAGE---------------------- */
@@ -668,8 +672,8 @@ input {
 /*changed 12/17*/
 
 .subscription-options h2 {
-	font-family: {{ settings.face_accent }};
-	color: {{ settings.color_main }};
+	font-family: {{ settings.face_secondary_heading }};
+	color: {{ settings.color_secondary_heading }};
 	font-size: 28px;
 	text-align: center;
 	padding-top: 43px;
@@ -680,8 +684,6 @@ input {
 .subscription-options p {
 	text-align: center;
 	padding-bottom: 0;
-	font-family: {{ settings.face_main }};
-	color: {{ settings.color_text }};
 	font-size: 20px;
 	font-weight: 300;
 }
@@ -691,8 +693,8 @@ input {
 .previous-container .paragraph {
 	text-align: center;
 	padding-bottom: 20px;
-	font-family: {{ settings.face_main }};
-	color: {{ settings.color_text }};
+	font-family: {{ settings.face_small_heading }};
+	color: {{ settings.color_small_heading }};
 	font-size: 16px;
 	font-weight: 300;
 	padding-top: 8px;
@@ -731,8 +733,8 @@ input {
 }
 
 .headline-container .step {
-	border-top: 2px solid {{ settings.color_text }};
-	border-bottom: 2px solid {{ settings.color_text }};
+	border-top: 2px solid {{ settings.color_body_text }};
+	border-bottom: 2px solid {{ settings.color_body_text }};
 	background-color: transparent;
 }
 
@@ -745,7 +747,7 @@ input {
 	height: 0;
 	border-top: 25px solid transparent;
 	border-bottom: 25px solid transparent;
-	border-left: 18px solid {{ settings.color_text }};
+	border-left: 18px solid {{ settings.color_body_text }};
 }
 
 .headline-container .step-arrow:after {
@@ -783,7 +785,7 @@ input {
 }
 
 .headline-container .step.selected {
-	background-color: {{ settings.color_text }}!important;
+	background-color: {{ settings.color_body_text }}!important;
 }
 
 .headline-container .step {
@@ -791,7 +793,7 @@ input {
 }
 
 .headline-container .step p {
-	color: {{ settings.color_main }}!important;
+	color: {{ settings.color_button }}!important;
 }
 
 .headline-container .step.selected p {
@@ -814,25 +816,28 @@ input {
 }
 
 .headline-container .heading {
-	color: {{ settings.color_main }};
-	font-family: {{ settings.face_main }};
+	color: {{ settings.color_large_heading }};
+	font-family: {{ settings.face_large_heading }};
 	padding-top: 25px;
 	margin-bottom: 25px;
 	text-align: center;
 }
 
 .headline-container .heading h1,
-.headline-container .heading h2,
+.headline-container .heading h2 {
+	font-family: {{ settings.face_large_heading }};
+}
+
 .headline-container .heading h3,
 .headline-container .heading h4
 {
 	font-weight: 900;
-	font-family: {{ settings.face_accent }};
+	font-family: {{ settings.face_secondary_heading }};
 }
 
 .headline-container p, .headline-container .paragraph {
-	color: {{ settings.color_text }};
-	font-family: {{ settings.face_main }};
+	color: {{ settings.color_body_text }};
+	font-family: {{ settings.face_body_text }};
 	font-weight: 300;
 	text-align: center;
 	width: 90%;
@@ -909,18 +914,18 @@ input {
 }
 
 .previous-boxes-title h3 {
-	color: {{ settings.color_main }};
+	color: {{ settings.color_secondary_heading }};
 	text-align: center;
-	font-family: {{ settings.face_accent }};
+	font-family: {{ settings.face_secondary_heading }};
 	font-size: 22px;
 	font-weight: 900;
 }
 
 .previous-boxes-title .paragraph {
 	padding-top: 10px;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 	text-align: center;
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	font-size: 16px;
 	font-weight: 300;
 }
@@ -934,7 +939,7 @@ input {
 
 .subscription-options h3 {
 	text-align: center;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 	margin-top: 35px;
 	line-height: 28px;
 }
@@ -942,7 +947,7 @@ input {
 .sml-text {
 	font-size: 14px!important;
 	padding-top: 5px;
-	color: {{ settings.color_text }}!important;
+	color: {{ settings.color_body_text }}!important;
 	margin-bottom: 25px;
 }
 
@@ -953,9 +958,9 @@ input {
 }
 
 .select-button-container button, .select-button-container a, .primary-button {
-	background-color: {{ settings.color_main }};
-	color: #FFF;
-	font-family: {{ settings.face_main }};
+	background-color: {{ settings.color_button }};
+	color: {{ settings.color_button_text }};
+	font-family: {{ settings.face_button_text }};
 	font-size: 17px;
 	font-weight: 700;
     min-height: 50px;
@@ -965,8 +970,8 @@ input {
 }
 
 .select-button-container button:hover, .select-button-container a:hover, .primary-button:hover {
-	background-color: {{ settings.color_main_button_hover }};
-    color: #FFF;
+	background-color: {{ settings.color_button_hover }};
+    color: {{ settings.color_button_text }};
 	text-decoration: none;
 }
 
@@ -983,10 +988,10 @@ input {
 
 .how-it-works {
 	padding-bottom: 100px;
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	font-size: 14px;
 	font-weight: 300;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 }
 
 .how-it-works p {
@@ -996,22 +1001,22 @@ input {
 
 .hiw-side-promo {
 	background-color: #FFF;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 	padding-top: 24px;
 	padding-left: 28px;
 	padding-right: 28px;
 	padding-bottom: 18px;
 	margin-top: 10px;
 	margin-bottom: 20px;
-    border: 5px solid {{ settings.color_main }};
+    border: 5px solid {{ settings.color_form_border }};
 }
 .hiw-side-promo .heading h3 {
-	font-family: {{ settings.face_accent }};
-	color: {{ settings.color_main }};
+	font-family: {{ settings.face_secondary_heading }};
+	color: {{ settings.color_secondary_heading }};
 }
 
 .hiw-side-promo .paragraph {
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 21px;
@@ -1020,10 +1025,10 @@ input {
 }
 
 .hiw-side-promo button {
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 	font-size: 12px;
 	text-transform: uppercase;
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	font-weight: 900;
 	padding: 7px 10px 7px 10px;
 	margin-right: 5px;
@@ -1031,24 +1036,24 @@ input {
 }
 
 .sml-start-button {
-	background-color: {{ settings.color_main }};
+	background-color: {{ settings.color_button }};
 }
 
 .sml-gift-button {
-	background-color: {{ settings.color_text }};
-	color: {{ settings.color_text }}!important;
+	background-color: {{ settings.color_body_text }};
+	color: {{ settings.color_body_text }}!important;
 }
 
 .sml-start-button:hover {
-	background-color: {{ settings.color_text }};
+	background-color: {{ settings.color_body_text }};
 	text-decoration: none;
 }
 
 .sml-gift-button:hover {
-	background-color: {{ settings.color_text }};
-	color: {{ settings.color_text }}!important;
+	background-color: {{ settings.color_body_text }};
+	color: {{ settings.color_body_text }}!important;
 	text-decoration: none;
-	border: 1px solid {{ settings.color_text }};
+	border: 1px solid {{ settings.color_body_text }};
 }
 
 .hiw-promos {
@@ -1138,15 +1143,15 @@ fieldset.product-options {
 }
 
 .summary-order-box {
-	background-color: {{ settings.color_text }};
-	border: 3px solid {{ settings.color_text }};
+	background-color: {{ settings.color_body_text }};
+	border: 3px solid {{ settings.color_body_text }};
 	padding: 5px;
 	float: left;
 	width: 100%;
 }
 
 .checkout-side-promo-inside {
-	border: 1px solid {{ settings.color_text }};
+	border: 1px solid {{ settings.color_body_text }};
 	float: left;
 	padding: 26px;
 	width: 100%;
@@ -1154,7 +1159,7 @@ fieldset.product-options {
 
 
 .summary-order-box h3 {
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 	padding-bottom: 20px;
 	float: left;
 }
@@ -1166,7 +1171,7 @@ fieldset.product-options {
 
 .summary-order-container p {
 	color: {{ settings.color_text }};
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	font-size: 16px;
 	font-weight: 100;
 	padding-top: 8px;
@@ -1177,15 +1182,15 @@ fieldset.product-options {
 	clear: left;
 	margin-top: 20px;
 	margin-bottom: 12px;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 	font-size: 16px;
-	font-family: {{ settings.face_main }};
-	background-color: {{ settings.color_text }};
+	font-family: {{ settings.face_body_text }};
+	background-color: {{ settings.color_body_text }};
 	padding: 9px 14px 9px 14px;
 }
 
 .summary-order-container a:hover {
-	background-color: {{ settings.color_text }};
+	background-color: {{ settings.color_body_text }};
 	text-decoration: none;
 }
 
@@ -1221,9 +1226,9 @@ fieldset.product-options {
 	position: absolute;
 	top: 9px;
 	left: 8px;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 	font-size: 14px !important;
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	font-weight: 300;
 }
 
@@ -1233,8 +1238,8 @@ fieldset.product-options {
 
 .styled-select option {
 	background-color: #F7F1E5;
-	color: {{ settings.color_text }};
-	font-family: {{ settings.face_main }};
+	color: {{ settings.color_body_text }};
+	font-family: {{ settings.face_body_text }};
 	font-size: 14px;
 	font-weight: 300;
 	padding-top: 3px;
@@ -1257,7 +1262,7 @@ fieldset.product-options {
 }
 
 .summary-order-container #coupon-form {
-	border: 1px solid {{ settings.color_text }};
+	border: 1px solid {{ settings.color_body_text }};
 	height: 30px;
 	width: 200px;
 }
@@ -1266,10 +1271,10 @@ fieldset.product-options {
 	margin-left: -4px;
 	margin-top: -1px;
 	border: none;
-	background-color: {{ settings.color_main }};
+	background-color: {{ settings.color_body_text }};
 	height: 30px;
-	color: {{ settings.color_text }};
-	font-family:  '{{ settings.face_main }}';
+	color: {{ settings.color_body_text }};
+	font-family:  '{{ settings.face_body_text }}';
 	font-size: 16px;
 	padding-left: 7px;
 	padding-right: 7px;
@@ -1277,8 +1282,8 @@ fieldset.product-options {
 }
 
 .summary-order-container #coupon-submit:hover {
-	background-color: {{ settings.color_main_button_hover }};
-	color: {{ settings.color_text }};
+	background-color: {{ settings.color_button_hover }};
+	color: {{ settings.color_body_text }};
 	text-decoration: none;
 }
 
@@ -1297,8 +1302,8 @@ fieldset.product-options {
 }
 
 .checkout_content select {
-    border: 1px solid {{ settings.color_text }};
-    color: {{ settings.color_text }};
+    border: 1px solid {{ settings.color_form_input }};
+    color: {{ settings.color_form_input }};
 }
 
 .cart_listing .item_table, .cart_listing .price_table {
@@ -1310,43 +1315,43 @@ fieldset.product-options {
 }
 
 .checkout_content .invalid_text {
-	font-family: {{ settings.face_paragraph }};
+	font-family: {{ settings.face_body_text }};
 }
 
 #add_coupon_code {
-	background-color: {{ settings.color_secondary }};
-	color: {{ settings.color_inverted_primary }};
-	font-family: {{ settings.face_cta }};
+	background-color: {{ settings.color_button }};
+	color: {{ settings.color_button_text }};
+	font-family: {{ settings.face_button_text }};
 	border: none;
 }
 
 #add_coupon_code:hover {
-	background-color: {{ settings.color_text }};
+	background-color: {{ settings.color_button_hover }};
 	text-decoration: none;
-	color: {{ settings.color_inverted_primary }};
+	color: {{ settings.color_button_text }};
 }
 
 .checkout_content input[type="text"].not-required:focus + label[placeholder]:before,
 .checkout_content input[type="text"][required]:focus + label[placeholder]:before,
 .checkout_content input[type="email"][required]:focus + label[placeholder]:before,
 .checkout_content input[type="password"][required]:focus + label[placeholder]:before  {
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 }
 
 .checkout_content input[type="text"].not-required:focus,
 .checkout_content input[type="text"][required]:focus,
 .checkout_content input[type="email"][required]:focus,
 .checkout_content input[type="password"][required]:focus {
-	border-color: {{ settings.color_text }};
+	border-color: {{ settings.color_body_text }};
 }
 
 
 .checkout_content label {
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 }
 
 .checkout-side-promo-inside {
-	border: 1px solid {{ settings.color_text }};
+	border: 1px solid {{ settings.color_body_text }};
 	float: left;
 	padding: 26px;
 	width: 100%;
@@ -1358,7 +1363,7 @@ fieldset.product-options {
 
 
 .checkout-form {
-	background-color: {{ settings.color_text }};
+	background-color: {{ settings.color_body_text }};
 	padding: 28px;
 	float: left;
 	width: 100%;
@@ -1366,7 +1371,7 @@ fieldset.product-options {
 }
 
 .checkout-form h3 {
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 	float: left;
 	clear: left;
 	width: 100%;
@@ -1374,17 +1379,17 @@ fieldset.product-options {
 }
 
 .checkout-form label {
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	font-size: 14px;
 	font-weight: 100;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 	margin-bottom: 10px;
 	margin-top: 20px;
 }
 
 .checkout-form input {
-	font-family: {{ settings.face_main }};
-	color: {{ settings.color_text }};
+	font-family: {{ settings.face_body_text }};
+	color: {{ settings.color_body_text }};
 	font-size: 14px;
 	font-weight: 300;
 	padding-left: 5px;
@@ -1399,16 +1404,15 @@ fieldset.product-options {
 
 #checkout-submit-button {
 	color: #FFF;
-	background-color: {{ settings.color_main }};
-	font-family: {{ settings.face_main }};
+	background-color: {{ settings.color_body_text }};
+	font-family: {{ settings.face_body_text }};
 	font-size: 16px;
 	border: none;
 	padding: 8px 35px 7px 35px;
-
 }
 
 #checkout-submit-button:hover {
-	background-color: {{ settings.main_button_hover }};
+	background-color: {{ settings.color_button_hover }};
 }
 
 .checkout_content .ship_to {
@@ -1456,7 +1460,7 @@ fieldset.product-options {
 		height: 0;
 		border-top: 25px solid transparent;
 		border-bottom: 25px solid transparent;
-		border-left: 18px solid {{ settings.color_text }};
+		border-left: 18px solid {{ settings.color_body_text }};
 	}
 
 	.headline-container .step-arrow.after:after {
@@ -1757,4 +1761,14 @@ fieldset.product-options {
 
 #preview-mode-banner {
     z-index: 10;
+}
+
+.small-heading-grp {
+	font-family: {{ settings.face_small_heading }};
+	color: {{ settings.color_small_heading }};
+}
+
+#keep-in-touch input {
+	background-color: transparent;
+	color: {{ settings.color_light_body_text }};
 }

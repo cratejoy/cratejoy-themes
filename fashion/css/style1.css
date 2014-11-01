@@ -65,15 +65,16 @@ i, em{
 }
 
 a{
-	color: {{ settings.color_text }};
+	color: {{ settings.color_link }};
+
 }
 
 a:hover{
-	color: {{ settings.color_text }};
+	color: {{ settings.color_link }};
 }
 
 p, .paragraph {
-	color: {{ settings.color_text }}
+	color: {{ settings.color_body_text }}
 }
 
 /* End of Meyer Reset CSS */
@@ -100,9 +101,14 @@ p, .paragraph {
 
 body {
 	background-color: #FFF;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
+	font-family: {{ settings.face_body_text }};
 }
 
+a {
+	font-family: {{ settings.face_link }};
+	color: {{ settings.color_link }};
+}
 
 h1 {
 	font-size: 46px;
@@ -134,18 +140,14 @@ h4 {
 }
 
 .utility-nav a {
-	font-family: {{ settings.face_main }};
 	font-weight: 300;
 	text-transform: uppercase;
-	color: {{ settings.color_text }};
 	font-size: 11px;
 }
 
 .utility-nav span {
-	font-family: {{ settings.face_main }};
 	font-weight: 300;
 	text-transform: uppercase;
-	color: {{ settings.color_text }};
 	margin-left: 5px;
 	margin-right: 5px;
 	font-size: 11px;
@@ -167,9 +169,7 @@ h4 {
 }
 
 .navbar-collapse ul li a {
-	font-family: {{ settings.face_main }};
 	font-size: 14px;
-	color: {{ settings.color_text }};
 	font-weight: 100;
 	height: 22px;
 	padding-bottom: 22px;
@@ -180,12 +180,12 @@ h4 {
 
 .navbar-collapse ul li a:hover {
 	background-color: transparent;
-	border-bottom: 1px solid {{ settings.color_text }};
+	border-bottom: 1px solid {{ settings.color_link }};
 }
 
 .on-state {
 	background-color: transparent!important;
-	border-bottom: 1px solid {{ settings.color_text }}!important;
+	border-bottom: 1px solid {{ settings.color_body_text }}!important;
 }
 
 .navbar-static-top {
@@ -208,13 +208,10 @@ h4 {
 	padding-right: 0;
 	padding-bottom: 0;
 	line-height: 52px;	padding-top: 42px;
-	color: #000;
-	font-family: {{ settings.face_accent }};
 }
 
 .bs-header .navbar-brand a {
-	font-family: {{ settings.face_main }};
-	color: {{ settings.color_text }};
+
 }
 
 .banner-container {
@@ -232,8 +229,6 @@ h4 {
 
 
 .banner .heading {
-	font-family: {{ settings.face_accent }};
-	color: {{ settings.color_banner_text }};
 	font-weight: 100;
 	text-transform: uppercase;
 	margin-top: 100px;
@@ -242,10 +237,8 @@ h4 {
 }
 
 .banner .paragraph {
-	color: {{ settings.color_banner_text }};
 	font-size: 18px;
 	font-weight: 300;
-	font-family: {{ settings.face_main }};
 	margin-top: 25px;
     margin-bottom:40px;
 }
@@ -255,9 +248,7 @@ h4 {
 }
 
 .cta a {
-	color: #FFF;
 	text-transform: uppercase;
-	font-family: {{ settings.face_main }};
 	font-size: 17px;
 	font-weight: 300;
 	padding: 15px 42px 13px 42px;
@@ -267,16 +258,13 @@ h4 {
 
 .cta a:hover {
 	text-decoration: none;
-	color: #FFF;
-	background-color: {{ settings.color_main_button_hover }};
 }
 
 .cta .getstarted-button {
-	background-color: {{ settings.color_main }};
+
 }
 
 .cta .gift-button {
-	background-color: {{ settings.color_text }};
 	margin-left: 30px;
 }
 
@@ -287,16 +275,12 @@ h4 {
 
 .intro-container .heading {
 	text-align: center;
-	color: {{ settings.color_main }};
-	font-family: {{ settings.face_accent }};
 	margin-bottom: 35px;
 }
 
 .intro-container .paragraph {
-	font-family: {{ settings.face_main }};
 	font-size: 18px;
 	font-weight: 100;
-	color: {{ settings.color_text }};
 	text-align: center;
 	line-height: 20px;
 	width: 75%;
@@ -311,8 +295,6 @@ h4 {
 }
 
 .main-promos .heading {
-	font-family: {{ settings.face_accent }};
-	color: {{ settings.color_main }};
 	text-align: center;
 	padding-top: 40px;
 }
@@ -320,8 +302,6 @@ h4 {
 .main-promos .paragraph {
 	text-align: center;
 	padding-bottom: 20px;
-	font-family: {{ settings.face_main }};
-	color: {{ settings.color_text }};
 	font-size: 20px;
 	font-weight: 100;
 }
@@ -358,13 +338,7 @@ h4 {
 	margin-top: 40px;
 	margin-bottom: 70px;
     font-size: 18px;
-	color: {{ settings.color_text }};
-    font-family: {{ settings.face_main }};
 	text-align: center;
-}
-
-.bs-footer a {
-	color: #FFF;
 }
 
 .bs-footer .submit-button {
@@ -372,7 +346,7 @@ h4 {
 }
 
 .bs-footer .heading {
-    font-family: {{ settings.face_main }};
+
 }
 
 .bs-footer .heading h3 {
@@ -387,11 +361,9 @@ h4 {
 
 .sub-footer {
     margin-top: -15px;
-    background-color: {{ settings.color_main }};
+
 }
 .sub-footer .copyright {
-    font-family: {{ settings.face_main }};
-    color: #FFF;
     font-size: 11px;
     float:left;
     padding-top:50px;
@@ -409,13 +381,8 @@ h4 {
     clear: both;
 }
 
-footer {
-	background-color: {{ settings.color_main }};
-}
-
 footer .heading {
 	text-align: center;
-	color: #FFF;
 	margin-bottom: 10px;
 }
 
@@ -425,8 +392,6 @@ footer .row {
 }
 
 footer .paragraph {
-	color: #FFF;
-	font-family: {{ settings.face_main }};
 	text-align: center;
 	font-size: 13px;
 	font-weight: 300;
@@ -493,7 +458,6 @@ footer form {
 .text-input {
 	width: 180px;
 	border: 1px solid #FFF;
-	background-color: {{ settings.color_main }};
 	float: left;
 	height: 27px;
 	margin-top: 5px;
@@ -516,12 +480,10 @@ footer form {
 }
 
 .submit-button {
-	background-color: {{ settings.color_main }};
 	border: none;
 	float: left;
 	color: #FFF;
 	margin-top: 5px;
-	font-family: {{ settings.face_main }};
 	text-transform: uppercase;
 	font-size: 11px;
 	font-weight: 300;
@@ -529,20 +491,19 @@ footer form {
 
 .submit-button:hover {
     color: #FFF;
-	background-color: {{ settings.color_main_button_hover }};
 }
 
 footer input {
 	padding-left: 5px;
 	color: #FFF;
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	font-size: 12px;
 }
 
 /*----------------------FORMS---------------------- */
 
 .form-container {
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	padding: 30px 0;
 }
 
@@ -551,7 +512,7 @@ footer input {
 	padding: 28px;
 	width: 100%;
 	margin-bottom: 30px;
-	border: 5px solid {{ settings.color_main }};
+	border: 5px solid {{ settings.color_large_heading }};
 }
 
 .simple-form h3 {
@@ -563,7 +524,6 @@ footer input {
 }
 
 label {
-	font-family: {{ settings.face_main }};
 	font-size: 14px;
 	font-weight: 300;
 	color: #666666;
@@ -572,12 +532,11 @@ label {
 }
 
 input {
-	font-family: {{ settings.face_main }};
 	color: #666666;
 	font-size: 14px;
 	font-weight: 300;
 	padding-left: 5px;
-	border: 1px solid {{ settings.color_text }};
+	border: 1px solid;
 }
 
 .simple-form input {
@@ -592,8 +551,6 @@ input {
     font-size: 18px;
     text-align: center;
     color: white;
-	font-family: {{ settings.face_main }};
-    background-color: #C7C2B4;
 	border: 1px solid #B3A367;
 }
 
@@ -605,30 +562,8 @@ input {
 	border: none;
 }
 
-.checkout_content h3 {
-	color: {{ settings.color_text }};
-}
-
-.checkout_content section {
-	color: {{ settings.color_text }};
-	border-color: {{ settings.color_text }};
-}
-
 .checkout_content select {
-	border: 1px solid {{ settings.color_text }};
-    color: {{ settings.color_text }};
-}
-
-.checkout_content .styled_cart table tr td .product-name,
-.checkout_content .styled_cart table tr td .subscription-name,
-.checkout_content .styled_cart table tr td .subscription-autorenew,
-.checkout_content .styled_cart table tr td .variant-name
-{
-	color: {{ settings.color_text }};
-}
-
-.checkout_content .styled_cart .total-row #total_price {
-	color: {{ settings.color_text }};
+	border: 1px solid;
 }
 
 /*----------------------SUBSCRIPTION PAGE---------------------- */
@@ -644,10 +579,8 @@ input {
 /*changed 12/17*/
 
 .subscription-options .heading {
-	font-family: {{ settings.face_accent }};
 	text-align: center;
 	line-height: 28px;
-	color: {{ settings.color_main }};
 	margin-top: 35px;
 	margin-bottom: 35px;
 }
@@ -655,8 +588,6 @@ input {
 .subscription-options p {
 	text-align: center;
 	padding-bottom: 0;
-	font-family: {{ settings.face_main }};
-	color: {{ settings.color_text }};
 	font-size: 20px;
 	font-weight: 100;
 }
@@ -666,14 +597,12 @@ input {
 .previous-container .paragraph {
 	text-align: center;
 	padding-bottom: 20px;
-	font-family: {{ settings.face_main }};
-	color: {{ settings.color_text }};
 	font-size: 18px;
 	font-weight: 100;
 }
 
 .subscription-options .promo-border {
-	border: solid 5px #FFF;
+	border: solid 5px {{ settings.color_large_heading_light }};
 	margin-bottom: 20px;
 }
 
@@ -695,8 +624,8 @@ input {
 }
 
 .headline-container .step {
-	border-top: 1px solid {{ settings.color_text }};
-	border-bottom: 1px solid {{ settings.color_text }};
+	border-top: 1px solid {{ settings.color_large_heading }};
+	border-bottom: 1px solid {{ settings.color_large_heading }};
 	background-color: transparent;
 }
 
@@ -708,7 +637,8 @@ input {
 	height: 0;
 	border-top: 25px solid transparent;
 	border-bottom: 25px solid transparent;
-	border-left: 18px solid {{ settings.color_text }};
+	border-left: 18px solid {{ settings.color_large_heading }};
+	color: {{ settings.color_large_heading }};
 }
 
 .headline-container .step-arrow:after {
@@ -747,25 +677,21 @@ input {
 }
 
 .headline-container .step.selected {
-	background-color: {{ settings.color_text }}!important;
+	background-color: {{ settings.color_large_heading }}!important;
 }
 
 .headline-container .step.selected p {
-	color: {{ settings.color_main }}!important;
+	color: {{ settings.color_large_heading_light }}!important;
 	font-weight: 300!important;
 }
 
 .headline-container .heading {
 	padding-top: 25px;
-	color: {{ settings.color_main }};
-	font-family: {{ settings.face_accent }};
 	text-align: center;
 	margin-bottom: 40px;
 }
 
 .headline-container p, .headline-container .paragraph {
-	color: {{ settings.color_text }};
-	font-family: {{ settings.face_main }};
 	font-weight: 100;
 	text-align: center;
 	width: 90%;
@@ -862,17 +788,13 @@ input {
 }
 
 .previous-boxes-title h3 {
-	color: {{ settings.color_text }};
 	text-align: center;
-	font-family: {{ settings.face_main }};
 	font-size: 22px;
 }
 
 .previous-boxes-title .paragraph {
 	padding-top: 10px;
-	color: {{ settings.color_text }};
 	text-align: center;
-	font-family: {{ settings.face_main }};
 	font-size: 14px;
 	font-weight: 300;
 }
@@ -887,7 +809,6 @@ input {
 .sml-text {
 	font-size: 14px!important;
 	padding-top: 5px;
-	color: {{ settings.color_text }}!important;
 	margin-bottom: 25px;
 }
 
@@ -900,9 +821,6 @@ input {
 }
 
 .select-button-container button, .select-button-container a, .primary-button {
-	background-color: {{ settings.color_main }};
-	color: #FFF;
-	font-family: {{ settings.face_main }};
 	font-size: 17px;
 	font-weight: 300;
     min-width: 200px;
@@ -913,7 +831,6 @@ input {
 }
 
 .select-button-container button:hover, .select-button-container a:hover, .primary-button:hover {
-	background-color: {{ settings.color_main_button_hover }};
 	text-decoration: none;
 }
 
@@ -930,11 +847,11 @@ input {
 
 .how-it-works {
 	padding-bottom: 100px;
-	font-family: {{ settings.face_main }};
+	font-family: {{ settings.face_body_text }};
 	font-size: 14px;
 	font-weight: 100;
     line-height:21px;
-	color: {{ settings.color_text }};
+	color: {{ settings.color_body_text }};
 }
 
 .how-it-works .paragraph {
@@ -948,17 +865,11 @@ input {
 	padding-left: 28px;
 	padding-right: 28px;
 	padding-bottom: 18px;
-	color: {{ settings.color_text }};
-    border: solid 5px {{ settings.color_main }};
-}
-
-.hiw-side-promo .heading {
-	font-family: {{ settings.face_accent }};
+	color: {{ settings.color_body_text }};
+    border: solid 5px {{ settings.color_large_heading }};
 }
 
 .hiw-side-promo .paragraph {
-	color: {{ settings.color_text }};
-	font-family: {{ settings.face_main }};
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 21px;
@@ -971,15 +882,10 @@ input {
 	color: white;
 	font-size: 13px;
 	text-transform: uppercase;
-	font-family: {{ settings.face_main }};
 	font-weight: 300;
 	padding: 7px 10px 7px 10px;
 	margin-right: 5px;
 	border: none;
-}
-
-.sml-start-button {
-	background-color: {{ settings.color_main }};
 }
 
 .sml-gift-button {
@@ -987,7 +893,6 @@ input {
 }
 
 .sml-start-button:hover {
-	background-color: {{ settings.color_main_button_hover }};
 	color: #FFF;
 	text-decoration: none;
 }
@@ -1084,15 +989,12 @@ fieldset.product-options {
 }
 
 .summary-order-box {
-	background-color: {{ settings.color_text }};
-	border: 3px solid {{ settings.color_text }};
 	padding: 5px;
 	float: left;
 	width: 100%;
 }
 
 .checkout-side-promo-inside {
-	border: 1px solid {{ settings.color_text }};
 	float: left;
 	padding: 26px;
 	width: 100%;
@@ -1100,7 +1002,6 @@ fieldset.product-options {
 
 
 .summary-order-box h3 {
-	color: {{ settings.color_text }};
 	padding-bottom: 20px;
 	float: left;
 }
@@ -1111,8 +1012,6 @@ fieldset.product-options {
 }
 
 .summary-order-container p {
-	color: {{ settings.color_text }};
-	font-family: {{ settings.face_main }};
 	font-size: 16px;
 	font-weight: 100;
 	padding-top: 8px;
@@ -1123,15 +1022,11 @@ fieldset.product-options {
 	clear: left;
 	margin-top: 20px;
 	margin-bottom: 12px;
-	color: {{ settings.color_text }};
 	font-size: 16px;
-	font-family: {{ settings.face_main }};
-	background-color: {{ settings.color_text }};
 	padding: 9px 14px 9px 14px;
 }
 
 .summary-order-container a:hover {
-	background-color: {{ settings.color_text }};
 	text-decoration: none;
 }
 
@@ -1167,9 +1062,7 @@ fieldset.product-options {
 	position: absolute;
 	top: 9px;
 	left: 8px;
-	color: {{ settings.color_text }};
 	font-size: 14px !important;
-	font-family: {{ settings.face_main }};
 	font-weight: 300;
 }
 
@@ -1179,8 +1072,6 @@ fieldset.product-options {
 
 .styled-select option {
 	background-color: #F7F1E5;
-	color: {{ settings.color_text }};
-	font-family: {{ settings.face_main }};
 	font-size: 14px;
 	font-weight: 300;
 	padding-top: 3px;
@@ -1203,8 +1094,6 @@ fieldset.product-options {
 }
 
 .summary-order-container #coupon-form {
-	border: 1px solid {{ settings.color_text }};
-	height: 30px;
 	width: 200px;
 }
 
@@ -1212,10 +1101,7 @@ fieldset.product-options {
 	margin-left: -4px;
 	margin-top: -1px;
 	border: none;
-	background-color: {{ settings.color_main }};
 	height: 30px;
-	color: {{ settings.color_text }};
-	font-family:  '{{ settings.face_main }}';
 	font-size: 16px;
 	padding-left: 7px;
 	padding-right: 7px;
@@ -1223,8 +1109,6 @@ fieldset.product-options {
 }
 
 .summary-order-container #coupon-submit:hover {
-	background-color: {{ settings.color_main_button_hover }};
-	color: {{ settings.color_text }};
 	text-decoration: none;
 }
 
@@ -1250,44 +1134,20 @@ fieldset.product-options {
 	border-top: 2px solid #e7e7e7;
 }
 
-.checkout_content .invalid_text {
-	font-family: {{ settings.face_paragraph }};
-}
-
 #add_coupon_code {
-	background-color: {{ settings.color_secondary }};
-	color: {{ settings.color_inverted_primary }};
-	font-family: {{ settings.face_cta }};
 	border: none;
 }
 
 #add_coupon_code:hover {
-	background-color: {{ settings.color_accent }};
 	text-decoration: none;
-	color: {{ settings.color_inverted_primary }};
 }
-
-.checkout_content input[type="text"].not-required:focus + label[placeholder]:before,
-.checkout_content input[type="text"][required]:focus + label[placeholder]:before,
-.checkout_content input[type="email"][required]:focus + label[placeholder]:before,
-.checkout_content input[type="password"][required]:focus + label[placeholder]:before  {
-	color: {{ settings.color_accent }};
-}
-
-.checkout_content input[type="text"].not-required:focus,
-.checkout_content input[type="text"][required]:focus,
-.checkout_content input[type="email"][required]:focus,
-.checkout_content input[type="password"][required]:focus {
-	border-color: {{ settings.color_accent }};
-}
-
 
 .checkout_content label {
 	color: #b2b2b2;
 }
 
 .checkout-side-promo-inside {
-	border: 1px solid {{ settings.color_accent }};
+	border: 1px solid;
 	float: left;
 	padding: 26px;
 	width: 100%;
@@ -1297,9 +1157,7 @@ fieldset.product-options {
 	padding: 20px 0;
 }
 
-
 .checkout-form {
-	background-color: {{ settings.color_text }};
 	padding: 28px;
 	float: left;
 	width: 100%;
@@ -1307,7 +1165,6 @@ fieldset.product-options {
 }
 
 .checkout-form h3 {
-	color: {{ settings.color_text }};
 	float: left;
 	clear: left;
 	width: 100%;
@@ -1315,17 +1172,13 @@ fieldset.product-options {
 }
 
 .checkout-form label {
-	font-family: {{ settings.face_main }};
 	font-size: 14px;
 	font-weight: 100;
-	color: {{ settings.color_text }};
 	margin-bottom: 10px;
 	margin-top: 20px;
 }
 
 .checkout-form input {
-	font-family: {{ settings.face_main }};
-	color: {{ settings.color_text }};
 	font-size: 14px;
 	font-weight: 300;
 	padding-left: 5px;
@@ -1340,17 +1193,12 @@ fieldset.product-options {
 
 #checkout-submit-button {
 	color: #FFF;
-	background-color: {{ settings.color_main }};
-	font-family: {{ settings.face_main }};
 	font-size: 16px;
 	border: none;
 	padding: 8px 35px 7px 35px;
 
 }
 
-#checkout-submit-button:hover {
-	background-color: {{ settings.main_button_hover }};
-}
 .checkout_content .ship_to {
     margin-bottom:20px;
 }
@@ -1385,7 +1233,7 @@ fieldset.product-options {
 		height: 0;
 		border-top: 25px solid transparent;
 		border-bottom: 25px solid transparent;
-		border-left: 18px solid {{ settings.color_text }};
+		border-left: 18px solid;
 	}
 
 	.headline-container .step-arrow.after:after {
@@ -1656,4 +1504,104 @@ fieldset.product-options {
 
 #preview-mode-banner {
     z-index: 10;
+}
+
+.logo-grp, logo-grp:hover {
+	color: {{ settings.color_logo }};
+	font-family: {{ settings.face_logo }};
+	text-decoration: none;
+}
+
+.large-light-grp {
+	color: {{ settings.color_large_heading_light }};
+	font-family: {{ settings.face_large_heading }};
+}
+
+.large-grp {
+	color: {{ settings.color_large_heading }};
+	font-family: {{ settings.face_large_heading }};
+}
+
+.secondary-grp {
+	color: {{ settings.color_secondary_heading }};
+	font-family: {{ settings.face_secondary_heading }};
+}
+
+.small-grp, .small-grp:hover {
+	color: {{ settings.color_small_heading }};
+	font-family: {{ settings.face_small_heading }};
+}
+
+.small-light-grp {
+	color: {{ settings.color_small_heading_light }};
+	font-family: {{ settings.face_small_heading }};
+}
+
+.button-grp, .checkout_button, .btn {
+	background-color: {{ settings.color_button }};
+	font-family: {{ settings.face_button }};
+	color: {{ settings.color_button_text }};
+}
+
+.button-grp:hover, .checkout_button:hover, .btn:hover {
+	background-color: {{ settings.color_button_hover }};
+	color: {{ settings.color_button_text }};
+}
+
+.secondary-button-grp, #add_coupon_code {
+	background-color: {{ settings.color_secondary_button }};
+	color: {{ settings.color_secondary_button_text }};
+	font-family: {{ settings.face_secondary_button }};
+}
+
+.secondary-button-grp:hover, #add_coupon_code:hover {
+	background-color: {{ settings.color_secondary_button_hover }};
+	color: {{ settings.color_secondary_button_text }};
+}
+
+.nav-link-grp, .nav-link-grp a,
+.nav-link-grp:hover, .nav-link-grp a:hover {
+	color: {{ settings.color_nav_link }};
+	font-family: {{ settings.face_nav_link }};
+}
+
+.body-grp {
+	color: {{ settings.color_body_text }};
+	font-family: {{ settings.face_body_text }};
+}
+
+.body-light-grp {
+	color: {{ settings.color_body_text_light }};
+	font-family: {{ settings.face_body_text }};
+}
+
+.footer-grp {
+	background-color: {{ settings.color_footer }};
+}
+
+.small-text-grp {
+	font-family: {{ settings.face_small_text }};
+	color: {{ settings.color_small_text }};
+}
+
+.form-input-grp {
+	font-family: {{ settings.face_form_input }};
+	color: {{ settings.color_form_input }};
+}
+
+.form-input-inverted-grp {
+	font-family: {{ settings.face_form_input }};
+	color: {{ settings.color_form_input_inverted }};
+}
+
+footer a {
+	color: {{ settings.color_body_text_light }};
+}
+
+form#keep-in-touch, form#keep-in-touch input {
+	background-color: transparent;
+}
+
+form#keep-in-touch input {
+	border: 1px solid {{ settings.color_form_input_inverted }};
 }

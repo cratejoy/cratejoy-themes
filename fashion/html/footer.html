@@ -1,15 +1,15 @@
-<footer class="bs-footer" role="contentinfo">
+<footer class="bs-footer footer-grp" role="contentinfo">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
-				<div class="heading" data-barley="footer_contact_us_title" data-barley-editor="plus">
+				<div class="heading small-light-grp" data-barley="footer_contact_us_title" data-barley-editor="plus">
 					<h3>Contact Us</h3>
 				</div>
-				<div class="paragraph" data-barley="footer_call_us_text" data-barley-editor="advanced">Call us at: {{ settings.contact_phone | default('123-456-7890', True) }}</div>
+				<div class="paragraph body-light-grp" data-barley="footer_call_us_text" data-barley-editor="advanced">Call us at: {{ settings.contact_phone | default('123-456-7890', True) }}</div>
 				<div class="paragraph"><a href="mailto:{{ store.settings.support_email }}" data-barley="footer_support_email_link" data-barley-editor="link">{{ store.settings.support_email }}</a></div>
 			</div>
 			<div class="col-md-4">
-				<div class="heading" data-barley="footer_follow_us_title" data-barley-editor="plus">
+				<div class="heading small-light-grp" data-barley="footer_follow_us_title" data-barley-editor="plus">
 					<h3>Follow Us</h3>
 				</div>
 				<div class="social-media-container">
@@ -20,25 +20,24 @@
 				</div>
 			</div>
 			<div class="col-md-4">
-				{% if settings.has('mc_list_id') and settings.mc_list_id %}
-				<div class="heading" data-barley="footer_mc_title" data-barley-editor="plus">
+				{% if settings.has('mc_list_id') and settings.mc_list_id #}
+				<div class="heading small-light-grp" data-barley="footer_mc_title" data-barley-editor="plus">
 					<h3>Keep In Touch</h3>
 				</div>
-				<form action="/customer/list_subscribe" method="POST">
+				<form action="/customer/list_subscribe" method="POST" id="keep-in-touch">
 					<input class="text-input" type="text" name="email" placeholder="Enter Email Address">
-					<input type="hidden" name="list_id" value="{{ settings.mc_list_id }}" />
-					<input class="submit-button" type="submit" value="Submit">
+					<input type="hidden" name="list_id" value="{{ settings.mc_list_id }}">
+					<input class="submit-button button-grp" type="submit" value="Submit">
 				</form>
-                {% else %}
+				{% else #}
                 <div class="cta">
-					<a class="getstarted-button" href="/subscribe" data-barley="footer_cta_btn" data-barley-editor="linkedit">Subscribe</a>
-                </div>
-				{% endif %}
+					<a class="getstarted-button button-grp" href="/subscribe" data-barley="footer_cta_btn" data-barley-editor="linkedit">Subscribe</a>
+				</div>
 			</div>
 		</div>
 	</div>
     <div class="sub-footer">
-      <div class="copyright" data-barley="ftr_copyright" data-barley-editor="simple">
+      <div class="copyright small-text-grp" data-barley="ftr_copyright" data-barley-editor="simple">
         &copy; 2014, All Rights Reserved.
       </div>
       <div class="powered-by-cratejoy">
