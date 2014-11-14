@@ -1,0 +1,16 @@
+<div>
+    {% if stage == "product" %}
+        Select a Product
+    {% else %}
+      {% set ns = (steps | length) %}
+
+      {% for key, val in steps %}
+          {% if loop.index == cur_step %}<p>Current Step:</p>{% endif %}
+          {% if key == 'variant' %}
+            <p>Select {{ val.name }}</p>
+          {% else %}
+            <p>Select {{ key.title() }}</p>
+          {% endif %}
+      {% endfor %}
+    {% endif %}
+</div>

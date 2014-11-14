@@ -1,0 +1,6 @@
+<div>
+    <figure data-barley="variant_value.{{ value.id }}.img" data-barley-editor="image-logo">{{ value | object_img_tag }}</figure>
+  	<h4>{{ value.value }}</h4>
+  	<p>{{ value.description | default("Variant description placeholder text", true) }}</p>
+    <a type="button" href="{{ product | product_subscribe_url(chosen_values, value, gift=gift) }}">SUBSCRIBE</a>
+</div>

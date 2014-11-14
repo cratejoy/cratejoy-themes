@@ -1,0 +1,5 @@
+<div>
+    <h4>{{ term_price.term.name | safe }}</h4>
+    <h2>{{ term_price.price | currency }}</h2>
+    <a type="button" href="{{ product | product_subscribe_url(chosen_values, term_price.term, gift=gift) }}">SUBSCRIBE</a>
+</div>

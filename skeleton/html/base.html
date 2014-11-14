@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>{% block title %} {{ page_title }} {% endblock %}</title>
+
+  {{ settings | meta_tags(slug, path) }}
+  {{ store | ogp_tags(page_title) }}
+
+  {{ css.base() }}
+  {{ 'css/style.css' | asset_url | stylesheet_tag }} 
+
+  <!-- Change your favicon location here if desired -->
+  {{ 'images/favicon.ico' | asset_url | icon_tag }}
+
+  {% set cart = active_cart() %}
+  {{ settings.header_code | safe }}
+</head>
+<body>
+    <a>Cart ({{ (cart.products | length ) + (cart.gifts | length) }})</a>
+
+    {%- macro gift_item(cart_gift) -%}
+        {% set instance = cart_gift.instance %}
+        <h4>Gift of {{ instance.product.name }}</h4>
+        <p>{{ cart_gift.subscription_type_term.name | title }}</p>
+        {% for var in instance.variants %}
+            <p>{{ var.variant_type.name }}: {{ var.variant_value.value }}</p>
+        {% endfor %}
+        <p>{{ cart_gift.price | currency }}</p>
+        <form method="POST" action="/checkout/remove/{{ cart_gift.id }}">
+            <button type="submit"/>remove gift</button>
+        </form>
+    {%- endmacro -%}
+
+    {%- macro item(cart_prod) -%}
+    {% set instance = cart_prod.instance %}
+        <h4>{{ instance.product.name }}</h4>
+        <p>{{ cart_prod.subscription_type_term.name | title }}</p>
+        {% for var in instance.variants %}
+            <p>{{ var.variant_type.name }}: {{ var.variant_value.value }}</p>
+        {% endfor %}
+        <p>{{ cart_prod.price | currency }}</p>
+        <form id="rem_product_form" method="POST" action="/checkout/remove/{{ cart_prod.id }}">
+            <button type="submit">remove product</button>
+        </form>
+    {%- endmacro -%}
+
+    {%- macro coupon_item(cart_coupon) -%}
+        <h4>{{ cart_coupon.discount_name }}</h4>
+        <p>({{ cart_coupon.code_used }})</p>
+        <p>-{{ cart_coupon.discount_value | currency }}</p>
+        <form id="rem_coupon_form" method="POST" action="/checkout/rem_coupon/{{ cart_coupon.id }}">
+            <button type="submit" class="close">remove coupon</button>
+        </form>
+    {%- endmacro -%}
+
+    {% if cart and (cart.products or cart.gifts) %}
+        {% for p in cart.products %}
+            {{ item(p) }}
+        {% endfor %}
+
+        {% for g in cart.gifts %}
+            {{ gift_item(g) }}
+        {% endfor %}
+
+        {% for c in cart.coupons %}
+            {{ coupon_item(c) }}
+        {% endfor %}
+        <div>Subtotal: {{ cart.product_total | currency }}</div>
+        <div>Est. Tax:{% if cart.tax_price and cart.tax_price != 0 %} {{ cart.tax_price|currency }}{% endif %}</div>
+        <div>Total: {{ cart.total|currency }}</div>
+        <a href="/checkout/">CHECKOUT</a>
+    {% else %}
+        <h3>Your cart is empty</h3>
+    {% endif %}
+
+
+
+
+
+
+
+
+    {% if guest %}
+        <a href="/customer/login">Login</a>
+    {% else %}
+        {{ customer.name }}
+        <ul>
+            <li><a href="/customer/account">Preferences</a></li>
+            <li><a href="/customer/logout">Sign Out</a></li>
+        </ul>
+    {% endif %}
+
+    {% block page_content %}
+    {% endblock %}
+
+    {{ ga.base() }}
+    {{ js.base() }}
+
+    {{ '/js/jquery-1.11.1.min.js' | asset_url | javascript_tag }}  
+
+    <!-- Any page specific javascript can be included in your child templates in a page_javascript block -->  
+    {% block page_javascript %}
+    {% endblock %}
+
+    {{ settings.footer_code | safe }}
+</body>
+</html>

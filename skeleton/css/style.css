@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("{{ 'fonts/Lato-Regular.eot' | asset_url }}");
+  src: url("{{ 'fonts/Lato-Regular.eot' | asset_url }}?#iefix") format('embedded-opentype'), url("{{ 'fonts/Lato-Regular.woff' | asset_url }}") format('woff'), url("{{ 'fonts/Lato-Regular.ttf' | asset_url }}") format('truetype'), url("{{ 'fonts/Lato-Regular.svg' | asset_url }}#Lato-Regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("{{ 'fonts/Lato-Bold.eot' | asset_url }}");
+  src: url("{{ 'fonts/Lato-Bold.eot' | asset_url }}?#iefix") format('embedded-opentype'), url("{{ 'fonts/Lato-Bold.woff' | asset_url }}") format('woff'), url("{{ 'fonts/Lato-Bold.ttf' | asset_url }}") format('truetype'), url("{{ 'fonts/Lato-Bold.svg' | asset_url }}#Lato-Bold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: {{ settings.face_regular }};
+}
+
+.red {
+    color: {{ settings.color_test }};
+}
+
+.green {
+    color: {{ settings.color_test_2 }};
+}
+
+.bold { 
+    font-family: {{ settings.face_bold }};
+}

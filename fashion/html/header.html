@@ -25,6 +25,11 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right nav-link-grp">
+					{%- if guest -%}
+					<li><a href="/customer/login" data-barley="header_login_link_mobile" data-barley-editor="linkedit">Login</a></li>
+					{%- else -%}
+					<li><a href="/customer/signout">Sign Out</a></li>
+					{%- endif -%}
 					<li><a href="/howitworks" data-barley="header_hiw_title" data-barley-editor="linkedit"  {% if slug == "howitworks" %}class='on-state'{% endif %}>How it works</a></li>
 					<li><a href="/subscribe" data-barley="header_join_title" data-barley-editor="linkedit" {% if slug == "subscribe" %}class='on-state'{% endif %}>Join Now</a></li>
 					<li><a href="/about_us" data-barley="header_about_title" data-barley-editor="linkedit" {% if slug == "about_us" %}class='on-state'{% endif %}>About</a></li>

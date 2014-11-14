@@ -1,6 +1,4 @@
-<title>{% if settings.has(slug ~ '_page_title') %}{{ settings[slug ~ '_page_title'] }}{% else %}{{ slug | title }} | {{ store.name }}{% endif %}</title>
-<meta name="description" content="" />
-<meta name="keywords" content="" />
+<title>{% block title %}{{ page_title }}{% endblock %}</title>
 <meta charset="UTF-8" />
 <meta name="format-detection" content="telephone=no">
 

@@ -20,7 +20,7 @@
 				</div>
 			</div>
 			<div class="col-md-4">
-				{% if settings.has('mc_list_id') and settings.mc_list_id #}
+				{% if settings.has('mc_list_id') and settings.mc_list_id %}
 				<div class="heading small-light-grp" data-barley="footer_mc_title" data-barley-editor="plus">
 					<h3>Keep In Touch</h3>
 				</div>
@@ -29,10 +29,11 @@
 					<input type="hidden" name="list_id" value="{{ settings.mc_list_id }}">
 					<input class="submit-button button-grp" type="submit" value="Submit">
 				</form>
-				{% else #}
+				{% else %}
                 <div class="cta">
 					<a class="getstarted-button button-grp" href="/subscribe" data-barley="footer_cta_btn" data-barley-editor="linkedit">Subscribe</a>
 				</div>
+				{% endif %}
 			</div>
 		</div>
 	</div>

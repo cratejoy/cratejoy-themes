@@ -255,19 +255,25 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="previous-container">
-						<div class="previous-img1" style="background-image: url('{{ settings.prev1_img | asset_url }}');" data-barley="home_seenin_img1" data-barley-editor="bgimage" data-width="240" data-height="228">&nbsp;</div>
+						<div class="previous-img1" data-barley="home_seenin_img1" data-barley-editor="image" data-width="240" data-height="228">
+							<img src="{{ settings.prev1_img | asset_url }}">
+						</div>
 						<div class="paragraph small-heading-grp" data-barley="subscribe_prev1_title" data-barley-editor="advanced">{{ settings.prev1_title | safe }}</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="previous-container">
-						<div class="previous-img2" style="background-image: url('{{ settings.prev2_img | asset_url }}');" data-barley="home_seenin_img2" data-barley-editor="bgimage" data-width="273" data-height="183">&nbsp;</div>
+						<div class="previous-img2" data-barley="home_seenin_img2" data-barley-editor="image" data-width="273" data-height="183">
+							<img src="{{ settings.prev2_img | asset_url }}">
+						</div>
 						<div class="paragraph small-heading-grp" data-barley="subscribe_prev2_title" data-barley-editor="advanced">{{ settings.prev2_title | safe }}</div>
 					</div>
 				</div>
 				<div class="col-md-4">
   					<div class="previous-container" >
-						<div class="previous-img3" style="background-image: url('{{ settings.prev3_img | asset_url }}');" data-barley="home_seenin_img3" data-barley-editor="bgimage" data-width="195" data-height="177">&nbsp;</div>
+						<div class="previous-img3" data-barley="home_seenin_img3" data-barley-editor="image" data-width="195" data-height="177">
+							<img src="{{ settings.prev3_img | asset_url }}">
+						</div>
 						<div class="paragraph small-heading-grp" data-barley="subscribe_prev3_title" data-barley-editor="advanced">{{ settings.prev3_title | safe }}</div>
 					</div>
 				</div>

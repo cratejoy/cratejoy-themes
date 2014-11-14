@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<!-- Feedback messages -->
+{%- if result -%}
+<p>
+      {{ result }}
+</p>
+{%- endif -%}
+
+<form action="/customer/login" method="post" accept-charset="utf-8">
+    <input type="email" name="email" id="email" placeholder="Email address">
+    <input type="password" id="inputPassword" name="password" placeholder="Password">
+<button type="submit">LOGIN</button>
+</form>
+
+<a href="/customer/forgot_password">Forgot Password?</a>
+
+{% endblock %}

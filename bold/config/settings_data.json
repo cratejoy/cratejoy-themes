@@ -213,8 +213,11 @@
       "html\/head.html",
       "html\/header.html",
       "html\/error.html",
-      "customer\/order.html",
-      "customer\/thank_you.html"
+      "html\/thanks.html",
+      "html\/shop\/product.html",
+      "html\/shop\/listing.html",
+      "html\/customer\/order.html",
+      "html\/customer\/thank_you.html"
     ],
     "faq_sub_heading": "Common questions and answers",
     "subscribe_term1_body": "Lorem ipsum dolor sit amet, ipsum adipiscing elit, sed diam nonummy nibh lorem ipsum amet euismod",

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<!-- Indicators -->
+{% include "subscribe_flow/progress_bar.html" %}
+<!-- Wrapper for slides -->
+  {% if stage == "product" %}
+    {% for product in store.visible_subscription_products %}
+      {% set product_loop = loop %}
+      {% include "subscribe_flow/product_grid_item.html" %}
+    {% endfor %}
+  {% elif stage == "variants" %}
+    {% for value in possible_values %}
+      {% set variant_loop = loop %}
+      {% include "subscribe_flow/variant_grid_item.html" %}
+    {% endfor %}
+  {% elif stage == "terms" %}
+    {% set num_enabled_terms = instance.calc_num_enabled_terms() %}
+    {% for term_price in instance.term_prices %}
+      <!-- Only show enabled terms -->
+      {% if term_price.term.enabled %}
+        {% set term_loop = loop %}
+        {% include "subscribe_flow/term_grid_item.html" %}
+      {% endif %}
+      {% endfor %}
+  {% endif %}
+{% endblock %}
+

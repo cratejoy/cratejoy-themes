@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<!-- Feedback messages -->
+{%- if result -%}
+    <p>
+    {{ result }}
+    </p>
+{%- endif -%}
+
+<h2>Update your information</h2>
+{{ customer_helper.show_subscription_info(vertical=True, btn_class="btn-primary") }}
+{{ customer_helper.show_basic_account_info(btn_class="btn-primary") }}
+{{ customer_helper.show_shipping_address_info(btn_class="btn-primary") }}
+{{ customer_helper.show_payment_info(btn_class="btn-primary") }}
+
+{% endblock %}

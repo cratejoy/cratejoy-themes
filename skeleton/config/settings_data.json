@@ -1,0 +1,47 @@
+{
+  "current": "Skeleton",
+  "Skeleton": {
+    "index_title": "Home",
+    "subscribe_title": "Subscribe",
+    "checkout_title": "Checkout",
+
+    "color_test": "#0F0",
+    "color_test_description": "Test Color",
+    "color_test_name": "Test",
+    "color_test_weight": 0,
+
+    "color_test_2": "#F00",
+    "color_test_2_description": "Test 2 Color",
+    "color_test_2_name": "Test 2",
+    "color_test_2_weight": 1,
+
+    "face_regular": "Lato-Regular",
+    "face_regular_description": "Regular Text",
+    "face_regular_name": "Regular",
+    "face_regular_weight": 0,
+
+    "face_bold_heading": "Lato-Bold",
+    "face_bold_description": "Bold Text",
+    "face_bold_name": "Bold",
+    "face_bold_weight": 1,
+
+    "available_font_families": [
+        "Lato-Regular",
+        "Lato-Bold"
+    ],
+    "uneditable_pages": [
+      "html\/error.html",
+      "html\/base.html",
+      "html\/subscribe_flow\/product_grid_item.html",
+      "html\/subscribe_flow\/progress_bar.html",
+      "html\/subscribe_flow\/term_grid_item.html",
+      "html\/subscribe_flow\/variant_grid_item.html",
+      "html\/customer\/order.html",
+      "html\/customer\/thank_you.html"
+    ],
+    "max_products": 3,
+    "max_variants": 3,
+    "max_variant_values": 3,
+    "favicon":"images\/favicon.ico"
+  }
+}

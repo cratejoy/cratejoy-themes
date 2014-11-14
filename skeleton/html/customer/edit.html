@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<!-- Feedback messages -->
+{%- if result -%}
+<p>
+{{ result }}
+</p>
+{%- endif -%}
+
+<h2>Update your information</h2>
+
+
+<!-- Feedback messages from account edit-->
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            {{ message | safe }}
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+{{ customer_helper.edit_basic_account_info(btn_class="btn-primary") }}
+{{ customer_helper.edit_payment_info(btn_class="btn-primary") }}
+{{ customer_helper.edit_address_info(btn_class="btn-primary") }}
+
+{% endblock %}

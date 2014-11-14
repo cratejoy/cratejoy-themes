@@ -1,0 +1,5 @@
+<div>
+    <figure data-barley="product.{{ product.id }}.img" data-barley-editor="image-logo">{{ product | object_img_tag }}</figure>
+    <h4>{{ product.name | safe}}</h4>
+    <a type="button" href="{{ product | product_subscribe_url(gift=gift) }}">SUBSCRIBE</a>
+</div>
