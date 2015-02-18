@@ -1,0 +1,30 @@
+<!-- The following code snippet determines bootstrap column widths -->
+{% if num_enabled_terms in [4,8] %}
+    {% set col_width = 'col-lg-3' %}
+{% elif num_enabled_terms in [3,5,6,7] %}
+    {% set col_width = 'col-md-4' %}
+{% endif %}
+
+{% set term = term_price.term %}
+<section class="plan text-center col-centered col-xs-10 col-xs-offset-0 col-sm-offset-0 col-sm-6 {{ col_width }}">
+  <figure class="circle has-overlay">
+    <div class="product_image_container" data-barley="{% if gift %}gift.{% endif %}term.{{ term.id }}.img" data-barley-editor="image">
+        {{ ('images/term' ~ term_loop.index ~ '.png') | asset_url | img_tag(css_class="img-responsive center-block circle-crop") }}
+    </div>
+    <a href="{{ product | product_subscribe_url(chosen_values, term_price.term, gift=gift) }}" class="overlayer overlayer-hide text-center lt-desc-grp"></a>
+    <a href="{{ product | product_subscribe_url(chosen_values, term_price.term, gift=gift) }}" class="overlayer-hide select-txt">Click to select <i class="icon fa fa-angle-right"></i></a>
+  </figure>
+  <p data-barley="{% if gift %}gift.{% endif %}term_price.{{ term_price.id }}.price" data-barley-editor="simple" class="price lrg-heading-grp"> {{ term_price.price | currency }} </p>
+  <a href="{{ product | product_subscribe_url(chosen_values, term_price.term, gift=gift) }}" class="heading strong sm-heading-grp" data-barley="term.{{ term.id }}.name" data-barley-editor="linkedit">{{ term.name | safe }}</a>
+    {% if not gift %}
+      <p data-barley="{% if gift %}gift.{% endif %}term_price.{{ term_price.id }}.description" data-barley-editor="simple">{{ term.description | safe }}</p>
+    {% endif %}
+  <hr>
+  <p class="sml-text">{{ product | ship_option }}</p>
+  <div class="visible-sm visible-xs">
+    <a data-barley="{% if gift %}gift.{% endif %}btn_text.{{ term.id }}" data-barley-editor="linkedit" href="{{ product | product_subscribe_url(chosen_values, term_price.term, gift=gift) }}" type="button" class="btn btn-success lt-btn-grp">SUBSCRIBE</a>
+  </div>
+  <div class="visible-xs">
+    <br/><br/>
+  </div>
+</section>

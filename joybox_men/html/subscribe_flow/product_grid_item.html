@@ -9,8 +9,8 @@
 {% endif %}
 <div class="plan text-center col-centered col-xs-10 col-xs-offset-0 col-sm-offset-0 {{ col_width }}">
   <section class="box-choose subscribe">
-    <figure data-barley="product.{{ product.id }}.img" data-barley-editor="image-logo">{{ product | object_img_tag }}</figure>
-    <h4 data-barley="product.{{ product.id }}.name" data-barley-editor="simple" class="subheading">{{ product.name | safe}}</h4>
-    <a type="button" class="btn btn-primary fullsize" href="{{ product | product_subscribe_url(gift=gift) }}" data-barley="product.{{ product.id }}.sub_button_text" data-barley-editor="linkedit">SUBSCRIBE</a>
+    <figure data-barley="{% if gift %}gift.{% endif %}product.{{ product.id }}.img" data-barley-editor="image-logo">{{ product | object_img_tag }}</figure>
+    <h4 data-barley="{% if gift %}gift.{% endif %}product.{{ product.id }}.name" data-barley-editor="simple" class="subheading">{{ product.name | safe}}</h4>
+    <a type="button" class="btn btn-primary fullsize" href="{{ product | product_subscribe_url(gift=gift) }}" data-barley="{% if gift %}gift.{% endif %}product.{{ product.id }}.sub_button_text" data-barley-editor="linkedit">SUBSCRIBE</a>
   </section>
 </div>

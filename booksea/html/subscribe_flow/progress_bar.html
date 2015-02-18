@@ -1,0 +1,105 @@
+<!-- We want to include the progress bar in base's header_inner_content block -->
+<!-- so we create a macro, and call it on the subscribe page -->
+{% macro progress_bar() %}
+{% set ns = (steps | length) %}
+{% set stack_steps = ns > 2 %}
+{% if stack_steps and stage != "product" %}
+  {% set steps_class = 'stack-steps' %}
+{% else %}
+  {% set steps_class = 'steps' %}
+{% endif %}
+<div class="col-md-8">
+  <div class="col-md-8 col-md-offset-2 col-sm-11 col-xs-10">
+      {% if stage == "product" %}
+      <div class="steps">
+        <div class="step first current">
+          <span class="point"></span>
+          <span class="title"><span class="marker">1.</span> Product</span>
+        </div>
+        <div class="step second">
+          <span class="point"></span>
+          <span class="title"><span class="marker">2.</span> Options</span>
+        </div>
+        <div class="step third">
+          <span class="point"></span>
+          <span class="title"><span class="marker">3.</span> Term</span>
+        </div>
+      </div>
+      {% elif stack_steps %}
+        <div class="visible-xs invisible-sm invisible-md invisible-lg stack-steps">
+          {{ stacked_step(ns) }}
+        </div>
+        <div class="invisible-xs visible-sm visible-md visible-lg steps steps-lg">
+          {{ horiz_steps(ns) }}
+        </div>
+      {% else %}
+        <div class="steps">
+          {{ horiz_steps(ns) }}
+        </div>
+      {% endif %}
+  </div>
+</div>
+{% endmacro %}
+
+{% macro stacked_step(ns) %}
+        <div class="stack-step first done">
+          <span class="point"></span>
+          <span class="title"><span class="marker">1.</span> Product</span>
+          <div class="vertical-bar"></div>
+        </div>
+        {% for key, val in steps %}
+          {% set step_class = "" %}
+          {% if loop.index == cur_step %}
+            {% set step_class = "current" %}
+          {% elif loop.index < cur_step %}
+            {% set step_class = "done" %}
+          {% endif %}
+          {% set is_last_step = ns == loop.index %}
+          {% if key == 'variant' %}
+            {% set step_name = val.name %}
+          {% else %}
+            {% set step_name = key.title() %}
+          {% endif %}
+          <span class="hidden"></span>
+          <div class="stack-step {{ step_class }}">
+            <span class="point"></span>
+            <span class="title"><span class="marker">{{ loop.index + 1 }}. </span>{{ step_name }}</span>
+            {% if ns != loop.index %}
+              <div class="vertical-bar"></div>
+            {% endif %}
+          </div>
+        {% endfor %}
+{% endmacro %}
+
+{% macro horiz_steps(ns) %}
+        {% set left_percent_increment = 100 // ns %}
+        {% set current_left_percent = 0 %}
+        <div class="step first done" style="width: {{left_percent_increment}}%;">
+          <span class="point"></span>
+          <span class="title"><span class="marker">1.</span> Product</span>
+        </div>
+        {% for key, val in steps %}
+          {% set current_left_percent = current_left_percent + left_percent_increment %}
+          {% set step_class = "" %}
+          {% if loop.index == cur_step %}
+            {% set step_class = "current" %}
+          {% elif loop.index < cur_step %}
+            {% set step_class = "done" %}
+          {% endif %}
+          {% set step_style = "left: " ~ current_left_percent ~ "%;" %}
+          {% set is_last_step = ns == loop.index %}
+          {% if loop.index <= cur_step and not is_last_step %}
+            {% set step_style = step_style ~ "width: " ~ left_percent_increment ~ "%;" %}
+          {% endif %}
+          {% if key == 'variant' %}
+            {% set step_name = val.name %}
+          {% else %}
+            {% set step_name = key.title() %}
+          {% endif %}
+          <span class="hidden"></span>
+          <div class="step {{ step_class }}" style="{{ step_style }}">
+            <span class="point"></span>
+            <span class="title"><span class="marker">{{ loop.index + 1 }}.</span>{{ step_name }}</span>
+          </div>
+        {% endfor %}
+{% endmacro %}

@@ -1,0 +1,243 @@
+{
+  "current": "Booksea",
+  "Booksea": {
+    "color_menu_btn": "#384D70",
+    "color_menu_btn_description": "Menu Button Color",
+    "color_menu_btn_name": "Menu Button",
+    "color_menu_btn_weight": 0,
+
+    "color_menu_bg": "#101825",
+    "color_menu_bg_description": "Menu Background Color",
+    "color_menu_bg_name": "Menu Background",
+    "color_menu_bg_weight": 1,
+
+    "color_img_bnr_overlay": "#38506F",
+    "color_img_bnr_overlay_description": "Image Banner Overlay Color",
+    "color_img_bnr_overlay_name": "Image Banner Overlay",
+    "color_img_bnr_overlay_weight": 2,
+
+    "color_hiw_bg": "#FAFAFA",
+    "color_hiw_bg_description": "How It Works Background Color",
+    "color_hiw_bg_name": "How It Works Background",
+    "color_hiw_bg_weight": 3,
+
+    "color_ftr_nav_bg": "#F2F2F2",
+    "color_ftr_nav_bg_description": "Footer Nav Background Color",
+    "color_ftr_nav_bg_name": "Footer Nav Background",
+    "color_ftr_nav_bg_weight": 4,
+
+    "color_ftr_bg": "#EDEDEC",
+    "color_ftr_bg_description": "Footer Background Color",
+    "color_ftr_bg_name": "Footer Background",
+    "color_ftr_bg_weight": 5,
+
+    "color_top_bnr_bg": "#384D70",
+    "color_top_bnr_bg_description": "Top Banner Background Color",
+    "color_top_bnr_bg_name": "Top Banner Background",
+    "color_top_bnr_bg_weight": 6,
+
+    "color_lt_btn": "#B8DCBE",
+    "color_lt_btn_description": "Light Button Color",
+    "color_lt_btn_name": "Light Button",
+    "color_lt_btn_weight": 7,
+
+    "color_lt_btn_hvr": "#98C0A4",
+    "color_lt_btn_hvr_description": "Light Button Hover Color",
+    "color_lt_btn_hvr_name": "Light Button Hover",
+    "color_lt_btn_hvr_weight": 8,
+
+    "color_lt_btn_text": "#516A55",
+    "color_lt_btn_text_description": "Light Button Text Color",
+    "color_lt_btn_text_name": "Light Button Text",
+    "color_lt_btn_text_weight": 9,
+
+    "color_sm_lt_btn_text": "#516A55",
+    "color_sm_lt_btn_text_description": "Small Light Button Text Color",
+    "color_sm_lt_btn_text_name": "Small Light Button Text",
+    "color_sm_lt_btn_text_weight": 10,
+
+    "color_drk_btn": "#384D70",
+    "color_drk_btn_description": "Dark Button Color",
+    "color_drk_btn_name": "Dark Button",
+    "color_drk_btn_weight": 11,
+
+    "color_drk_btn_hvr": "#2C405B",
+    "color_drk_btn_hvr_description": "Dark Button Hover Color",
+    "color_drk_btn_hvr_name": "Dark Button Hover",
+    "color_drk_btn_hvr_weight": 12,
+
+    "color_drk_btn_text": "#FFFFFF",
+    "color_drk_btn_text_description": "Dark Button Text Color",
+    "color_drk_btn_text_name": "Dark Button Text",
+    "color_drk_btn_text_weight": 13,
+
+    "color_sm_drk_btn_text": "#FFFFFF",
+    "color_sm_drk_btn_text_description": "Small Dark Button Text Color",
+    "color_sm_drk_btn_text_name": "Small Dark Button Text",
+    "color_sm_drk_btn_text_weight": 14,
+
+    "color_sub_nav": "#384D70",
+    "color_sub_nav_description": "Subscription Nav Color",
+    "color_sub_nav_name": "Subscription Nav",
+    "color_sub_nav_weight": 15,
+
+    "color_sub_nav_hvr": "#B8DCBE",
+    "color_sub_nav_hvr_description": "Subscription Nav Hover Color",
+    "color_sub_nav_hvr_name": "Subscription Nav Hover",
+    "color_sub_nav_hvr_weight": 16,
+
+    "color_index_bnr_text": "#384D70",
+    "color_index_bnr_text_description": "Homepage Banner Text Color",
+    "color_index_bnr_text_name": "Homepage Banner Text",
+    "color_index_bnr_text_weight": 17,
+
+    "color_lrg_hdng": "#384D70",
+    "color_lrg_hdng_description": "Large Heading Color",
+    "color_lrg_hdng_name": "Large Heading",
+    "color_lrg_hdng_weight": 18,
+
+    "color_sm_hdng": "#384D70",
+    "color_sm_hdng_description": "Small Heading Color",
+    "color_sm_hdng_name": "Small Heading",
+    "color_sm_hdng_weight": 19,
+
+    "color_drk_desc_text": "#7B7B7B",
+    "color_drk_desc_text_description": "Dark Description Text Color",
+    "color_drk_desc_text_name": "Dark Description Text",
+    "color_drk_desc_text_weight": 20,
+
+    "color_lt_desc_text": "#FFFFFF",
+    "color_lt_desc_text_description": "Light Description Text Color",
+    "color_lt_desc_text_name": "Light Description Text",
+    "color_lt_desc_text_weight": 21,
+
+    "color_body_text": "#7B7B7B",
+    "color_body_text_description": "Body Text Color",
+    "color_body_text_name": "Body Text",
+    "color_body_text_weight": 22,
+
+    "color_quote_text": "#FFFFFF",
+    "color_quote_text_description": "Quote Text Color",
+    "color_quote_text_name": "Quote Text",
+    "color_quote_text_weight": 23,
+
+    "color_lt_nav_link_text": "#FFFFFF",
+    "color_lt_nav_link_text_description": "Light Nav Link Text Color",
+    "color_lt_nav_link_text_name": "Light Nav Link Text",
+    "color_lt_nav_link_text_weight": 24,
+
+    "color_drk_nav_link_text": "#384D70",
+    "color_drk_nav_link_text_description": "Dark Nav Link Text Color",
+    "color_drk_nav_link_text_name": "Dark Nav Link Text",
+    "color_drk_nav_link_text_weight": 25,
+
+    "color_ftr_nav_text": "#B8B8B8",
+    "color_ftr_nav_text_description": "Footer Nav Text Color",
+    "color_ftr_nav_text_name": "Footer Nav Text",
+    "color_ftr_nav_text_weight": 26,
+
+    "color_frm_input_text": "#7B7B7B",
+    "color_frm_input_text_description": "Form Input Text Color",
+    "color_frm_input_text_name": "Form Input Text",
+    "color_frm_input_text_weight": 27,
+
+    "color_social_icons": "#384D70",
+    "color_social_icons_description": "Social Icon Color",
+    "color_social_icons_name": "Social Icon",
+    "color_social_icons_weight": 28,
+
+    "color_logo_text": "#384D70",
+    "color_logo_text_description": "Logo Text Color",
+    "color_logo_text_name": "Logo Text",
+    "color_logo_text_weight": 29,
+
+    "face_body_text": "Lato-Regular",
+    "face_body_text_description": "Body Text Font",
+    "face_body_text_name": "Body Text",
+    "face_body_text_weight": 0,
+
+    "face_nav_link_text": "Lato-Bold",
+    "face_nav_link_text_description": "Nav Link Text Font",
+    "face_nav_link_text_name": "Nav Link Text",
+    "face_nav_link_text_weight": 1,
+
+    "face_ftr_nav_text": "Lato-Bold",
+    "face_ftr_nav_text_description": "Footer Nav Text Font",
+    "face_ftr_nav_text_name": "Footer Nav Text",
+    "face_ftr_nav_text_weight": 2,
+
+    "face_frm_input_text": "Lato-Bold",
+    "face_frm_input_text_description": "Form Input Text Font",
+    "face_frm_input_text_name": "Form Input Text",
+    "face_frm_input_text_weight": 3,
+
+    "face_index_bnr_text": "Lato-Light",
+    "face_index_bnr_text_description": "Homepage Banner Text Font",
+    "face_index_bnr_text_name": "Homepage Banner Text",
+    "face_index_bnr_text_weight": 4,
+
+    "face_lrg_hdng": "Lato-Light",
+    "face_lrg_hdng_description": "Large Heading Font",
+    "face_lrg_hdng_name": "Large Heading",
+    "face_lrg_hdng_weight": 5,
+
+    "face_sm_hdng": "Lato-Bold",
+    "face_sm_hdng_description": "Small Heading Font",
+    "face_sm_hdng_name": "Small Heading",
+    "face_sm_hdng_weight": 6,
+
+    "face_desc_text": "Lato-Regular",
+    "face_desc_text_description": "Description Text Font",
+    "face_desc_text_name": "Description Text",
+    "face_desc_text_weight": 7,
+
+    "face_quote_text": "Lato-Light",
+    "face_quote_text_description": "Quote Text Font",
+    "face_quote_text_name": "Quote Text",
+    "face_quote_text_weight": 8,
+
+    "face_btn_text": "Lato-Black",
+    "face_btn_text_description": "Button Text Font",
+    "face_btn_text_name": "Button Text",
+    "face_btn_text_weight": 9,
+
+    "face_sm_btn_text": "Lato-Black",
+    "face_sm_btn_text_description": "Small Button Text Font",
+    "face_sm_btn_text_name": "Small Button Text",
+    "face_sm_btn_text_weight": 10,
+
+    "face_logo_text": "Lato-Bold",
+    "face_logo_text_description": "Logo Text Font",
+    "face_logo_text_name": "Logo Text",
+    "face_logo_text_weight": 11,
+
+    "available_font_families": [
+      "Lato-Regular",
+      "Lato-Light",
+      "Lato-Bold",
+      "Lato-Black"
+    ],
+    "uneditable_pages": [
+      "html\/ga.html",
+      "html\/base.html",
+      "html\/footer.html",
+      "html\/error.html",
+      "html\/customer\/order.html",
+      "html\/customer\/thank_you.html",
+      "html\/components\/descriptions.html",
+      "html\/components\/featured.html",
+      "html\/components\/testimonials.html",
+      "html\/components\/how-it-works.html",
+      "html\/subscribe_flow\/product_grid_item.html",
+      "html\/subscribe_flow\/progress_bar.html",
+      "html\/subscribe_flow\/term_grid_item.html",
+      "html\/subscribe_flow\/upsell_grid_item.html",
+      "html\/subscribe_flow\/variant_grid_item.html"
+    ],
+
+    "max_products": 3,
+    "max_variants": 3,
+    "max_variant_values": 3,
+    "logo_url": "images\/logo-booksea.png"
+  }
+}

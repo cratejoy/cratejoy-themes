@@ -1,6 +1,7 @@
 <title>{% block title %}{{ page_title }}{% endblock %}</title>
 <meta charset="UTF-8" />
 <meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
 {{ store | canonical_tags(slug, path) }}
 {{ settings | meta_tags(slug, path) }}
@@ -11,8 +12,8 @@
 {{ settings.bootstrap_css_path | asset_url | stylesheet_tag }}
 {{ 'css/bootstrap.min.css' | asset_url | stylesheet_tag }}
 {{ settings.css_path | asset_url | stylesheet_tag }}
-{% if settings.favicon %}
-{{ settings.favicon | asset_url | icon_tag }}
-{% endif %}
 
-<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+{{ 'images/favicon.ico' | asset_url | icon_tag }}
+
+{{ settings.header_code | safe }}
+

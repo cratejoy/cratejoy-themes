@@ -9,7 +9,7 @@
 {% endif %}
 <div class="plan text-center col-centered col-xs-10 col-xs-offset-0 col-sm-offset-0 {{ col_width }}">
   <section class="box-selector box-subscribe">
-    <h3 class="subheading secondary-grp" data-barley="product.{{ product.id }}.name" data-barley-editor="simple">{{ product.name | safe }}</h3>
-    <a href="{{ product | product_subscribe_url(gift=gift) }}" type="button" data-barley="product.{{ product.id }}.sub_button_text" data-barley-editor="linkedit" class="btn btn-default alt-button-grp">SUBSCRIBE</a>
+    <h3 class="subheading secondary-grp" data-barley="{% if gift %}gift.{% endif %}product.{{ product.id }}.name" data-barley-editor="simple">{{ product.name | safe }}</h3>
+    <a href="{{ product | product_subscribe_url(gift=gift) }}" type="button" data-barley="{% if gift %}gift.{% endif %}product.{{ product.id }}.sub_button_text" data-barley-editor="linkedit" class="btn btn-default alt-button-grp">SUBSCRIBE</a>
   </section>
 </div>
