@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block header_tag %}
+<header class="sheader login-area" data-barley="login_bg_img" data-barley-editor="bgimage" style="background-image: url('{{ 'images/bg-login.jpg' | asset_url }}');">
+{% endblock %}
+
+{% block header_content %}
+  {{ super() }}
+
+  <div class="row content">
+    <section class="col-md-5 col-sm-8">
+      {%- if result -%}
+        <div class="login-feedback">
+            <div>
+            {{ result }}
+            </div>
+        </div>
+      {%- endif -%}
+      <h1 class="heading lrg-heading-grp" data-barley="login_heading" data-barley-editor="simple" >Login to your account</h1>
+      <p class="drk-desc-grp" data-barley="login_sub_heading" data-barley-editor="simple">Want to make changes to your information, or update your password? Login and have a blast!</p>
+      <form role="form" class="cform" action="/customer/login" method="post" accept-charset="utf-8">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="form-group frm-input-grp">
+              <label for="email" class="sr-only" data-barley="login_label_email" data-barley-editor="simple">Email</label>
+              <input type="email" name="email" class="form-control frm-input-grp input-lg" id="email" placeholder="Email address">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-9">                    
+            <div class="form-group frm-input-grp">
+              <label for="password" class="sr-only" data-barley="login_label_password" data-barley-editor="simple">Password</label>
+              <input type="password" class="form-control frm-input-grp input-lg" id="inputPassword" name="password" placeholder="Password">
+            </div>
+          </div>
+        </div>                      
+        <p class="lead drk-desc-grp">Don’t have an account? <a class="drk-desc-grp" href="/subscribe">Subscribe</a> to sign up!</p>
+        <div class="row">
+          <div class="col-md-5">                     
+            <button type="submit" class="btn btn-primary fullsize drk-btn-grp">LOGIN</button>
+          </div>
+        </div>    
+      </form>
+    </section>
+  </div>
+              
+{% endblock %}

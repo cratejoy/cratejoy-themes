@@ -12,5 +12,10 @@
 		{% include "footer.html" %}
 
 		{% include "ga.html" %}
+
+		<!-- Any page specific javascript can be included in your child templates in a page_javascript block -->
+		{% block page_javascript %}
+		{% endblock %}
+
 	</body>
 </html> 

@@ -29,11 +29,7 @@
 	        <h2 data-barley="product.{{ product.id }}.name" data-barley-editor="simple"><a href="{{ product | product_ecom_url }}">{{ product.name | safe}}</a></h2>
 			<div class="product_image_container" data-barley="product.{{ product.id }}.img" data-barley-editor="image-logo">
 				<a href="{{ product | product_ecom_url }}">
-				{% if product.images %}
-					{{ product.images[0].url | img_tag(css_class="product_image") }}
-				{% else %}
-					{{ settings.product_placeholder_img | asset_url | img_tag(css_class="product_image") }}
-				{% endif %}
+                  {{ product | object_img_tag(default_img_path=settings.product_placeholder_img) }}
 				</a>
 			</div>
 
@@ -41,7 +37,7 @@
 			{% set max = product.calc_max_ecom_price() %}
 
 			{% if max == min %}
-				<p data-barley="product.{{ product.id }}.ecom_price" data-barley-editor="text">{{ min | currency }}</p>
+				<p data-barley="product.{{ product.id }}.ecom_price" data-barley-editor="simple">{{ min | currency }}</p>
 			{% else %}
 				<p>{{ min | currency }} - {{ max | currency }}</p>
 			{% endif %}

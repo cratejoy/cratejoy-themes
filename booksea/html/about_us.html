@@ -1,0 +1,291 @@
+{% extends "base.html" %}
+
+{% block header_inner_content %}
+
+<div class="col-xs-12 col-sm-8 text-center">
+  <ol class="breadcrumb">
+    <li><a class="drk-nav-link-grp" href="#section-1" data-barley="about_header_link_1" data-barley-editor="link">Our mission</a></li>
+    <li><a class="drk-nav-link-grp" href="#section-2" data-barley="about_header_link_2" data-barley-editor="link">the team</a></li>
+    <li><a class="drk-nav-link-grp" href="#section-3" data-barley="about_header_link_3" data-barley-editor="link">how we started</a></li>
+    <li><a class="drk-nav-link-grp" href="#section-4" data-barley="about_header_link_4" data-barley-editor="link">featured in</a></li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block page_content %}
+
+        <div class="container">
+          <div class="fpanel">
+            <div class="row">
+              <div class="col-md-8 col-md-push-4">
+                <figure>
+                  <div data-barley="about_heading_vid" data-barley-editor="image" data-width="770" data-height="430">
+                    <img src="{{ 'images/about-booksea.jpg' | asset_url }}" alt="" class="img-responsive fullsize"/>
+                  </div>
+                </figure>
+              </div>      
+              <div class="visible-sm visible-xs"><br/><br/></div>        
+              <section class="col-md-4 col-md-pull-8">
+                <h2 class="heading h-section lrg-heading-grp" data-barley="about_heading_title" data-barley-editor="simple">Helping people discover great books is what we do best</h2>
+                <p data-barley="about_heading_content" data-barley-editor="simple">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <a href="/subscribe" type="button" class="btn btn-success lt-btn-grp" data-barley="about_heading_cta" data-barley-editor="link">SUBSCRIBE TODAY</a>
+                    </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <hr/>
+
+          <div class="fpanel">
+            <div class="row">
+              <div class="col-sm-5 text-center-m">
+                <figure>
+                  <div data-barley="about_sec_1_img" data-barley-editor="image" data-width="395" data-height="457">
+                    <img src="{{ 'images/books.jpg' | asset_url }}" alt="" class="img-responsive"/>
+                  </div>
+                </figure>
+              </div>
+              <section class="col-md-7">
+                <h2 id="section-1" class="heading h-section lrg-heading-grp" data-barley="about_sec_1_title" data-barley-editor="simple">A little bit about our mission here at BookSea...</h2>
+                <p data-barley="about_sec_1_content_1" data-barley-editor="simple">Sed porta egestas quam, vel dignissim lorem pulvinar nec. Aenean ultricies mi et lectus volutpat, eu convallis ante sagittis. Donec commodo, urna in auctor ornare, neque nulla molestie metus, laoreet ornare leo dui auctor ante. Vivamus pellentesque interdum consectetur. Maecenas sodales ante dui, non adipiscing sem malesuada quis. Ut at vestibulum massa, ac mattis dui. Suspendisse consectetur pretium nibh, vitae consectetur nisi cursus a. Curabitur tincidunt posuere magna in tincidunt. Suspendisse vehicula cursus odio. Sed vel magna erat. Cras malesuada nulla non orci posuere tempor. Nullam placerat turpis felis, eu scelerisque lectus volutpat et. Proin molestie at libero egestas volutpat. Nullam neque risus, scelerisque at odio et, viverra consectetur mauris.</p>
+                <p data-barley="about_sec_1_content_2" data-barley-editor="simple">Morbi vestibulum blandit convallis. Integer justo nisi, vulputate eget blandit in, consectetur non augue. Vivamus mollis leo in fermentum vulputate. Nam laoreet eget augue in fringilla. Nulla a dignissim ante, vitae faucibus leo. Etiam dignissim velit ipsum.</p>
+              </section>
+            </div>
+          </div>
+
+          <hr/>
+
+          <div class="fpanel">
+            <h2 id="section-2" class="heading h-section text-center lrg-heading-grp" data-barley="about_sec_2_title" data-barley-editor="simple">Meet our BookSea team</h2>
+            <div class="row">
+              <section class="hiw col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <figure class="thumb">
+                  <div data-barley="about_team_1_img" data-barley-editor="image" data-width="200" data-height="200">
+                    <img src="{{ 'images/team-1.png' | asset_url }}" alt="" class="img-responsive"/>
+                  </div>
+                </figure>
+                <h4 class="heading strong sm-heading-grp" data-barley="about_team_1_name" data-barley-editor="simple">Rachel Langdon</h4>
+                <p class="drk-desc-grp" data-barley="about_team_1_title" data-barley-editor="simple">Author &amp; Founder</p>
+                <hr/>
+                <ul class="list-inline social-icon-grp">
+                  <li><a href="#" data-barley="about_team_1_fb" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill="#231F20" d="M36.5 48.2V34.6h4.6l.7-5.3h-5.3v-3.4c0-1.5.4-2.6 2.6-2.6h2.8v-4.8c-.5-.1-2.2-.2-4.1-.2-4.1 0-6.9 2.5-6.9 7v3.9h-4.6v5.3H31v13.7h5.5z"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#" data-barley="about_team_1_twitter" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill="#231F20" d="M49.2 23.9 40 21.1c-3.4 0-6.2 2.8-6.2 6.2 0 .5.1 1 .2 1.4-5.1-.3-9.7-2.7-12.7-6.4-.5.9-.8 2-.8 3.1 0 2.1 1.1 4 2.7 5.1-1 0-2-.3-2.8-.8v.1c0 3 2.1 5.5 4.9 6-.5.1-1.1.2-1.6.2-.4 0-.8 0-1.2-.1.8 2.4 3.1 4.2 5.8 4.3-2.1 1.7-4.8 2.6-7.6 2.6-.5 0-1 0-1.5-.1 2.7 1.7 6 2.8 9.4 2.8 11.3 0 17.5-9.4 17.5-17.5v-.8c1.2-.9 2.2-2 3.1-3.2-1.1.5-2.3.8-3.5 1 1.3-.8 2.2-2 2.7-3.4-1.2.7-2.5 1.2-3.9 1.5-1.2-1.3-2.8-2-4.5-2"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#" data-barley="about_team_1_pinterest" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill="#231F20" d="M34.9 18.2c-8.2 0-12.3 5.9-12.3 10.8 0 3 1.1 5.6 3.5 6.6.4.2.7 0 .9-.4.1-.3.3-1.1.4-1.4.1-.4.1-.6-.2-1-.7-.8-1.1-1.9-1.1-3.4 0-4.4 3.3-8.3 8.5-8.3 4.6 0 7.2 2.8 7.2 6.6 0 5-2.2 9.2-5.5 9.2-1.8 0-3.2-1.5-2.7-3.3.5-2.2 1.5-4.5 1.5-6.1 0-1.4-.8-2.6-2.3-2.6-1.8 0-3.3 1.9-3.3 4.5 0 1.6.5 2.7.5 2.7s-1.9 8-2.2 9.4c-.7 2.8-.1 6.2-.1 6.5 0 .2.3.3.4.1.2-.2 2.4-2.9 3.1-5.6.2-.8 1.2-4.7 1.2-4.7.6 1.1 2.3 2.1 4.2 2.1 5.5 0 9.3-5.1 9.3-11.8-.1-5.1-4.4-9.9-11-9.9z"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#" data-barley="about_team_1_instagram" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M23.1 18.2h22.3c2.1 0 3.8 1.7 3.8 3.8v22.3c0 2.1-1.7 3.9-3.8 3.9H23.1c-2.1 0-3.9-1.7-3.9-3.9V22.1c0-2.1 1.7-3.9 3.9-3.9zm18 3.4c-.7 0-1.4.6-1.4 1.4v3.2c0 .7.6 1.4 1.4 1.4h3.4c.7 0 1.4-.6 1.4-1.4V23c0-.7-.6-1.4-1.4-1.4h-3.4zm4.7 9.3h-2.6c.2.8.4 1.7.4 2.6 0 5-4.2 9-9.3 9-5.2 0-9.3-4-9.3-9 0-.9.1-1.8.4-2.6h-2.8v12.7c0 .7.5 1.2 1.2 1.2h20.9c.7 0 1.2-.5 1.2-1.2V30.9zm-11.6-3.6c-3.3 0-6 2.6-6 5.8 0 3.2 2.7 5.8 6 5.8s6-2.6 6-5.8c.1-3.1-2.6-5.8-6-5.8z"/>
+                    </svg>
+                  </a></li>
+                </ul>                 
+              </section>
+              <section class="hiw col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                <figure class="thumb">
+                  <div data-barley="about_team_2_img" data-barley-editor="image" data-width="200" data-height="200">
+                    <img src="{{ 'images/team-2.png' | asset_url }}" alt="" class="img-responsive"/>
+                  </div>
+                </figure>
+                <h4 class="heading strong sm-heading-grp" data-barley="about_team_2_name" data-barley-editor="simple">Johnathan Miller</h4>
+                <p class="drk-desc-grp" data-barley="about_team_2_title" data-barley-editor="simple">Curator &amp; Avid-Reader</p>
+                <hr/>
+                <ul class="list-inline social-icon-grp">
+                  <li><a href="#" data-barley="about_team_2_fb" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill="#231F20" d="M36.5 48.2V34.6h4.6l.7-5.3h-5.3v-3.4c0-1.5.4-2.6 2.6-2.6h2.8v-4.8c-.5-.1-2.2-.2-4.1-.2-4.1 0-6.9 2.5-6.9 7v3.9h-4.6v5.3H31v13.7h5.5z"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#" data-barley="about_team_2_twitter" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill="#231F20" d="M49.2 23.9 40 21.1c-3.4 0-6.2 2.8-6.2 6.2 0 .5.1 1 .2 1.4-5.1-.3-9.7-2.7-12.7-6.4-.5.9-.8 2-.8 3.1 0 2.1 1.1 4 2.7 5.1-1 0-2-.3-2.8-.8v.1c0 3 2.1 5.5 4.9 6-.5.1-1.1.2-1.6.2-.4 0-.8 0-1.2-.1.8 2.4 3.1 4.2 5.8 4.3-2.1 1.7-4.8 2.6-7.6 2.6-.5 0-1 0-1.5-.1 2.7 1.7 6 2.8 9.4 2.8 11.3 0 17.5-9.4 17.5-17.5v-.8c1.2-.9 2.2-2 3.1-3.2-1.1.5-2.3.8-3.5 1 1.3-.8 2.2-2 2.7-3.4-1.2.7-2.5 1.2-3.9 1.5-1.2-1.3-2.8-2-4.5-2"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#" data-barley="about_team_2_pinterest" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill="#231F20" d="M34.9 18.2c-8.2 0-12.3 5.9-12.3 10.8 0 3 1.1 5.6 3.5 6.6.4.2.7 0 .9-.4.1-.3.3-1.1.4-1.4.1-.4.1-.6-.2-1-.7-.8-1.1-1.9-1.1-3.4 0-4.4 3.3-8.3 8.5-8.3 4.6 0 7.2 2.8 7.2 6.6 0 5-2.2 9.2-5.5 9.2-1.8 0-3.2-1.5-2.7-3.3.5-2.2 1.5-4.5 1.5-6.1 0-1.4-.8-2.6-2.3-2.6-1.8 0-3.3 1.9-3.3 4.5 0 1.6.5 2.7.5 2.7s-1.9 8-2.2 9.4c-.7 2.8-.1 6.2-.1 6.5 0 .2.3.3.4.1.2-.2 2.4-2.9 3.1-5.6.2-.8 1.2-4.7 1.2-4.7.6 1.1 2.3 2.1 4.2 2.1 5.5 0 9.3-5.1 9.3-11.8-.1-5.1-4.4-9.9-11-9.9z"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#" data-barley="about_team_2_instagram" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M23.1 18.2h22.3c2.1 0 3.8 1.7 3.8 3.8v22.3c0 2.1-1.7 3.9-3.8 3.9H23.1c-2.1 0-3.9-1.7-3.9-3.9V22.1c0-2.1 1.7-3.9 3.9-3.9zm18 3.4c-.7 0-1.4.6-1.4 1.4v3.2c0 .7.6 1.4 1.4 1.4h3.4c.7 0 1.4-.6 1.4-1.4V23c0-.7-.6-1.4-1.4-1.4h-3.4zm4.7 9.3h-2.6c.2.8.4 1.7.4 2.6 0 5-4.2 9-9.3 9-5.2 0-9.3-4-9.3-9 0-.9.1-1.8.4-2.6h-2.8v12.7c0 .7.5 1.2 1.2 1.2h20.9c.7 0 1.2-.5 1.2-1.2V30.9zm-11.6-3.6c-3.3 0-6 2.6-6 5.8 0 3.2 2.7 5.8 6 5.8s6-2.6 6-5.8c.1-3.1-2.6-5.8-6-5.8z"/>
+                    </svg>
+                  </a></li>
+                </ul>                  
+              </section>
+              <section class="hiw col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <figure class="thumb">
+                  <div data-barley="about_team_3_img" data-barley-editor="image" data-width="200" data-height="200">
+                    <img src="{{ 'images/team-1.png' | asset_url }}" alt="" class="img-responsive"/>
+                  </div>
+                </figure>
+                <h4 class="heading strong sm-heading-grp" data-barley="about_team_3_name" data-barley-editor="simple">Rachel Langdon</h4>
+                <p class="drk-desc-grp" data-barley="about_team_3_title" data-barley-editor="simple">Author &amp; Founder</p>
+                <hr/>
+                <ul class="list-inline social-icon-grp">
+                  <li><a href="#" data-barley="about_team_3_fb" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill="#231F20" d="M36.5 48.2V34.6h4.6l.7-5.3h-5.3v-3.4c0-1.5.4-2.6 2.6-2.6h2.8v-4.8c-.5-.1-2.2-.2-4.1-.2-4.1 0-6.9 2.5-6.9 7v3.9h-4.6v5.3H31v13.7h5.5z"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#" data-barley="about_team_3_twitter" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill="#231F20" d="M49.2 23.9 40 21.1c-3.4 0-6.2 2.8-6.2 6.2 0 .5.1 1 .2 1.4-5.1-.3-9.7-2.7-12.7-6.4-.5.9-.8 2-.8 3.1 0 2.1 1.1 4 2.7 5.1-1 0-2-.3-2.8-.8v.1c0 3 2.1 5.5 4.9 6-.5.1-1.1.2-1.6.2-.4 0-.8 0-1.2-.1.8 2.4 3.1 4.2 5.8 4.3-2.1 1.7-4.8 2.6-7.6 2.6-.5 0-1 0-1.5-.1 2.7 1.7 6 2.8 9.4 2.8 11.3 0 17.5-9.4 17.5-17.5v-.8c1.2-.9 2.2-2 3.1-3.2-1.1.5-2.3.8-3.5 1 1.3-.8 2.2-2 2.7-3.4-1.2.7-2.5 1.2-3.9 1.5-1.2-1.3-2.8-2-4.5-2"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#" data-barley="about_team_3_pinterest" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill="#231F20" d="M34.9 18.2c-8.2 0-12.3 5.9-12.3 10.8 0 3 1.1 5.6 3.5 6.6.4.2.7 0 .9-.4.1-.3.3-1.1.4-1.4.1-.4.1-.6-.2-1-.7-.8-1.1-1.9-1.1-3.4 0-4.4 3.3-8.3 8.5-8.3 4.6 0 7.2 2.8 7.2 6.6 0 5-2.2 9.2-5.5 9.2-1.8 0-3.2-1.5-2.7-3.3.5-2.2 1.5-4.5 1.5-6.1 0-1.4-.8-2.6-2.3-2.6-1.8 0-3.3 1.9-3.3 4.5 0 1.6.5 2.7.5 2.7s-1.9 8-2.2 9.4c-.7 2.8-.1 6.2-.1 6.5 0 .2.3.3.4.1.2-.2 2.4-2.9 3.1-5.6.2-.8 1.2-4.7 1.2-4.7.6 1.1 2.3 2.1 4.2 2.1 5.5 0 9.3-5.1 9.3-11.8-.1-5.1-4.4-9.9-11-9.9z"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#" data-barley="about_team_3_instagram" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M23.1 18.2h22.3c2.1 0 3.8 1.7 3.8 3.8v22.3c0 2.1-1.7 3.9-3.8 3.9H23.1c-2.1 0-3.9-1.7-3.9-3.9V22.1c0-2.1 1.7-3.9 3.9-3.9zm18 3.4c-.7 0-1.4.6-1.4 1.4v3.2c0 .7.6 1.4 1.4 1.4h3.4c.7 0 1.4-.6 1.4-1.4V23c0-.7-.6-1.4-1.4-1.4h-3.4zm4.7 9.3h-2.6c.2.8.4 1.7.4 2.6 0 5-4.2 9-9.3 9-5.2 0-9.3-4-9.3-9 0-.9.1-1.8.4-2.6h-2.8v12.7c0 .7.5 1.2 1.2 1.2h20.9c.7 0 1.2-.5 1.2-1.2V30.9zm-11.6-3.6c-3.3 0-6 2.6-6 5.8 0 3.2 2.7 5.8 6 5.8s6-2.6 6-5.8c.1-3.1-2.6-5.8-6-5.8z"/>
+                    </svg>
+                  </a></li>
+                </ul>                 
+              </section>
+              <section class="hiw col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                <figure class="thumb">
+                  <div data-barley="about_team_4_img" data-barley-editor="image" data-width="200" data-height="200">
+                    <img src="{{ 'images/team-2.png' | asset_url }}" alt="" class="img-responsive"/>
+                  </div>
+                </figure>
+                <h4 class="heading strong sm-heading-grp" data-barley="about_team_4_name" data-barley-editor="simple">Johnathan Miller</h4>
+                <p class="drk-desc-grp" data-barley="about_team_4_title" data-barley-editor="simple">Curator &amp; Avid-Reader</p>
+                <hr />
+                <ul class="list-inline social-icon-grp">
+                  <li><a href="#" data-barley="about_team_4_fb" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill="#231F20" d="M36.5 48.2V34.6h4.6l.7-5.3h-5.3v-3.4c0-1.5.4-2.6 2.6-2.6h2.8v-4.8c-.5-.1-2.2-.2-4.1-.2-4.1 0-6.9 2.5-6.9 7v3.9h-4.6v5.3H31v13.7h5.5z"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#" data-barley="about_team_4_twitter" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill="#231F20" d="M49.2 23.9 40 21.1c-3.4 0-6.2 2.8-6.2 6.2 0 .5.1 1 .2 1.4-5.1-.3-9.7-2.7-12.7-6.4-.5.9-.8 2-.8 3.1 0 2.1 1.1 4 2.7 5.1-1 0-2-.3-2.8-.8v.1c0 3 2.1 5.5 4.9 6-.5.1-1.1.2-1.6.2-.4 0-.8 0-1.2-.1.8 2.4 3.1 4.2 5.8 4.3-2.1 1.7-4.8 2.6-7.6 2.6-.5 0-1 0-1.5-.1 2.7 1.7 6 2.8 9.4 2.8 11.3 0 17.5-9.4 17.5-17.5v-.8c1.2-.9 2.2-2 3.1-3.2-1.1.5-2.3.8-3.5 1 1.3-.8 2.2-2 2.7-3.4-1.2.7-2.5 1.2-3.9 1.5-1.2-1.3-2.8-2-4.5-2"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#" data-barley="about_team_4_pinterest" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill="#231F20" d="M34.9 18.2c-8.2 0-12.3 5.9-12.3 10.8 0 3 1.1 5.6 3.5 6.6.4.2.7 0 .9-.4.1-.3.3-1.1.4-1.4.1-.4.1-.6-.2-1-.7-.8-1.1-1.9-1.1-3.4 0-4.4 3.3-8.3 8.5-8.3 4.6 0 7.2 2.8 7.2 6.6 0 5-2.2 9.2-5.5 9.2-1.8 0-3.2-1.5-2.7-3.3.5-2.2 1.5-4.5 1.5-6.1 0-1.4-.8-2.6-2.3-2.6-1.8 0-3.3 1.9-3.3 4.5 0 1.6.5 2.7.5 2.7s-1.9 8-2.2 9.4c-.7 2.8-.1 6.2-.1 6.5 0 .2.3.3.4.1.2-.2 2.4-2.9 3.1-5.6.2-.8 1.2-4.7 1.2-4.7.6 1.1 2.3 2.1 4.2 2.1 5.5 0 9.3-5.1 9.3-11.8-.1-5.1-4.4-9.9-11-9.9z"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#" data-barley="about_team_4_instagram" data-barley-editor="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M23.1 18.2h22.3c2.1 0 3.8 1.7 3.8 3.8v22.3c0 2.1-1.7 3.9-3.8 3.9H23.1c-2.1 0-3.9-1.7-3.9-3.9V22.1c0-2.1 1.7-3.9 3.9-3.9zm18 3.4c-.7 0-1.4.6-1.4 1.4v3.2c0 .7.6 1.4 1.4 1.4h3.4c.7 0 1.4-.6 1.4-1.4V23c0-.7-.6-1.4-1.4-1.4h-3.4zm4.7 9.3h-2.6c.2.8.4 1.7.4 2.6 0 5-4.2 9-9.3 9-5.2 0-9.3-4-9.3-9 0-.9.1-1.8.4-2.6h-2.8v12.7c0 .7.5 1.2 1.2 1.2h20.9c.7 0 1.2-.5 1.2-1.2V30.9zm-11.6-3.6c-3.3 0-6 2.6-6 5.8 0 3.2 2.7 5.8 6 5.8s6-2.6 6-5.8c.1-3.1-2.6-5.8-6-5.8z"/>
+                    </svg>
+                  </a></li>
+                </ul>                  
+              </section>
+            </div>
+          </div>
+          <hr/>                           
+        </div>    
+                
+        <section class="fpanel">
+          <h2 id="section-3" class="heading h-section text-center lrg-heading-grp" data-barley="about_sec_3_title" data-barley-editor="simple">How it all started</h2>
+          <p class="text-center" data-barley="about_sec_3_content" data-barley-editor="simple">Curabitur tincidunt posuere magna in tincidunt. Suspendisse vehicula cursus odio. Sed vel magna erat. Cras malesuada nulla non orci posuere tempor. </p>
+          <div class="container-fluid">
+            <div class="row-images row">
+              <div class="col-xs-12 col-sm-6" data-barley="about_sec_3_left_image" data-barley-editor="image" data-width="677" data-height="400">
+                <img class="img-responsive" src="{{ 'images/started-1.jpg' | asset_url }}" alt=""/>
+              </div>
+              <div class="col-xs-12 col-sm-6" data-barley="about_sec_3_right_image" data-barley-editor="image" data-width="677" data-height="400">
+                <img class="img-responsive" src="{{ 'images/started-2.jpg' | asset_url }}" alt=""/>
+              </div>
+        </div>          
+      </div>
+          <div class="container">
+            <div class="row">
+              <section class="col-md-4 col-md-offset-1">
+                <h2 class="heading h-section lrg-heading-grp" data-barley="about_sec_3_left_title" data-barley-editor="simple">In the beginning...</h2>
+                <div class="benefit">
+                  <figure>
+                    <div data-barley="about_sec_3_icon_1" data-barley-editor="image" data-width="86" data-height="77">
+                        <img src="{{ 'images/icon-book-opened-mobile.png' | asset_url }}"/>
+                    </div>
+                  </figure>
+                  <div class="info">
+                    <p data-barley="about_sec_3_left_content_1" data-barley-editor="simple">Phasellus facilisis at erat id auctor. Sed faucibus posuere lacus. Duis posuere accumsan sem vel facilisis. Nam consectetur elementum ligula. Morbi eu erat massa. Aenean ut vulputate risus. Nullam suscipit mi vitae tincidunt aliquet. Nulla scelerisque, odio vel convallis porta, lacus arcu rutrum lorem, vitae vulputate nibh nisl convallis erat.</p>
+                  </div>
+                </div>   
+                <div class="benefit">
+                  <figure>
+                    <div data-barley="about_sec_3_icon_2" data-barley-editor="image" data-width="74" data-height="97">
+                        <img src="{{ 'images/icon-book-star-mobile.png' | asset_url }}"/>
+                    </div>
+                  </figure>
+                  <div class="info">
+                    <p data-barley="about_sec_3_left_content_2" data-barley-editor="simple">Suspendisse accumsan euismod leo non sagittis. Phasellus risus elit, lacinia vitae leo quis, dapibus ultrices diam. Morbi metus sem, sodales in odio vitae, rhoncus condimentum elit. Fusce et est vel dui mattis tincidunt vel eu metus. Donec sit amet fermentum metus, at ultricies sem. Fusce in lacus at elit sodales adipiscing. Etiam id iaculis libero. Integer libero odio, egestas ac tortor et, gravida suscipit metus. Proin et nisl vehicula, laoreet mi eu, rhoncus orci.</p>
+                  </div>
+                </div>                               
+              </section>
+              <section class="col-md-4 col-md-offset-1">
+                <h2 class="heading h-section lrg-heading-grp" data-barley="about_sec_3_right_title" data-barley-editor="simple">Where we are today</h2>
+                <div class="benefit">
+                  <figure>
+                    <div data-barley="about_sec_3_icon_3" data-barley-editor="image" data-width="89" data-height="89">
+                        <img src="{{ 'images/icon-box-mobile.png' | asset_url }}" alt=""/>
+                    </div>
+                  </figure>
+                  <div class="info">
+                    <p data-barley="about_sec_3_right_content_1" data-barley-editor="simple">Morbi vestibulum blandit convallis. Integer justo nisi, vulputate eget blandit in, consectetur non augue. Vivamus mollis leo in fermentum vulputate. Nam laoreet eget augue in fringilla. Nulla a dignissim ante, vitae faucibus leo. Etiam dignissim velit ipsum. Vivamus sed fringilla metus.</p>
+                  </div>
+                </div>   
+                <div class="benefit">
+                  <figure>
+                    <div data-barley="about_sec_3_icon_4" data-barley-editor="image" data-width="96" data-height="83">
+                        <img src="{{ 'images/icon-shipping-mobile.png' | asset_url }}" alt=""/>
+                    </div>
+                  </figure>
+                  <div class="info">
+                    <p data-barley="about_sec_3_right_content_2" data-barley-editor="simple">Nunc commodo dolor condimentum risus hendrerit, ut iaculis nibh scelerisque. Maecenas rutrum iaculis diam, aliquet cursus augue sollicitudin quis. Cras eget dictum erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tincidunt est urna, vel aliquet augue interdum vel. Curabitur sem dui, elementum ut iaculis sit amet, eleifend ac urna.</p>
+                  </div>
+                </div>                               
+              </section>
+            </div>
+            
+            <div class="row row-question row-centered">
+              <div class="col-md-7">
+                <h2 class="heading text-center lrg-heading-grp" data-barley="about_footer_cta_title" data-barley-editor="simple">Are you ready to subscribe to BookSea yet?</h2>
+              </div>
+              <div class="col-md-5 col-centered about-footer-cta">
+                <a href="/subscribe" type="button" class="btn btn-success lt-btn-grp" data-barley="about_footer_cta_subscribe" data-barley-editor="link">get started</a><div class="about-footer-cta-or hidden-xs hidden-sm" data-barley="about_footer_cta_or" data-barley-editor="simple">OR</div> <a href="/subscribe/gift" type="button" class="btn btn-primary drk-btn-grp" data-barley="about_footer_cta_subscribe_gift" data-barley-editor="link">give a gift</a>
+              </div>
+            </div>     
+            
+          </div>
+        </section>
+        
+        {% include "components/featured.html" %}        
+
+{% endblock %}  

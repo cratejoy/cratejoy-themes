@@ -3,7 +3,7 @@
 {% block page_content %}
 <div class="fpanel">
   <div class="container">
-    <h2 class="heading h-section text-center" data-barley="subscribe_heading" data-barley-editor="simple">Subscribe to Joy box </h2>
+    <h2 class="heading h-section text-center" data-barley="{% if gift %}gift.{% endif %}subscribe_heading" data-barley-editor="simple">Subscribe to Joy box </h2>
     
     <div id="subscriber">
       
@@ -37,7 +37,7 @@
               {% endfor %}
             </div>
           {% elif stage == "upsell" %}
-            <h1 class="heading h-section text-center" data-barley="sub_upsell_heading" data-barley-editor="simple">Choose a Bonus</h1>
+            <h1 class="heading h-section text-center" data-barley="{% if gift %}gift.{% endif %}sub_upsell_heading" data-barley-editor="simple">Choose a Bonus</h1>
             <div class="row row-centered">
             {% include "subscribe_flow/upsell_grid_item.html" %}
             </div>

@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>{% block title %} {{ page_title }} {% endblock %}</title>
+
+    {{ store | canonical_tags(slug, path) }}
+    {{ settings | meta_tags(slug, path) }}
+    {{ store | ogp_tags(page_title) }}
+
+    {{ css.base() }}
+    {{ 'css/bootstrap.css' | asset_url | stylesheet_tag }}
+    {{ 'css/fontawesome.css' | asset_url | stylesheet_tag }}
+    {{ 'css/style.css' | asset_url | stylesheet_tag }}
+
+    <!-- Change your favicon location here if desired -->
+    {{ 'images/favicon.ico' | asset_url | icon_tag }}
+
+    <!-- create empty string to allow duplicate barley tags -->
+    {% set dupe='' %}
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    {{ settings.header_code | safe}}
+
+    {% set cart = active_cart() %}
+    </head>
+<body class="body-grp">
+  <div class="viewport">
+    <div class="row row-offcanvas row-offcanvas-right">
+      <div class="pagecontent col-xs-12">
+        <!-- TOPPER -->
+        <section class="topper top-bnr-bg-grp">
+          <div class="container">
+            <strong data-barley="header_message" data-barley-editor="simple" class="hidden-xs lt-nav-link-grp">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci!</strong>
+            <strong data-barley="header_message_mobile" data-barley-editor="simple" class="visible-xs-inline lt-nav-link-grp">Donec nec justo eget fermentum. Aliquam!</strong>
+            <a type="button" href="/subscribe" class="btn btn-success btn-small sm-lt-btn-grp" data-barley="base_header_main" data-barley-editor="link">Join Now</a>
+          </div>
+        </section>
+        <!-- /TOPPER -->
+
+        <!-- HEADER -->
+		{% block header_tag %}
+        <header class="sheader">
+		{% endblock %}
+
+          <nav class="navbar navbar-default">
+            <div class="container">
+              {% block header_content %}
+              <div class="navbar-header row">
+                <button type="button" class="btn-menu menu-btn-grp" data-toggle="offcanvas show-menu">
+                  <i class="fa fa-bars icon"></i>MENU
+                </button>
+                <div class="col-xs-10 col-md-4">
+                    <a class="navbar-brand" href="/" >
+                        <div data-barley="brand_logo" data-barley-editor="logo">
+                            <span class="hidden logo-grp">{{ store.name }}</span>
+                            <img src="{{ 'images/logo-booksea.png' | asset_url }}" />
+                        </div>
+                    </a>
+                </div>
+                {% block header_inner_content %}
+                {% endblock %}
+              </div>
+              {% endblock %}
+              <button type="button" class="btn-close menu-btn-close-grp" data-toggle="offcanvas hide-menu">
+                <i class="fa fa-times icon"></i>Close
+              </button>
+            </div><!-- /.container -->
+          </nav>
+        </header>
+        <!-- /HEADER -->
+
+        {% block page_content %}
+        {% endblock %}
+
+        <!-- FOOTER -->
+        <footer class="sfooter ftr-bg-grp">
+          {% block footer_content %}
+          <div class="top ftr-nav-bg-grp">
+            <div class="container">
+              <ul class="list-inline">
+                <li><a class="ftr-nav-grp" href="/howitworks" data-barley="footer_hiw_link" data-barley-editor="link">HOW IT WORKS</a></li>
+                <li><a class="ftr-nav-grp" href="/subscribe" data-barley="footer_subscribe_link" data-barley-editor="link">SUBSCRIBE</a></li>
+                <li><a class="ftr-nav-grp" href="/subscribe/gift" data-barley="footer_gift_link" data-barley-editor="link">GIVE A GIFT</a></li>
+                <li><a class="ftr-nav-grp" href="/about_us" data-barley="footer_about_link" data-barley-editor="link">ABOUT</a></li>
+                <li><a class="ftr-nav-grp" href="/faq" data-barley="footer_faq_link" data-barley-editor="link">CONTACT &amp; FAQ</a></li>
+              </ul>
+              {% if store.settings.support_email %}
+				 <span data-barley-editor="simple" data-barley="email_us_footer_prompt">email us at</span>
+				 <a data-barley="email_us_footer" data-barley-editor="link" class="ftr-nav-grp" href="mailto:{{ store.settings.support_email }}">
+				  <strong class="hlight">
+				   {{ store.settings.support_email }}
+				  </strong>
+				 </a>
+              {% endif %}
+            </div>
+          </div>
+
+          <div>
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+                <h6 class="heading strong sm-heading-grp" data-barley="footer_social_heading" data-barley-editor="simple">Follow us!</h6>
+                <ul class="list-inline social-icon-grp">
+                  <li><a href="#" data-barley="facebook_link{{dupe}}" data-barley-editor="link" data-barley-dupe>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill="#231F20" d="M36.5 48.2V34.6h4.6l.7-5.3h-5.3v-3.4c0-1.5.4-2.6 2.6-2.6h2.8v-4.8c-.5-.1-2.2-.2-4.1-.2-4.1 0-6.9 2.5-6.9 7v3.9h-4.6v5.3H31v13.7h5.5z"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#" data-barley="twitter_link{{dupe}}" data-barley-editor="link" data-barley-dupe>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill="#231F20" d="M49.2 23.9 40 21.1c-3.4 0-6.2 2.8-6.2 6.2 0 .5.1 1 .2 1.4-5.1-.3-9.7-2.7-12.7-6.4-.5.9-.8 2-.8 3.1 0 2.1 1.1 4 2.7 5.1-1 0-2-.3-2.8-.8v.1c0 3 2.1 5.5 4.9 6-.5.1-1.1.2-1.6.2-.4 0-.8 0-1.2-.1.8 2.4 3.1 4.2 5.8 4.3-2.1 1.7-4.8 2.6-7.6 2.6-.5 0-1 0-1.5-.1 2.7 1.7 6 2.8 9.4 2.8 11.3 0 17.5-9.4 17.5-17.5v-.8c1.2-.9 2.2-2 3.1-3.2-1.1.5-2.3.8-3.5 1 1.3-.8 2.2-2 2.7-3.4-1.2.7-2.5 1.2-3.9 1.5-1.2-1.3-2.8-2-4.5-2"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#" data-barley="pinterest_link{{dupe}}" data-barley-editor="link" data-barley-dupe>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill="#231F20" d="M34.9 18.2c-8.2 0-12.3 5.9-12.3 10.8 0 3 1.1 5.6 3.5 6.6.4.2.7 0 .9-.4.1-.3.3-1.1.4-1.4.1-.4.1-.6-.2-1-.7-.8-1.1-1.9-1.1-3.4 0-4.4 3.3-8.3 8.5-8.3 4.6 0 7.2 2.8 7.2 6.6 0 5-2.2 9.2-5.5 9.2-1.8 0-3.2-1.5-2.7-3.3.5-2.2 1.5-4.5 1.5-6.1 0-1.4-.8-2.6-2.3-2.6-1.8 0-3.3 1.9-3.3 4.5 0 1.6.5 2.7.5 2.7s-1.9 8-2.2 9.4c-.7 2.8-.1 6.2-.1 6.5 0 .2.3.3.4.1.2-.2 2.4-2.9 3.1-5.6.2-.8 1.2-4.7 1.2-4.7.6 1.1 2.3 2.1 4.2 2.1 5.5 0 9.3-5.1 9.3-11.8-.1-5.1-4.4-9.9-11-9.9z"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="#" data-barley="instagram_link{{dupe}}" data-barley-editor="link" data-barley-dupe>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+                      <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M23.1 18.2h22.3c2.1 0 3.8 1.7 3.8 3.8v22.3c0 2.1-1.7 3.9-3.8 3.9H23.1c-2.1 0-3.9-1.7-3.9-3.9V22.1c0-2.1 1.7-3.9 3.9-3.9zm18 3.4c-.7 0-1.4.6-1.4 1.4v3.2c0 .7.6 1.4 1.4 1.4h3.4c.7 0 1.4-.6 1.4-1.4V23c0-.7-.6-1.4-1.4-1.4h-3.4zm4.7 9.3h-2.6c.2.8.4 1.7.4 2.6 0 5-4.2 9-9.3 9-5.2 0-9.3-4-9.3-9 0-.9.1-1.8.4-2.6h-2.8v12.7c0 .7.5 1.2 1.2 1.2h20.9c.7 0 1.2-.5 1.2-1.2V30.9zm-11.6-3.6c-3.3 0-6 2.6-6 5.8 0 3.2 2.7 5.8 6 5.8s6-2.6 6-5.8c.1-3.1-2.6-5.8-6-5.8z"/>
+                    </svg>
+                  </a></li>
+                </ul>
+                <div class="copyright">
+                  <span class="pull-left ftr-nav-grp" data-barley="footer_copyright_heading" data-barley-editor="simple">&copy; 2014 Booksea</span>
+                  <a class="powered-by-logo" href="http://www.cratejoy.com"><img src="{{ 'images/powered_by_cratejoy.png' | asset_url }}" alt="Powered By Cratejoy"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endblock %}
+        </footer>
+
+        <!-- /FOOTER -->
+      </div> <!-- /.page -->
+      <div class="col-xs-3 sidebar-offcanvas menu-bg-grp" id="slidebar" role="navigation">
+        <figure>
+          <div class="sidebar-logo hidden-xs" data-barley="sidebar_logo" data-barley-editor="logo">
+            <span class="hidden">{{ store.name }}</span>
+            <img class="img-responsive" src="{{ 'images/logo-small.png' | asset_url }}"/>
+          </div>
+
+          <div class="sidebar-logo visible-xs" data-barley="sidebar_logo_xs" data-barley-editor="logo">
+            <span class="hidden">{{ store.name }}</span>
+            <img class="img-responsive" src="{{ 'images/logo-big.png' | asset_url }}"/>
+          </div>
+        </figure>
+        <ul class="nav-primary">
+          {% if guest %}
+            <li><a type="button" class="btn btn-success btn-small sm-lt-btn-grp" href="/customer/login" data-barley="slidebar_login_btn" data-barley-editor="link">LOGIN</a></li>
+          {% else %}
+            <li><a class="lt-nav-link-grp" href="/customer/account">{{ customer.name }}</a></li>
+            <li><a class="lt-nav-link-grp" href="/customer/logout">Sign Out</a></li>
+          {% endif %}
+          <li><a class="lt-nav-link-grp" href="/checkout" >Cart ({{ (cart.products | length ) + (cart.gifts | length) }})</a></li>
+          <li><a class="lt-nav-link-grp" href="/howitworks" data-barley="slidebar_hiw_link" data-barley-editor="link">HOW IT WORKS</a></li>
+          <li><a class="lt-nav-link-grp" href="/subscribe" data-barley="slidebar_subscribe_link" data-barley-editor="link">SUBSCRIBE</a></li>
+          <li><a class="lt-nav-link-grp" href="/subscribe/gift" data-barley="slidebar_gift_link" data-barley-editor="link">GIVE A GIFT</a></li>
+          <li><a class="lt-nav-link-grp" href="/about_us" data-barley="slidebar_about_link" data-barley-editor="link">ABOUT</a></li>
+          <li><a class="lt-nav-link-grp" href="/faq" data-barley="slidebar_faq_link" data-barley-editor="link">CONTACT &amp; FAQ</a></li>
+        </ul>
+        <h6 class="heading strong lt-desc-grp" data-barley="slidebar_social_heading" data-barley-editor="simple">Follow us!</h6>
+        <ul class="list-inline social-icon social-icon-grp">
+          <li><a href="#" data-barley="{{dupe}}facebook_link" data-barley-editor="link" data-barley-dupe>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+              <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+              <path fill="#231F20" d="M36.5 48.2V34.6h4.6l.7-5.3h-5.3v-3.4c0-1.5.4-2.6 2.6-2.6h2.8v-4.8c-.5-.1-2.2-.2-4.1-.2-4.1 0-6.9 2.5-6.9 7v3.9h-4.6v5.3H31v13.7h5.5z"/>
+            </svg>
+          </a></li>
+          <li><a href="#" data-barley="{{dupe}}twitter_link" data-barley-editor="link" data-barley-dupe>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+              <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+              <path fill="#231F20" d="M49.2 23.9 40 21.1c-3.4 0-6.2 2.8-6.2 6.2 0 .5.1 1 .2 1.4-5.1-.3-9.7-2.7-12.7-6.4-.5.9-.8 2-.8 3.1 0 2.1 1.1 4 2.7 5.1-1 0-2-.3-2.8-.8v.1c0 3 2.1 5.5 4.9 6-.5.1-1.1.2-1.6.2-.4 0-.8 0-1.2-.1.8 2.4 3.1 4.2 5.8 4.3-2.1 1.7-4.8 2.6-7.6 2.6-.5 0-1 0-1.5-.1 2.7 1.7 6 2.8 9.4 2.8 11.3 0 17.5-9.4 17.5-17.5v-.8c1.2-.9 2.2-2 3.1-3.2-1.1.5-2.3.8-3.5 1 1.3-.8 2.2-2 2.7-3.4-1.2.7-2.5 1.2-3.9 1.5-1.2-1.3-2.8-2-4.5-2"/>
+            </svg>
+          </a></li>
+          <li><a href="#" data-barley="{{dupe}}pinterest_link" data-barley-editor="link" data-barley-dupe>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+              <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+              <path fill="#231F20" d="M34.9 18.2c-8.2 0-12.3 5.9-12.3 10.8 0 3 1.1 5.6 3.5 6.6.4.2.7 0 .9-.4.1-.3.3-1.1.4-1.4.1-.4.1-.6-.2-1-.7-.8-1.1-1.9-1.1-3.4 0-4.4 3.3-8.3 8.5-8.3 4.6 0 7.2 2.8 7.2 6.6 0 5-2.2 9.2-5.5 9.2-1.8 0-3.2-1.5-2.7-3.3.5-2.2 1.5-4.5 1.5-6.1 0-1.4-.8-2.6-2.3-2.6-1.8 0-3.3 1.9-3.3 4.5 0 1.6.5 2.7.5 2.7s-1.9 8-2.2 9.4c-.7 2.8-.1 6.2-.1 6.5 0 .2.3.3.4.1.2-.2 2.4-2.9 3.1-5.6.2-.8 1.2-4.7 1.2-4.7.6 1.1 2.3 2.1 4.2 2.1 5.5 0 9.3-5.1 9.3-11.8-.1-5.1-4.4-9.9-11-9.9z"/>
+            </svg>
+          </a></li>
+          <li><a href="#" data-barley="{{dupe}}instagram_link" data-barley-editor="link" data-barley-dupe>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.4 68.4" width="29px" height="29px" enable-background="new 0 0 68.4 68.4">
+              <circle fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" cx="34.2" cy="33.3" r="31.2"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M23.1 18.2h22.3c2.1 0 3.8 1.7 3.8 3.8v22.3c0 2.1-1.7 3.9-3.8 3.9H23.1c-2.1 0-3.9-1.7-3.9-3.9V22.1c0-2.1 1.7-3.9 3.9-3.9zm18 3.4c-.7 0-1.4.6-1.4 1.4v3.2c0 .7.6 1.4 1.4 1.4h3.4c.7 0 1.4-.6 1.4-1.4V23c0-.7-.6-1.4-1.4-1.4h-3.4zm4.7 9.3h-2.6c.2.8.4 1.7.4 2.6 0 5-4.2 9-9.3 9-5.2 0-9.3-4-9.3-9 0-.9.1-1.8.4-2.6h-2.8v12.7c0 .7.5 1.2 1.2 1.2h20.9c.7 0 1.2-.5 1.2-1.2V30.9zm-11.6-3.6c-3.3 0-6 2.6-6 5.8 0 3.2 2.7 5.8 6 5.8s6-2.6 6-5.8c.1-3.1-2.6-5.8-6-5.8z"/>
+            </svg>
+          </a></li>
+        </ul>
+        <div class="copyright">
+          <p class="ftr-nav-grp" data-barley="slidebar_copyright_heading" data-barley-editor="simple">&copy; 2014 Booksea</p>
+          <p><a href="http://www.cratejoy.com"><img src="{{ 'images/powered_by_cratejoy.png' | asset_url }}" alt="Powered By Cratejoy"></a></p>
+        </div>
+      </div><!-- /.slidebar -->
+    </div><!--/row-->
+  </div><!--/.container-->
+
+  <script src="{{ 'js/jquery-1.11.1.min.js' | asset_url }}"></script>
+  <script src="{{ 'js/bootstrap.min.js' | asset_url }}"></script>
+  <script src="{{ 'js/offcanvas.js' | asset_url }}"></script>
+  <script src="{{ 'js/carousel-heights.js' | asset_url }}"></script>
+
+  {{ ga.base() }}
+  {{ js.base() }}
+
+  <!-- Any page specific javascript can be included in your child templates in a page_javascript block -->
+  {% block page_javascript %}
+  {% endblock %}
+
+  {{ settings.footer_code | safe}}
+</body>
+</html>
+

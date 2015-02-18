@@ -19,11 +19,7 @@
 			<div class="row">
 				
   		<div class="col-md-6">
-  			{% if product.images %}
-				{{ product.images[0].url | img_tag(css_class="product-image", alt=product.name) }}
-            {% else %}
-          		{{ '/images/style2/placeholder.png' | asset_url | img_tag(css_class="product-image", alt=product.name) }}
-			{% endif %}
+            {{ product | object_img_tag(default_img_path="images/style2/placeholder.png", css_class="product-image") }}
             <ul class="product-thumbnails">
 			{% for image in product.images[1:] %}
 				<li>

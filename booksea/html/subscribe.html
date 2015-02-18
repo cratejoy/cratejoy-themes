@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+<!-- Include the progress_bar macro, so we can put it in the header_inner_content block -->
+{% from "subscribe_flow/progress_bar.html" import progress_bar with context %}
+{% block header_inner_content %} {{ progress_bar() }} {% endblock %}
+
+{% block page_content %}
+
+        <div class="container">
+          <div class="fpanel">
+              {% if stage == "product" %}
+                <h1 class="heading h-section text-center lrg-heading-grp" data-barley="{% if gift %}gift.{% endif %}sub_product_heading" data-barley-editor="simple">Choose a Product</h1>
+                <div class="row row-centered">
+                {% for product in store.visible_subscription_products %}
+                  {% set product_loop = loop %}
+                  {% include "subscribe_flow/product_grid_item.html" %}
+                {% endfor %}
+                </div>
+              {% elif stage == "variants" %}
+                <h1 class="heading h-section text-center lrg-heading-grp" data-barley="{% if gift %}gift.{% endif %}sub_variant_heading" data-barley-editor="simple">Choose an Option</h1>
+                <div class="row row-centered">
+                {% for value in possible_values %}
+                  {% set variant_loop = loop %}
+                  {% include "subscribe_flow/variant_grid_item.html" %}
+                {% endfor %}
+                </div>
+              {% elif stage == "terms" %}
+                <h1 class="heading h-section text-center lrg-heading-grp" data-barley="{% if gift %}gift.{% endif %}sub_term_heading" data-barley-editor="simple">Choose a Term</h1>
+                <div class="row row-centered">
+                {% set num_enabled_terms = instance.calc_num_enabled_terms() %}
+                {% for term_price in instance.term_prices %}
+                  <!-- Only show enabled terms -->
+                  {% if term_price.term.enabled %}
+                    {% set term_loop = loop %}
+                    {% include "subscribe_flow/term_grid_item.html" %}
+                  {% endif %}
+                  {% endfor %}
+                </div>
+              {% elif stage == "upsell" %}
+                <h1 class="heading h-section text-center" data-barley="{% if gift %}gift.{% endif %}sub_upsell_heading" data-barley-editor="simple">Choose a Bonus</h1>
+                <div class="row row-centered">
+                {% include "subscribe_flow/upsell_grid_item.html" %}
+                </div>
+              {% endif %}
+          </div>
+
+          <hr/>
+          <div class="fpanel x-small text-center">
+            <span data-barley="{% if gift %}gift.{% endif %}sub_footer" data-barley-editor="simple">Vestibulum sit amet bibendum tortor. Donec sed magna justo. Maecenas vitae egestas elit, ac ornare nibh. Cras congue risus eget felis sollicitudin tincidunt. Nunc sapien turpis, varius a turpis in, congue malesuada ante. Morbi ullamcorper urna vitae nunc aliquet bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut hendrerit varius dolor sit amet blandit. Morbi blandit nibh id imperdiet tempus. Quisque nec vestibulum lectus. Etiam mollis semper faucibus. Maecenas nisl orci, vestibulum ut tortor a, mattis dapibus arcu. Donec id aliquam quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. </span>
+          </div>
+        </div>
+
+{% endblock %}

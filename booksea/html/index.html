@@ -1,0 +1,79 @@
+<!-- If you're looking for the shared template that contains -->
+<!-- the header and footer, look in html/base.html -->
+{% extends "base.html" %}
+
+{% block header_tag %}
+<header class="sheader header-index" data-barley="index_bg_img" data-barley-editor="bgimage" data-width="1400" data-height="740" style="background-image: url('{{ 'images/bg-get-books.jpg' | asset_url }}');">
+{% endblock %}
+
+{% block header_content %}
+{{ super() }}
+
+<div class="row content">
+  <section class="col-md-5 col-sm-8">
+    <h1 class="heading index-bnr-grp" data-barley="index_cta_heading" data-barley-editor="simple">Get handpicked books delivered every month.</h1>
+    <p class="drk-desc-grp" data-barley="index_cta_text" data-barley-editor="simple">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Faucibus, tortor praesent neque id dapibus.</p>
+    <br>
+    <div class="row hidden-xs cta-btn-row">
+        <a type="button" class="btn btn-success lt-btn-grp" href="/subscribe" data-barley="index_cta_main" data-barley-editor="link">get started</a><div class="cta-or" data-barley="cta_or" data-barley-editor="simple">OR</div><a type="button" class="btn btn-primary drk-btn-grp" href="/subscribe/gift" data-barley="index_cta_gift" data-barley-editor="link">give a gift</a>
+    </div>
+  </section>
+</div>
+
+{% endblock %}
+
+{% block page_content %}
+
+<div class="container visible-xs">
+  <div class="row cta-btn-row-xs">
+      <a type="button" class="btn btn-success lt-btn-grp" href="/subscribe" data-barley="index_cta_main_xs" data-barley-editor="link">get started</a>
+      <a type="button" class="btn btn-primary dark-btn-grp" href="/subscribe/gift" data-barley="index_cta_gift_xs" data-barley-editor="link">give a gift</a>
+  </div>
+</div>
+
+<div class="fpanel">
+  <div class="container">
+    <section>
+      <h2 class="heading h-section lrg-heading-grp" data-barley="index_hiw_heading" data-barley-editor="simple">What is BookSea?</h2>
+      <p data-barley="index_hiw_text_1" data-barley-editor="simple">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>                
+      <p data-barley="index_hiw_text_2" data-barley-editor="simple">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+    </section>
+  </div>
+</div>
+
+{% include "components/descriptions.html" %}
+
+<div class="fpanel bg1 hiw-bg-grp">
+  <div class="container">
+    {% include "components/how-it-works.html" %}
+  </div>
+</div>   
+
+<div class="fpanel">
+  <div class="container">
+    <h2 class="heading h-section text-center lrg-heading-grp" data-barley="index_product_choice_heading" data-barley-editor="simple">What type of reader are you?</h2>
+    <div class="row row-centered">
+      {% for product in store.visible_subscription_products %}
+        {% if loop.length in [2,4,8] %}
+          {% set col_width = 'col-md-6' %}
+        {% elif loop.length in [1,3,5,6,7] %}
+          {% set col_width = 'col-md-4' %}
+        {% endif %}
+        <section class="col-xs-12 col-sm-6 {{ col_width }} col-centered plan">
+          <figure class="circle">
+            <div class="product_image_container" data-barley="product.{{ product.id }}.img" data-barley-editor="image" data-width="300" data-height="300">
+                  {{ product | object_img_tag(default_img_path="images/term1.png", css_class="img-responsive center-block circle-crop") }}
+            </div>
+          </figure>
+          <br>
+          <a type="button" href="{{ product | product_subscribe_url() }}" data-barley="product.{{ product.id }}.name" data-barley-editor="linkedit" class="btn btn-success lt-btn-grp">{{ product.name | safe }}</a>
+          <br><br>
+        </section>
+      {% endfor %}
+    </div>
+  </div>
+</div>    
+
+{% include "components/testimonials.html" %}                  
+
+{% endblock %}

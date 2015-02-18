@@ -10,11 +10,11 @@
 {% set term = term_price.term %}
 <div class="col-centered col-xs-10 col-xs-offset-0 col-sm-offset-0 {{ col_width }}">
   <section class="box-selector box-subscribe">
-    <h3 class="subheading secondary-invert-grp" data-barley="term.{{ term.id }}.name" data-barley-editor="simple">{{ term.name | safe }}</h3>
+    <h3 class="subheading secondary-invert-grp" data-barley="{% if gift %}gift.{% endif %}term.{{ term.id }}.name" data-barley-editor="simple">{{ term.name | safe }}</h3>
       {% if not gift %}
-        <p class="body-grp" data-barley="term.{{ term.id }}.description" data-barley-editor="simple">{{ term.description | safe}}</p>
+        <p class="body-grp" data-barley="{% if gift %}gift.{% endif %}term.{{ term.id }}.description" data-barley-editor="simple">{{ term.description | safe}}</p>
       {% endif %}
-    <p class="price cart-pricing-grp" data-barley="term_price.{{ term_price.id }}.price" data-barley-editor="simple">{{ term_price.price | currency }}</p>
-    <a href="{{ product | product_subscribe_url(chosen_values, term, gift=gift) }}" type="button" class="alt-button-grp btn btn-default" data-barley="{{ term_price.id }}.sub_button_text" data-barley-editor="linkedit">SUBSCRIBE</a>
+    <p class="price cart-pricing-grp" data-barley="{% if gift %}gift.{% endif %}term_price.{{ term_price.id }}.price" data-barley-editor="simple">{{ term_price.price | currency }}</p>
+    <a href="{{ product | product_subscribe_url(chosen_values, term, gift=gift) }}" type="button" class="alt-button-grp btn btn-default" data-barley="{% if gift %}gift.{% endif %}{{ term_price.id }}.sub_button_text" data-barley-editor="linkedit">SUBSCRIBE</a>
   </section>
 </div>

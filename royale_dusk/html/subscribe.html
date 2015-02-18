@@ -3,8 +3,8 @@
 {% block page_content %}
 <div class="fpanel text-center invert">
   <div class="container">
-    <h1 class="heading large-grp" data-barley="sub_heading_title" data-barley-editor="simple">Subscribe</h1>
-    <p class="body-grp" data-barley="sub_heading_content" data-barley-editor="simple">Subscribe today to start bringing some awesome into your life. Each Royale Crate will leave you feeling like royalty!</p>
+    <h1 class="heading large-grp" data-barley="{% if gift %}gift.{% endif %}sub_heading_title" data-barley-editor="simple">Subscribe</h1>
+    <p class="body-grp" data-barley="{% if gift %}gift.{% endif %}sub_heading_content" data-barley-editor="simple">Subscribe today to start bringing some awesome into your life. Each Royale Crate will leave you feeling like royalty!</p>
     <div id="subscriber">
         {% include "subscribe_flow/progress_bar.html" %}
         <hr>
@@ -36,7 +36,7 @@
               {% endfor %}
             </div>
           {% elif stage == "upsell" %}
-            <h1 class="heading h-section text-center" data-barley="sub_upsell_heading" data-barley-editor="simple">Choose a Bonus</h1>
+            <h1 class="heading h-section text-center" data-barley="{% if gift %}gift.{% endif %}sub_upsell_heading" data-barley-editor="simple">Choose a Bonus</h1>
             <div class="row row-centered">
             {% include "subscribe_flow/upsell_grid_item.html" %}
             </div>

@@ -1,0 +1,27 @@
+<!-- variant_loop is the jinja for loop variable -->
+<!-- The following code snippet determines bootstrap column widths -->
+{% if variant_loop.length in [4, 8] %}
+    {% set col_width = 'col-lg-3' %}
+{% elif variant_loop.length in [3,5,6,7] %}
+    {% set col_width = 'col-md-4' %}
+{% endif %}
+<section class="plan text-center col-centered col-xs-10 col-xs-offset-0 col-sm-offset-0 col-sm-6 {{ col_width }}">
+  <figure class="circle has-overlay">
+    <div class="product_image_container" data-barley="{% if gift %}gift.{% endif %}variant_value.{{ value.id }}.img" data-barley-editor="image">
+        {{ value | object_img_tag(default_img_path="images/term1.png", css_class="img-responsive center-block circle-crop") }}
+    </div>
+    <a href="{{ product | product_subscribe_url(chosen_values, value, gift=gift) }}" class="overlayer overlayer-hide text-center lt-desc-grp"></a>
+    <a href="{{ product | product_subscribe_url(chosen_values, value, gift=gift) }}" class="overlayer-hide select-txt">Click to select <i class="icon fa fa-angle-right"></i></a>
+  </figure>
+  <a href="{{ product | product_subscribe_url(chosen_values, value, gift=gift) }}" data-barley="{% if gift %}gift.{% endif %}variant_value.{{ value.id }}.value" data-barley-editor="linkedit" class="heading strong sm-heading-grp">{{ value.value }}</a>
+  <p data-barley="{% if gift %}gift.{% endif %}variant_value.{{ value.id }}.description" data-barley-editor="simple">{{ value.description | default("Variant description placeholder text", true) }}</p>
+  <hr>
+  {{ product | get_price_or_price_range(value.variant_type, values = chosen_values + [value]) }}
+  <p data-barley="{% if gift %}gift.{% endif %}addl_description.{{ value.id }}" data-barley-editor="simple">Additional Variant Description</p>
+  <div class="visible-xs visible-sm">
+    <a data-barley="{% if gift %}gift.{% endif %}btn_text.{{ value.id }}" data-barley-editor="linkedit" type="button" href="{{ product | product_subscribe_url(chosen_values, value, gift=gift) }}" class="btn btn-success lt-btn-grp">SELECT OPTION</a>
+  </div>
+  <div class="visible-xs">
+    <br/><br/>
+  </div>
+</section>

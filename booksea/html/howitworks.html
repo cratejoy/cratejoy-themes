@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block page_content %}
+
+        <div class="container">
+          <div class="fpanel">
+            {% include "components/how-it-works.html" %}
+          </div>
+
+          <hr/>
+
+          <div class="fpanel">
+            <div class="row">
+              <div class="col-md-4">
+                <figure class="text-center-m">
+                  <div data-barley="hiw_sec_1_img" data-barley-editor="image" data-width="395" data-height="460">
+                    <img src="{{ 'images/about.jpg' | asset_url }}" alt="" class="img-responsive" />
+                  </div>
+                </figure>
+              </div>
+              <div class="visible-xs"><br /><br /></div>
+              <div class="col-md-8">
+                <h2 class="heading h-section lrg-heading-grp" data-barley="hiw_sec_1_heading" data-barley-editor="simple">A little tidbit about your BookSea box...</h2>
+                <p data-barley="hiw_sec_1_content_1" data-barley-editor="simple">Sed porta egestas quam, vel dignissim lorem pulvinar nec. Aenean ultricies mi et lectus volutpat, eu convallis ante sagittis. Donec commodo, urna in auctor ornare, neque nulla molestie metus, laoreet ornare leo dui auctor ante. Vivamus pellentesque interdum consectetur. Maecenas sodales ante dui, non adipiscing sem malesuada quis. Ut at vestibulum massa, ac mattis dui. Suspendisse consectetur pretium nibh, vitae consectetur nisi cursus a. Curabitur tincidunt posuere magna in tincidunt. Suspendisse vehicula cursus odio. Sed vel magna erat. Cras malesuada nulla non orci posuere tempor. Nullam placerat turpis felis, eu scelerisque lectus volutpat et. Proin molestie at libero egestas volutpat. Nullam neque risus, scelerisque at odio et, viverra consectetur mauris.</p>                
+                <p data-barley="hiw_sec_1_content_2" data-barley-editor="simple">Morbi vestibulum blandit convallis. Integer justo nisi, vulputate eget blandit in, consectetur non augue. Vivamus mollis leo in fermentum vulputate. Nam laoreet eget augue in fringilla. Nulla a dignissim ante, vitae faucibus leo. Etiam dignissim velit ipsum.</p>                
+              </div>
+            </div>
+          </div>
+
+          <div class="fpanel">
+            <div class="row">
+              <div class="col-md-9 col-md-push-3">
+                <figure>
+                  <div data-barley="hiw_sec_2_img" data-barley-editor="image" data-width="870" data-height="490">
+                    <img src="{{ 'images/videoplayer.jpg' | asset_url }}" alt="" class="img-responsive fullsize" />
+                  </div>
+                </figure>
+              </div>
+              <div class="visible-sm visible-xs"><br/><br/></div>
+              <section class="col-md-3 col-md-pull-9">
+                <h2 class="heading h-section lrg-heading-grp" data-barley="hiw_sec_2_heading" data-barley-editor="simple">Helping people discover great books is what we do best</h2>
+                <p data-barley="hiw_sec_2_content" data-barley-editor="simple">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+                <a href="/subscribe" type="button" class="btn btn-success lt-btn-grp" data-barley="hiw_sec_2_cta_link" data-barley-editor="link">SUBSCRIBE TODAY</a>
+              </section>
+            </div>
+          </div>
+
+        </div>
+
+        {% include "components/featured.html" %}
+
+{% endblock %}

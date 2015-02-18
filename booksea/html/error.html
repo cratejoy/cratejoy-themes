@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<div class="headline-container">
+	<div class="headline">
+		<div class="container">
+			<h1>Oops, we had a problem</h1>
+			<h2>{{ error }}</h2>
+		</div>
+		<p>The file that triggered this was {{ filename }}</p>
+	</div>
+</div>
+
+{% endblock %}
+
