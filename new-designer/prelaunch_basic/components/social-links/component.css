@@ -1,0 +1,17 @@
+#[[COMPONENT_ID]] {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+#[[COMPONENT_ID]] .component-social-links a {
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#[[COMPONENT_ID]] .component-social-links a:hover svg path {
+	stroke: {{ settings['highlight_color'] }};
+}
+#[[COMPONENT_ID]] .component-social-links a:hover svg path + path {
+	fill: {{ settings['highlight_color'] }};
+	stroke: transparent;
+}

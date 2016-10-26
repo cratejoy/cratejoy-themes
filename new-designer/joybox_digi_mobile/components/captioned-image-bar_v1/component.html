@@ -1,0 +1,42 @@
+<section id="[[COMPONENT_ID]]" class="row">
+	<div class="col-xs-12">
+		<div class="title text-center">
+			{{ settings['[[COMPONENT_ID]]/title'] }}
+		</div>
+
+		<div class="box-choose-row row">
+			<div class="col-md-3 col-xs-12 box-choose flex-center text-center">
+				<div class="row">
+					<div class="col-xs-12">
+						<img src="{{ settings["[[COMPONENT_ID]]/image_1"] | asset_url }}" />
+					</div>
+					<div class="col-xs-12">
+						{{ settings["[[COMPONENT_ID]]/caption_1"] }}
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-xs-12 box-choose flex-center text-center">
+				<div class="row">
+					<div class="col-xs-12">
+						<img src="{{ settings["[[COMPONENT_ID]]/image_2"] | asset_url }}" />
+					</div>
+					<div class="col-xs-12">
+						{{ settings["[[COMPONENT_ID]]/caption_2"] }}
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-xs-12 box-choose flex-center text-center">
+				<div class="row">
+					<div class="col-xs-12">
+						<img src="{{ settings["[[COMPONENT_ID]]/image_3"] | asset_url }}" />
+					</div>
+					<div class="col-xs-12">
+						{{ settings["[[COMPONENT_ID]]/caption_3"] }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

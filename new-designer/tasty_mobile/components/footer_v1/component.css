@@ -1,0 +1,71 @@
+#[[COMPONENT_ID]].footer {
+	background-color: {{ settings['[[COMPONENT_ID]]/background_color'] }};
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/body/font_face'] }};
+	padding: 25px 0;
+
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+#[[COMPONENT_ID]].footer p {
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+}
+
+#[[COMPONENT_ID]] .footer-subscribe {
+	padding: 15px 0;
+}
+
+#[[COMPONENT_ID]] .footer-subscribe .btn {
+	border: 1px solid #FFFFFF;
+}
+
+#[[COMPONENT_ID]] .footer-social {
+	padding: 15px 0;
+}
+
+#[[COMPONENT_ID]] .footer-social a {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+#[[COMPONENT_ID]] .footer-social svg path {
+	fill: {{ settings['[[COMPONENT_ID]]/social_icons_color'] }};
+}
+
+#[[COMPONENT_ID]] .footer-social a:hover svg path,
+#[[COMPONENT_ID]] .footer-social a:focus svg path,
+#[[COMPONENT_ID]] .footer-social a:active svg path {
+	fill: {{ settings['[[COMPONENT_ID]]/social_icons_hover_color'] }};
+}
+
+#[[COMPONENT_ID]] .footer-contact {
+	padding: 15px 0;
+
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+#[[COMPONENT_ID]] .footer-contact p {
+	margin: 0 0 0.5em 0;
+}
+
+@media (min-width: 768px) {
+	#[[COMPONENT_ID]].footer {
+		padding: 40px 0;
+
+		-webkit-align-items: flex-start;
+		-moz-align-items: flex-start;
+		-ms-align-items: flex-start;
+		align-items: flex-start;
+
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+}

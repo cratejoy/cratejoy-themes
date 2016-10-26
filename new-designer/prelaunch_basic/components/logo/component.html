@@ -1,0 +1,13 @@
+<section id="[[COMPONENT_ID]]">
+	
+	<div class="logo">
+		<h1>
+		{% if settings["logo_image"] %}
+			<img src="{{ settings["logo_image"] | asset_url }}">
+		{% else %}
+			<span class="store-name">{{ store.name }}</span>
+		{% endif %}
+		</h1>
+	</div>
+
+</section>

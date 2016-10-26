@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+	<title>{% block title %}{{ page_title }}{% endblock %}</title>
+	{{ 'images/favicon.ico' | asset_url | icon_tag }}
+
+	{{ settings | meta_tags(slug, path) }}
+	{{ store | canonical_tags(slug, path) }}
+	{{ store | ogp_tags(page_title) }}
+
+	{{ 'css/reset.css' | asset_url | stylesheet_tag }}
+	{{ css.base() }}
+	{{ 'css/bootstrap.css' | asset_url | stylesheet_tag }}
+	{{ 'css/plugins/pikachoose/base.css' | asset_url | stylesheet_tag }}
+	{{ 'css/style.css' | asset_url | stylesheet_tag }}
+
+	{% block css %}
+
+	{% endblock %}
+
+	{% set cart = active_cart() %}
+	{{ settings.header_code | safe }}
+
+	<!-- DON'T PUT JAVASCRIPT INCLUDES IN THE HEADER! Put them in the footer! -->
+</head>
+<body class="{% block body_class %}{% endblock %}">
+	{% block page_content %}
+		{{ components_helpers.render_components('base') }}
+		{{ components_helpers.render_components(components_list_name) }}
+	{% endblock %}
+
+	<script src="{{ 'js/jquery-1.11.1.min.js' | asset_url }}"></script>
+	<script src="{{ 'js/tether.min.js' | asset_url }}"></script>
+	<script src="{{ 'js/bootstrap.min.js' | asset_url }}"></script>
+
+	{{ ga.base() }}
+	{{ js.base() }}
+
+	{% block page_javascript %}
+		{{ components_helpers.scripts_for_page('base') }}
+		{{ components_helpers.scripts_for_page(components_list_name) }}
+	{% endblock %}
+
+	{{ settings.footer_code | safe }}
+</body>
+</html>

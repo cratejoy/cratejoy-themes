@@ -1,0 +1,16 @@
+{#
+	This component is used by several of the customer pages to give feedback
+	to the user if a form submission does not work. For example, a bad password.
+#}
+{% if result %}
+	<!-- Display any server messages back to the user after a form submission -->
+	<section class='form-feedback'>
+		<div class="container-fluid">
+			<div class="row content">
+				<div class="alert alert-info">
+					{{ result }}
+				</div>
+			</div>
+		</div>
+	</section>
+{% endif %}

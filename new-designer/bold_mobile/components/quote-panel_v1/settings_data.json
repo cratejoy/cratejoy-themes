@@ -1,0 +1,8 @@
+{
+	"[[COMPONENT_ID]]/quote_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Jane Smith\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/quote_1_html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi</p>\n<h3>Jane Smith</h3>",
+	"[[COMPONENT_ID]]/quote_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"John West\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/quote_2_html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi</p>\n<h3>John West</h3>",
+	"[[COMPONENT_ID]]/quote_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Kammit Halahar\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/quote_3_html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi</p>\n<h3>Kammit Halahar</h3>"
+}

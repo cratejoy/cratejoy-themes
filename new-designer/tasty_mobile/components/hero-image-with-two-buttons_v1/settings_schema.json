@@ -1,0 +1,173 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/image",
+			"label": "Image",
+			"type": "image"
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/background_color",
+			"label": "Background",
+			"type": "color",
+			"inherits": "page_background_color"
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/content",
+			"type": "richtext"
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/button_text_1",
+			"label": "Button Text 1",
+			"type": "text"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/button_url_1",
+			"label": "Button URL 1",
+			"type": "link"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/button_text_2",
+			"label": "Button Text 2",
+			"type": "text"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/button_url_2",
+			"label": "Button URL 2",
+			"type": "link"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_1/font_face",
+			"label": "Heading 1",
+			"type": "font_face",
+			"inherits": "page_heading/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_1/font_size",
+			"type": "font_size",
+			"inherits": "page_heading/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_1/color",
+			"type": "color",
+			"inherits": "page_heading/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_2/font_face",
+			"label": "Heading 2",
+			"type": "font_face",
+			"inherits": "page_secondary_heading/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_2/font_size",
+			"type": "font_size",
+			"inherits": "page_secondary_heading/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_2/color",
+			"type": "color",
+			"inherits": "page_secondary_heading/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_3/font_face",
+			"label": "Heading 3",
+			"type": "font_face",
+			"inherits": "page_tertiary_heading/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_3/font_size",
+			"type": "font_size",
+			"inherits": "page_tertiary_heading/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_3/color",
+			"type": "color",
+			"inherits": "page_tertiary_heading/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/font_face",
+			"label": "Body",
+			"type": "font_face",
+			"inherits": "page_body/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/font_size",
+			"type": "font_size",
+			"inherits": "page_body/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/color",
+			"type": "color",
+			"inherits": "page_body/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/primary_button/font_face",
+			"type": "font_face",
+			"inherits": "primary_button/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/primary_button/font_size",
+			"type": "font_size",
+			"inherits": "primary_button/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/primary_button/color",
+			"type": "color",
+			"inherits": "primary_button/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/primary_button/hover_color",
+			"type": "color",
+			"inherits": "primary_button/hover_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/primary_button/text_color",
+			"type": "color",
+			"inherits": "primary_button/text_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/primary_button/hover_text_color",
+			"type": "color",
+			"inherits": "primary_button/hover_text_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/secondary_button/font_face",
+			"type": "font_face",
+			"inherits": "secondary_button/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/secondary_button/font_size",
+			"type": "font_size",
+			"inherits": "secondary_button/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/secondary_button/color",
+			"type": "color",
+			"inherits": "secondary_button/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/secondary_button/hover_color",
+			"type": "color",
+			"inherits": "secondary_button/hover_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/secondary_button/text_color",
+			"type": "color",
+			"inherits": "secondary_button/text_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/secondary_button/hover_text_color",
+			"type": "color",
+			"inherits": "secondary_button/hover_text_color"
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"name": "[[COMPONENT_LABEL]]",
+	"description": "Subscription Product List",
+	"version": "1",
+	"whitelist": [
+		"subscribe_flow/product_step"
+	]
+}

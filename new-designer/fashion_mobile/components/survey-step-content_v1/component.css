@@ -1,0 +1,15 @@
+#[[COMPONENT_ID]] {
+	background-color: {{ settings["[[COMPONENT_ID]]/background_color"] }};
+}
+
+#[[COMPONENT_ID]] h3 {
+	color: {{ settings['[[COMPONENT_ID]]/heading/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading/font_size'] }};
+}
+
+#[[COMPONENT_ID]] p {
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/body/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/body/font_size'] }};
+}

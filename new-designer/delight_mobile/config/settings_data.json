@@ -1,0 +1,29 @@
+{
+	"current": "default",
+	"default": {
+		"primary_color": "#C39D6A",
+		"secondary_color": "#333333",
+		"accent_color": "#D7BEE5",
+		"content_background_color": "#FFFFFF",
+		"accent_background_color": "#FAFAFA",
+		"page_background_color": "#EEEEEE",
+
+		"page_heading/font_face": "Courgette",
+		"page_heading/font_size": "40px",
+		"page_secondary_heading/font_face": "Lato",
+		"page_secondary_heading/font_size": "22px",
+		"page_tertiary_heading/font_face": "Lato",
+		"page_tertiary_heading/font_size": "15px",
+		"page_body/font_face": "Lato",
+		"page_body/font_size": "13px",
+		"page_body/color": "#B0B0B0",
+
+		"primary_button/font_size": "12px",
+		"primary_button/text_color": "#FFFFFF",
+		"primary_button/hover_text_color": "#FFFFFF",
+		"secondary_button/text_color": "#FAFAFA",
+		"secondary_button/hover_text_color": "#FAFAFA",
+
+		"product_placeholder_image": "images/product_placeholder.jpg"
+	}
+}

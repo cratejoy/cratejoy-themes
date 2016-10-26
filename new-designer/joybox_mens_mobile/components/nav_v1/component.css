@@ -1,0 +1,86 @@
+#[[COMPONENT_ID]] .navbar {
+	background-color: {{ settings['[[COMPONENT_ID]]/background_color'] }};
+	border-radius: 0;
+	margin-bottom: 3rem;
+}
+
+#[[COMPONENT_ID]] .navbar-brand {
+	color: {{ settings['logo/color'] }};
+	font-family: {{ settings['logo/font_face'] }};
+	font-size: {{ settings['logo/font_size'] }};
+	margin: 0;
+	line-height: 1;
+	text-align: center;
+}
+
+#[[COMPONENT_ID]] .navbar-brand > img {
+	display: inline-block;
+}
+
+#[[COMPONENT_ID]] .navbar-nav {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+
+	-moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+
+	margin: 0;
+}
+
+#[[COMPONENT_ID]] .navbar a.nav-link,
+#[[COMPONENT_ID]] .navbar button {
+	color: {{ settings['[[COMPONENT_ID]]/link_button/text_color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/link_button/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/link_button/font_size'] }};;
+	letter-spacing: 1px;
+	padding: 8px 12px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#[[COMPONENT_ID]] .navbar a.nav-link:hover,
+#[[COMPONENT_ID]] .navbar a.nav-link:focus,
+#[[COMPONENT_ID]] .navbar a.nav-link:active,
+#[[COMPONENT_ID]] .navbar button:hover,
+#[[COMPONENT_ID]] .navbar button:focus,
+#[[COMPONENT_ID]] .navbar button:active {
+	color: {{ settings['[[COMPONENT_ID]]/link_button/hover_text_color'] }};
+	outline: none;
+}
+
+#[[COMPONENT_ID]] .navbar-nav .dropdown-menu a {
+	color: {{ settings['page_body/color'] }};
+	padding: 10px 0;
+}
+
+#[[COMPONENT_ID]] .navbar-toggler {
+	padding: 1rem;
+}
+
+@media(min-width: 767px) {
+	#[[COMPONENT_ID]] .navbar-nav {
+		-moz-flex-direction: row;
+		-webkit-flex-direction: row;
+		flex-direction: row;
+
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	#[[COMPONENT_ID]] .navbar-nav li {
+		-moz-flex-shrink: 0;
+		-webkit-flex-shrink: 0;
+		flex-shrink: 0;
+	}
+
+	#[[COMPONENT_ID]] .navbar-nav .nav-link {
+		padding: 8px 0 8px 28px;
+	}
+}

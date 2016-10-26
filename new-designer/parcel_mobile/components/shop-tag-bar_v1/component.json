@@ -1,0 +1,8 @@
+{
+	"name": "[[COMPONENT_LABEL]]",
+	"description": "Product Tag Bar",
+	"version": "1",
+	"whitelist": [
+		"shop/listing"
+	]
+}

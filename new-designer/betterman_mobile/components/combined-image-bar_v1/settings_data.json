@@ -1,0 +1,16 @@
+{
+    "[[COMPONENT_ID]]/title": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"How It Works\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+    "[[COMPONENT_ID]]/title_html": "<h2>How It Works</h2>",
+	"[[COMPONENT_ID]]/caption_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"1. Set your preferences\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/caption_1_html": "<h3>1. Set your preferences</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi</p>",
+	"[[COMPONENT_ID]]/image_1": "images/hiw_placeholder_1.jpg",
+	"[[COMPONENT_ID]]/caption_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"2. We curate your box\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/caption_2_html": "<h3>2. We curate your box</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi</p>",
+	"[[COMPONENT_ID]]/image_2": "images/hiw_placeholder_2.jpg",
+	"[[COMPONENT_ID]]/caption_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"3. Enjoy monthly vitamins\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/caption_3_html": "<h3>3. Enjoy monthly vitamins</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi</p>",
+	"[[COMPONENT_ID]]/image_3": "images/hiw_placeholder_3.jpg",
+	"[[COMPONENT_ID]]/button_text": "GET STARTED",
+	"[[COMPONENT_ID]]/button_url": "/subscribe/",
+	"[[COMPONENT_ID]]/show_button": true
+}

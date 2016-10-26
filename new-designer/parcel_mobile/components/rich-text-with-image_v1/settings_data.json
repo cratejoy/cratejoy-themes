@@ -1,0 +1,7 @@
+{
+	"[[COMPONENT_ID]]/image": "",
+	"[[COMPONENT_ID]]/content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Lorem ipsum dolor sit amet\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"6ac1j\",\"text\":\"Lorem ipsum dolor sit amet\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"8p2lm\",\"text\":\"Ad dico atomorum democritum usu. Id dolore laudem contentiones eam. Eum ad putant epicuri, ea vocent laoreet pro.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/content_html": "<h2>Lorem ipsum dolor sit amet</h2>\n<h1>Lorem ipsum dolor sit amet</h1>\n<p>Ad dico atomorum democritum usu. Id dolore laudem contentiones eam. Eum ad putant epicuri, ea vocent laoreet pro.</p>",
+
+	"[[COMPONENT_ID]]/control_variable/image_orientation": "left"
+}

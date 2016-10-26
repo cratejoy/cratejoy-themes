@@ -1,0 +1,20 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "checkout_summary_img",
+			"label": "Cart Summary",
+			"type": "image"
+		},
+		{
+			"id": "checkout_header_text",
+			"label": "Cart Header",
+			"type": "text"
+		},
+		{
+			"id": "checkout_total_text",
+			"label": "Total",
+			"type": "text"
+		}
+	]
+}

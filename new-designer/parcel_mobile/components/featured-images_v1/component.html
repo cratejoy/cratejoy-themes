@@ -1,0 +1,20 @@
+<section id="[[COMPONENT_ID]]" class="container-fluid">
+	<div class="row square-row">
+		<div class="col-md-6 col-xs-12 flex-center text-center hero-content" {{ setting_helpers.image_attributes('[[COMPONENT_ID]]/image_left') }}>
+			<div>
+				{{ settings["[[COMPONENT_ID]]/content_left"] }}
+				<a type="button" class="btn btn-large btn-primary" href="{{ settings['[[COMPONENT_ID]]/left_button_url'] }}">
+					{{ settings["[[COMPONENT_ID]]/left_button_text"] }}
+				</a>
+			</div>
+		</div>
+		<div class="col-md-6 col-xs-12 flex-center text-center hero-content" {{ setting_helpers.image_attributes('[[COMPONENT_ID]]/image_right') }}>
+			<div>
+				{{ settings["[[COMPONENT_ID]]/content_right"] }}
+				<a type="button" class="btn btn-large btn-primary" href="{{ settings['[[COMPONENT_ID]]/right_button_url'] }}">
+					{{ settings["[[COMPONENT_ID]]/right_button_text"] }}
+				</a>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,192 @@
+#[[COMPONENT_ID]].footer {
+	background-color: {{ settings['[[COMPONENT_ID]]/background_color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/body/font_face'] }};
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+#[[COMPONENT_ID]] .footer-social {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+#[[COMPONENT_ID]] .footer-social a {
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#[[COMPONENT_ID]] .footer-social svg path {
+	fill: {{ settings['[[COMPONENT_ID]]/social_icons_color'] }};
+}
+
+#[[COMPONENT_ID]] .footer-social a:hover svg path,
+#[[COMPONENT_ID]] .footer-social a:focus svg path,
+#[[COMPONENT_ID]] .footer-social a:active svg path {
+	fill: {{ settings['[[COMPONENT_ID]]/social_icons_hover_color'] }};
+}
+
+#[[COMPONENT_ID]].footer .toggler-container {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+#[[COMPONENT_ID]].footer .navbar-toggler {
+	color: {{ settings['primary_color'] }};
+	font-size: {{ settings['primary_button/font_size'] }};
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+#[[COMPONENT_ID]] .footer-cc {
+	border-top: 1px solid #e1e1e1;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+#[[COMPONENT_ID]] .footer-cc img {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#[[COMPONENT_ID]] .footer-cc p,
+#[[COMPONENT_ID]] .footer-tributes p {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: 0;
+}
+
+#[[COMPONENT_ID]] .footer-tributes p a {
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+	padding: 0;
+}
+
+#[[COMPONENT_ID]] .footer-tributes p a:hover,
+#[[COMPONENT_ID]] .footer-tributes p a:focus,
+#[[COMPONENT_ID]] .footer-tributes p a:active {
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+	text-decoration: none;
+}
+
+#[[COMPONENT_ID]] .footer-directory {
+	text-align: center;
+}
+
+#[[COMPONENT_ID]] .footer-list {
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+#[[COMPONENT_ID]] .footer-list .footer-item {
+	-webkit-flex: 0 0 50%;
+	-moz-flex: 0 0 50%;
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+
+	padding: 8px 18px;
+	position: relative;
+}
+
+#[[COMPONENT_ID]] .footer-list .footer-link {
+	color: {{ settings['[[COMPONENT_ID]]/link_button/text_color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/link_button/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/link_button/font_size'] }};
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+#[[COMPONENT_ID]] .footer-list .footer-link:hover,
+#[[COMPONENT_ID]] .footer-list .footer-link:focus,
+#[[COMPONENT_ID]] .footer-list .footer-link:active {
+	color: {{ settings['[[COMPONENT_ID]]/link_button/hover_text_color'] }};
+	text-decoration: none;
+}
+
+@media (max-width: 767px) {
+	#[[COMPONENT_ID]] .col-sm-12,
+	#[[COMPONENT_ID]] .col-xs-12 {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 auto;
+		-ms-flex: 0 0 auto;
+		flex: 0 0 auto;
+	}
+}
+
+@media (min-width: 768px) {
+	#[[COMPONENT_ID]].footer {
+		-webkit-align-items: flex-start;
+		-moz-align-items: flex-start;
+		-ms-align-items: flex-start;
+		align-items: flex-start;
+
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	#[[COMPONENT_ID]] .footer-directory {
+		-webkit-order: 1;
+		-moz-order: 1;
+		-ms-order: 1;
+		order: 1;
+
+		text-align: left;
+	}
+	#[[COMPONENT_ID]] .footer-social {
+		-webkit-order: 2;
+		-moz-order: 2;
+		-ms-order: 2;
+		order: 2;
+
+		padding-top: 0;
+		padding-bottom: 0;
+		text-align: right;
+	}
+	#[[COMPONENT_ID]] .footer-cc {
+		-webkit-order: 3;
+		-moz-order: 3;
+		-ms-order: 3;
+		order: 3;
+	}
+	#[[COMPONENT_ID]] .footer-cc p {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 992px) {
+	#[[COMPONENT_ID]] .footer-cc {
+		-webkit-order: 2;
+		-moz-order: 2;
+		-ms-order: 2;
+		order: 2;
+
+		border-top: none;
+	}
+	#[[COMPONENT_ID]] .footer-cc p {
+		display: block;
+	}
+	#[[COMPONENT_ID]] .footer-social {
+		-webkit-order: 3;
+		-moz-order: 3;
+		-ms-order: 3;
+		order: 3;
+	}
+}

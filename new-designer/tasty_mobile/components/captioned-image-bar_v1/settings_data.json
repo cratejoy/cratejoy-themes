@@ -1,0 +1,19 @@
+{
+	"[[COMPONENT_ID]]/background_color": "#FFFFFF",
+	"[[COMPONENT_ID]]/tile_background_color": "#FFFFFF",
+	"[[COMPONENT_ID]]/caption_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Team Member\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/caption_1_html": "<p>Team Member</p>",
+	"[[COMPONENT_ID]]/caption_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Team Member\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/caption_2_html": "<p>Team Member</p>",
+	"[[COMPONENT_ID]]/caption_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Team Member\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/caption_3_html": "<p>Team Member</p>",
+	"[[COMPONENT_ID]]/image_1": "images/team_placeholder.png",
+	"[[COMPONENT_ID]]/image_2": "images/team_placeholder.png",
+	"[[COMPONENT_ID]]/image_3": "images/team_placeholder.png",
+	"[[COMPONENT_ID]]/label_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Role\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/label_1_html": "<h3>Role</h3>",
+	"[[COMPONENT_ID]]/label_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Role\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/label_2_html": "<h3>Role</h3>",
+	"[[COMPONENT_ID]]/label_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Role\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/label_3_html": "<h3>Role</h3>"
+}

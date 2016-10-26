@@ -1,0 +1,181 @@
+#[[COMPONENT_ID]] {
+	border-bottom: 4px solid {{ settings['[[COMPONENT_ID]]/border_color'] }};
+	padding: 0;
+}
+
+#[[COMPONENT_ID]] .navbar {
+	background-color: {{ settings['[[COMPONENT_ID]]/background_color'] }};
+	border-radius: 0;
+	padding: 0;
+
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+#[[COMPONENT_ID]] .navbar a:hover,
+#[[COMPONENT_ID]] .navbar a:focus,
+#[[COMPONENT_ID]] .navbar a:active {
+	color: {{ settings['[[COMPONENT_ID]]/link_button/hover_text_color'] }};
+}
+
+#[[COMPONENT_ID]] .navbar-brand {
+	color: {{ settings['[[COMPONENT_ID]]/logo_button/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/logo_button/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/logo_button/font_size'] }};
+	margin: 0;
+	max-width: 100%;
+	padding: 15px;
+	text-align: center;
+
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+
+	-webkit-flex-grow: 1;
+	-moz-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+
+	-webkit-flex-shrink: 0;
+	-moz-flex-shrink: 0;
+	-ms-flex-shrink: 0;
+	flex-shrink: 0;
+}
+
+#[[COMPONENT_ID]] .navbar-brand img {
+	max-width: 100%;
+}
+
+#[[COMPONENT_ID]] .navbar .navbar-toggler {
+	background-color: {{ settings['primary_button/color'] }};
+	border-radius: 0;
+	color: {{ settings['primary_button/text_color'] }};
+	font-size: {{ settings['primary_button/font_size'] }};
+	letter-spacing: 0.071em;
+	padding: 15px;
+	text-transform: uppercase;
+}
+
+#[[COMPONENT_ID]] .navbar .navbar-toggler:hover,
+#[[COMPONENT_ID]] .navbar .navbar-toggler:focus,
+#[[COMPONENT_ID]] .navbar .navbar-toggler:active {
+	background-color: {{ settings['primary_button/hover_color'] }};
+	color: {{ settings['primary_button/hover_text_color'] }};
+}
+
+#[[COMPONENT_ID]] .navbar-nav {
+	background-color: {{ settings['primary_button/color'] }};
+	margin: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+#[[COMPONENT_ID]] .navbar-nav li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#[[COMPONENT_ID]] .navbar-nav .nav-link {
+	color: {{ settings['primary_button/text_color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/link_button/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/link_button/font_size'] }};;
+	letter-spacing: 0.071em;
+	padding: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+	#[[COMPONENT_ID]] {
+		border-width: 0;
+	}
+	#[[COMPONENT_ID]] .dropdown-menu {
+		background-color: {{ settings['primary_button/color'] }};
+	}
+}
+
+@media (min-width: 768px) {
+	#[[COMPONENT_ID]] .navbar {
+		padding: 15px;
+		padding-bottom: 0;
+
+		-webkit-align-items: center;
+		-moz-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	#[[COMPONENT_ID]] .navbar-brand {
+		padding: 0;
+		padding-bottom: 15px;
+	}
+	#[[COMPONENT_ID]] .navbar-toggleable-sm {
+		-webkit-flex-shrink: 1;
+		-moz-flex-shrink: 1;
+		-ms-flex-shrink: 1;
+		flex-shrink: 1;
+
+		-webkit-flex-grow: 2;
+		-moz-flex-grow: 2;
+		-ms-flex-grow: 2;
+		flex-grow: 2;
+	}
+	#[[COMPONENT_ID]] .navbar-nav {
+		background-color: {{ settings['[[COMPONENT_ID]]/background_color'] }};
+		padding: 0;
+		padding-bottom: 15px;
+		
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+
+		-webkit-justify-content: space-around;
+		-moz-justify-content: space-around;
+		-ms-justify-content: space-around;
+		justify-content: space-around;
+	}
+	#[[COMPONENT_ID]] .navbar-nav li {
+		padding: 0;
+	}
+	#[[COMPONENT_ID]] .navbar-nav .nav-link {
+		color: {{ settings['[[COMPONENT_ID]]/link_button/text_color'] }};
+	}
+	#[[COMPONENT_ID]] .navbar a:hover,
+	#[[COMPONENT_ID]] .navbar a:focus,
+	#[[COMPONENT_ID]] .navbar a:active {
+		color: {{ settings['[[COMPONENT_ID]]/logo_button/hover_color'] }};
+	}
+}

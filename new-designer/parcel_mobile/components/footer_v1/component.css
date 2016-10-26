@@ -1,0 +1,117 @@
+#[[COMPONENT_ID]].footer {
+	background-color: {{ settings['[[COMPONENT_ID]]/background_color'] }};
+	padding-top: 22px;
+	padding-bottom: 22px;
+}
+
+#[[COMPONENT_ID]],
+#[[COMPONENT_ID]] p,
+#[[COMPONENT_ID]] h1,
+#[[COMPONENT_ID]] h2,
+#[[COMPONENT_ID]] h3 {
+	font-family: {{ settings['[[COMPONENT_ID]]/body/font_face'] }};
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+}
+
+#[[COMPONENT_ID]] h3 {
+	margin-bottom: 10px;
+}
+
+#[[COMPONENT_ID]],
+#[[COMPONENT_ID]] p {
+	font-weight: lighter;
+}
+
+/* Navigation list */
+
+#[[COMPONENT_ID]] .footer-list .footer-link {
+	color: {{ settings['[[COMPONENT_ID]]/link_button/text_color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/link_button/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/page_body/font_size'] }};
+	text-transform: lowercase;
+}
+
+#[[COMPONENT_ID]] .footer-list .footer-link:hover,
+#[[COMPONENT_ID]] .footer-list .footer-link:focus,
+#[[COMPONENT_ID]] .footer-list .footer-link:active {
+	color: {{ settings['[[COMPONENT_ID]]/link_button/hover_text_color'] }};
+	text-decoration: none;
+}
+
+#[[COMPONENT_ID]] .footer-list .footer-item {
+	padding: 3px 0;
+}
+
+/* follow us column */
+#[[COMPONENT_ID]] .footer-follow-us svg path {
+	fill: {{ settings['[[COMPONENT_ID]]/social_icons_color'] }};
+}
+
+#[[COMPONENT_ID]] .footer-follow-us a:hover svg path,
+#[[COMPONENT_ID]] .footer-follow-us a:focus svg path,
+#[[COMPONENT_ID]] .footer-follow-us a:active {
+	fill: {{ settings['[[COMPONENT_ID]]/link_button/hover_text_color'] }};
+}
+
+#[[COMPONENT_ID]] .footer-follow-us {
+	letter-spacing: 1px;
+	text-align: center;
+
+	border-top: 1px solid;
+	border-color: {{ settings['[[COMPONENT_ID]]/border_color'] }};
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#[[COMPONENT_ID]] .footer-follow-us .social-icons-row {
+	justify-content: center;
+	margin-top: 18px;
+	margin-bottom: 15px;
+}
+
+#[[COMPONENT_ID]] .footer-follow-us .social-icons-row a {
+	margin: 0 8px;
+}
+
+#[[COMPONENT_ID]] .footer-follow-us p {
+	padding-bottom: 15px;
+	margin: 0;
+}
+
+/* contact us column */
+#[[COMPONENT_ID]] .footer-contact-us a {
+	display: inline-block;
+}
+
+#[[COMPONENT_ID]] .footer-bottom {
+	border-top: 1px solid;
+	border-color: {{ settings['[[COMPONENT_ID]]/border_color'] }};
+}
+
+#[[COMPONENT_ID]] .footer-bottom > div {
+	margin-top: 22px;
+}
+
+@media (min-width: 768px) {
+	#[[COMPONENT_ID]] .footer-contact-us {
+		-webkit-order: 3;
+		-moz-order: 3;
+		-ms-order: 3;
+		order: 3;
+	}
+
+	#[[COMPONENT_ID]] .footer-follow-us {
+		border-top: none;
+		padding-top: 0;
+	}
+
+	#[[COMPONENT_ID]] .footer-bottom {
+		text-align: left;
+	}
+
+	#[[COMPONENT_ID]] .footer-cards {
+		float: right;
+		padding-top: 0;
+	}
+}

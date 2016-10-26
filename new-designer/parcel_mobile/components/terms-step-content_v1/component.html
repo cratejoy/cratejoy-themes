@@ -1,0 +1,45 @@
+<section id="[[COMPONENT_ID]]" class="container-fluid">
+	<div class="row sf-grid">
+		{% for term in flow_step.terms %}
+		{% if term.enabled %}
+		<div class="col-md-4 col-xs-12 sf-grid__container">
+			<div class="sf-item">
+				<div class="sf-item__content">
+					<a href="{{ term | subscribe_flow_url }}">
+						{#
+							Uses a placeholder image for every term. This can be changed to use a different image for each term using the visual designer.
+						#}
+						{{ term | object_img_tag(default_img_path=settings['[[COMPONENT_ID]]/term_placeholder_image'], css_class="") }}
+					</a>
+
+					<!-- Product Name -->
+					<h3 class="sf-item__name">{{ term.name }}</h3>
+
+					<p class="sf-item__description">
+						{#
+							Renders the term description if one exists, otherwise uses the default string
+						#}
+						{{ term.description | default("", True) }}
+					</p>
+				</div>
+				<div class="sf-item__footer">
+					<h3>
+						{#
+							Display the term price formatted properly for the current store currency
+						#}
+						<p>{{ term.price | currency }}</p>
+					</h3>
+
+					{#
+						Creates a link which advances the subscribe flow to the next step, choosing the current product
+					#}
+					<a type="button" href="{{ term | subscribe_flow_url }}" class="btn btn-large btn-primary">
+						{{ settings['[[COMPONENT_ID]]/terms_step_term_button_text'] }}
+					</a>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+		{% endfor %}
+	</div>
+</section>

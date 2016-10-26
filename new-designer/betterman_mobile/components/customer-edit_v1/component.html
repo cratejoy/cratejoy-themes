@@ -1,0 +1,43 @@
+{% include "components/form_feedback.html" %}
+
+<section class="account-header">
+	<h2 class="text-center">
+		{% if forms.title %}
+		{{ forms.title }}
+		{% else %}
+		Update your information
+		{% endif %}
+	</h2>
+	{% if forms.title == 'Your Addresses' %}
+		<a href="/customer/edit/ship_address?address_id=new" class="btn {{ btn_class }} btn-primary cj-edit-address-add pull-right hidden-md-down" id="your-addresses-add">Add an Address</a>
+		<a href="/customer/edit/ship_address?address_id=new" class="btn {{ btn_class }} btn-primary cj-edit-address-add hidden-lg-up" id="your-addresses-add-xs">Add an Address</a>
+	{% endif %}
+</section>
+
+<section class="errors">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+			{% with messages = get_flashed_messages() %}
+				{% if messages %}
+					{% for message in messages %}
+						<div class="alert alert-danger">
+							{{ message | safe }}
+						</div>
+					{% endfor %}
+				{% endif %}
+			{% endwith %}
+		</div>
+	</div>
+</section>
+
+<section class="my-account">
+	<div class="form-container">
+		<div class="row content">
+			<div class="col-lg-8 col-lg-offset-2 col-xs-12">
+				{{ customer_helper.edit_basic_account_info(btn_class="btn-primary") }}
+				{{ customer_helper.edit_payment_info(btn_class="btn-primary") }}
+				{{ customer_helper.edit_address_info(btn_class="btn-primary") }}
+			</div>
+		</div>
+	</div>
+</section>

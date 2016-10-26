@@ -1,0 +1,124 @@
+{% macro cycle_abbr(product) -%}
+	{% if product.billing.rebill_months == 1 -%}
+		mo
+	{% elif product.billing.rebill_weeks == 1 -%}
+		wk
+	{% else -%}
+		cycle
+	{% endif %}
+{% endmacro %}
+
+{% set cart = active_cart() %}
+
+<section id="[[COMPONENT_ID]]" class="component-cart">
+	<div class="row cart-thead cart-table hidden-sm-down">
+		<div class="col-md-6 cart-td">
+			<h3 class="heading">product</h3>
+		</div>
+		<div class="col-md-2 cart-td">
+			<h3 class="heading">price</h3>
+		</div>
+		<div class="col-md-2 cart-td">
+			<h3 class="heading">quantity</h3>
+		</div>
+		<div class="col-md-2 cart-td">
+			<h3 class="heading">total</h3>
+		</div>
+	</div>
+
+	{% if cart.products | length > 0 %}
+		{% for cart_product in cart.products %}
+
+		{% set instance = cart_product.instance %}
+		{% set product = instance.product %}
+		<div class="row cart-item cart-table flex-center" id="cart-product-{{ cart_product.id }}">
+			<div class="product-main col-md-6 cart-td">
+				<div class="product-label row flex-center">
+					<figure class="col-xs-4 product-image">
+						<a href="#">
+							{{ product | object_img_tag(height=90, width=90, title='N/A', fgcolor='#FFFFFF', bgcolor='#C39D6A') }}
+						</a>
+					</figure>
+					<div class="col-xs-8 product-info">
+						<h3 class="heading"><a href="#">{{ product.name }}</a></h3>
+						{% if cart_product.subscription_type_term %}
+							{% set is_gifted = cart.product_is_gifted(cart_product) %}
+
+							{% set stt = cart_product.subscription_type_term %}
+								<p>{{ stt.name|title }} Plan @ {% if is_gifted %}Gifted{% else %}{{ (cart_product.price / stt.num_cycles) | currency }}{% endif %}/{{ cycle_abbr(instance.product) }}</p>
+							{% if stt.subscription_type.autorenew and not is_gifted %}
+								<p>{{ stt.num_cycles }} deliver{% if stt.num_cycles==1 %}y{% else %}ies{% endif %}, auto-renewing.</p>
+							{% else %}
+								<p>{{ stt.num_cycles }} deliver{% if stt.num_cycles==1 %}y{% else %}ies{% endif %}, does not auto-renew.</p>
+							{% endif %}
+						{% endif %}
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 cart-td">
+				<div class="product-label row">
+					<span class="info col-xs-4 hidden-md-up">Price</span>
+					<div class="meta col-md-12 col-xs-8">
+						{% if product.single_purchasable %}
+							{% set price = instance.price %}
+						{% else %}
+							{% set stt = cart_product.subscription_type_term %}
+							{% set st = stt.subscription_type %}
+							{% set price = instance.calc_price(st, stt) %}
+						{% endif %}
+						<p>{{ price | currency }} USD</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 cart-td">
+				<div class="product-label row">
+					<span class="info col-xs-4 hidden-md-up">Quantity</span>
+					<div class="meta col-md-12 col-xs-8">
+						{% if product.single_purchasable %}
+							<select name="product-qty-{{ cart_product.id }}" class="product-qty-select form-control" data-cart-product="{{ cart_product.id}}">
+								{% for i in range(10) %}
+								<option value="{{ i + 1 }}" {%if i + 1 == cart_product.quantity%}selected{%endif%}>
+									{{ i + 1 }}
+								</option>
+								{% endfor %}
+							</select>
+						{% else %}
+							{{ cart_product.quantity }}
+						{% endif %}
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 cart-td">
+				<div class="product-label row">
+					<span class="info col-xs-4 hidden-md-up">Total</span>
+					<div class="meta col-md-12 col-xs-8">
+						<p class="cart-product-price">{{ cart_product.price | currency }} USD</p>
+					</div>
+				</div>
+			</div>
+
+			<button type="button" data-cart-product="{{ cart_product.id }}" class="product-rem-btn close"><i class="icon icon-remove"></i><span class="sr-only">Close</span></button>
+		</div>
+		{% endfor %}
+	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1 text-center">
+			<div class="cart-subtotal">
+				<h3 class="title">Subtotal</h3>
+				<h1 class="price" id="cart-subtotal-price">
+					{{ cart.product_total | currency }} {{ store | currency_code }}
+				</h1>
+				<p>Subtotal excludes Shipping, Tax & Discounts</p>
+			</div>
+			<a href="/checkout" class="btn btn-large btn-primary">CHECKOUT</a>
+		</div>
+	</div>
+	{% else %}
+	<div class="row cart-table" role="alert">
+		<div class="col-xs-12 cart-td">
+			<div class="product-label">
+				Your cart is empty!
+			</div>
+		</div>
+	</div>
+	{% endif %}
+</section>

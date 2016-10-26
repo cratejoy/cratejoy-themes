@@ -1,0 +1,62 @@
+#[[COMPONENT_ID]] {
+	background-color: {{ settings['[[COMPONENT_ID]]/background_color'] }};
+}
+
+#[[COMPONENT_ID]] .content-row {
+	margin: 0;
+
+	-webkit-justify-content: space-around;
+	-moz-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+}
+
+#[[COMPONENT_ID]] .content {
+	background-color: {{ settings['[[COMPONENT_ID]]/tile_background_color'] }};
+	border: 5px solid {{ settings['[[COMPONENT_ID]]/tile_border_color'] }};
+	margin: 15px 0;
+	padding: 25px;
+
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+#[[COMPONENT_ID]] .square-image {
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	height: 200px;
+	margin: 0 0 15px 0;
+	width: 200px;
+}
+
+#[[COMPONENT_ID]] h1 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_1/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_1/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_1/font_size'] }};
+}
+
+#[[COMPONENT_ID]] h2 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_2/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_2/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_2/font_size'] }};
+}
+
+#[[COMPONENT_ID]] h3 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_3/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_3/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_3/font_size'] }};
+}
+
+#[[COMPONENT_ID]] p {
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/body/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/body/font_size'] }};
+}
+
+@media (min-width: 768px) {
+	#[[COMPONENT_ID]] .content {
+		margin: 15px;
+	}
+}

@@ -1,0 +1,42 @@
+#[[COMPONENT_ID]] > header {
+	margin-bottom: 40px;
+}
+#[[COMPONENT_ID]] .item {
+	position: relative;
+	margin-bottom: 30px;
+}
+#[[COMPONENT_ID]] .item > .pull-left {
+	margin-right: 20px;
+	width: 65px;
+}
+#[[COMPONENT_ID]] .item .meta {
+	margin: 0;
+	line-height: 120%;
+}
+#[[COMPONENT_ID]] .item .media-heading {
+	padding-right: 15px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#[[COMPONENT_ID]] .item .close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	color: #fff;
+	text-shadow: none;
+}
+#[[COMPONENT_ID]] .total {
+	margin-bottom: 25px;
+	padding: 25px 0;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+#[[COMPONENT_ID]] .total .dt {
+	text-align: right;
+}
+#[[COMPONENT_ID]] .total .strong {
+	font-size: 15px;
+}

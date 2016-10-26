@@ -1,0 +1,32 @@
+{
+	"global": [
+		{
+			"source": "logo",
+			"label": "Logo"
+		}
+	],
+	"index": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Logo"
+			}
+		},
+		{
+			"source": "image_v1",
+			"label": "Image"
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Launch Text"
+		},
+		{
+			"source": "email-form",
+			"label": "Email Form"
+		},
+		{
+			"source": "social-links",
+			"label": "Social Links"
+		}
+	]
+}

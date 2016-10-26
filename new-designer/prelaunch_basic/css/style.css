@@ -1,0 +1,150 @@
+/* Globals
+------------------------------*/
+
+/* Hides test mode notices */
+
+#cj_test_banner,
+#cj_overlay,
+#cj_overlay .cj-message {
+	display: none;
+}
+
+/* Globals
+------------------------------*/
+
+html, body {
+	height: 100%;
+}
+body {
+	background-color: {{ settings['background_color'] }};
+	font-size: 17px;
+	font-family: {{ settings['page_body/font_face'] }};
+	line-height: 1.5;
+}
+@media screen and (min-width: 881px) {
+	body {
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+}
+.viewport {
+	width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: {{ settings['page_heading/font_face'] }};
+}
+h1 {
+	font-size: 48px;
+}
+h2 {
+  font-size: 38px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4, h5, h6 {
+  font-size: 22px;
+}
+a {
+	color: {{ settings['highlight_color'] }};
+}
+.pagecontent {
+	background: #fff;
+	max-width: 780px;
+	padding: 15px 30px;
+	margin: 0 auto;
+}
+@media screen and (min-width: 881px) {
+	.pagecontent {
+		width: 780px;
+		padding: 30px 60px;
+	}
+}
+
+/* Forms
+--------------------------------------------------------------*/
+
+label {
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+}
+
+input,
+select,
+textarea {
+	font-family: {{ settings['page_body/font_face'] }};
+	padding: .35rem 1rem;
+}
+.btn,
+.btn-primary,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: none;
+	background-color: {{ settings['highlight_color'] }};
+	color: #fff;
+	border-radius: 3px;
+	box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
+	-webkit-appearance: none;
+
+}
+.btn:hover,
+.btn-primary:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+
+}
+button:focus,
+.btn:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+.btn:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+.btn:active:focus {
+	background-color: {{ settings['highlight_color'] }};
+	box-shadow: inset 0 2px rgba(0, 0, 0, 0.15);
+	outline: none;
+}
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"],
+input[type="search"],
+input[type="url"],
+textarea {
+	background-color: #fafafa;
+	border: none;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.025), inset 0 1px 1px rgba(0, 0, 0, 0.2);
+	color: rgba(0, 0, 0, 0.75);
+	display: block;
+	width: 100%;
+	border-radius: 3px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+	padding: .35rem 1rem;
+	background-color: #fff;
+	outline: none;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(0, 0, 0, 0.2);
+}

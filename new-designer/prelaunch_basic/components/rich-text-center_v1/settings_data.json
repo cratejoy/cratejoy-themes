@@ -1,0 +1,4 @@
+{
+	"[[COMPONENT_ID]]/content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"We're Getting Ready to Launch\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"We're excited about our new subscription box. We hope you are too! Join our mailing list to stay in the loop.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/content_html": "<h3>We're Getting Ready to Launch</h3>\n<p>We're excited about our new subscription box. We hope you are too! Join our mailing list to stay in the loop.</p>"
+}

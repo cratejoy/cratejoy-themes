@@ -1,0 +1,9 @@
+{
+	"[[COMPONENT_ID]]/title": "{\"entityMap\":{},\"blocks\":[{\"key\":\"68t2d\",\"text\":\"As Seen In\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/title_html": "<p>As Seen In</p>",
+	"[[COMPONENT_ID]]/control_variable/image_1": "images/logo-placeholder-1.png",
+	"[[COMPONENT_ID]]/control_variable/image_2": "images/logo-placeholder-2.png",
+	"[[COMPONENT_ID]]/control_variable/image_3": "images/logo-placeholder-3.png",
+	"[[COMPONENT_ID]]/control_variable/image_4": "images/logo-placeholder-4.png",
+	"[[COMPONENT_ID]]/body/font_size": "18px"
+}

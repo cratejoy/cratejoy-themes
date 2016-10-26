@@ -1,0 +1,8 @@
+{
+	"name": "[[COMPONENT_LABEL]]",
+	"description": "Cart",
+	"version": "1",
+	"whitelist": [
+		"cart"
+	]
+}

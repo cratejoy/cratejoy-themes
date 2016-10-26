@@ -1,0 +1,55 @@
+#[[COMPONENT_ID]] .shop-listing-item {
+	color: {{ settings['page_body/color'] }};
+}
+
+#[[COMPONENT_ID]] .shop-listing-item:hover,
+#[[COMPONENT_ID]] .shop-listing-item:focus {
+	text-decoration: none;
+}
+
+#[[COMPONENT_ID]] .shop-listing-item__image {
+	background-size: cover;
+	background-position: center center;
+}
+
+#[[COMPONENT_ID]] .shop-listing-item__name {
+	margin: 10px 0;
+}
+
+#[[COMPONENT_ID]] .shop-listing-item__price {
+	margin: 10px 0 30px;
+}
+
+#[[COMPONENT_ID]] .product_paging {
+	-webkit-display: flex;
+	-ms-display: flex;
+	display: flex;
+	justify-content: center;
+
+	margin: 20px 0;
+}
+
+#[[COMPONENT_ID]] .product_page a,
+#[[COMPONENT_ID]] .next_page a,
+#[[COMPONENT_ID]] .prev_page a {
+	display: block;
+	padding: 12px 15px;
+	margin: 0 2px;
+	border: 1px solid #E0E0E0;
+	border-radius: 5px;
+}
+
+#[[COMPONENT_ID]] .product_page.active a,
+#[[COMPONENT_ID]] .product_page a:hover,
+#[[COMPONENT_ID]] .product_page a:focus,
+#[[COMPONENT_ID]] .next_page a:hover,
+#[[COMPONENT_ID]] .next_page a:focus,
+#[[COMPONENT_ID]] .prev_page a:hover,
+#[[COMPONENT_ID]] .prev_page a:focus {
+	text-decoration: none;
+	background-color: #F9F9F9;
+}
+
+#[[COMPONENT_ID]] .product_page.active a {
+	color: black;
+}

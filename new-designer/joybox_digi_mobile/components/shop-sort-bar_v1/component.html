@@ -1,0 +1,21 @@
+<section id="[[COMPONENT_ID]]" class="container">
+	<div class="component-shop-sort row flex-center">
+		<ul class="nav nav-pills">
+			<li class="nav-item">
+				<a href="{{ base_url }}?sort=" class="nav-link {% if not sort %}active{% endif %}">
+					Most Recent
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="{{ base_url }}?sort=high" class="nav-link {% if sort == 'high' %}active{% endif %}">
+					Price: High to Low
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="{{ base_url }}?sort=low" class="nav-link {% if sort == 'low' %}active{% endif %}">
+					Price: Low to High
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>

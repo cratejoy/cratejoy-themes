@@ -1,0 +1,126 @@
+<section id="[[COMPONENT_ID]]" class="container-fluid">
+	<div class="shop-product row">
+		<div class="col-md-6 col-xs-12">
+			<ul id="thumbs">
+				{% if product.images %}
+				{% for img in product.images %}
+				<li>
+					{{ product | object_img_tag(default_img_path=settings['product_placeholder_image'], index=loop.index0, ref=product.images[loop.index0].url) }}
+				</li>
+				{% endfor %}
+				{% else %}
+				<li>
+					{{ product | object_img_tag(default_img_path=settings['product_placeholder_image']) }}
+				</li>
+				{% endif %}
+			</ul>
+		</div>
+		<div class="col-md-6 col-xs-12" itemscope itemtype="http://schema.org/Product">
+			<h3 class="shop-product__name" itemprop="name">{{ product.name }}</h3>
+
+			{% set min = product.calc_min_ecom_price() %}
+			{% set max = product.calc_max_ecom_price() %}
+			{% if max == min %}
+			<h3 class="shop-product__price">{{ min | currency }}</h3>
+			{% else %}
+			<h3 class="shop-product__price">{{ min | currency }} - {{ max | currency }}</h3>
+			{% endif %}
+
+			<!-- Add to cart form -->
+			<form action="/cart/add" method="POST" role="form" class="shop-product__add-to-cart" id="product-form">
+				{% for variant in product | get_undeleted_variants %}
+				{% if variant.name %}
+				<fieldset class="form-group">
+					<label for="product-variant:{{ variant.name }}">{{ variant.name.lstrip() | capitalize }}</label>
+					<select class="form-control" name="variant:{{ variant.name }}" id="product-variant:{{ variant.name }}">
+						{% for value in variant.values %}
+						<option value="{{ value.value }}">{{ value.value.lstrip() | capitalize }}</option>
+						{% endfor %}
+					</select>
+				</fieldset>
+				{% endif %}
+				{% endfor %}
+
+				{% set quantity = [1,2,3,4,5,6,7,8,9,10] %}
+				<fieldset class="form-group">
+					<label for="product-quantity">{{ settings['[[COMPONENT_ID]]/quantity_label'] }}</label>
+					<select class="form-control" name="quantity" id="product-quantity">
+						{% for q in quantity %}
+						<option>{{q}}</option>
+						{% endfor %}
+					</select>
+				</fieldset>
+				<input type="hidden" name="product_id" value="{{ product.id }}" />
+				<input type="hidden" name="product_name" value="{{ product.name }}" />
+
+				<div class="out-of-stock"></div>
+				<button type="submit" class="btn btn-primary">{{ settings['[[COMPONENT_ID]]/add_to_cart_button'] }}</button>
+			</form>
+
+			<!-- Review summary + Share buttons (desktop only) -->
+			<div class="shop-product__review-share-desktop">
+				<div class="row hidden-sm-down">
+					{% if reviews_data %}
+					<div class="col-xs-6 rating">
+						<div class="product-avg-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+							<span style="display: none;" itemprop="ratingValue">{{ reviews_data.avg_rating | float }}</span>
+							<span class="product-rating" data-score="{{ reviews_data.avg_rating | float}}"></span>
+							<span itemprop="ratingCount">{{ reviews_data.reviews | length }}</span> reviews
+						</div>
+						<a href="#write-a-review" class="btn btn-small btn-empty">{{ settings['[[COMPONENT_ID]]/write_review_button'] }}</a>
+					</div>
+					{% endif %}
+
+					<div class="col-xs-6">
+						<h3>{{ settings['[[COMPONENT_ID]]/share_label'] }}</h3>
+						<div>
+							<span class="fb-share-button" data-layout="button_count"></span>
+							<span>
+								<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ product | product_ecom_url(http=True) }}" data-text="Check out {{product.name}}!">Tweet</a>
+								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+							</span>
+							<span class="pinterest-share-button">
+								<a href="//www.pinterest.com/pin/create/button/?url={{ product | product_ecom_url(http=True) }}&amp;{%if product.images%}media={{ product.images[0].url[2:]}}&amp;{%endif%}description=Next%20stop%3A%20Pinterest" data-pin-do="buttonPin" data-pin-config="beside" data-pin-color="red"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" /></a>
+								<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{% if product.description %}
+			<h3>{{ settings['[[COMPONENT_ID]]/product_description_label'] }}</h3>
+			<p itemprop="description">{{ product.description | safe}}</p>
+			{% endif %}
+
+			<!-- Review summary + Share buttons (mobile only) -->
+			<div class="row hidden-md-up">
+				<div class="col-xs-12 text-center">
+					<h3>{{ settings['[[COMPONENT_ID]]/share_label'] }}</h3>
+					<div>
+						<span class="fb-share-button" data-layout="button_count"></span>
+						<span>
+							<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ product | product_ecom_url(http=True) }}" data-text="Check out {{product.name}}!">Tweet</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+						</span>
+						<span class="pinterest-share-button">
+							<a href="//www.pinterest.com/pin/create/button/?url={{ product | product_ecom_url(http=True) }}&amp;{%if product.images%}media={{ product.images[0].url[2:]}}&amp;{%endif%}description=Next%20stop%3A%20Pinterest" data-pin-do="buttonPin" data-pin-config="beside" data-pin-color="red"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" /></a>
+							<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+						</span>
+					</div>
+				</div>
+
+				{% if reviews_data %}
+				<div class="col-xs-12 rating text-center">
+					<div class="product-avg-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+						<span style="display: none;" itemprop="ratingValue">{{ reviews_data.avg_rating | float }}</span>
+						<span class="product-rating" data-score="{{ reviews_data.avg_rating | float}}"></span>
+						<span itemprop="ratingCount">{{ reviews_data.reviews | length }}</span> reviews
+					</div>
+					<a href="#write-a-review" class="btn btn-small btn-empty">{{ settings['[[COMPONENT_ID]]/write_review_button'] }}</a>
+				</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</section>

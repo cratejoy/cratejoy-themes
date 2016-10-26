@@ -1,0 +1,8 @@
+#[[COMPONENT_ID]].survey h2 {
+	margin-bottom: 1em;
+}
+
+#[[COMPONENT_ID]].survey .radio input[type="radio"],
+#[[COMPONENT_ID]].survey .checkbox input[type="checkbox"] {
+	margin-right: 0.5em;
+}

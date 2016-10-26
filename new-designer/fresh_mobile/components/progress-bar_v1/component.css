@@ -1,0 +1,37 @@
+#[[COMPONENT_ID]] {
+	background-color: {{ settings['[[COMPONENT_ID]]/background_color'] }};
+	padding-top: 14px;
+	padding-bottom: 0;
+}
+
+#[[COMPONENT_ID]] .progress-bar {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+@media(min-width: 768px) {
+	#[[COMPONENT_ID]] .progress-bar {
+		display: flex;
+		justify-content: flex-start;
+	}
+}
+
+#[[COMPONENT_ID]] .progress-bar .step {
+	color: {{ settings['primary_color'] }};
+	text-transform: lowercase;
+	padding-bottom: 14px;
+}
+
+#[[COMPONENT_ID]] .progress-bar .step .separator {
+	opacity: 0.5;
+	margin: 0 20px;
+}
+
+#[[COMPONENT_ID]] .progress-bar .step .title {
+	opacity: 0.5;
+}
+
+#[[COMPONENT_ID]] .progress-bar .step.active .title {
+	opacity: 1;
+}

@@ -1,0 +1,8 @@
+{
+	"name": "[[COMPONENT_LABEL]]",
+	"description": "Betterman MOBILE Checkout Component",
+	"version": "1",
+	"whitelist": [
+		"checkout"
+	]
+}

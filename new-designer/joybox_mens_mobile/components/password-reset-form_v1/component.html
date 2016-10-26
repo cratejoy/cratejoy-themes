@@ -1,0 +1,35 @@
+{% include "components/form_feedback.html" %}
+
+<section id="[[COMPONENT_ID]]" class="container"> <!-- Begin form -->
+	<div class="form row">
+		<div class="card col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+			<div class="card-block">
+				<form action="/customer/password_reset" class="simple-form form-horizontal" method="post" accept-charset="utf-8">
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input class="form-control" name="email" type="email" {% if email %}value="{{ email }}"{% endif %} required="required" >
+					</div>
+
+					<div class="form-group">
+						<label for="temporary_key">Temporary Key</label>
+						<input class="form-control" name="temporary_key" type="text" {% if temporary_key %}value="{{ temporary_key }}"{% endif %} required="required" >
+					</div>
+
+					<div class="form-group">
+						<label for="password">New Password</label>
+						<input class="form-control" name="password" type="password" required="required" >
+					</div>
+
+					<div class="form-group">
+						<label for="password2">New Password Again</label>
+						<input class="form-control" name="password2" type="password" required="required" placeholder="Repeat your password">
+					</div>
+
+					<div class="form-group text-center">
+						<button id="submit" name="submit" class="btn btn-med btn-primary">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section> <!-- End form -->

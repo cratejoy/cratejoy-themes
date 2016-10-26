@@ -1,0 +1,41 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/link_1",
+			"label" : "Link 1",
+			"type": "text",
+			"placeholder" : "https://facebook.com/yourstore"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/link_2",
+			"label" : "Link 2",
+			"type": "text",
+			"placeholder" : "https://twitter.com/yourstore"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/link_3",
+			"label" : "Link 3",
+			"type": "text",
+			"placeholder" : "https://instagram.com/yourstore"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/link_4",
+			"label" : "Link 4",
+			"type": "text",
+			"placeholder" : "https://youtube.com/yourstore"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/link_5",
+			"label" : "Link 5",
+			"type": "text",
+			"placeholder" : "https://pinterest.com/yourstore"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/link_6",
+			"label" : "Link 6",
+			"type": "text",
+			"placeholder" : "https://tumblr.com/yourstore"
+		}
+	]
+}

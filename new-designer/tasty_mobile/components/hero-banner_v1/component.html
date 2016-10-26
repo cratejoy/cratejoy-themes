@@ -1,0 +1,17 @@
+<section id="[[COMPONENT_ID]]" class="component-hero-banner row" {{ setting_helpers.image_attributes('[[COMPONENT_ID]]/image', overlay=settings['[[COMPONENT_ID]]/control_variable/overlay'] ) }}>
+	<div class="container-fluid">
+		<div class="hero-row row">
+			<div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 hero-content">
+				{{ settings["[[COMPONENT_ID]]/content"] }}
+				<div class="button-container">
+					<a type="button" class="btn btn-large btn-primary" href="{{ settings['[[COMPONENT_ID]]/primary_button_url'] }}">
+						{{ settings["[[COMPONENT_ID]]/primary_button_text"] }}
+					</a>
+					<a type="button" class="btn btn-large btn-secondary" href="{{ settings['[[COMPONENT_ID]]/secondary_button_url'] }}">
+						{{ settings["[[COMPONENT_ID]]/secondary_button_text"] }}
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

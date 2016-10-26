@@ -1,0 +1,10 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/survey_step_submit_button_text",
+			"label": "Choose Button",
+			"type": "text"
+		}
+	]
+}

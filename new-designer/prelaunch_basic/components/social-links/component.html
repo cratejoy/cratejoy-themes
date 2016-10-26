@@ -1,0 +1,38 @@
+{% macro render_social_link( url ) -%}
+
+    {% if "facebook.com" in url %}
+		<a class="facebook" href="{{ url }}">{% include "svg/facebook.html" %}</a>
+	{% endif %}
+
+	{% if "twitter.com" in url %}
+		<a class="twitter" href="{{ url }}">{% include "svg/twitter.html" %}</a>
+	{% endif %}
+
+	{% if "instagram.com" in url %}
+		<a class="instagram" href="{{ url }}">{% include "svg/instagram.html" %}</a>
+	{% endif %}
+
+	{% if "youtube.com" in url %}
+		<a class="youtube" href="{{ url }}">{% include "svg/youtube.html" %}</a>
+	{% endif %}
+
+	{% if "pinterest.com" in url %}
+		<a class="pinterest" href="{{ url }}">{% include "svg/pinterest.html" %}</a>
+	{% endif %}
+
+	{% if "tumblr.com" in url %}
+		<a class="tumblr" href="{{ url }}">{% include "svg/tumblr.html" %}</a>
+	{% endif %}
+
+{%- endmacro %}
+
+<section id="[[COMPONENT_ID]]">
+	<div class="component-social-links">
+		{{ render_social_link( settings["[[COMPONENT_ID]]/link_1"] ) }}
+		{{ render_social_link( settings["[[COMPONENT_ID]]/link_2"] ) }}
+		{{ render_social_link( settings["[[COMPONENT_ID]]/link_3"] ) }}
+		{{ render_social_link( settings["[[COMPONENT_ID]]/link_4"] ) }}
+		{{ render_social_link( settings["[[COMPONENT_ID]]/link_5"] ) }}
+		{{ render_social_link( settings["[[COMPONENT_ID]]/link_6"] ) }}
+	</div>
+</section>

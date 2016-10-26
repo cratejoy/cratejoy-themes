@@ -1,0 +1,11 @@
+#[[COMPONENT_ID]] .checkout_content {
+	overflow: auto;
+}
+
+#[[COMPONENT_ID]] .checkout_content section {
+	border-color: #F5F5F5;
+}
+
+#[[COMPONENT_ID]] .cart_listing table {
+	border-color: #F5F5F5;
+}

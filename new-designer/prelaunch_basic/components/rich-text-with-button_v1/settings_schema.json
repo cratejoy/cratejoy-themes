@@ -1,0 +1,19 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/content",
+			"type": "richtext"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/button_text",
+			"label": "Button",
+			"type": "text"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/button_url",
+			"label": "Button URL",
+			"type": "link"
+		}
+	]
+}

@@ -1,0 +1,15 @@
+<section id="[[COMPONENT_ID]]" {{ setting_helpers.image_attributes('[[COMPONENT_ID]]/image', overlay=True) }}>
+	<div class="container">
+		<div class="col-xs-12 flex-center text-center hero-content">
+			<div>
+				{{ settings["[[COMPONENT_ID]]/content"] }}
+
+				{% if settings["[[COMPONENT_ID]]/control_variable/show_button"] %}
+					<a type="button" class="btn btn-large btn-primary" href="{{ settings['[[COMPONENT_ID]]/button_url'] }}">
+						{{ settings["[[COMPONENT_ID]]/button_text"] }}
+					</a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</section>

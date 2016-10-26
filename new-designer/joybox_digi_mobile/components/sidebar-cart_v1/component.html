@@ -1,0 +1,106 @@
+{%- macro gift_item(cart_gift) -%}
+{% set instance = cart_gift.instance %}
+	<div class="media item" role="alert">
+		<div class="media-body">
+			<h4 class="media-heading subheading">Gift of {{ instance.product.name }}</h4>
+			{% if cart_gift.subscription_type_term %}
+			<p class="meta">{{ cart_gift.subscription_type_term.name | title }}</p>
+			{% else %}
+			<p class="meta">One-Time Product</p>
+			{% endif %}
+			{% for var in instance.variants %}
+				<p class='meta'>{{ var.variant_type.name }}: {{ var.variant_value.value }}</p>
+			{% endfor %}
+			<p class="meta">{{ cart_gift.price | currency }}</p>
+		</div>
+		<form id="rem_product_form" method="POST" action="/checkout/remove/{{ cart_gift.id }}">
+			<button type="submit" class="close">
+				<span class="fa fa-times-circle-o"></span><span class="sr-only">Close</span>
+			</button>
+		</form>
+	</div>
+{%- endmacro -%}
+
+{%- macro item(cart_prod) -%}
+{% set instance = cart_prod.instance %}
+	<div class="media item" role="alert">
+		<div class="media-body">
+			<h4 class="media-heading subheading">{{ instance.product.name }}</h4>
+			{% if cart_prod.subscription_type_term %}
+			<p class="meta">{{ cart_prod.subscription_type_term.name | title }}</p>
+			{% else %}
+			<p class="meta">One-Time Product</p>
+			{% endif %}
+			{% for var in instance.variants %}
+				<p class='meta'>{{ var.variant_type.name }}: {{ var.variant_value.value }}</p>
+			{% endfor %}
+			<p class="meta">{{ cart_prod.price | currency }}</p>
+		</div>
+		<form id="rem_product_form" method="POST" action="/checkout/remove/{{ cart_prod.id }}">
+			<button type="submit" class="close">
+				<span class="fa fa-times-circle-o"></span><span class="sr-only">Close</span>
+			</button>
+		</form>
+	</div>
+{%- endmacro -%}
+
+{%- macro coupon_item(cart_coupon) -%}
+	<div class="media item" role="alert">
+		<div class="media-body">
+			<h4 class="media-heading subheading">{{ cart_coupon.discount_name }}</h4>
+			<p class="meta">({{ cart_coupon.code_used }})</p>
+			<p class="meta">-{{ cart_coupon.discount_value | currency }}</p>
+		</div>
+		<form id="rem_coupon_form" method="POST" action="/checkout/rem_coupon/{{ cart_coupon.id }}">
+			<button type="submit" class="close">
+				<span class="fa fa-times-circle-o"></span><span class="sr-only">Close</span>
+			</button>
+		</form>
+	</div>
+{%- endmacro -%}
+
+<!-- Slidebar -->
+<section id="[[COMPONENT_ID]]" class="shopping-cart">
+	{% set cart = active_cart() %}
+	<header>
+		<h2 class="heading" data-barley="slide_cart_heading" data-barley-editor="simple">Your Cart</h2>
+	</header>
+	{% if cart and (cart.products or cart.gifts) %}
+		{% for p in cart.products %}
+				{{ item(p) }}
+		{% endfor %}
+
+		{% for g in cart.gifts %}
+				{{ gift_item(g) }}
+		{% endfor %}
+
+		{% for c in cart.coupons %}
+				{{ coupon_item(c) }}
+		{% endfor %}
+		<div class="total">
+			<div class="row">
+				<div class="col-xs-5 strong dt hlight">Subtotal</div>
+				<div class="col-xs-5 col-xs-offset-2">{{ cart.product_total | currency }}</div>
+			</div>
+			{% if store.settings.collect_taxes %}
+			<div class="row">
+				<div class="col-xs-5 dt">Est. Tax</div>
+				<div class="col-xs-5 col-xs-offset-2">
+					{% if cart.tax_price and cart.tax_price != 0 %}
+							{{ cart.tax_price|currency }}
+					{% endif %}
+				</div>
+			</div>
+			{% endif %}
+			<br>
+			<div class="row">
+				<div class="col-xs-5 strong dt hlight">Total</div>
+				<div class="col-xs-5 col-xs-offset-2 strong hlight">{{ cart.total|currency }}</div>
+			</div>
+		</div>
+		<br>
+		<a href="/checkout/" type="button" class="btn btn-primary fullsize" data-barley="slidebar_checkout_button" data-barley-editor="linkedit">CHECKOUT</a>
+	{% else %}
+		<h3 data-barley="slide_cart_empty_text" data-barley-editor="simple">Your cart is empty</h3>
+	{% endif %}
+</section>

@@ -1,0 +1,59 @@
+#[[COMPONENT_ID]].footer {
+	background-color: {{ settings['[[COMPONENT_ID]]/background_color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/body/font_face'] }};
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/body/font_size'] }};
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 100px;
+	text-align: center;
+	border-top: 1px solid {{ settings['border_color'] }};
+}
+
+#[[COMPONENT_ID]] a,
+#[[COMPONENT_ID]] a:hover,
+#[[COMPONENT_ID]] a:focus {
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+}
+
+#[[COMPONENT_ID]] .footer-social {
+	padding-top: 20px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+#[[COMPONENT_ID]] .footer-social a {
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#[[COMPONENT_ID]] .footer-social svg path {
+	stroke: {{ settings['[[COMPONENT_ID]]/social_icons_color'] }};
+}
+
+#[[COMPONENT_ID]] .footer-social svg path + path {
+	fill: {{ settings['[[COMPONENT_ID]]/social_icons_color'] }};
+}
+
+#[[COMPONENT_ID]] .footer-social a:hover svg path,
+#[[COMPONENT_ID]] .footer-social a:focus svg path,
+#[[COMPONENT_ID]] .footer-social a:active svg path {
+	stroke: {{ settings['[[COMPONENT_ID]]/social_icons_hover_color'] }};
+}
+
+#[[COMPONENT_ID]] .footer-social a:hover svg path + path,
+#[[COMPONENT_ID]] .footer-social a:focus svg path + path,
+#[[COMPONENT_ID]] .footer-social a:active svg path + path {
+	fill: {{ settings['[[COMPONENT_ID]]/social_icons_hover_color'] }};
+}
+
+@media(min-width: 1140px) {
+	.footer-copyright {
+		text-align: left;
+	}
+
+	.footer-tribute {
+		text-align: right;
+	}
+}

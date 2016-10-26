@@ -1,0 +1,33 @@
+#[[COMPONENT_ID]] {
+	padding-bottom: 60px;
+}
+
+#[[COMPONENT_ID]] img {
+	max-width: 285px;
+	max-height: 190px;
+	margin: auto;
+}
+
+#[[COMPONENT_ID]] .sf-item {
+	width: 285px;
+	margin: auto;
+	background-color: {{ settings['[[COMPONENT_ID]]/content_background_color'] }};
+}
+
+#[[COMPONENT_ID]] a.btn {
+	margin-top: 12px;
+}
+
+#[[COMPONENT_ID]] h2 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_2/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_2/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_2/font_size'] }};
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+#[[COMPONENT_ID]] p {
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/body/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/body/font_size'] }};
+}

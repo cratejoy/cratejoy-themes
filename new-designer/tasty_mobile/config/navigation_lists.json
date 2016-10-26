@@ -1,0 +1,28 @@
+{
+	"header": [
+		{
+			"title": "Join Now",
+			"url": "/subscribe"
+		},
+		{
+			"title": "Shop",
+			"url": "/shop"
+		},
+		{
+			"title": "How it Works",
+			"url": "/howitworks"
+		},
+		{
+			"title": "About Us",
+			"url": "/about"
+		},
+		{
+			"title": "FAQ",
+			"url": "/faq"
+		},
+		{
+			"title": "Cart",
+			"url": "/view-cart"
+		}
+	]
+}

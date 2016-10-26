@@ -1,0 +1,25 @@
+#[[COMPONENT_ID]] {
+	background-color: {{ settings["[[COMPONENT_ID]]/background_color"] }};
+}
+
+#[[COMPONENT_ID]] h2 {
+	color: {{ settings['[[COMPONENT_ID]]/price/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/price/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/price/font_size'] }};
+}
+
+#[[COMPONENT_ID]] h3 {
+	color: {{ settings['[[COMPONENT_ID]]/term/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/term/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/term/font_size'] }};
+}
+
+#[[COMPONENT_ID]] p {
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/body/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/body/font_size'] }};
+}
+
+#[[COMPONENT_ID]] .sf-item {
+	background-color: {{ settings["[[COMPONENT_ID]]/tile_background_color"] }};
+}

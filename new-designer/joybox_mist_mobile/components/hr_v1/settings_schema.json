@@ -1,0 +1,11 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/color",
+			"label": "Color",
+			"type": "color",
+			"inherits": "border_color"
+		}
+	]
+}

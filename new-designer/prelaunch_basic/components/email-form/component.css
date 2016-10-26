@@ -1,0 +1,30 @@
+#[[COMPONENT_ID]] .component-email-form {
+	max-width: 540px;
+	margin: 20px auto 20px;
+	position: relative;
+	text-align: center;
+	padding-bottom: 15px;
+}
+#[[COMPONENT_ID]] .component-email-form .email-form-group {
+	width: calc(100% - 200px);
+}
+#[[COMPONENT_ID]] #mce-EMAIL,
+#[[COMPONENT_ID]] #mc-embedded-subscribe {
+	margin-top: 10px;
+}
+#[[COMPONENT_ID]] .component-email-form div.mce_inline_error {
+	font-weight: bold;
+	font-size: 14px;
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: red;
+}
+#[[COMPONENT_ID]] #mce-success-response,
+#[[COMPONENT_ID]] #mce-error-response {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 30px;
+}

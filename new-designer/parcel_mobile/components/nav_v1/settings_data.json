@@ -1,0 +1,8 @@
+{
+	"[[COMPONENT_ID]]/logo/font_face": "Lato",
+	"[[COMPONENT_ID]]/logo/font_size": "28px",
+	"[[COMPONENT_ID]]/control_variable/logo_image": "images/logo_image.png",
+
+	"[[COMPONENT_ID]]/banner/content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Subscribe by the 15th to get this month's box!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/banner/content_html": "<p>Subscribe by the 15th to get this month's box!</p>"
+}

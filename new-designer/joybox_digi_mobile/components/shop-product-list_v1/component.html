@@ -1,0 +1,35 @@
+<section id="[[COMPONENT_ID]]" class="container">
+	{% paginate products by 8, page %}
+	<div class="row shop-listing">
+		{% for product in paged_items %}
+		<div class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/shop/product/{{ product.id }}" class="shop-listing-item">
+				<div class="col-xs-12 square-img-container">
+					{{ product | object_img_centered(default_img_path=settings['product_placeholder_image'], css_class="shop-listing-item__image square-img-content") }}
+				</div>
+
+				<h2 class="shop-listing-item__name">{{ product.name }}</h2>
+
+				{% set min = product.calc_min_ecom_price() %}
+				{% set max = product.calc_max_ecom_price() %}
+				{% if max == min %}
+				<div class="shop-listing-item__price">{{ min | currency }}</div>
+				{% else %}
+				<div class="shop-listing-item__price">{{ min | currency }} - {{ max | currency }}</div>
+				{% endif %}
+
+				{% if reviews_data and reviews_data.num_ratings[product.id] > 0 and product.reviewable %}
+				<div class="product-avg-rating">
+					<span class="listing-product-rating product-rating" data-score="{{ reviews_data.avg_ratings[product.id] | float }}"></span>
+					<span class="product-rating-text">{{ reviews_data.num_ratings[product.id] }} Review(s)</span>
+				</div>
+				{% endif %}
+			</a>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="text-center">
+		{{ navigation }}
+	</div>
+	{% endpaginate %}
+</section>

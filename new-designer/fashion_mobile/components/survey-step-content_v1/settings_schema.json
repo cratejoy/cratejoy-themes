@@ -1,0 +1,47 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/survey_step_submit_button_text",
+			"label": "Choose Button",
+			"type": "text"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/background_color",
+			"label": "Background",
+			"type": "color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading/font_face",
+			"label": "Heading",
+			"type": "font_face",
+			"inherits": "page_tertiary_heading/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading/font_size",
+			"type": "font_size",
+			"inherits": "page_tertiary_heading/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading/color",
+			"type": "color",
+			"inherits": "page_tertiary_heading/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/font_face",
+			"label": "Body",
+			"type": "font_face",
+			"inherits": "page_body/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/font_size",
+			"type": "font_size",
+			"inherits": "page_body/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/color",
+			"type": "color",
+			"inherits": "page_body/color"
+		}
+	]
+}

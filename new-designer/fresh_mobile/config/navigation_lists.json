@@ -1,0 +1,42 @@
+{
+	"header": [
+		{
+			"title": "Subscribe",
+			"url": "/subscribe"
+		},
+		{
+			"title": "Shop",
+			"url": "/shop"
+		},
+		{
+			"title": "About",
+			"url": "/about"
+		},
+		{
+			"title": "Cart",
+			"url": "/view-cart"
+		}
+	],
+	"footer": [
+		{
+			"title": "Cart",
+			"url": "/view-cart"
+		},
+		{
+			"title": "Subscribe",
+			"url": "/subscribe"
+		},
+		{
+			"title": "Shop",
+			"url": "/shop/"
+		},
+		{
+			"title": "About",
+			"url": ""
+		},
+		{
+			"title": "Give Gift",
+			"url": "/subscribe/gift"
+		}
+	]
+}

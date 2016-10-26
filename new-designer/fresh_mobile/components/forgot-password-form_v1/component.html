@@ -1,0 +1,19 @@
+{% include "components/form_feedback.html" %}
+
+<section id="[[COMPONENT_ID]]" class="container">
+	<div class="row">
+		<div class="card col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+			<div class="card-block">
+				<form action="/customer/forgot" class="simple-form form-horizontal" method="post" accept-charset="utf-8">
+					<div class="form-group">
+						<input id="email" name="email" type="email" placeholder="Email address" class="form-control input-xlarge" required="">
+					</div>
+
+					<div class="form-group text-center">
+						<button id="submit" name="submit" class="btn btn-med btn-primary">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

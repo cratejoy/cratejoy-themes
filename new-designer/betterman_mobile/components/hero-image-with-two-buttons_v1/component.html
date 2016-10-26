@@ -1,0 +1,23 @@
+{% if settings["[[COMPONENT_ID]]/control_variable/image_orientation"] == "left" %}
+	{% set hero_class="row square-row row-reverse" %}
+{% else %}
+	{% set hero_class="row square-row" %}
+{% endif %}
+
+<section id="[[COMPONENT_ID]]" class="{{ hero_class }}">
+	<div class="col-md-6 col-xs-12 flex-center text-center hero-content">
+		<div>
+			{{ settings["[[COMPONENT_ID]]/content"] }}
+			<div class="button-container row">
+				<a type="button" class="btn btn-primary" href="{{ settings['[[COMPONENT_ID]]/button_url_1'] }}">
+					{{ settings["[[COMPONENT_ID]]/button_text_1"] }}
+				</a>
+				<a type="button" class="btn btn-secondary" href="{{ settings['[[COMPONENT_ID]]/button_url_2'] }}">
+					{{ settings["[[COMPONENT_ID]]/button_text_2"] }}
+				</a>
+			</div>
+		</div>
+	</div>
+
+	{{ setting_helpers.image_tag('[[COMPONENT_ID]]/image', class_name='col-md-6 col-xs-12') }}
+</section>

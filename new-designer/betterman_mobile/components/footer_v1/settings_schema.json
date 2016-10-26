@@ -1,0 +1,111 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"global": true,
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/copyright",
+			"label": "Copyright",
+			"type": "text"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/cc_accept_text",
+			"label": "Credit Card Accept",
+			"type": "text"
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/background_color",
+			"label": "Background",
+			"type": "color",
+			"inherits": "accent_background_color"
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/facebook_url",
+			"label": "Facebook URL",
+			"type": "link",
+			"boolean": true
+		},
+		{
+			"id": "[[COMPONENT_ID]]/twitter_url",
+			"label": "Twitter URL",
+			"type": "link",
+			"boolean": true
+		},
+		{
+			"id": "[[COMPONENT_ID]]/pinterest_url",
+			"label": "Pinterest URL",
+			"type": "link",
+			"boolean": true
+		},
+		{
+			"id": "[[COMPONENT_ID]]/instagram_url",
+			"label": "Instagram URL",
+			"type": "link",
+			"boolean": true
+		},
+		{
+			"id": "[[COMPONENT_ID]]/tumblr_url",
+			"label": "Tumblr URL",
+			"type": "link",
+			"boolean": true
+		},
+		{
+			"id": "[[COMPONENT_ID]]/youtube_url",
+			"label": "YouTube URL",
+			"type": "link",
+			"boolean": true
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/social_icons_color",
+			"label": "Social Icons",
+			"type": "color",
+			"inherits": "secondary_button/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/social_icons_hover_color",
+			"label": "Social Icons Hover",
+			"type": "color",
+			"inherits": "secondary_button/hover_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/link_button/font_face",
+			"label": "Link Style",
+			"type": "font_face",
+			"inherits": "page_body/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/link_button/text_color",
+			"type": "color",
+			"inherits": "secondary_button/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/link_button/hover_text_color",
+			"type": "color",
+			"inherits": "primary_button/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/link_button/font_size",
+			"type": "font_size",
+			"inherits": "primary_button/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/font_face",
+			"label": "Text",
+			"type": "font_face",
+			"inherits": "page_body/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/color",
+			"type": "color",
+			"inherits": "page_body/color"
+		}
+	]
+}

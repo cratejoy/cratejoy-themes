@@ -1,0 +1,66 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/term_placeholder_image",
+			"label": "Default Image",
+			"type": "image"
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/terms_step_term_button_text",
+			"label": "Choose Button",
+			"type": "text"
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/background_color",
+			"label": "Background",
+			"type": "color",
+			"inherits": "page_background_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/content_background_color",
+			"label": "Background",
+			"type": "color",
+			"inherits": "page_background_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_2/font_face",
+			"label": "Heading",
+			"type": "font_face",
+			"inherits": "page_secondary_heading/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_2/font_size",
+			"type": "font_size",
+			"inherits": "page_secondary_heading/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_2/color",
+			"type": "color",
+			"inherits": "page_secondary_heading/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/color",
+			"label": "Text",
+			"type": "color",
+			"inherits": "page_body/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/font_face",
+			"label": "Body",
+			"type": "font_face",
+			"inherits": "page_body/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/font_size",
+			"type": "font_size",
+			"inherits": "page_body/font_size"
+		}
+	]
+}

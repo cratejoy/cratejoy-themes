@@ -1,0 +1,58 @@
+[
+	{
+		"label": "Background",
+		"global": true,
+		"settings": [
+			{
+				"id": "background_color",
+				"label": "Background Color",
+				"type": "color"
+			},
+			{
+				"id": "background_image",
+				"label": "Background Image",
+				"type": "image",
+				"boolean": true
+			}
+		]
+	},
+	{
+		"label": "Site Logo",
+		"global": true,
+		"settings": [
+			{
+				"id": "logo_image",
+				"label": "Logo Image",
+				"type": "image",
+				"boolean": true
+			}
+		]
+	},
+	{
+		"label": "Color Scheme",
+		"global": true,
+		"settings": [
+			{
+				"id": "highlight_color",
+				"label": "Highlight Color",
+				"type": "color"
+			}
+		]
+	},
+	{
+		"label": "Fonts",
+		"global": true,
+		"settings": [
+			{
+				"id": "page_heading/font_face",
+				"label": "Header Font",
+				"type": "font_face"
+			},
+			{
+				"id": "page_body/font_face",
+				"label": "Body Font",
+				"type": "font_face"
+			}
+		]
+	}
+]

@@ -1,0 +1,12 @@
+#[[COMPONENT_ID]] .component-shop-sort {
+	justify-content: center;
+	border-bottom: 1px solid {{ settings['border/color'] }};
+	padding: 15px;
+}
+
+#[[COMPONENT_ID]] ul.nav-pills {
+	background-color: #FAFAFA;
+	border: 1px solid #EEEEEE;
+	border-radius: 3px;
+	padding: 3px;
+}

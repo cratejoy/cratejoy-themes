@@ -1,0 +1,8 @@
+#[[COMPONENT_ID]] {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#[[COMPONENT_ID]] img {
+	display: block;
+	margin: 0 auto;
+}

@@ -1,0 +1,22 @@
+{
+	"[[COMPONENT_ID]]/content_left": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Women's Parcel\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/content_left_html": "<h2>Women's Parcel</h2>",
+	"[[COMPONENT_ID]]/content_right": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Men's Parcel\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/content_right_html": "<h2>Men's Parcel</h2>","[[COMPONENT_ID]]/left_button_text": "subscribe",
+	"[[COMPONENT_ID]]/left_button_text": "subscribe",
+	"[[COMPONENT_ID]]/left_button_url": "/subscribe/",
+	"[[COMPONENT_ID]]/image_left": "images/womens-placeholder.png",
+	"[[COMPONENT_ID]]/right_button_text": "subscribe",
+	"[[COMPONENT_ID]]/right_button_url": "/subscribe/",
+	"[[COMPONENT_ID]]/image_right": "images/mens-placeholder.png",
+
+	"[[COMPONENT_ID]]/heading_1/font_face": "Lato",
+	"[[COMPONENT_ID]]/heading_1/font_size": "45px",
+
+	"[[COMPONENT_ID]]/heading_2/color": "#FFFFFF",
+	"[[COMPONENT_ID]]/heading_3/color": "#FFFFFF",
+	"[[COMPONENT_ID]]/body/color": "#FFFFFF",
+
+	"[[COMPONENT_ID]]/button/text_color": "#FFFFFF",
+	"[[COMPONENT_ID]]/button/hover_text_color": "#FFFFFF"
+}

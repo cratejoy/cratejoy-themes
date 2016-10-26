@@ -1,0 +1,46 @@
+<section id="[[COMPONENT_ID]]" class="footer">
+	<div class="container">
+		<div class="row flex-center">
+			<div class="footer-copyright col-lg-4 col-xs-12">
+				{{ settings["[[COMPONENT_ID]]/copyright"] }}
+			</div>
+
+			<div class="footer-social col-lg-4 col-xs-12">
+				{% if settings["[[COMPONENT_ID]]/facebook_url"] %}
+				<a href="{{ settings["[[COMPONENT_ID]]/facebook_url"] }}">
+					{% include "svg/facebook.html" %}
+				</a>
+				{% endif %}
+				{% if settings["[[COMPONENT_ID]]/twitter_url"] %}
+				<a href="{{ settings["[[COMPONENT_ID]]/twitter_url"] | default('#') }}">
+					{% include "svg/twitter.html" %}
+				</a>
+				{% endif %}
+				{% if settings["[[COMPONENT_ID]]/pinterest_url"] %}
+				<a href="{{ settings["[[COMPONENT_ID]]/pinterest_url"] | default('#') }}">
+					{% include "svg/pinterest.html" %}
+				</a>
+				{% endif %}
+				{% if settings["[[COMPONENT_ID]]/instagram_url"] %}
+				<a href="{{ settings["[[COMPONENT_ID]]/instagram_url"] | default('#') }}">
+					{% include "svg/instagram.html" %}
+				</a>
+				{% endif %}
+				{% if settings["[[COMPONENT_ID]]/tumblr_url"] %}
+				<a href="{{ settings["[[COMPONENT_ID]]/tumblr_url"] | default('#') }}">
+					{% include "svg/tumblr.html" %}
+				</a>
+				{% endif %}
+				{% if settings["[[COMPONENT_ID]]/youtube_url"] %}
+				<a href="{{ settings["[[COMPONENT_ID]]/youtube_url"] | default('#') }}">
+					{% include "svg/youtube.html" %}
+				</a>
+				{% endif %}
+			</div>
+
+			<div class="footer-tribute col-lg-4 col-xs-12">
+				<a href="http://cratejoy.com">Powered by Cratejoy</a>
+			</div>
+		</div>
+	</div>
+</section>

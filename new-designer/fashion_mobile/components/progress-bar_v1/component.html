@@ -1,0 +1,51 @@
+<section id="[[COMPONENT_ID]]" class="component-progress-bar">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="progress-bar-container col-xs-10 col-xs-offset-1">
+				<div class="progress-bar-filler"></div>
+				<div class="progress-bar">
+					<div class="step first {% if not flow_data %}active{% endif %}">
+						<span class="point"></span>
+						<strong class="title hidden-sm-down">Product</strong>
+					</div>
+
+					{#
+						Product Step
+					#}
+					{% if not flow_data %}
+						<div class="step">
+							<span class="point"></span>
+							<strong class="title hidden-sm-down">Options</strong>
+						</div>
+					{% endif %}
+
+					{% if flow_data %}
+						{% for step in flow_data.steps %}
+							{% if step.type == 'variant' %}
+							<div class="step second {% if step['index'] == flow_step.index %}active{% endif %}">
+								<span class="point"></span>
+								<strong class="title {% if step['index'] != flow_step.index %}hidden-sm-down{% endif %}">{{ step.name }}</strong>
+							</div>
+							{% elif step.type == 'terms' %}
+							<div class="step second {% if step['index'] == flow_step.index %}active{% endif %}">
+								<span class="point"></span>
+								<strong class="title {% if step['index'] != flow_step.index %}hidden-sm-down{% endif %}">Terms</strong>
+							</div>
+							{% elif step.type == 'survey' %}
+							<div class="step second {% if step['index'] == flow_step.index %}active{% endif %}">
+								<span class="point"></span>
+								<strong class="title {% if step['index'] != flow_step.index %}hidden-sm-down{% endif %}">Survey</strong>
+							</div>
+							{% endif %}
+						{% endfor %}
+					{% endif %}
+
+					<div class="step third">
+						<span class="point"></span>
+						<strong class="title hidden-sm-down">Checkout</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

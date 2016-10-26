@@ -1,0 +1,127 @@
+#[[COMPONENT_ID]] {
+	background-position: right top !important;
+	background-repeat: no-repeat !important;
+	margin: 0;
+	min-height: calc(100vh - 100px);
+	padding: 0;
+
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+#[[COMPONENT_ID]] .container-fluid {
+	width: 100%;
+}
+
+#[[COMPONENT_ID]] .hero-row {
+	margin: 0;
+}
+
+#[[COMPONENT_ID]] .hero-content {
+	margin: 0;
+	text-align: center;
+}
+
+#[[COMPONENT_ID]] .hero-content h1 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_1/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_1/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_1/font_size'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content h2 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_2/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_2/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_2/font_size'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content h3 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_3/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_3/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_3/font_size'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content p {
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/body/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/body/font_size'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content .button-container {
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+#[[COMPONENT_ID]] .hero-content .btn {
+	margin: 5px 0;
+	padding: 1em;
+	white-space: normal;
+	width: 90%;
+}
+
+#[[COMPONENT_ID]] .hero-content .btn-primary {
+	background-color: {{ settings['[[COMPONENT_ID]]/primary_button/color'] }};
+	color: {{ settings['[[COMPONENT_ID]]/primary_button/text_color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/primary_button/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/primary_button/font_size'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content .btn-primary:hover,
+#[[COMPONENT_ID]] .hero-content .btn-primary:focus,
+#[[COMPONENT_ID]] .hero-content .btn-primary:active {
+	background-color: {{ settings['[[COMPONENT_ID]]/primary_button/hover_color'] }};
+	color: {{ settings['[[COMPONENT_ID]]/primary_button/hover_text_color'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content .btn-secondary {
+	background-color: {{ settings['[[COMPONENT_ID]]/secondary_button/color'] }};
+	color: {{ settings['[[COMPONENT_ID]]/secondary_button/text_color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/secondary_button/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/secondary_button/font_size'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content .btn-secondary:hover,
+#[[COMPONENT_ID]] .hero-content .btn-secondary:focus,
+#[[COMPONENT_ID]] .hero-content .btn-secondary:active {
+	background-color: {{ settings['[[COMPONENT_ID]]/secondary_button/hover_color'] }};
+	color: {{ settings['[[COMPONENT_ID]]/secondary_button/hover_text_color'] }};
+}
+
+@media (min-width: 768px) {
+	#[[COMPONENT_ID]] {
+		min-height: 40vw;
+	}
+	#[[COMPONENT_ID]] .hero-content {
+		margin: 15px;
+		text-align: left;
+	}
+	#[[COMPONENT_ID]] .hero-content .button-container {
+		-webkit-justify-content: flex-start;
+		-moz-justify-content: flex-start;
+		-ms-justify-content: flex-start;
+		justify-content: flex-start;
+	}
+	#[[COMPONENT_ID]] .hero-content .btn {
+		margin: 0 15px 0 0;
+		width: 45%;
+	}
+}
+
+@media (min-width: 1200px) {
+	#[[COMPONENT_ID]] {
+		min-height: 533px;
+	}
+}

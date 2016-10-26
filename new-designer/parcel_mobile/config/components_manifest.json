@@ -1,0 +1,636 @@
+{
+	"global": [
+		{
+			"source": "nav_v1",
+			"label": "Header"
+		},
+		{
+			"source": "footer_v1",
+			"label": "Footer"
+		}
+	],
+	"index": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "hero_v1",
+			"label": "Hero",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"A parcel for every taste\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"2lmd6\",\"text\":\"Nullam tempor porttitor libero ac pretium. Aenean ac est volutpat, pulvinar tortor vel, consequat magna. Suspendisse eros ante, condimentum vitae velit sed, consectetur gravida sapien. Aliquam urna tortor.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>A parcel for every taste</h1>\n<p>Nullam tempor porttitor libero ac pretium. Aenean ac est volutpat, pulvinar tortor vel, consequat magna. Suspendisse eros ante, condimentum vitae velit sed, consectetur gravida sapien. Aliquam urna tortor.</p>",
+				"background_color": "#CCCCCC",
+				"image": "images/banner-placeholder-1.png"
+			},
+			"css": {
+				"h1": {
+					"margin-bottom": "15px"
+				},
+				"p": {
+					"margin-bottom": "20px"
+				}
+			}
+		},
+		{
+			"source": "featured-images_v1",
+			"label": "Featured Images",
+			"css": {
+				"h1": {
+					"margin-top": "20px",
+					"margin-bottom": "10px"
+				},
+				"p": {
+					"margin-bottom": "25px"
+				}
+			}
+		},
+		{
+			"source": "rich-text-with-image_v1",
+			"label": "About",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Fully responsive Cratejoy theme equipped with heavy eCommerce capabilities plus subscription functionality!\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Proin ac mi feugiat, auctor nibh et, congue ante. Ut tempus dui et bibendum vulputate. Sed faucibus eros urna, in molestie leo convallis vel. Pellentesque fermentum tempor purus mollis porta. Duis vel tempus turpis. Praesent feugiat nibh non aliquam venenatis. Fusce nisi orci, lobortis in tristique id, tempus commodo sem.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Proin ac mi feugiat, auctor nibh et, congue ante. Ut tempus dui et bibendum vulputate. Sed faucibus eros urna, in molestie leo convallis vel. Pellentesque fermentum tempor purus mollis porta. Duis vel tempus turpis. Praesent feugiat nibh non aliquam venenatis. Fusce nisi orci, lobortis in tristique id, tempus commodo sem.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Proin ac mi feugiat, auctor nibh et, congue ante. Ut tempus dui et bibendum vulputate. Sed faucibus eros urna, in molestie leo convallis vel. Pellentesque fermentum tempor purus mollis porta. Duis vel tempus turpis. Praesent feugiat nibh non aliquam venenatis. Fusce nisi orci, lobortis in tristique id, tempus commodo sem.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h3>Fully responsive Cratejoy theme equipped with heavy eCommerce capabilities plus subscription functionality!</h3>\n<p>Proin ac mi feugiat, auctor nibh et, congue ante. Ut tempus dui et bibendum vulputate. Sed faucibus eros urna, in molestie leo convallis vel. Pellentesque fermentum tempor purus mollis porta. Duis vel tempus turpis. Praesent feugiat nibh non aliquam venenatis. Fusce nisi orci, lobortis in tristique id, tempus commodo sem.</p>",
+				"image": "images/chair-placeholder-1.png"
+			},
+			"css": {
+				"h1": {
+					"margin-bottom": "15px"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"about": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-with-image-and-button_v1",
+			"label": "Hero Content",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Fully responsive Cratejoy theme equipped with heavy eCommerce capabilities plus subscription functionality!\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Proin ac mi feugiat, auctor nibh et, congue ante. Ut tempus dui et bibendum vulputate. Sed faucibus eros urna, in molestie leo convallis vel. Pellentesque fermentum tempor purus mollis porta. Duis vel tempus turpis. Praesent feugiat nibh non aliquam venenatis. Fusce nisi orci, lobortis in tristique id, tempus commodo sem.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Proin ac mi feugiat, auctor nibh et, congue ante. Ut tempus dui et bibendum vulputate. Sed faucibus eros urna, in molestie leo convallis vel. Pellentesque fermentum tempor purus mollis porta. Duis vel tempus turpis. Praesent feugiat nibh non aliquam venenatis. Fusce nisi orci, lobortis in tristique id, tempus commodo sem.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Proin ac mi feugiat, auctor nibh et, congue ante. Ut tempus dui et bibendum vulputate. Sed faucibus eros urna, in molestie leo convallis vel. Pellentesque fermentum tempor purus mollis porta. Duis vel tempus turpis. Praesent feugiat nibh non aliquam venenatis. Fusce nisi orci, lobortis in tristique id, tempus commodo sem.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>Fully responsive Cratejoy theme equipped with heavy eCommerce capabilities plus subscription functionality!</h2>\n<p>Proin ac mi feugiat, auctor nibh et, congue ante. Ut tempus dui et bibendum vulputate. Sed faucibus eros urna, in molestie leo convallis vel. Pellentesque fermentum tempor purus mollis porta. Duis vel tempus turpis. Praesent feugiat nibh non aliquam venenatis. Fusce nisi orci, lobortis in tristique id, tempus commodo sem.</p>\n<p>Proin ac mi feugiat, auctor nibh et, congue ante. Ut tempus dui et bibendum vulputate. Sed faucibus eros urna, in molestie leo convallis vel. Pellentesque fermentum tempor purus mollis porta. Duis vel tempus turpis. Praesent feugiat nibh non aliquam venenatis. Fusce nisi orci, lobortis in tristique id, tempus commodo sem.</p>\n<p>Proin ac mi feugiat, auctor nibh et, congue ante. Ut tempus dui et bibendum vulputate. Sed faucibus eros urna, in molestie leo convallis vel. Pellentesque fermentum tempor purus mollis porta. Duis vel tempus turpis. Praesent feugiat nibh non aliquam venenatis. Fusce nisi orci, lobortis in tristique id, tempus commodo sem.</p>",
+				"image": "images/chair-placeholder-2.png",
+				"button_text": "subscribe now"
+			},
+			"css": {
+				"h2": {
+					"margin-bottom": "13px"
+				}
+			}
+		},
+		{
+			"source": "image_v1",
+			"label": "Image",
+			"settings": {
+				"image": "images/banner-placeholder-2.png"
+			}
+		},
+		{
+			"source": "rich-text-left_v1",
+			"label": "Content",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Need more reasons to sign up?\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"2ui8v\",\"text\":\"Donec consectetur purus lorem, sagittis eleifend nulla cursus sed. Nulla sit amet hendrerit libero. Nunc luctus leo risus. Maecenas consectetur scelerisque est ut dictum. Fusce pulvinar enim at tellus egestas, eget vehicula ligula mattis. Suspendisse urna quam, volutpat sagittis sapien ac, lectus.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"8p2lm\",\"text\":\"Cras suscipit magna sedfinibus iaculis. Nam feugiat placerat lacinia. Aenean posuere turpis nulla, non vestibulum purus volutpat in. Nulla placerat dignissim risus, at sollicitudin est ultricies eu. Suspendisse ornare dui a mi lobortis, in mattis sem dignissim. Curabitur inest ornare, finibus augue accumsan, aliquetmagna. Etiam eu dui non tellus luctus egestas in eu neque. Nulla sit amet varius nisl, sit amet tempus enim. In sagittis, nisi eu consectetur fringilla, sem nisl accumsan lacus, a elementum lorem ipsum et magna. Pellentesque facilisis venenatis luctus. Cras et ante nec tellus vestibulum sodales vitae eu dolor. Phasellus vitae lectusin ex bibendum auctor. Duis imperdiet orcieget enim lacinia, eget imperdiet elit lacinia. Etiam porttitor malesuada urna ac tristique.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>Need more reasons to sign up?</h2>\n<p>Donec consectetur purus lorem, sagittis eleifend nulla cursus sed. Nulla sit amet hendrerit libero. Nunc luctus leo risus. Maecenas consectetur scelerisque est ut dictum. Fusce pulvinar enim at tellus egestas, eget vehicula ligula mattis. Suspendisse urna quam, volutpat sagittis sapien ac, lectus.</p>\n<p>Cras suscipit magna sedfinibus iaculis. Nam feugiat placerat lacinia. Aenean posuere turpis nulla, non vestibulum purus volutpat in. Nulla placerat dignissim risus, at sollicitudin est ultricies eu. Suspendisse ornare dui a mi lobortis, in mattis sem dignissim. Curabitur inest ornare, finibus augue accumsan, aliquetmagna. Etiam eu dui non tellus luctus egestas in eu neque. Nulla sit amet varius nisl, sit amet tempus enim. In sagittis, nisi eu consectetur fringilla, sem nisl accumsan lacus, a elementum lorem ipsum et magna. Pellentesque facilisis venenatis luctus. Cras et ante nec tellus vestibulum sodales vitae eu dolor. Phasellus vitae lectusin ex bibendum auctor. Duis imperdiet orcieget enim lacinia, eget imperdiet elit lacinia. Etiam porttitor malesuada urna ac tristique.</p>"
+			},
+			"css": {
+				"h2": {
+					"margin-bottom": "13px"
+				}
+			}
+		},
+		{
+			"source": "quote-panel_v1",
+			"label": "Testimonials",
+			"css": {
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"faq": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-title_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Frequently Asked Questions\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Frequently Asked Questions</h1>"
+			},
+			"css": {
+			}
+		},
+		{
+			"source": "rich-text-left_v1",
+			"label": "Content",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"How often will my subscription be re-billed?\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"2ui1v\",\"text\":\"Donec consectetur purus lorem, sagittis eleifend nulla cursus sed. Nulla sit amet hendrerit libero. Nunc luctus leo risus. Maecenas consectetur scelerisque est ut dictum. Fusce pulvinar enim at tellus egestas, eget vehicula ligula mattis. Suspendisse urna quam, volutpat sagittis sapien ac, lectus.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"6c6cx\",\"text\":\"Are you sold out?\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"2ui8q\",\"text\":\"Donec consectetur purus lorem, sagittis eleifend nulla cursus sed. Nulla sit amet hendrerit libero. Nunc luctus leo risus. Maecenas consectetur scelerisque est ut dictum. Fusce pulvinar enim at tellus egestas, eget vehicula ligula mattis. Suspendisse urna quam, volutpat sagittis sapien ac, lectus.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"6c6cp\",\"text\":\"Need more reasons to sign up?\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"2ui8v\",\"text\":\"Donec consectetur purus lorem, sagittis eleifend nulla cursus sed. Nulla sit amet hendrerit libero. Nunc luctus leo risus. Maecenas consectetur scelerisque est ut dictum. Fusce pulvinar enim at tellus egestas, eget vehicula ligula mattis. Suspendisse urna quam, volutpat sagittis sapien ac, lectus.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>How often will my subscription be re-billed?</h2>\n<p>Donec consectetur purus lorem, sagittis eleifend nulla cursus sed. Nulla sit amet hendrerit libero. Nunc luctus leo risus. Maecenas consectetur scelerisque est ut dictum. Fusce pulvinar enim at tellus egestas, eget vehicula ligula mattis. Suspendisse urna quam, volutpat sagittis sapien ac, lectus.</p>\n<h2>Are you sold out?</h2>\n<p>Donec consectetur purus lorem, sagittis eleifend nulla cursus sed. Nulla sit amet hendrerit libero. Nunc luctus leo risus. Maecenas consectetur scelerisque est ut dictum. Fusce pulvinar enim at tellus egestas, eget vehicula ligula mattis. Suspendisse urna quam, volutpat sagittis sapien ac, lectus.</p>\n<h2>Need more reasons to sign up?</h2>\n<p>Donec consectetur purus lorem, sagittis eleifend nulla cursus sed. Nulla sit amet hendrerit libero. Nunc luctus leo risus. Maecenas consectetur scelerisque est ut dictum. Fusce pulvinar enim at tellus egestas, eget vehicula ligula mattis. Suspendisse urna quam, volutpat sagittis sapien ac, lectus.</p>"
+			},
+			"css": {
+				"h2": {
+					"margin-bottom": "15px",
+					"margin-top": "40px"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"shop/listing": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"The Shop\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Shop our products\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>The Shop</h1>\n<p>Shop our products</p>"
+			},
+			"css": {
+				"": {
+					"padding": "50px 0 15px"
+				},
+				"h1": {
+					"margin-bottom": "15px"
+				}
+			}
+		},
+		{
+			"source": "shop-tag-bar_v1",
+			"label": "Tag Bar"
+		},
+		{
+			"source": "shop-sort-bar_v1",
+			"label": "Sort Bar",
+			"css": {
+				"": {
+				}
+			}
+		},
+		{
+			"source": "shop-product-list_v1",
+			"label": "Product List",
+			"css": {
+				"": {
+					"margin-top": "40px",
+					"margin-bottom": "40px"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"shop/product": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "shop-product-title_v1",
+			"label": "Title"
+		},
+		{
+			"source": "shop-product-content_v1",
+			"label": "Details",
+			"css": {
+				"": {
+					"margin-top": "40px",
+					"margin-bottom": "40px"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"subscribe": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-title_v1",
+			"label": "Title",
+			"settings": {
+					"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Subscribe\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+					"content_html": "<h1>Subscribe</h1>"
+			}
+		},
+		{
+			"source": "subscription-product-list_v1",
+			"label": "Product List"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"subscribe_flow/survey_step": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "subscribe-step-title_v1",
+			"label": "Title",
+			"settings": {
+				"default_title": "Survey"
+			}
+		},
+		{
+			"source": "survey-step-content_v1",
+			"label": "Content"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"subscribe_flow/terms_step": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "subscribe-step-title_v1",
+			"label": "Title",
+			"settings": {
+				"default_title": "Choose a term"
+			}
+		},
+		{
+			"source": "terms-step-content_v1",
+			"label": "Content"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"subscribe_flow/variant_step": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "subscribe-step-title_v1",
+			"label": "Title",
+			"settings": {
+				"default_title": "Choose an option"
+			}
+		},
+		{
+			"source": "variant-step-content_v1",
+			"label": "Content"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Gifting"
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"view-cart": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Your Cart\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"lorem ipsum dolor sit amet pentellesque dolor sit lorem\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Your Cart</h1>\n<p>lorem ipsum dolor sit amet pentellesque dolor sit lorem</p>"
+			},
+			"css": {
+				"": {
+					"padding": "50px 0;"
+				},
+				"h1": {
+					"margin-bottom": "15px"
+				}
+			}
+		},
+		{
+			"source": "cart_v1",
+			"label": "Cart"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"customer/account": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "customer-account_v1",
+			"label": "Account Information"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"customer/edit": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "customer-edit_v1",
+			"label": "Edit Information"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"customer/order": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "order_v1",
+			"label": "Order"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"customer/thank_you": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "thank-you_v1",
+			"label": "Account Info"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"customer/login": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Account Login\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Manage your subscription & other information regarding your account\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Account Login</h1>\n<p>Manage your subscription &amp; other information regarding your account</p>"
+			},
+			"css": {
+				"": {
+					"padding": "50px 0"
+				},
+				"h1": {
+					"margin-bottom": "15px"
+				}
+			}
+		},
+		{
+			"source": "login-form_v1",
+			"label": "Login Form",
+			"css": {
+				"": {
+					"padding-bottom": "120px"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"customer/forgot_password": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Forgot your password?\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"No worries, we'll help you reset it and get back in.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Forgot your password?</h1>\n<p>No worries, we'll help you reset it and get back in.</p>"
+			},
+			"css": {
+				"": {
+					"padding": "50px 0"
+				},
+				"h1": {
+					"margin-bottom": "15px"
+				}
+			}
+		},
+		{
+			"source": "forgot-password-form_v1",
+			"label": "Forgot Password Form",
+			"css": {
+				"": {
+					"padding-bottom": "120px"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"customer/password_reset": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Password Reset\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Use your email and the temporary key just sent to you to change your password\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Password Reset</h1>\n<p>Use your email and the temporary key just sent to you to change your password</p>"
+			},
+			"css": {
+				"": {
+					"padding": "50px 0"
+				},
+				"h1": {
+					"margin-bottom": "15px"
+				}
+			}
+		},
+		{
+			"source": "password-reset-form_v1",
+			"label": "Password Reset Form",
+			"css": {
+				"": {
+					"padding-bottom": "120px"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"sold_out": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-with-image-and-button_v1",
+			"label": "Content",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Sorry, we are currently sold out!\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"We know you want your parcel, but we're at capacity for this month. Don't worry though, because we have more goodies coming next month!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>Sorry, we are currently sold out!</h2>\n<p>We know you want your parcel, but we're at capacity for this month. Don't worry though, because we have more goodies coming next month!</p>",
+				"image": "images/sold-out.png",
+				"button_text": "back to homepage",
+				"button_url": "/"
+			},
+			"css": {
+				"": {
+					"margin-top": "60px",
+					"margin-bottom": "60px"
+				},
+				"h2": {
+					"margin-bottom": "13px"
+				},
+				"img.img-fluid": {
+					"width": "auto"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"checkout": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "checkout_v1",
+			"label": "Checkout"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	]
+}

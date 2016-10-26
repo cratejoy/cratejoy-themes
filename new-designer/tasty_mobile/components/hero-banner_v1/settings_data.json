@@ -1,0 +1,11 @@
+{
+	"[[COMPONENT_ID]]/image": "images/banner-1.png",
+	"[[COMPONENT_ID]]/content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"ENJOY UNLIMITED ACCESS TO OUR PRODUCTS TODAY.\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"8p2lm\",\"text\":\"Join now and have a blast. Keep what you love!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/content_html": "<h1>ENJOY UNLIMITED ACCESS TO OUR PRODUCTS TODAY.</h1>\n<p>Join now and have a blast. Keep what you love!</p>",
+	"[[COMPONENT_ID]]/primary_button_text": "GET STARTED",
+	"[[COMPONENT_ID]]/primary_button_url": "/subscribe/",
+	"[[COMPONENT_ID]]/secondary_button_text": "GIVE AS A GIFT",
+	"[[COMPONENT_ID]]/secondary_button_url": "/subscribe/gift",
+	"[[COMPONENT_ID]]/control_variable/overlay": false,
+	"[[COMPONENT_ID]]/heading_1/color": "#7B7770"
+}

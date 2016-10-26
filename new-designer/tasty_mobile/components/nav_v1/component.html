@@ -1,0 +1,38 @@
+<section id="[[COMPONENT_ID]]" class="component-nav">
+	<div class="container-fluid">
+
+		<div class="navbar row">
+			{% set cart = active_cart() %}
+
+			<a href="/" class="navbar-brand">
+				{% if settings["[[COMPONENT_ID]]/logo_image"] %}
+				<img src="{{ settings["[[COMPONENT_ID]]/logo_image"] | asset_url }}"/>
+				{% else %}
+				<span class="store-name">{{ store.name }}</span>
+				{% endif %}
+			</a>
+
+			<button type="button" class="navbar-toggler hidden-md-up" data-toggle="collapse" data-target="#navbar-menu">Menu</button>
+
+			<div id="navbar-menu" class="navbar-toggleable-sm collapse">
+				<ul class="navbar-nav">
+					{% for item in navigation_lists().header %}
+						{% if item.children %}
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">{{ item.title | safe }}</a>
+								<ul class="dropdown-menu">
+									{% for subitem in item.children %}
+										<li><a href="{{ subitem.url }}" class="nav-link">{{ subitem.title | safe }}</a></li>
+									{% endfor %}
+								</ul>
+							</li>
+						{% else %}
+							<li><a href="{{ item.url }}" class="nav-link">{{ item.title | safe }}</a></li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</section>

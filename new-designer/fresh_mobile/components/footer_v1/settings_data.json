@@ -1,0 +1,21 @@
+{
+  "[[COMPONENT_ID]]/column_1_content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6cx\",\"text\":\"navigate\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+  "[[COMPONENT_ID]]/column_1_content_html": "<h3>navigate</h3>",
+
+  "[[COMPONENT_ID]]/column_2_content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6cx\",\"text\":\"follow us\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"6c6ct\",\"text\":\"We're always staying current with the latest updates & news. Follow us on our social channels for more!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+  "[[COMPONENT_ID]]/column_2_content_html": "<h3>follow us</h3>\n<p>We're always staying current with the latest updates &amp; news. Follow us on our social channels for more!</p>",
+
+  "[[COMPONENT_ID]]/column_3_content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6cx\",\"text\":\"contact us\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"6c6ct\",\"text\":\"hello@fresh.co\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+  "[[COMPONENT_ID]]/column_3_content_html": "<h3>contact us</h3>\n<p>hello@fresh.co</p>",
+
+  "[[COMPONENT_ID]]/facebook_url": "https://facebook.com/YourStoreGoesHere",
+  "[[COMPONENT_ID]]/twitter_url": "https://twitter.com/@YourStoreGoesHere",
+  "[[COMPONENT_ID]]/pinterest_url": "https://pinterest.com/YourStoreGoesHere",
+  "[[COMPONENT_ID]]/instagram_url": "https://www.instagram.com/YourStoreGoesHere",
+  "[[COMPONENT_ID]]/tumblr_url": "https://YourStoreGoesHere.tumblr.com",
+  "[[COMPONENT_ID]]/youtube_url": "https://youtube.com/channel/YourStoreGoesHere",
+  "[[COMPONENT_ID]]/social_icons_color": "#FFFFFF",
+  "[[COMPONENT_ID]]/copyright": "Copyright Fresh, 2016",
+  "[[COMPONENT_ID]]/body/color": "#FFFFFF",
+  "[[COMPONENT_ID]]/link_button/text_color": "#FFFFFF"
+}

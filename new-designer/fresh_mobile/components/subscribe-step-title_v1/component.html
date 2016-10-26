@@ -1,0 +1,8 @@
+<section id="[[COMPONENT_ID]]" class="container">
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<h1>{{ flow_step.page_title | default(settings['[[COMPONENT_ID]]/default_title'], True) }}</h1>
+			<p class="description main">{{ flow_step.page_description | default("", True) }}</p>
+		</div>
+	</div>
+</section>

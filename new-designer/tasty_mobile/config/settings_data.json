@@ -1,0 +1,28 @@
+{
+	"current": "default",
+	"default": {
+		"primary_color": "#E27A54",
+		"secondary_color": "#FFFFFF",
+		"accent_color": "#EF9521",
+		"page_background_color": "#FFFFFF",
+		"accent_background_color": "#E7E6E5",
+
+		"page_heading/font_face": "Playfair Display",
+		"page_heading/font_size": "48px",
+		"page_secondary_heading/font_face": "Playfair Display",
+		"page_secondary_heading/font_size": "32px",
+		"page_tertiary_heading/font_face": "Playfair Display",
+		"page_tertiary_heading/font_size": "24px",
+		"page_body/font_face": "Open Sans",
+		"page_body/font_size": "14px",
+		"page_body/color": "#7B7770",
+
+		"primary_button/font_size": "14px",
+		"primary_button/text_color": "#FFFFFF",
+		"primary_button/hover_text_color": "#FFFFFF",
+		"secondary_button/text_color": "#FFFFFF",
+		"secondary_button/hover_text_color": "#FFFFFF",
+
+		"product_placeholder_image": "images/product_placeholder.jpg"
+	}
+}

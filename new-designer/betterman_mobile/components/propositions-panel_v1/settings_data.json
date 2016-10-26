@@ -1,0 +1,22 @@
+{
+	"[[COMPONENT_ID]]/title_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"68t2d\",\"text\":\"Easy to order\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/title_1_html": "<h3>Easy to order</h3>",
+	"[[COMPONENT_ID]]/proposition_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"68t2d\",\"text\":\"Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismo.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/proposition_1_html": "<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismo.</p>",
+	"[[COMPONENT_ID]]/image_1": "images/icon-pointer.png",
+	"[[COMPONENT_ID]]/title_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"68t2d\",\"text\":\"Always on time\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/title_2_html": "<h3>Always on time</h3>",
+	"[[COMPONENT_ID]]/proposition_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"68t2d\",\"text\":\"Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismo.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/proposition_2_html": "<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismo.</p>",
+	"[[COMPONENT_ID]]/image_2": "images/icon-truck.png",
+	"[[COMPONENT_ID]]/title_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"68t2d\",\"text\":\"Fits any budget\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/title_3_html": "<h3>Fits any budget</h3>",
+	"[[COMPONENT_ID]]/proposition_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"68t2d\",\"text\":\"Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismo.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/proposition_3_html": "<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismo.</p>",
+	"[[COMPONENT_ID]]/image_3": "images/icon-thumb.png",
+	"[[COMPONENT_ID]]/title_4": "{\"entityMap\":{},\"blocks\":[{\"key\":\"68t2d\",\"text\":\"Be a healthier you\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/title_4_html": "<h3>Be a healthier you</h3>",
+	"[[COMPONENT_ID]]/proposition_4": "{\"entityMap\":{},\"blocks\":[{\"key\":\"68t2d\",\"text\":\"Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismo.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/proposition_4_html": "<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismo.</p>",
+	"[[COMPONENT_ID]]/image_4": "images/icon-smile.png"
+}

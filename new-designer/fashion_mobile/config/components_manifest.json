@@ -1,0 +1,798 @@
+{
+	"global": [
+		{
+			"source": "nav_v1",
+			"label": "Header"
+		},
+		{
+			"source": "footer_v1",
+			"label": "Footer"
+		},
+		{
+			"source": "rich-text-with-button_v1",
+			"label": "Gifting",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Shopping for someone else?\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>Shopping for someone else?</h2>",
+				"button_text": "GIVE A GIFT",
+				"button_url": "/subscribe/gift"
+			},
+			"css": {
+				"": {
+					"padding-top": "0"
+				}
+			}
+		}
+	],
+	"index": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "hero-banner_v1",
+			"label": "Hero"
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "How It Works",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"How It Works\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"When you sign up for The Sampler, every month you will receive a box of carefully selected products and presents. A portion of the proceeds will be donated to a good cause.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>How It Works</h2>\n<p>When you sign up for The Sampler, every month you will receive a box of carefully selected products and presents. A portion of the proceeds will be donated to a good cause.</p>"
+			}
+		},
+		{
+			"source": "captioned-image-bar_v1",
+			"label": "Steps"
+		},
+		{
+			"source": "image-bar_v1",
+			"label": "Features"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"about": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"About Us\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>About Us</h2>"
+			}
+		},
+		{
+			"source": "rich-text-left_v1",
+			"label": "Mission",
+			"settings": {
+				"background_color": "#F3F2F0",
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"A little about our mission...\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Additional description can go here lacinia tempor massa, in elementum erat. Aenean facilisis eros at hendrerit commodo. Donec in finibus ex. Morbi consectetur viverra tristique. Phasellus commodo venenatis justo vel. Aenean velit dolor, elementum a tempor quis, tristique id augue. Maecenas vel leo quis sem malesuada aliquam. Quisque venenatis nulla posuere augue lacinia pellentesque. Nulla sagittis lorem sit amet justo vehicula, eget sollicitudin nisi tincidunt. Donec condimentum.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>A little about our mission...</h2>\n<p>Additional description can go here lacinia tempor massa, in elementum erat. Aenean facilisis eros at hendrerit commodo. Donec in finibus ex. Morbi consectetur viverra tristique. Phasellus commodo venenatis justo vel. Aenean velit dolor, elementum a tempor quis, tristique id augue. Maecenas vel leo quis sem malesuada aliquam. Quisque venenatis nulla posuere augue lacinia pellentesque. Nulla sagittis lorem sit amet justo vehicula, eget sollicitudin nisi tincidunt. Donec condimentum.</p>"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Meet Our Team",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Meet Our Team\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>Meet Our Team</h2>"
+			},
+			"css": {
+				"": {
+					"padding-bottom": "0"
+				}
+			}
+		},
+		{
+			"source": "captioned-image-bar_v1",
+			"label": "Members",
+			"settings": {
+				"background_color": "#FFFFFF",
+				"tile_background_color": "#FFFFFF",
+				"caption_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Team Member\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_1_html": "<p>Team Member</p>",
+				"caption_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Team Member\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_2_html": "<p>Team Member</p>",
+				"caption_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Team Member\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_3_html": "<p>Team Member</p>",
+				"image_1": "images/team_placeholder.png",
+				"image_2": "images/team_placeholder.png",
+				"image_3": "images/team_placeholder.png",
+				"label_1": "{}",
+				"label_1_html": "",
+				"label_2": "{}",
+				"label_2_html": "",
+				"label_3": "{}",
+				"label_3_html": ""
+			},
+			"css": {
+				"": {
+					"padding-top": "0"
+				}
+			}
+		},
+		{
+			"source": "rich-text-with-button_v1",
+			"label": "Call To Action",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Are you ready to subscribe to Bold?\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"2ui8v\",\"text\":\"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>Are you ready to subscribe to Bold?</h2>\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>",
+				"background_color": "#F3F2F0"
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"howitworks": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "How It Works",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"How It Works\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"When you sign up for The Sampler, every month you will receive a box of carefully selected products and presents. A portion of the proceeds will be donated to a good cause.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>How It Works</h2>\n<p>When you sign up for The Sampler, every month you will receive a box of carefully selected products and presents. A portion of the proceeds will be donated to a good cause.</p>"
+			}
+		},
+		{
+			"source": "captioned-image-bar_v1",
+			"label": "Steps"
+		},
+		{
+			"source": "text-col-with-button_v1",
+			"label": "Call To Action"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"faq": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "FAQ",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Frequently Asked Questions\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"2lmd6\",\"text\":\"What is the Bold box?\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"nkcf\",\"text\":\"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"ch1tj\",\"text\":\"How does it work?\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"4ji33\",\"text\":\"Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"4h5r7\",\"text\":\"How are the vitamins selected?\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"e9mhu\",\"text\":\"Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"4h5r7\",\"text\":\"Can I purchase a subscription as a gift?\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"e9mhu\",\"text\":\"Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"4h5r7\",\"text\":\"How are the boxes priced?\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"e9mhu\",\"text\":\"Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>Frequently Asked Questions</h2>\n<h3>What is the Bold box?</h3>\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>\n<h3>How does it work?</h3>\n<p>Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>\n<h3>How are the vitamins selected?</h3>\n<p>Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.</p>\n<h3>Can I purchase a subscription as a gift?</h3>\n<p>Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>\n<h3>How are the boxes priced?</h3>\n<p>Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.</p>",
+				"heading_3/color": "#000000"
+			},
+			"css": {
+				"h2": {
+					"margin": "0 0 40px 0"
+				},
+				"p": {
+					"border-bottom": "1px solid #EEEEEE",
+					"padding": "0 0 25px 0"
+				}
+			}
+		},
+		{
+			"source": "rich-text-with-button_v1",
+			"label": "Call To Action",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Are you ready to subscribe to Bold?\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"2ui8v\",\"text\":\"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>Are you ready to subscribe to Bold?</h2>\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>",
+				"background_color": "#F3F2F0"
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"shop/listing": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"The Shop\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>The Shop</h1>"
+			},
+			"css": {
+				"": {
+					"padding-bottom": "20px"
+				}
+			}
+		},
+		{
+			"source": "shop-tag-bar_v1",
+			"label": "Tag Bar"
+		},
+		{
+			"source": "shop-sort-bar_v1",
+			"label": "Sort Bar"
+		},
+		{
+			"source": "shop-product-list_v1",
+			"label": "Product List"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"shop/product": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "shop-product-title_v1",
+			"label": "Title"
+		},
+		{
+			"source": "shop-product-content_v1",
+			"label": "Details",
+			"css": {
+				"": {
+					"padding-top": "0"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"subscribe": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "progress-bar_v1",
+			"label": "Progress Bar"
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Subscribe\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Select your preferences below. Lorem ipsum dolor sit amet consequer agua.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Subscribe</h1>\n<p>Select your preferences below. Lorem ipsum dolor sit amet consequer agua.</p>"
+			}
+		},
+		{
+			"source": "subscription-product-list_v1",
+			"label": "Product List"
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Previous Boxes",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Previous Boxes\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Past boxes have included products like these:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>Previous Boxes</h2>\n<p>Past boxes have included products like these:</p>"
+			},
+			"css": {
+				"": {
+					"padding-bottom": "0"
+				}
+			}
+		},
+		{
+			"source": "captioned-image-bar_v1",
+			"label": "Boxes",
+			"settings": {
+				"background_color": "#FFFFFF",
+				"tile_background_color": "#FFFFFF",
+				"label_1": "{}",
+				"label_1_html": "",
+				"image_1": "images/previous-box-1.jpg",
+				"caption_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"The Package Deal\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_1_html": "<p>The Package Deal</p>",
+				"label_2": "{}",
+				"label_2_html": "",
+				"image_2": "images/previous-box-2.jpg",
+				"caption_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"The Favorite\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_2_html": "<p>The Favorite</p>",
+				"label_3": "{}",
+				"label_3_html": "",
+				"image_3": "images/previous-box-3.jpg",
+				"caption_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"The Best Box\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_3_html": "<p>The Best Box</p>"
+			},
+			"css": {
+				"": {
+					"padding-top": "0"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"subscribe_flow/survey_step": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "progress-bar_v1",
+			"label": "Progress Bar"
+		},
+		{
+			"source": "subscribe-step-title_v1",
+			"label": "Title",
+			"settings": {
+				"default_title": "Survey"
+			}
+		},
+		{
+			"source": "survey-step-content_v1",
+			"label": "Content"
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Previous Boxes",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Previous Boxes\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Past boxes have included products like these:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>Previous Boxes</h2>\n<p>Past boxes have included products like these:</p>"
+			},
+			"css": {
+				"": {
+					"padding-bottom": "0"
+				}
+			}
+		},
+		{
+			"source": "captioned-image-bar_v1",
+			"label": "Boxes",
+			"settings": {
+				"background_color": "#FFFFFF",
+				"tile_background_color": "#FFFFFF",
+				"label_1": "{}",
+				"label_1_html": "",
+				"image_1": "images/previous-box-1.jpg",
+				"caption_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"The Package Deal\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_1_html": "<p>The Package Deal</p>",
+				"label_2": "{}",
+				"label_2_html": "",
+				"image_2": "images/previous-box-2.jpg",
+				"caption_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"The Favorite\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_2_html": "<p>The Favorite</p>",
+				"label_3": "{}",
+				"label_3_html": "",
+				"image_3": "images/previous-box-3.jpg",
+				"caption_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"The Best Box\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_3_html": "<p>The Best Box</p>"
+			},
+			"css": {
+				"": {
+					"padding-top": "0"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"subscribe_flow/terms_step": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "progress-bar_v1",
+			"label": "Progress Bar"
+		},
+		{
+			"source": "subscribe-step-title_v1",
+			"label": "Title",
+			"settings": {
+				"default_title": "Choose a term"
+			}
+		},
+		{
+			"source": "terms-step-content_v1",
+			"label": "Content"
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Previous Boxes",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Previous Boxes\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Past boxes have included products like these:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>Previous Boxes</h2>\n<p>Past boxes have included products like these:</p>"
+			},
+			"css": {
+				"": {
+					"padding-bottom": "0"
+				}
+			}
+		},
+		{
+			"source": "captioned-image-bar_v1",
+			"label": "Boxes",
+			"settings": {
+				"background_color": "#FFFFFF",
+				"tile_background_color": "#FFFFFF",
+				"label_1": "{}",
+				"label_1_html": "",
+				"image_1": "images/previous-box-1.jpg",
+				"caption_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"The Package Deal\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_1_html": "<p>The Package Deal</p>",
+				"label_2": "{}",
+				"label_2_html": "",
+				"image_2": "images/previous-box-2.jpg",
+				"caption_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"The Favorite\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_2_html": "<p>The Favorite</p>",
+				"label_3": "{}",
+				"label_3_html": "",
+				"image_3": "images/previous-box-3.jpg",
+				"caption_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"The Best Box\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_3_html": "<p>The Best Box</p>"
+			},
+			"css": {
+				"": {
+					"padding-top": "0"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"subscribe_flow/variant_step": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "progress-bar_v1",
+			"label": "Progress Bar"
+		},
+		{
+			"source": "subscribe-step-title_v1",
+			"label": "Title",
+			"settings": {
+				"default_title": "Choose an option"
+			}
+		},
+		{
+			"source": "variant-step-content_v1",
+			"label": "Content"
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Previous Boxes",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Previous Boxes\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Past boxes have included products like these:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>Previous Boxes</h2>\n<p>Past boxes have included products like these:</p>"
+			},
+			"css": {
+				"": {
+					"padding-bottom": "0"
+				}
+			}
+		},
+		{
+			"source": "captioned-image-bar_v1",
+			"label": "Boxes",
+			"settings": {
+				"background_color": "#FFFFFF",
+				"tile_background_color": "#FFFFFF",
+				"label_1": "{}",
+				"label_1_html": "",
+				"image_1": "images/previous-box-1.jpg",
+				"caption_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"The Package Deal\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_1_html": "<p>The Package Deal</p>",
+				"label_2": "{}",
+				"label_2_html": "",
+				"image_2": "images/previous-box-2.jpg",
+				"caption_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"The Favorite\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_2_html": "<p>The Favorite</p>",
+				"label_3": "{}",
+				"label_3_html": "",
+				"image_3": "images/previous-box-3.jpg",
+				"caption_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"The Best Box\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_3_html": "<p>The Best Box</p>"
+			},
+			"css": {
+				"": {
+					"padding-top": "0"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"view-cart": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Your Cart\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Shop our products lorem ipsum dolor sit amet pentellesque dolor sit lorem\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Your Cart</h1>\n<p>Shop our products lorem ipsum dolor sit amet pentellesque dolor sit lorem</p>"
+			}
+		},
+		{
+			"source": "cart_v1",
+			"label": "Cart"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"customer/login": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Account Login\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Manage your subscription & other information regarding your account\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Account Login</h1>\n<p>Manage your subscription &amp; other information regarding your account</p>"
+			}
+		},
+		{
+			"source": "login-form_v1",
+			"label": "Login Form"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"customer/forgot_password": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Forgot your password?\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"No worries, we'll help you reset it and get back in.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Forgot your password?</h1>\n<p>No worries, we'll help you reset it and get back in.</p>"
+			}
+		},
+		{
+			"source": "forgot-password-form_v1",
+			"label": "Forgot Password Form"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"customer/password_reset": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Password Reset\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Use your email and the temporary key just sent to you to change your password\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Password Reset</h1>\n<p>Use your email and the temporary key just sent to you to change your password</p>"
+			}
+		},
+		{
+			"source": "password-reset-form_v1",
+			"label": "Password Reset Form"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"customer/account": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "customer-account_v1",
+			"label": "Customer Account Content"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"customer/edit": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "customer-edit_v1",
+			"label": "Customer Edit Content"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"customer/order": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "order_v1",
+			"label": "Order"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"customer/thank_you": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "customer-thank-you_v1",
+			"label": "Customer Thank You Content"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"sold_out": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "image_v1",
+			"label": "Image",
+			"settings": {
+				"image": "images/sold-out.png"
+			}
+		},
+		{
+			"source": "rich-text-with-button_v1",
+			"label": "Content",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Sorry, we are currently sold out.\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"We know you want macaroons, but we're at capacity for this month. Don't worry though, because we have more goodies coming next month!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Sorry, we are currently sold out.</h1>\n<p>We know you want macaroons, but we're at capacity for this month. Don't worry though, because we have more goodies coming next month!</p>",
+				"button_text": "BACK TO HOMEPAGE",
+				"button_url": "/"
+			},
+			"css": {
+				"": {
+					"padding-top": "0"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"checkout": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "checkout_v1",
+			"label": "Checkout"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	]
+}

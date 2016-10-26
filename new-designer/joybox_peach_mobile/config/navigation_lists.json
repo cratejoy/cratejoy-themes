@@ -1,0 +1,12 @@
+{
+	"header": [
+		{
+			"title": "Shop",
+			"url": "/shop"
+		},
+		{
+			"title": "Cart",
+			"url": "/view-cart"
+		}
+	]
+}

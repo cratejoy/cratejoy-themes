@@ -1,0 +1,73 @@
+#[[COMPONENT_ID]] {
+	padding: 0;
+}
+
+#[[COMPONENT_ID]] .hero-content {
+	background-color: {{ settings['[[COMPONENT_ID]]/background_color'] }};
+	padding: 20px;
+}
+
+#[[COMPONENT_ID]] .hero-content h1 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_1/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_1/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_1/font_size'] }};
+	margin: 0 0 15px 0;
+}
+
+#[[COMPONENT_ID]] .hero-content h2 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_2/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_2/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_2/font_size'] }};
+	margin: 0 0 15px 0;
+}
+
+#[[COMPONENT_ID]] .hero-content h3 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_3/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_3/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_3/font_size'] }};
+	margin: 0 0 15px 0;
+}
+
+#[[COMPONENT_ID]] .hero-content p {
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/body/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/body/font_size'] }};
+	margin: 0 0 15px 0;
+}
+
+#[[COMPONENT_ID]] .hero-content .button-container {
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+}
+
+#[[COMPONENT_ID]] .hero-content .btn {
+	margin: 3px;
+	padding: 15px;
+	width: 40%;
+}
+
+#[[COMPONENT_ID]] .hero-content .btn-primary {
+	background-color: {{ settings['[[COMPONENT_ID]]/primary_button/color'] }};
+	color: {{ settings['[[COMPONENT_ID]]/primary_button/text_color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/primary_button/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/primary_button/font_size'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content .btn-primary:hover {
+	background-color: {{ settings['[[COMPONENT_ID]]/primary_button/hover_color'] }};
+	color: {{ settings['[[COMPONENT_ID]]/primary_button/hover_text_color'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content .btn-secondary {
+	background-color: {{ settings['[[COMPONENT_ID]]/secondary_button/color'] }};
+	color: {{ settings['[[COMPONENT_ID]]/secondary_button/text_color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/secondary_button/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/secondary_button/font_size'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content .btn-secondary:hover {
+	background-color: {{ settings['[[COMPONENT_ID]]/secondary_button/hover_color'] }};
+	color: {{ settings['[[COMPONENT_ID]]/secondary_button/hover_text_color'] }};
+}

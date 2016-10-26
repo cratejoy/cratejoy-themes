@@ -1,0 +1,19 @@
+{
+	"[[COMPONENT_ID]]/quote_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/quote_1_html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi</p>",
+	"[[COMPONENT_ID]]/quote_1_name": "{\"entityMap\":{},\"blocks\":[{\"key\":\"68t2d\",\"text\":\"Jane Smith\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/quote_1_name_html": "<h3>Jane Smith</h3>",
+	"[[COMPONENT_ID]]/quote_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/quote_2_html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi</p>",
+	"[[COMPONENT_ID]]/quote_2_name": "{\"entityMap\":{},\"blocks\":[{\"key\":\"68t2d\",\"text\":\"John West\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/quote_2_name_html": "<h3>John West</h3>",
+	"[[COMPONENT_ID]]/quote_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/quote_3_html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi</p>",
+	"[[COMPONENT_ID]]/quote_3_name": "{\"entityMap\":{},\"blocks\":[{\"key\":\"68t2d\",\"text\":\"Kammit Halahar\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/quote_3_name_html": "<h3>Kammit Halahar</h3>",
+	"[[COMPONENT_ID]]/title": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"People talking about Parcel\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/title_html": "<h2>People talking about Parcel</h2>",
+	"[[COMPONENT_ID]]/image1": "images/65x65_headshot.svg",
+	"[[COMPONENT_ID]]/image2": "images/65x65_headshot.svg",
+	"[[COMPONENT_ID]]/image3": "images/65x65_headshot.svg"
+}

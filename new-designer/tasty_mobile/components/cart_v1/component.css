@@ -1,0 +1,76 @@
+#[[COMPONENT_ID]] {
+	padding: 15px 15px 100px 15px;
+}
+
+#[[COMPONENT_ID]] .cart-thead {
+	border-bottom: 1px solid #E1E1E1;
+	padding: 10px 0;
+}
+
+#[[COMPONENT_ID]] .cart-thead h3 {
+	text-transform: uppercase;
+}
+
+#[[COMPONENT_ID]] .cart-item {
+	border: 1px solid #E1E1E1;
+	padding: 25px 0;
+	position: relative;
+}
+
+#[[COMPONENT_ID]] .product-main {
+	margin: 0 0 15px 0;
+}
+
+#[[COMPONENT_ID]] .product-label p {
+	margin: 0;
+}
+
+#[[COMPONENT_ID]] .product-label .info {
+	color: {{ settings['page_secondary_heading/color'] }};
+	text-align: right;
+	text-transform: uppercase;
+}
+
+#[[COMPONENT_ID]] .product-label .meta {
+	color: {{ settings['page_body/color'] }};
+	font-size: {{ settings['page_body/font_size'] }};
+}
+
+#[[COMPONENT_ID]] .product-rem-btn {
+	position: absolute;
+	right: 1%;
+	top: 1%;
+}
+
+#[[COMPONENT_ID]] figure {
+	margin: 0 0 15px 0;
+}
+
+#[[COMPONENT_ID]] .cart-subtotal {
+	margin: 50px 0 0 0;
+}
+
+#[[COMPONENT_ID]] .cart-subtotal h2 {
+	margin: 0 0 15px 0;
+}
+
+#[[COMPONENT_ID]] .cart-subtotal h3 {
+	margin: 0 0 25px 0;
+	text-transform: uppercase;
+}
+
+#[[COMPONENT_ID]] .cart-subtotal p {
+	margin: 0 0 25px 0;
+}
+
+@media (min-width: 768px) {
+	#[[COMPONENT_ID]] .cart-item {
+		border-width: 0 0 1px 0;
+	}
+	#[[COMPONENT_ID]] .product-rem-btn {
+		top: 40%;
+	}
+	#[[COMPONENT_ID]] figure {
+		margin: 0;
+	}
+}

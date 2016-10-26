@@ -1,0 +1,12 @@
+{
+	"[[COMPONENT_ID]]/button_text": "SUBSCRIBE",
+	"[[COMPONENT_ID]]/button_url": "/subscribe",
+	"[[COMPONENT_ID]]/content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Contact Us\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"6c6ct\",\"text\":\"Call us at: 123-456-7890\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/content_html": "<p>Contact Us</p>\n<p>Call us at: 123-456-7890</p>",
+	"[[COMPONENT_ID]]/control_variable/facebook_url": "https://facebook.com/YourStoreGoesHere",
+	"[[COMPONENT_ID]]/control_variable/twitter_url": "https://twitter.com/@YourStoreGoesHere",
+	"[[COMPONENT_ID]]/control_variable/pinterest_url": "https://pinterest.com/YourStoreGoesHere",
+	"[[COMPONENT_ID]]/control_variable/instagram_url": "https://www.instagram.com/YourStoreGoesHere",
+	"[[COMPONENT_ID]]/control_variable/tumblr_url": "https://YourStoreGoesHere.tumblr.com",
+	"[[COMPONENT_ID]]/control_variable/youtube_url": "https://youtube.com/channel/YourStoreGoesHere"
+}

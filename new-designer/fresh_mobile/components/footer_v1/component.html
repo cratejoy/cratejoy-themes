@@ -1,0 +1,88 @@
+<section id="[[COMPONENT_ID]]" class="footer">
+	<div class="container">
+		<div class="row">
+			{% set cart = active_cart() %}
+
+			<div class="footer-directory col-md-3 col-xs-6">
+				{{ settings['[[COMPONENT_ID]]/column_1_content'] }}
+
+				<div id="[[COMPONENT_ID]]-footer-menu" class="">
+					<ul class="footer-list">
+						{% for item in navigation_lists().footer %}
+							{% if item.children %}
+								<li class="footer-item" class="dropdown">
+									<a href="#" class="dropdown-toggle footer-link" data-toggle="dropdown">{{ item.title | safe }}</a>
+									<ul class="dropdown-menu">
+										{% for subitem in item.children %}
+											<li class="footer-item"><a href="{{ subitem.url }}" class="footer-link">{{ subitem.title | safe }}</a></li>
+										{% endfor %}
+									</ul>
+								</li>
+							{% else %}
+								<li class="footer-item"><a href="{{ item.url }}" class="footer-link">{{ item.title | safe }}</a></li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-contact-us col-md-3 col-xs-6">
+				{{ settings['[[COMPONENT_ID]]/column_3_content'] }}
+			</div>
+
+			<div class="footer-follow-us col-md-6 col-xs-12">
+				{{ settings['[[COMPONENT_ID]]/column_2_content'] }}
+
+				<div class="row social-icons-row">
+					{% if settings["[[COMPONENT_ID]]/facebook_url"] %}
+					<a href="{{ settings["[[COMPONENT_ID]]/facebook_url"] }}">
+						{% include "svg/facebook.html" %}
+					</a>
+					{% endif %}
+					{% if settings["[[COMPONENT_ID]]/twitter_url"] %}
+					<a href="{{ settings["[[COMPONENT_ID]]/twitter_url"] | default('#') }}">
+						{% include "svg/twitter.html" %}
+					</a>
+					{% endif %}
+					{% if settings["[[COMPONENT_ID]]/pinterest_url"] %}
+					<a href="{{ settings["[[COMPONENT_ID]]/pinterest_url"] | default('#') }}">
+						{% include "svg/pinterest.html" %}
+					</a>
+					{% endif %}
+					{% if settings["[[COMPONENT_ID]]/instagram_url"] %}
+					<a href="{{ settings["[[COMPONENT_ID]]/instagram_url"] | default('#') }}">
+						{% include "svg/instagram.html" %}
+					</a>
+					{% endif %}
+					{% if settings["[[COMPONENT_ID]]/tumblr_url"] %}
+					<a href="{{ settings["[[COMPONENT_ID]]/tumblr_url"] | default('#') }}">
+						{% include "svg/tumblr.html" %}
+					</a>
+					{% endif %}
+					{% if settings["[[COMPONENT_ID]]/youtube_url"] %}
+					<a href="{{ settings["[[COMPONENT_ID]]/youtube_url"] | default('#') }}">
+						{% include "svg/youtube.html" %}
+					</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+
+		<div class="row footer-bottom">
+			<div class="col-md-6 col-xs-12">
+				{{ settings["[[COMPONENT_ID]]/copyright"] }} - Powered by <a href="http://cratejoy.com">Cratejoy</a>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="footer-cards">
+					<img src="{{ 'images/card_Visa.png' | asset_url }}"/>
+					<img src="{{ 'images/card_Mastercard.png' | asset_url }}"/>
+					<img src="{{ 'images/card_Amex.png' | asset_url }}"/>
+					<img src="{{ 'images/card_Discover.png' | asset_url }}"/>
+					<img src="{{ 'images/card_JCB.png' | asset_url }}"/>
+					<img src="{{ 'images/card_DinersClub.png' | asset_url }}"/>
+					<img src="{{ 'images/card_Maestro.png' | asset_url }}"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

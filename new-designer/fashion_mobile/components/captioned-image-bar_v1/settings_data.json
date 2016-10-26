@@ -1,0 +1,19 @@
+{
+	"[[COMPONENT_ID]]/label_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Step 1\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/label_1_html": "<h2>Step 1</h2>",
+	"[[COMPONENT_ID]]/image_1": "images/hiw-placeholder-1.png",
+	"[[COMPONENT_ID]]/caption_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Choose a size\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/caption_1_html": "<p>Choose a size</p>",
+	"[[COMPONENT_ID]]/label_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Step 2\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/label_2_html": "<h2>Step 2</h2>",
+	"[[COMPONENT_ID]]/image_2": "images/hiw-placeholder-2.png",
+	"[[COMPONENT_ID]]/caption_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Choose a frequency\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/caption_2_html": "<p>Choose a frequency</p>",
+	"[[COMPONENT_ID]]/label_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Step 3\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/label_3_html": "<h2>Step 3</h2>",
+	"[[COMPONENT_ID]]/image_3": "images/hiw-placeholder-3.png",
+	"[[COMPONENT_ID]]/caption_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Get a package!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/caption_3_html": "<p>Get a package!</p>",
+	"[[COMPONENT_ID]]/tile_background_color": "#F3F2F0",
+	"[[COMPONENT_ID]]/background_color": "#F3F2F0"
+}

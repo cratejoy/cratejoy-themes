@@ -1,0 +1,50 @@
+{
+	"header": [
+		{
+			"title": "Subscribe",
+			"url": "/subscribe"
+		},
+		{
+			"title": "What's Inside",
+			"url": "/whats_inside"
+		},
+		{
+			"title": "Shop",
+			"url": "/shop"
+		},
+		{
+			"title": "About",
+			"url": "/about"
+		},
+		{
+			"title": "Cart",
+			"url": "/view-cart"
+		}
+	],
+	"footer": [
+		{
+			"title": "Subscribe",
+			"url": "/subscribe"
+		},
+		{
+			"title": "Give Gift",
+			"url": "/subscribe/gift"
+		},
+		{
+			"title": "Shop",
+			"url": "/shop/"
+		},
+		{
+			"title": "What's Inside",
+			"url": "/whats_inside"
+		},
+		{
+			"title": "Cart",
+			"url": "/view-cart"
+		},
+		{
+			"title": "About",
+			"url": ""
+		}
+	]
+}

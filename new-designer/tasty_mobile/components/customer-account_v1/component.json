@@ -1,0 +1,8 @@
+{
+	"name": "[[COMPONENT_LABEL]]",
+	"description": "Customer Account Page",
+	"version": "1",
+	"whitelist": [
+		"customer/account"
+	]
+}

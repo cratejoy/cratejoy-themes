@@ -1,0 +1,15 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/term_placeholder_image",
+			"label": "Default Image",
+			"type": "image"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/terms_step_term_button_text",
+			"label": "Choose Button",
+			"type": "text"
+		}
+	]
+}

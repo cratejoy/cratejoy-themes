@@ -1,0 +1,31 @@
+<section id="[[COMPONENT_ID]]" class="component-combined-image-bar row">
+
+	<div class="row flex-center text-center">
+		{{ settings["[[COMPONENT_ID]]/title"] }}
+	</div>
+
+	<div class="row">
+		<div class="col-md-4 col-xs-12 content flex-center text-center">
+			{{ setting_helpers.image_tag("[[COMPONENT_ID]]/image_1", class_name="square-image") }}
+			{{ settings["[[COMPONENT_ID]]/caption_1"] }}
+		</div>
+
+		<div class="col-md-4 col-xs-12 content flex-center text-center">
+			{{ setting_helpers.image_tag("[[COMPONENT_ID]]/image_2", class_name="square-image") }}
+			{{ settings["[[COMPONENT_ID]]/caption_2"] }}
+		</div>
+
+		<div class="col-md-4 col-xs-12 content flex-center text-center">
+			{{ setting_helpers.image_tag("[[COMPONENT_ID]]/image_3", class_name="square-image") }}
+			{{ settings["[[COMPONENT_ID]]/caption_3"] }}
+		</div>
+	</div>
+
+	{% if settings["[[COMPONENT_ID]]/show_button"] %}
+	<div class="row flex-center text-center">
+		<a type="button" class="btn btn-large btn-primary" href="{{ settings['[[COMPONENT_ID]]/button_url'] | default('#') }}">
+			{{ settings["[[COMPONENT_ID]]/button_text"] }}
+		</a>
+	</div>
+	{% endif %}
+</section>

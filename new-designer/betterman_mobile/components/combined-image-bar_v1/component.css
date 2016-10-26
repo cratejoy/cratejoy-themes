@@ -1,0 +1,48 @@
+#[[COMPONENT_ID]] {
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	background-color: {{ settings['[[COMPONENT_ID]]/background_color'] }};
+}
+
+#[[COMPONENT_ID]] .content {
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	margin: 0 auto;
+	padding: 25px;
+}
+
+#[[COMPONENT_ID]] .square-image {
+	height: 225px;
+	margin: 0 0 15px 0;
+	width: 225px;
+}
+
+#[[COMPONENT_ID]] h1 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_1/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_1/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_1/font_size'] }};
+}
+
+#[[COMPONENT_ID]] h2 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_2/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_2/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_2/font_size'] }};
+}
+
+#[[COMPONENT_ID]] h3 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_3/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_3/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_3/font_size'] }};
+}
+
+#[[COMPONENT_ID]] p {
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/body/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/body/font_size'] }};
+}

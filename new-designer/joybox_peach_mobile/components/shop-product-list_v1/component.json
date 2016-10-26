@@ -1,0 +1,8 @@
+{
+	"name": "[[COMPONENT_LABEL]]",
+	"description": "Product List",
+	"version": "1",
+	"whitelist": [
+		"shop/listing"
+	]
+}

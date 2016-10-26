@@ -1,0 +1,9 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/content",
+			"type": "richtext"
+		}
+	]
+}

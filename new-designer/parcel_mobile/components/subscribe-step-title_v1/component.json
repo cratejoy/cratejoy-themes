@@ -1,0 +1,10 @@
+{
+	"name": "[[COMPONENT_LABEL]]",
+	"description": "Survey Step Title",
+	"version": "1",
+	"whitelist": [
+		"subscribe_flow/survey_step",
+		"subscribe_flow/terms_step",
+		"subscribe_flow/variant_step"
+	]
+}

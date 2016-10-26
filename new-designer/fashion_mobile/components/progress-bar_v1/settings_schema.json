@@ -1,0 +1,28 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/background_color",
+			"label": "Background",
+			"type": "color",
+			"inherits": "page_background_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/progress_bar_color",
+			"label": "Progress Bar Color",
+			"type": "color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/active_color",
+			"label": "Active Color",
+			"type": "color",
+			"inherits": "primary_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/text_color",
+			"label": "Text Color",
+			"type": "color",
+			"inherits": "page_body/color"
+		}
+	]
+}

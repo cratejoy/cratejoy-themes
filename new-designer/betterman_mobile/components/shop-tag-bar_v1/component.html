@@ -1,0 +1,23 @@
+{% if tags %}
+	<section id="[[COMPONENT_ID]]" class="component-shop-tags row">
+		<ul class="nav nav-pills">
+			<li class="nav-item">
+				{% if not category %}
+				<a class="nav-link active" href="/shop/all{% if sort %}?sort={{sort}}{% endif %}">All</a>
+				{% else %}
+				<a class="nav-link" href="/shop/all{% if sort %}?sort={{sort}}{% endif %}">All</a>
+				{% endif %}
+			</li>
+
+			{% for tag in tags %}
+			<li class="nav-item">
+				{% if tag.slug == category %}
+				<a class="nav-link active" href="/shop/all{% if sort %}?sort={{sort}}{% endif %}">{{ tag.name|title }}</a>
+				{% else %}
+				<a class="nav-link" href="/shop/{{ tag.slug }}{% if sort %}?sort={{sort}}{% endif %}">{{ tag.name|title }}</a>
+				{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+	</section>
+{% endif %}

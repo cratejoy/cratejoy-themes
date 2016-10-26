@@ -1,0 +1,10 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/btn_text",
+			"label": "Button Text",
+			"type": "text"
+		}
+	]
+}

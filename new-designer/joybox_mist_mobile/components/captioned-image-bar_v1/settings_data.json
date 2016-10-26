@@ -1,0 +1,13 @@
+{
+	"[[COMPONENT_ID]]/title": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Here's how it works\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/title_html": "<h2>Here's how it works</h2>",
+	"[[COMPONENT_ID]]/caption_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"1. Choose box\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/caption_1_html": "<h3>1. Choose box</h3>",
+	"[[COMPONENT_ID]]/image_1": "images/Step1-icon.png",
+	"[[COMPONENT_ID]]/caption_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"2. Choose plan\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/caption_2_html": "<h3>2. Choose plan</h3>",
+	"[[COMPONENT_ID]]/image_2": "images/Step2-icon.png",
+	"[[COMPONENT_ID]]/caption_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"3. Enjoy\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/caption_3_html": "<h3>3. Enjoy</h3>",
+	"[[COMPONENT_ID]]/image_3": "images/Step3-icon.png"
+}

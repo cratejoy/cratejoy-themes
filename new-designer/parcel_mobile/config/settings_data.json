@@ -1,0 +1,37 @@
+{
+	"current": "default",
+	"default": {
+		"primary_color": "#333333",
+		"secondary_color": "#F38258",
+		"content_background_color": "#CCCCCC",
+		"accent_background_color": "#F5F5F5",
+		"page_background_color": "#FFFFFF",
+
+		"page_heading/font_face": "Lato",
+		"page_heading/font_size": "45px",
+		"page_heading/color": "#333333",
+		"page_heading/alternate_color": "#FFFFFF",
+		"page_secondary_heading/font_face": "Lato",
+		"page_secondary_heading/font_size": "22px",
+		"page_secondary_heading/color": "#333333",
+		"page_tertiary_heading/font_face": "Lato",
+		"page_tertiary_heading/font_size": "16px",
+		"page_tertiary_heading/color": "#333333",
+		"page_body/font_face": "Lato",
+		"page_body/font_size": "14px",
+		"page_body/color": "#333333",
+		"page_body/alternate_color": "#FFFFFF",
+		"border/color": "#E7E7E7",
+
+		"primary_button/font_size": "15px",
+		"primary_button/font_face": "Lato",
+		"primary_button/text_color": "#FFFFFF",
+		"primary_button/hover_text_color": "#FFFFFF",
+		"secondary_button/font_size": "15px",
+		"secondary_button/font_face": "Lato",
+		"secondary_button/text_color": "#FAFAFA",
+		"secondary_button/hover_text_color": "#FAFAFA",
+
+		"product_placeholder_image": "images/product_placeholder.jpg"
+	}
+}

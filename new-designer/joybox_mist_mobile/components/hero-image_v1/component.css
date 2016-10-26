@@ -1,0 +1,172 @@
+/**********
+Navigation
+**********/
+#[[COMPONENT_ID]] .navbar {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 0;
+	margin-bottom: 3rem;
+}
+
+#[[COMPONENT_ID]] .navbar-brand {
+	color: {{ settings['[[COMPONENT_ID]]/logo/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/logo/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/logo/font_size'] }};
+	margin: 0;
+	line-height: 1;
+	text-align: center;
+}
+
+#[[COMPONENT_ID]] .navbar-brand > img {
+	display: inline-block;
+}
+
+#[[COMPONENT_ID]] .navbar-nav {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+
+	-moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+
+	margin: 20px 0;
+}
+
+#[[COMPONENT_ID]] .navbar a.nav-link,
+#[[COMPONENT_ID]] .navbar button {
+	color: {{ settings['[[COMPONENT_ID]]/link_button/text_color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/link_button/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/link_button/font_size'] }};;
+	letter-spacing: 1px;
+	padding: 8px 12px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#[[COMPONENT_ID]] .navbar a.nav-link:hover,
+#[[COMPONENT_ID]] .navbar a.nav-link:focus,
+#[[COMPONENT_ID]] .navbar a.nav-link:active,
+#[[COMPONENT_ID]] .navbar button:hover,
+#[[COMPONENT_ID]] .navbar button:focus,
+#[[COMPONENT_ID]] .navbar button:active {
+	color: {{ settings['[[COMPONENT_ID]]/link_button/hover_text_color'] }};
+	outline: none;
+}
+
+#[[COMPONENT_ID]] .navbar-nav .dropdown-menu a {
+	color: {{ settings['page_body/color'] }};
+	padding: 10px 0;
+}
+
+#[[COMPONENT_ID]] .navbar-toggler {
+	padding: 1rem;
+}
+
+@media(min-width: 767px) {
+	#[[COMPONENT_ID]] .navbar {
+		background-color: transparent;
+		margin-bottom: 0;
+	}
+
+	#[[COMPONENT_ID]] .navbar-nav {
+		-moz-flex-direction: row;
+		-webkit-flex-direction: row;
+		flex-direction: row;
+
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	#[[COMPONENT_ID]] .navbar-nav li {
+		-moz-flex-shrink: 0;
+		-webkit-flex-shrink: 0;
+		flex-shrink: 0;
+	}
+
+	#[[COMPONENT_ID]] .navbar-nav .nav-link {
+		padding: 8px 0 8px 28px;
+	}
+}
+
+
+/**********
+Hero
+**********/
+#[[COMPONENT_ID]] .hero-content {
+	padding: 20px;
+}
+
+@media(min-width: 768px) {
+	#[[COMPONENT_ID]] .hero-content {
+		min-height: 700px;
+	}
+}
+
+#[[COMPONENT_ID]] .hero-content h1 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_1/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_1/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_1/font_size'] }};
+	letter-spacing: 2px;
+}
+
+#[[COMPONENT_ID]] .hero-content h2 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_2/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_2/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_2/font_size'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content h3 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_3/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_3/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_3/font_size'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content p {
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/body/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/body/font_size'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content .btn {
+	margin-bottom: 10px;
+}
+
+#[[COMPONENT_ID]] .hero-content .btn.btn-primary {
+	border: 2px solid transparent;
+	background-color: {{ settings['[[COMPONENT_ID]]/primary_button/color'] }};
+	color: {{ settings['[[COMPONENT_ID]]/primary_button/text_color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/primary_button/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/primary_button/font_size'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content .btn.btn-primary:hover,
+#[[COMPONENT_ID]] .hero-content .btn.btn-primary:focus,
+#[[COMPONENT_ID]] .hero-content .btn.btn-primary:active,
+#[[COMPONENT_ID]] .hero-content .btn.btn-primary:active:focus {
+	background-color: {{ settings['[[COMPONENT_ID]]/primary_button/hover_color'] }};
+	color: {{ settings['[[COMPONENT_ID]]/primary_button/hover_text_color'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content .btn-secondary {
+	border: 2px solid;
+
+	background-color: {{ settings['[[COMPONENT_ID]]/secondary_button/color'] }};
+	border-color: {{ settings['[[COMPONENT_ID]]/secondary_button/text_color'] }};
+	color: {{ settings['[[COMPONENT_ID]]/secondary_button/text_color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/secondary_button/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/secondary_button/font_size'] }};
+}
+
+#[[COMPONENT_ID]] .hero-content .btn.btn-secondary:hover,
+#[[COMPONENT_ID]] .hero-content .btn.btn-secondary:focus,
+#[[COMPONENT_ID]] .hero-content .btn.btn-secondary:active,
+#[[COMPONENT_ID]] .hero-content .btn.btn-secondary:active:focus {
+	background-color: {{ settings['[[COMPONENT_ID]]/secondary_button/hover_color'] }};
+	border-color: {{ settings['[[COMPONENT_ID]]/secondary_button/hover_text_color'] }};
+	color: {{ settings['[[COMPONENT_ID]]/secondary_button/hover_text_color'] }};
+}

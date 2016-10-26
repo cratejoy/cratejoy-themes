@@ -1,0 +1,30 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/quantity_label",
+			"type": "text",
+			"label": "Quantity Label"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/add_to_cart_button",
+			"type": "text",
+			"label": "Add-to-Cart Button"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/write_review_button",
+			"type": "text",
+			"label": "Review Button"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/share_label",
+			"type": "text",
+			"label": "Share Label"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/product_description_label",
+			"type": "text",
+			"label": "Description Label"
+		}
+	]
+}

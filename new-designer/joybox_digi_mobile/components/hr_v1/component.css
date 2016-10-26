@@ -1,0 +1,3 @@
+#[[COMPONENT_ID]] hr {
+	border-top-color: {{ settings['[[COMPONENT_ID]]/color'] }};
+}

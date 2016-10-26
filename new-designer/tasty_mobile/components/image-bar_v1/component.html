@@ -1,0 +1,34 @@
+<section id="[[COMPONENT_ID]]" class="component-image-bar">
+	<div class="container-fluid">
+
+		<div class="title-row row">
+			<div class="col-xs-12 flex-center text-center">
+				{{ settings["[[COMPONENT_ID]]/title"] }}
+			</div>
+		</div>
+
+		<div class="content-row row">
+			{% if settings["[[COMPONENT_ID]]/control_variable/image_1"] %}
+			<div class="flex-center content">
+				<img src="{{ settings['[[COMPONENT_ID]]/control_variable/image_1'] | asset_url | placeholder_flexible('Image') }}" />
+			</div>
+			{% endif %}
+			{% if settings["[[COMPONENT_ID]]/control_variable/image_2"] %}
+			<div class="flex-center content">
+				<img src="{{ settings['[[COMPONENT_ID]]/control_variable/image_2'] | asset_url | placeholder_flexible('Image') }}" />
+			</div>
+			{% endif %}
+			{% if settings["[[COMPONENT_ID]]/control_variable/image_3"] %}
+			<div class="flex-center content">
+				<img src="{{ settings['[[COMPONENT_ID]]/control_variable/image_3'] | asset_url | placeholder_flexible('Image') }}" />
+			</div>
+			{% endif %}
+			{% if settings["[[COMPONENT_ID]]/control_variable/image_4"] %}
+			<div class="flex-center content">
+				<img src="{{ settings['[[COMPONENT_ID]]/control_variable/image_4'] | asset_url | placeholder_flexible('Image') }}" />
+			</div>
+			{% endif %}
+		</div>
+		
+	</div>
+</section>

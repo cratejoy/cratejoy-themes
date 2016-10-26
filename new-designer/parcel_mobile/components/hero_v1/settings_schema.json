@@ -1,0 +1,125 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/image",
+			"label": "Image",
+			"type": "image"
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/content",
+			"type": "richtext"
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/button_text",
+			"label": "Button",
+			"type": "text"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/button_url",
+			"label": "Button URL",
+			"type": "link"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_1/font_face",
+			"label": "Heading 1",
+			"type": "font_face",
+			"inherits": "page_heading/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_1/font_size",
+			"type": "font_size",
+			"inherits": "page_heading/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_1/color",
+			"type": "color",
+			"inherits": "page_heading/alternate_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_2/font_face",
+			"label": "Heading 2",
+			"type": "font_face",
+			"inherits": "page_secondary_heading/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_2/font_size",
+			"type": "font_size",
+			"inherits": "page_secondary_heading/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_2/color",
+			"type": "color",
+			"inherits": "secondary_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_3/font_face",
+			"label": "Heading 3",
+			"type": "font_face",
+			"inherits": "page_tertiary_heading/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_3/font_size",
+			"type": "font_size",
+			"inherits": "page_tertiary_heading/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_3/color",
+			"type": "color",
+			"inherits": "secondary_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/font_face",
+			"label": "Body",
+			"type": "font_face",
+			"inherits": "page_body/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/font_size",
+			"type": "font_size",
+			"inherits": "page_body/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/color",
+			"type": "color",
+			"inherits": "page_body/alternate_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/button/font_face",
+			"label": "Button",
+			"type": "font_face",
+			"inherits": "page_body/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/button/font_size",
+			"type": "font_size",
+			"inherits": "primary_button/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/button/color",
+			"type": "color",
+			"inherits": "primary_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/button/hover_color",
+			"type": "color",
+			"inherits": "secondary_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/button/text_color",
+			"type": "color",
+			"inherits": "primary_button/text_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/button/hover_text_color",
+			"type": "color",
+			"inherits": "primary_button/hover_text_color"
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"name": "[[COMPONENT_LABEL]]",
+	"description": "Subscription Progress Bar",
+	"version": "1",
+	"whitelist": [
+		"subscribe_flow/product_step",
+		"subscribe_flow/survey_step",
+		"subscribe_flow/terms_step",
+		"subscribe_flow/variant_step"
+	]
+}

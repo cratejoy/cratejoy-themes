@@ -1,0 +1,8 @@
+{
+	"name": "[[COMPONENT_LABEL]]",
+	"description": "Product Reviews (if enabled)",
+	"version": "1",
+	"whitelist": [
+		"shop/product"
+	]
+}

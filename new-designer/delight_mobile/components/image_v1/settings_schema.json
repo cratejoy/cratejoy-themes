@@ -1,0 +1,10 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/image",
+			"label": "Image",
+			"type": "image"
+		}
+	]
+}

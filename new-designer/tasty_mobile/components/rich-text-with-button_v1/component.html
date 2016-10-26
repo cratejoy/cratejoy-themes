@@ -1,0 +1,17 @@
+<section id="[[COMPONENT_ID]]" class="component-rich-text-with-button">
+	<div class="container-fluid">
+
+		<div class="component-rich-text-with-button__content-row row">
+			<div class="col-xs-12 text-center">
+				{{ settings["[[COMPONENT_ID]]/content"] }}
+			</div>
+		</div>
+
+		<div class="component-rich-text-with-button__button-row row">
+			<div class="col-xs-12 text-center">
+				<a type="button" class="btn btn-large btn-primary" href="{{ settings['[[COMPONENT_ID]]/button_url'] | default('#') }}">{{ settings["[[COMPONENT_ID]]/button_text"] }}</a>
+			</div>
+		</div>
+		
+	</div>
+</section>

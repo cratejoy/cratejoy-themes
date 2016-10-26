@@ -1,0 +1,29 @@
+{
+	"theme_name": "Fashion (Optimized for Mobile & Desktop)",
+	"version": 4,
+	"designer_version": 2,
+	"author_name": "Cratejoy",
+	"author_email": "support@cratejoy.com",
+	"author_url": "http://www.cratejoy.com",
+	"docs_url": "http://www.cratejoy.com",
+	"price": 0,
+	"short_desc": "Check out the new mobile first version of Fashion!",
+	"long_desc": "Responsive theme with 5 default pages, designed to help you quickly create a website for your business. Capture your customers' attention with a Large Homepage Banner image. Looks great on all devices, including desktops, laptops, phones & tablets.",
+	"features": [
+		"Mobile first using Bootstrap 4",
+		"Large Homepage Banner image",
+		"Multi-step subscribe flow",
+		"Supports multiple products & variants",
+		"e-Commerce Shop included"
+	],
+	"support_info": "This theme is developed and supported by Cratejoy. Any theme modifications will not be supported. For inquiries or issues, contact support@cratejoy.com.",
+	"category": "basic",
+	"preview_url": "",
+	"weight": 1,
+	"images": ["images/Fashion-thumb.png"],
+	"styles": {
+		"Fashion": {
+			"images": ["images/Fashion-thumb.png"]
+		}
+	}
+}

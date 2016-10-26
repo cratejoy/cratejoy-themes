@@ -1,0 +1,79 @@
+<section id="[[COMPONENT_ID]]" class="footer row">
+	{% set cart = active_cart() %}
+	<div class="footer-social col-lg-4 col-md-6 col-sm-12 col-xs-12">
+		{% if settings["[[COMPONENT_ID]]/facebook_url"] %}
+		<a href="{{ settings["[[COMPONENT_ID]]/facebook_url"] }}">
+			{% include "svg/facebook.html" %}
+		</a>
+		{% endif %}
+		{% if settings["[[COMPONENT_ID]]/twitter_url"] %}
+		<a href="{{ settings["[[COMPONENT_ID]]/twitter_url"] | default('#') }}">
+			{% include "svg/twitter.html" %}
+		</a>
+		{% endif %}
+		{% if settings["[[COMPONENT_ID]]/pinterest_url"] %}
+		<a href="{{ settings["[[COMPONENT_ID]]/pinterest_url"] | default('#') }}">
+			{% include "svg/pinterest.html" %}
+		</a>
+		{% endif %}
+		{% if settings["[[COMPONENT_ID]]/instagram_url"] %}
+		<a href="{{ settings["[[COMPONENT_ID]]/instagram_url"] | default('#') }}">
+			{% include "svg/instagram.html" %}
+		</a>
+		{% endif %}
+		{% if settings["[[COMPONENT_ID]]/tumblr_url"] %}
+		<a href="{{ settings["[[COMPONENT_ID]]/tumblr_url"] | default('#') }}">
+			{% include "svg/tumblr.html" %}
+		</a>
+		{% endif %}
+		{% if settings["[[COMPONENT_ID]]/youtube_url"] %}
+		<a href="{{ settings["[[COMPONENT_ID]]/youtube_url"] | default('#') }}">
+			{% include "svg/youtube.html" %}
+		</a>
+		{% endif %}
+		<div class="footer-tributes hidden-sm-down">
+			<p>{{ settings["[[COMPONENT_ID]]/copyright"] }}</p>
+			<p><a href="http://cratejoy.com">Powered by Cratejoy</a></p>
+		</div>
+	</div>
+
+	<div class="toggler-container">
+		<button type="button" class="navbar-toggler btn-small hidden-md-up" data-toggle="collapse" data-target="#[[COMPONENT_ID]]-footer-menu">Show Menu</button>
+	</div>
+
+	<div class="footer-directory col-lg-4 col-md-6 col-sm-12 col-xs-12">
+		<div id="[[COMPONENT_ID]]-footer-menu" class="navbar-toggleable-sm collapse">
+			<ul class="footer-list">
+				{% for item in navigation_lists().footer %}
+					{% if item.children %}
+						<li class="footer-item" class="dropdown">
+							<a href="#" class="dropdown-toggle footer-link" data-toggle="dropdown">{{ item.title | safe }}</a>
+							<ul class="dropdown-menu">
+								{% for subitem in item.children %}
+									<li class="footer-item"><a href="{{ subitem.url }}" class="footer-link">{{ subitem.title | safe }}</a></li>
+								{% endfor %}
+							</ul>
+						</li>
+					{% else %}
+						<li class="footer-item"><a href="{{ item.url }}" class="footer-link">{{ item.title | safe }}</a></li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer-cc col-lg-4 col-md-12 col-sm-12 col-xs-12">
+		<p>{{ settings["[[COMPONENT_ID]]/cc_accept_text"] }}</p>
+		<img src="{{ 'images/card_Visa.png' | asset_url }}"/>
+		<img src="{{ 'images/card_Mastercard.png' | asset_url }}"/>
+		<img src="{{ 'images/card_Amex.png' | asset_url }}"/>
+		<img src="{{ 'images/card_Discover.png' | asset_url }}"/>
+		<img src="{{ 'images/card_JCB.png' | asset_url }}"/>
+		<img src="{{ 'images/card_DinersClub.png' | asset_url }}"/>
+		<img src="{{ 'images/card_Maestro.png' | asset_url }}"/>
+		<div class="footer-tributes hidden-md-up">
+			<p>{{ settings["[[COMPONENT_ID]]/copyright"] }}</p>
+			<p><a href="http://cratejoy.com">Powered by Cratejoy</a></p>
+		</div>
+	</div>
+</section>

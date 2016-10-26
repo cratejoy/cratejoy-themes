@@ -1,0 +1,29 @@
+{
+	"theme_name": "Parcel (Optimized for Mobile & Desktop)",
+	"version": 4,
+	"designer_version": 2,
+	"author_name": "Cratejoy",
+	"author_email": "support@cratejoy.com",
+	"author_url": "http://www.cratejoy.com",
+	"docs_url": "http://www.cratejoy.com",
+	"price": 0,
+	"short_desc": "Parcel is a mobile-friendly theme that will look great on mobile devices and the desktop!",
+	"long_desc": "Parcel is a fresh & mobile first theme with a variety of pages structured to perfectly showcase your subscription product. Also included is an (optional) e-Commerce Shop & Product details page, for one-time purchases.",
+	"features": [
+		"Mobile first using Bootstrap 4",
+		"Multiple homepage banner layouts",
+		"Multi-step subscribe flow",
+		"Supports multiple products & variants",
+		"e-Commerce Shop included"
+	],
+	"support_info": "This theme is developed and supported by Cratejoy. Any theme modifications will not be supported. For inquiries or issues, contact support@cratejoy.com.",
+	"category": "basic",
+	"preview_url": "",
+	"weight": 1,
+	"images": ["images/Parcel-thumb.png"],
+	"styles": {
+		"Parcel": {
+			"images": ["images/Parcel-thumb.png"]
+		}
+	}
+}

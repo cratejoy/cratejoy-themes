@@ -1,0 +1,11 @@
+{
+	"[[COMPONENT_ID]]/caption_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"1. Sign Up!\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/caption_1_html": "<h3>1. Sign Up!</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi</p>",
+	"[[COMPONENT_ID]]/image_1": "images/hiw_placeholder_1.jpg",
+	"[[COMPONENT_ID]]/caption_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"2. Get Hungry\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/caption_2_html": "<h3>2. Get Hungry</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi</p>",
+	"[[COMPONENT_ID]]/image_2": "images/hiw_placeholder_2.jpg",
+	"[[COMPONENT_ID]]/caption_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"3. Eat Macaroons\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/caption_3_html": "<h3>3. Eat Macaroons</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet dolor at mi</p>",
+	"[[COMPONENT_ID]]/image_3": "images/hiw_placeholder_3.jpg"
+}

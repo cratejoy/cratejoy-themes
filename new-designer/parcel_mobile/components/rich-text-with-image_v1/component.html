@@ -1,0 +1,15 @@
+{% if settings["[[COMPONENT_ID]]/control_variable/image_orientation"] == "left" %}
+	{% set hero_class="row" %}
+{% else %}
+	{% set hero_class="row row-reverse" %}
+{% endif %}
+<section class="container-fluid" id="[[COMPONENT_ID]]">
+	<div class="{{ hero_class }}">
+		<div class="col-md-4 col-xs-12 img-container flex-center">
+			<img src="{{ settings['[[COMPONENT_ID]]/image'] | asset_url | placeholder_flexible('Image') }}" class="img-fluid"/>
+		</div>
+		<div class="col-md-8 col-xs-12 flex-center hero-content">
+				{{ settings["[[COMPONENT_ID]]/content"] }}
+		</div>
+	</div>
+</section>

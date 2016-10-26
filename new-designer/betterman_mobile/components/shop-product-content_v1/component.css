@@ -1,0 +1,28 @@
+#[[COMPONENT_ID]] .shop-product__name {
+	margin: 0 0 10px 0;
+}
+
+#[[COMPONENT_ID]] .shop-product__price {
+	margin: 0 0 20px 0;
+}
+
+#[[COMPONENT_ID]] .shop-product select {
+	width: auto;
+}
+
+#[[COMPONENT_ID]] .shop-product__add-to-cart {
+	margin: 0 0 20px 0;
+}
+
+#[[COMPONENT_ID]] .shop-product__review-share-desktop {
+	border-top: 1px solid #E1E1E1;
+	margin: 0 0 40px 0;
+}
+
+#[[COMPONENT_ID]] .shop-product__review-share-desktop .col-xs-6 {
+	padding: 10px 0 0 0;
+}
+
+#[[COMPONENT_ID]] .shop-product__review-share-desktop .col-xs-6 + .col-xs-6 {
+	border-left: 1px solid #E1E1E1;
+}

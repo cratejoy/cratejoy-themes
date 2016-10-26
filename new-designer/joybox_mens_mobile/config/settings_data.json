@@ -1,0 +1,30 @@
+{
+	"current": "default",
+	"default": {
+		"primary_color": "#938983",
+		"secondary_color": "#333333",
+		"accent_color": "#79706A",
+		"border_color": "#DDDDDD",
+		"page_background_color": "#FFFFFF",
+
+		"logo/font_size": "40px",
+
+		"page_heading/font_face": "Libre Baskerville",
+		"page_heading/font_size": "36px",
+		"page_secondary_heading/font_size": "24px",
+		"page_tertiary_heading/font_face": "Lato",
+		"page_tertiary_heading/font_size": "16px",
+		"page_body/font_face": "Lato",
+		"page_body/font_size": "14px",
+		"page_body/color": "#4A4A4A",
+
+		"primary_button/font_face": "Montserrat",
+		"primary_button/font_size": "14px",
+		"primary_button/text_color": "#FFFFFF",
+		"primary_button/hover_text_color": "#FFFFFF",
+		"secondary_button/text_color": "#FAFAFA",
+		"secondary_button/hover_text_color": "#FAFAFA",
+
+		"product_placeholder_image": "images/product_placeholder.jpg"
+	}
+}

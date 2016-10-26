@@ -1,0 +1,56 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"global": true,
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/logo_image",
+			"label": "Logo Image",
+			"type": "image",
+			"boolean": true
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/background_color",
+			"label": "Background",
+			"type": "color",
+			"inherits": "content_background_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/logo/font_face",
+			"label": "Logo Text",
+			"type": "font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/logo/color",
+			"type": "color",
+			"inherits": "primary_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/logo/font_size",
+			"type": "font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/link_button/font_face",
+			"label": "Link Style",
+			"type": "font_face",
+			"inherits": "page_body/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/link_button/font_size",
+			"type": "font_size",
+			"inherits": "primary_button/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/link_button/text_color",
+			"type": "color",
+			"inherits": "secondary_button/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/link_button/hover_text_color",
+			"type": "color",
+			"inherits": "primary_button/color"
+		}
+	]
+}

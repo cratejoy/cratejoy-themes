@@ -1,0 +1,40 @@
+{% include "components/form_feedback.html" %}
+
+<section id="[[COMPONENT_ID]]" class="container component">
+	<section class="account-header">
+		<div class="row content">
+			<div class="col-lg-4 col-xs-12 flex-center">
+				<h2>Update your information</h2>
+			</div>
+			<div class="col-lg-8 col-xs-12">
+				{{ customer_helper.show_gift_card_info(btn_class="btn-primary") }}
+				{{ components_helpers.blocks_for('customer/account', 'account_header') }}
+			</div>
+		</div>
+	</section>
+
+	<section class="my-account">
+		<div class="row content">
+			{{ components_helpers.blocks_for('customer/account', 'account_top') }}
+			<div class="col-lg-4 col-xs-12">
+				{#
+					Cratejoy renders the HTML that lists the customer's subscriptions.
+					You can change the way it looks by editing the css, there are examples in css/style.css.
+				#}
+				{{ customer_helper.show_subscription_info(vertical=True, btn_class="btn-med btn-primary") }}
+				{{ components_helpers.blocks_for('customer/account', 'account_left')}}
+			</div>
+			<div class="col-lg-8 col-xs-12">
+				{#
+					Cratejoy renders the HTML for editing account, shipping and payment information.
+					You can change the way it looks by editing the css, there are examples in css/style.css.
+				#}
+				{{ customer_helper.show_basic_account_info(btn_class="btn-large btn-primary") }}
+				{{ customer_helper.show_shipping_address_info(btn_class="btn-large btn-primary") }}
+				{{ customer_helper.show_payment_info(btn_class="btn-large btn-primary") }}
+				{{ components_helpers.blocks_for('customer/account', 'account_right')}}
+			</div>
+			{{ components_helpers.blocks_for('customer/account', 'account_bottom') }}
+		</div>
+	</section>
+</section>

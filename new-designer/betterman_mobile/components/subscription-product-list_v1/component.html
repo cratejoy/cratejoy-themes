@@ -1,0 +1,41 @@
+<div class="row sf-grid">
+	{% for product in store.visible_subscription_products %}
+	<div class="col-md-4 col-xs-12 sf-grid__container">
+		<div class="sf-item">
+			<div class="sf-item__content">
+				<a href="{{ product | product_subscribe_url(gift=gift) }}">
+					{#
+						Creates an image tag if one is uploaded to the product model. Otherwise it creates an image tag from the default image (images/product_placeholder.jpg)
+					#}
+					{{ product | object_img_tag(default_img_path=settings['product_placeholder_image'], css_class="") }}
+				</a>
+
+				<!-- Product Name -->
+				<h3 class="sf-item__name">{{ product.name | safe }}</h3>
+
+				<p class="sf-item__description">
+					{#
+						Renders the product description if one exists, otherwise uses the default string
+					#}
+					{{ product.description | default("", True) }}
+				</p>
+			</div>
+			<div class="sf-item__footer">
+				<h2>
+					{#
+						Creates a <p></p> containing either the actual price of the product or a price range (in the case that there are terms to be chosen)
+					#}
+					{{ product | get_price_or_price_range }}
+				</h2>
+
+				{#
+					Creates a link which advances the subscribe flow to the next step, choosing the current product
+				#}
+				<a type="button" href="{{ product | product_subscribe_url(gift=gift) }}"class="btn btn-large btn-primary">
+					{{ settings['[[COMPONENT_ID]]/product_button_text'] }}
+				</a>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>

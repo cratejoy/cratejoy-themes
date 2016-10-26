@@ -1,0 +1,8 @@
+{
+	"name": "[[COMPONENT_LABEL]]",
+	"description": "Order Component",
+	"version": "1",
+	"whitelist": [
+		"customer/order"
+	]
+}

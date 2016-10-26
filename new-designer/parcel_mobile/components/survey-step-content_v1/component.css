@@ -1,0 +1,38 @@
+#[[COMPONENT_ID]] {
+	padding: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#[[COMPONENT_ID]] h2 {
+	color: {{ settings['[[COMPONENT_ID]]/heading_2/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/heading_2/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/heading_2/font_size'] }};
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+#[[COMPONENT_ID]] p {
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+	font-family: {{ settings['[[COMPONENT_ID]]/body/font_face'] }};
+	font-size: {{ settings['[[COMPONENT_ID]]/body/font_size'] }};
+}
+
+#[[COMPONENT_ID]].survey p {
+	margin-left:0.1rem;
+	margin-bottom: 1rem;
+}
+
+#[[COMPONENT_ID]].survey .radio input[type="radio"],
+#[[COMPONENT_ID]].survey .checkbox input[type="checkbox"] {
+	margin-right: 0.5em;
+}
+
+#[[COMPONENT_ID]] .survey-error {
+	color: {{ settings['[[COMPONENT_ID]]/body/color'] }};
+}
+
+#[[COMPONENT_ID]] input,
+#[[COMPONENT_ID]] textarea {
+	color: {{ settings['[[COMPONENT_ID]]/input/text_color'] }};
+}

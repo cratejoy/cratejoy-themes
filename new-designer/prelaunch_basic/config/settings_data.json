@@ -1,0 +1,10 @@
+{
+	"current": "default",
+	"default": {
+		"background_color": "#B1C0CA",
+		"highlight_color": "#06b8bd",
+		"background_image": "",
+		"page_heading/font_face": "Playfair Display",
+		"page_body/font_face": "Droid Serif"
+	}
+}

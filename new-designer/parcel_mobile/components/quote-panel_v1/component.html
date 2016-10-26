@@ -1,0 +1,22 @@
+<section id="[[COMPONENT_ID]]" class="container-fluid">
+	<div class="component-quote-panel row">
+		<div class="col-xs-12 text-center component-quote-panel-header">
+			{{ settings["[[COMPONENT_ID]]/title"] }}
+		</div>
+		<div class="col-md-4 col-xs-12 content square-content flex-center text-center">
+			{{ settings["[[COMPONENT_ID]]/quote_1"] }}
+			<img src="{{ settings['[[COMPONENT_ID]]/image1'] | asset_url | placeholder_flexible('Image') }}" class=""/>
+			{{ settings["[[COMPONENT_ID]]/quote_1_name"] }}
+		</div>
+		<div class="col-md-4 col-xs-12 content square-content flex-center text-center">
+			{{ settings["[[COMPONENT_ID]]/quote_2"] }}
+			<img src="{{ settings['[[COMPONENT_ID]]/image2'] | asset_url | placeholder_flexible('Image') }}" class=""/>
+			{{ settings["[[COMPONENT_ID]]/quote_2_name"] }}
+		</div>
+		<div class="col-md-4 col-xs-12 content square-content flex-center text-center">
+			{{ settings["[[COMPONENT_ID]]/quote_3"] }}
+			<img src="{{ settings['[[COMPONENT_ID]]/image3'] | asset_url | placeholder_flexible('Image') }}" class=""/>
+			{{ settings["[[COMPONENT_ID]]/quote_3_name"] }}
+		</div>
+	</div>
+</section>

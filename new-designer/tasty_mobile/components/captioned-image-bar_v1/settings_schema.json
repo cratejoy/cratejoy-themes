@@ -1,0 +1,131 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/label_1",
+			"type": "richtext"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/image_1",
+			"type": "image"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/caption_1",
+			"type": "richtext"
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/label_2",
+			"type": "richtext"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/image_2",
+			"type": "image"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/caption_2",
+			"type": "richtext"
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/label_3",
+			"type": "richtext"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/image_3",
+			"type": "image"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/caption_3",
+			"type": "richtext"
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/background_color",
+			"label": "Background",
+			"type": "color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/tile_background_color",
+			"label": "Tile Background",
+			"type": "color",
+			"inherits": "secondary_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/tile_border_color",
+			"label": "Tile Border",
+			"type": "color",
+			"inherits": "secondary_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_1/font_face",
+			"label": "Heading 1",
+			"type": "font_face",
+			"inherits": "page_heading/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_1/font_size",
+			"type": "font_size",
+			"inherits": "page_heading/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_1/color",
+			"type": "color",
+			"inherits": "page_heading/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_2/font_face",
+			"label": "Heading 2",
+			"type": "font_face",
+			"inherits": "page_secondary_heading/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_2/font_size",
+			"type": "font_size",
+			"inherits": "page_secondary_heading/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_2/color",
+			"type": "color",
+			"inherits": "page_secondary_heading/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_3/font_face",
+			"label": "Heading 3",
+			"type": "font_face",
+			"inherits": "page_tertiary_heading/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_3/font_size",
+			"type": "font_size",
+			"inherits": "page_tertiary_heading/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/heading_3/color",
+			"type": "color",
+			"inherits": "page_tertiary_heading/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/font_face",
+			"label": "Body",
+			"type": "font_face",
+			"inherits": "page_body/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/font_size",
+			"type": "font_size",
+			"inherits": "page_body/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/color",
+			"type": "color",
+			"inherits": "page_body/color"
+		}
+	]
+}

@@ -1,0 +1,4 @@
+{
+	"[[COMPONENT_ID]]/content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Rich Text\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Write your rich text here!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+	"[[COMPONENT_ID]]/content_html": "<h1>Rich Text</h1>\n<p>Write your rich text here!</p>"
+}

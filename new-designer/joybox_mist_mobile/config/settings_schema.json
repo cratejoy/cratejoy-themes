@@ -1,0 +1,162 @@
+[
+	{
+		"label": "Color Scheme",
+		"global": true,
+		"settings": [
+			{
+				"id": "primary_color",
+				"label": "Primary",
+				"type": "color"
+			},
+			{
+				"id": "secondary_color",
+				"label": "Secondary",
+				"type": "color"
+			},
+			{
+				"id": "accent_color",
+				"label": "Accent",
+				"type": "color"
+			},
+			{
+				"id": "border_color",
+				"label": "Borders",
+				"type": "color"
+			},
+			{
+				"id": "accent_background_color",
+				"label": "Accent Background",
+				"type": "color"
+			},
+			{
+				"id": "page_background_color",
+				"label": "Page Background",
+				"type": "color"
+			}
+		]
+	},
+	{
+		"label": "Fonts",
+		"global": true,
+		"settings": [
+			{
+				"id": "page_heading/font_face",
+				"label": "Heading 1",
+				"type": "font_face"
+			},
+			{
+				"id": "page_heading/color",
+				"type": "color",
+				"inherits": "secondary_color"
+			},
+			{
+				"id": "page_heading/font_size",
+				"type": "font_size"
+			},
+			{
+				"id": "page_secondary_heading/font_face",
+				"label": "Heading 2",
+				"type": "font_face"
+			},
+			{
+				"id": "page_secondary_heading/color",
+				"type": "color",
+				"inherits": "secondary_color"
+			},
+			{
+				"id": "page_secondary_heading/font_size",
+				"type": "font_size"
+			},
+			{
+				"id": "page_tertiary_heading/font_face",
+				"label": "Heading 3",
+				"type": "font_face"
+			},
+			{
+				"id": "page_tertiary_heading/color",
+				"type": "color",
+				"inherits": "secondary_color"
+			},
+			{
+				"id": "page_tertiary_heading/font_size",
+				"type": "font_size"
+			},
+			{
+				"id": "page_body/font_face",
+				"label": "Body",
+				"type": "font_face"
+			},
+			{
+				"id": "page_body/color",
+				"type": "color"
+			},
+			{
+				"id": "page_body/font_size",
+				"type": "font_size"
+			}
+		]
+	},
+	{
+		"label": "Buttons",
+		"global": true,
+		"settings": [
+			{
+				"id": "primary_button/font_face",
+				"label": "Primary Button",
+				"type": "font_face",
+				"inherits": "page_heading/font_face"
+			},
+			{
+				"id": "primary_button/font_size",
+				"type": "font_size"
+			},
+			{
+				"id": "primary_button/color",
+				"type": "color",
+				"inherits": "primary_color"
+			},
+			{
+				"id": "primary_button/text_color",
+				"type": "color"
+			},
+			{
+				"id": "primary_button/hover_color",
+				"type": "color",
+				"inherits": "accent_color"
+			},
+			{
+				"id": "primary_button/hover_text_color",
+				"type": "color"
+			},
+			{
+				"id": "secondary_button/font_face",
+				"label": "Secondary Button",
+				"type": "font_face",
+				"inherits": "page_heading/font_face"
+			},
+			{
+				"id": "secondary_button/font_size",
+				"type": "font_size",
+				"inherits": "primary_button/font_size"
+			},
+			{
+				"id": "secondary_button/color",
+				"type": "color",
+				"inherits": "secondary_color"
+			},
+			{
+				"id": "secondary_button/text_color",
+				"type": "color"
+			},
+			{
+				"id": "secondary_button/hover_color",
+				"type": "color",
+				"inherits": "accent_color"
+			},
+			{
+				"id": "secondary_button/hover_text_color",
+				"type": "color"
+			}
+		]
+	}
+]

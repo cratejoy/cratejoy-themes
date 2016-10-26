@@ -1,0 +1,747 @@
+{
+	"global": [
+		{
+			"source": "nav_v1",
+			"label": "Header"
+		},
+		{
+			"source": "footer_v1",
+			"label": "Footer"
+		},
+		{
+			"source": "rich-text-with-button_v1",
+			"label": "Gifting",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Shopping for someone else?\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>Shopping for someone else?</h2>",
+				"button_text": "GIVE A GIFT",
+				"button_url": "/subscribe/gift"
+			},
+			"css": {
+				"": {
+					"padding-top": "0"
+				}
+			}
+		}
+	],
+	"index": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "hero-image-with-two-buttons_v1",
+			"label": "Hero",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Vitamins delivered to your door every month\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"8p2lm\",\"text\":\"Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Faucibus, tortor praesent neque id dapibus.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Vitamins delivered to your door every month</h1>\n<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Faucibus, tortor praesent neque id dapibus.</p>",
+				"image": "images/hero_placeholder.jpg",
+				"control_variable/image_orientation": "right",
+				"heading_1/font_face": "Just Another Hand",
+				"heading_1/font_size": "74px"
+			},
+			"css": {
+				"p": {
+					"margin": "0 0 25px 0"
+				}
+			}
+		},
+		{
+			"source": "propositions-panel_v1",
+			"label": "Propositions"
+		},
+		{
+			"source": "rich-text-left_v1",
+			"label": "Summary",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"What is the Betterman box?\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"2lmd6\",\"text\":\"HLorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"nkcf\",\"text\":\"Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>What is the Betterman box?</h2>\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>\n<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>"
+			}
+		},
+		{
+			"source": "combined-image-bar_v1",
+			"label": "How It Works",
+			"settings": {
+				"background_color": "#FAFAFA"
+			}
+		},
+		{
+			"source": "hero-image_v1",
+			"label": "What's Inside",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"What's inside the box?\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"8p2lm\",\"text\":\"We’re so glad you asked! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>What's inside the box?</h1>\n<p>We’re so glad you asked! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>",
+				"background_color": "#FFFFFF",
+				"button_text": "LEARN MORE",
+				"button_url": "/whats_inside",
+				"image": "images/whats_inside_placeholder_1.jpg",
+				"control_variable/image_orientation": "left"
+			},
+			"schema": {
+				"button/color": {
+					"inherits": "secondary_color"
+				},
+				"button/hover_color": {
+					"inherits": "accent_color"
+				}
+			},
+			"css": {
+				"p": {
+					"margin": "0 0 25px 0"
+				}
+			}
+		},
+		{
+			"source": "combined-image-bar_v1",
+			"label": "Testimonials",
+			"settings": {
+				"title": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"What people say about Betterman\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+			    "title_html": "<h2>What people say about Betterman</h2>",
+				"caption_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Every month I get a wonderful assortment of vitamins & supplements that my body craves. Go Betterman box!\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Blake Messer - Austin, TX\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_1_html": "<h3>Every month I get a wonderful assortment of vitamins & supplements that my body craves. Go Betterman box!</h3>\n<p>Blake Messer - Austin, TX</p>",
+				"image_1": "images/testimonials_placeholder.jpg",
+				"caption_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Every month I get a wonderful assortment of vitamins & supplements that my body craves. Go Betterman box!\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Blake Messer - Austin, TX\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_2_html": "<h3>Every month I get a wonderful assortment of vitamins & supplements that my body craves. Go Betterman box!</h3>\n<p>Blake Messer - Austin, TX</p>",
+				"image_2": "images/testimonials_placeholder.jpg",
+				"caption_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Every month I get a wonderful assortment of vitamins & supplements that my body craves. Go Betterman box!\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Blake Messer - Austin, TX\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_3_html": "<h3>Every month I get a wonderful assortment of vitamins & supplements that my body craves. Go Betterman box!</h3>\n<p>Blake Messer - Austin, TX</p>",
+				"image_3": "images/testimonials_placeholder.jpg"
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"about": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "hero-image_v1",
+			"label": "Hero",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Discovering people’s vitamin & supplement routine is what we do\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Discovering people’s vitamin & supplement routine is what we do</h1>\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>",
+				"button_text": "GET STARTED",
+				"image": "images/whats_inside_placeholder_3.jpg",
+				"control_variable/image_orientation": "left",
+				"background_color": "#FFFFFF"
+			}
+		},
+		{
+			"source": "rich-text-left_v1",
+			"label": "Mission Statement",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"A little about our Betterman mission…\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Additional description can go here lacinia tempor massa, in elementum erat. Aenean facilisis eros at hendrerit commodo. Donec in finibus ex. Morbi consectetur viverra tristique. Phasellus commodo venenatis justo vel. Aenean velit dolor, elementum a tempor quis, tristique id augue. Maecenas vel leo quis sem malesuada aliquam. Quisque venenatis nulla posuere augue lacinia pellentesque. Nulla sagittis lorem sit amet justo vehicula, eget sollicitudin nisi tincidunt. Donec condimentum.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Donec accumsan tellus a sollicitudin rhoncus. Nunc ex dolor, ullamcorper vitae sapien nec, tempor imperdiet massa. Suspendisse ut iaculis purus, vitae vehicula diam. Donec sed luctus ligula, vitae interdum elit. Duis bibendum hendrerit nunc, a congue justo aliquet a. Suspendisse imperdiet ultricies purus, sit amet semper ex.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>A little about our Betterman mission…</h2>\n<p>Additional description can go here lacinia tempor massa, in elementum erat. Aenean facilisis eros at hendrerit commodo. Donec in finibus ex. Morbi consectetur viverra tristique. Phasellus commodo venenatis justo vel. Aenean velit dolor, elementum a tempor quis, tristique id augue. Maecenas vel leo quis sem malesuada aliquam. Quisque venenatis nulla posuere augue lacinia pellentesque. Nulla sagittis lorem sit amet justo vehicula, eget sollicitudin nisi tincidunt. Donec condimentum.</p>\n<p>Donec accumsan tellus a sollicitudin rhoncus. Nunc ex dolor, ullamcorper vitae sapien nec, tempor imperdiet massa. Suspendisse ut iaculis purus, vitae vehicula diam. Donec sed luctus ligula, vitae interdum elit. Duis bibendum hendrerit nunc, a congue justo aliquet a. Suspendisse imperdiet ultricies purus, sit amet semper ex.</p>"
+			}
+		},
+		{
+			"source": "combined-image-bar_v1",
+			"label": "Meet The Team",
+			"settings": {
+				"title": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Meet our team\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"title_html": "<h1>Meet our team</h1>",
+				"caption_1": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Joe Montana\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Donec nec justo eget felis facilisis fermen.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_1_html": "<h3>Joe Montana</h3>\n<p>Donec nec justo eget felis facilisis fermen.</p>",
+				"image_1": "images/team_placeholder.png",
+				"caption_2": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"John Madden\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Donec nec justo eget felis facilisis fermen.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_2_html": "<h3>John Madden</h3>\n<p>Donec nec justo eget felis facilisis fermen.</p>",
+				"image_2": "images/team_placeholder.png",
+				"caption_3": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Mike Tyson\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Donec nec justo eget felis facilisis fermen.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"caption_3_html": "<h3>Mike Tyson</h3>\n<p>Donec nec justo eget felis facilisis fermen.</p>",
+				"image_3": "images/team_placeholder.png",
+				"show_button": false
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "How It Started",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"How it all started\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Curabitur tincidunt posuere magna in tincidunt. Suspendisse vehicula cursus odio. Sed vel magna erat. Cras malesuada nulla non orci posuere tempor.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>How it all started</h2>\n<p>Curabitur tincidunt posuere magna in tincidunt. Suspendisse vehicula cursus odio. Sed vel magna erat. Cras malesuada nulla non orci posuere tempor.</p>"
+			}
+		},
+		{
+			"source": "captioned-image-col_v1",
+			"label": "The Story"
+		},
+		{
+			"source": "rich-text-with-button_v1",
+			"label": "Call to Action",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Are you ready to subscribe to Betterman yet?\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"6c6ct\",\"text\":\"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Are you ready to subscribe to Betterman yet?</h1>\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>",
+				"button_url": "/subscribe/"
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"whats_inside": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"What's Inside?\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Maecenas nisl orci, vestibulum ut tortor a, mattis dapibus arcu. Donec id aliquam quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>What's Inside?</h1>\n<p>Maecenas nisl orci, vestibulum ut tortor a, mattis dapibus arcu. Donec id aliquam quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>"
+			}
+		},
+		{
+			"source": "hero-image_v1",
+			"label": "Hero Right",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Suits your needs\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Morbi in enim blandit, feugiat felis vel, feugiat erat Cras porttitor facilisis purus. Donec sit amet lorem justo Pellentesque ante vulputate malesuada maximus et leo Sed quis vestibulum mi. Morbi dignissim est sit amet ex auctor.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Suits your needs</h1>\n<p>Morbi in enim blandit, feugiat felis vel, feugiat erat Cras porttitor facilisis purus. Donec sit amet lorem justo Pellentesque ante vulputate malesuada maximus et leo Sed quis vestibulum mi. Morbi dignissim est sit amet ex auctor.</p>",
+				"button_text": "GET STARTED",
+				"image": "images/whats_inside_placeholder_2.jpg",
+				"control_variable/image_orientation": "left",
+				"background_color": "#FAFAFA"
+			}
+		},
+		{
+			"source": "hero-image_v1",
+			"label": "Hero Left",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Grab & Go Vitamins\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Morbi in enim blandit, feugiat felis vel, feugiat erat. Cras porttitor facilisis purus. Donec sit amet justo pellentesque ante vulputate malesuada maximus et leo. Sed quis vestibulum mi. Morbi dignissim est sit amet ex auctor aliquam. Aliquam neque diam, sodales eget dignissim id, pretium quis metus.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Grab & Go Vitamins</h1>\n<p>Morbi in enim blandit, feugiat felis vel, feugiat erat. Cras porttitor facilisis purus. Donec sit amet justo pellentesque ante vulputate malesuada maximus et leo. Sed quis vestibulum mi. Morbi dignissim est sit amet ex auctor aliquam. Aliquam neque diam, sodales eget dignissim id, pretium quis metus.</p>",
+				"button_text": "GIVE A GIFT",
+				"button_url": "/subscribe/gift/",
+				"image": "images/whats_inside_placeholder_3.jpg",
+				"control_variable/image_orientation": "right",
+				"background_color": "#FAFAFA"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Description",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Additional description can go here\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Additional description can go here lacinia tempor massa, in elementum erat. Aenean facilisis eros at hendrerit commodo. Donec in finibus ex. Morbi consectetur viverra tristique. Phasellus commodo venenatis justo vel. Aenean velit dolor, elementum a tempor quis, tristique id augue. Maecenas vel leo quis sem malesuada aliquam. Quisque venenatis nulla posuere augue lacinia pellentesque. Nulla sagittis lorem sit amet justo vehicula, eget sollicitudin nisi tincidunt. Donec condimentum.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"6c6ct\",\"text\":\"Donec accumsan tellus a sollicitudin rhoncus. Nunc ex dolor, ullamcorper vitae sapien nec, tempor imperdiet massa. Suspendisse ut iaculis purus, vitae vehicula diam. Donec sed luctus ligula, vitae interdum elit. Duis bibendum hendrerit nunc, a congue justo aliquet a. Suspendisse imperdiet ultricies purus, sit amet semper ex.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h3>Additional description can go here</h3>\n<p>Additional description can go here lacinia tempor massa, in elementum erat. Aenean facilisis eros at hendrerit commodo. Donec in finibus ex. Morbi consectetur viverra tristique. Phasellus commodo venenatis justo vel. Aenean velit dolor, elementum a tempor quis, tristique id augue. Maecenas vel leo quis sem malesuada aliquam. Quisque venenatis nulla posuere augue lacinia pellentesque. Nulla sagittis lorem sit amet justo vehicula, eget sollicitudin nisi tincidunt. Donec condimentum.</p>\n<p>Donec accumsan tellus a sollicitudin rhoncus. Nunc ex dolor, ullamcorper vitae sapien nec, tempor imperdiet massa. Suspendisse ut iaculis purus, vitae vehicula diam. Donec sed luctus ligula, vitae interdum elit. Duis bibendum hendrerit nunc, a congue justo aliquet a. Suspendisse imperdiet ultricies purus, sit amet semper ex.</p>"
+			}
+		},
+		{
+			"source": "combined-image-bar_v1",
+			"label": "How It Works",
+			"settings": {
+				"background_color": "#FAFAFA"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "FAQ",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Frequently Asked Questions\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"2lmd6\",\"text\":\"What is the Betterman box?\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"nkcf\",\"text\":\"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"ch1tj\",\"text\":\"How does it work?\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"4ji33\",\"text\":\"Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"4h5r7\",\"text\":\"How are the vitamins selected?\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"e9mhu\",\"text\":\"Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"4h5r7\",\"text\":\"Can I purchase a subscription as a gift?\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"e9mhu\",\"text\":\"Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"4h5r7\",\"text\":\"How are the boxes priced?\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"e9mhu\",\"text\":\"Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>Frequently Asked Questions</h2>\n<h3>What is the Betterman box?</h3>\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>\n<h3>How does it work?</h3>\n<p>Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>\n<h3>How are the vitamins selected?</h3>\n<p>Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.</p>\n<h3>Can I purchase a subscription as a gift?</h3>\n<p>Donec odio. Quisque volutpat tmattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>\n<h3>How are the boxes priced?</h3>\n<p>Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.</p>"
+				},
+			"css": {
+				"h2": {
+					"margin": "0 0 40px 0"
+				},
+				"h3": {
+					"margin": "0 0 15px 0"
+				},
+				"p": {
+					"border-bottom": "1px solid #EEEEEE",
+					"padding": "0 0 25px 0"
+				}
+			}
+		},
+		{
+			"source": "rich-text-with-button_v1",
+			"label": "Call to Action",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Are you ready to subscribe to Betterman yet?\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h2>Are you ready to subscribe to Betterman yet?</h2>",
+				"button_url": "/subscribe/"
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"shop/listing": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"The Shop\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>The Shop</h1>"
+			},
+			"css": {
+				"": {
+					"padding-bottom": "20px"
+				}
+			}
+		},
+		{
+			"source": "shop-tag-bar_v1",
+			"label": "Tag Bar"
+		},
+		{
+			"source": "shop-sort-bar_v1",
+			"label": "Sort Bar"
+		},
+		{
+			"source": "shop-product-list_v1",
+			"label": "Product List"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"shop/product": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "shop-product-title_v1",
+			"label": "Title"
+		},
+		{
+			"source": "shop-product-content_v1",
+			"label": "Details",
+			"css": {
+				"": {
+					"padding-top": "0"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"subscribe": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Subscribe\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Select your preferences below. Lorem ipsum dolor sit amet consequer agua.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Subscribe</h1>\n<p>Select your preferences below. Lorem ipsum dolor sit amet consequer agua.</p>"
+			},
+			"css": {
+				"": {
+					"padding-bottom": "0"
+				}
+			}
+		},
+		{
+			"source": "subscription-product-list_v1",
+			"label": "Product List"
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Footer",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"A message about your specials or subscriptions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<p>A message about your specials or subscriptions.</p>"
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Gifting"
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"subscribe_flow/survey_step": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "subscribe-step-title_v1",
+			"label": "Title",
+			"settings": {
+				"default_title": "Survey"
+			}
+		},
+		{
+			"source": "survey-step-content_v1",
+			"label": "Content",
+			"css": {
+				"": {
+					"padding-top": "0"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Gifting"
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"subscribe_flow/terms_step": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "subscribe-step-title_v1",
+			"label": "Title",
+			"settings": {
+				"default_title": "Choose a term"
+			}
+		},
+		{
+			"source": "terms-step-content_v1",
+			"label": "Content"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Gifting"
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"subscribe_flow/variant_step": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "subscribe-step-title_v1",
+			"label": "Title",
+			"settings": {
+				"default_title": "Choose an option"
+			}
+		},
+		{
+			"source": "variant-step-content_v1",
+			"label": "Content"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Gifting"
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"view-cart": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Your Cart\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Shop our products lorem ipsum dolor sit amet pentellesque dolor sit lorem\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Your Cart</h1>\n<p>Shop our products lorem ipsum dolor sit amet pentellesque dolor sit lorem</p>",
+				"heading_1/font_face": "Just Another Hand",
+				"heading_1/font_size": "74px"
+			}
+		},
+		{
+			"source": "cart_v1",
+			"label": "Cart"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"customer/login": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Account Login\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Manage your subscription & other information regarding your account\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Account Login</h1>\n<p>Manage your subscription &amp; other information regarding your account</p>",
+				"heading_1/font_face": "Just Another Hand",
+				"heading_1/font_size": "74px"
+			}
+		},
+		{
+			"source": "login-form_v1",
+			"label": "Login Form"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"customer/forgot_password": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Forgot your password?\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"No worries, we'll help you reset it and get back in.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Forgot your password?</h1>\n<p>No worries, we'll help you reset it and get back in.</p>",
+				"heading_1/font_face": "Just Another Hand",
+				"heading_1/font_size": "74px"
+			}
+		},
+		{
+			"source": "forgot-password-form_v1",
+			"label": "Forgot Password Form"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"customer/password_reset": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "rich-text-center_v1",
+			"label": "Title",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Password Reset\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"Use your email and the temporary key just sent to you to change your password\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Password Reset</h1>\n<p>Use your email and the temporary key just sent to you to change your password</p>",
+				"heading_1/font_face": "Just Another Hand",
+				"heading_1/font_size": "74px"
+			}
+		},
+		{
+			"source": "password-reset-form_v1",
+			"label": "Password Reset Form"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"customer/account": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "customer-account_v1",
+			"label": "Customer Account Content"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"customer/edit": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "customer-edit_v1",
+			"label": "Customer Edit Content"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"customer/thank_you": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "customer-thank-you_v1",
+			"label": "Customer Thank You Content"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"customer/order": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "order_v1",
+			"label": "Order"
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	],
+	"sold_out": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "image_v1",
+			"label": "Image",
+			"settings": {
+				"image": "images/sold-out.png"
+			}
+		},
+		{
+			"source": "rich-text-with-button_v1",
+			"label": "Content",
+			"settings": {
+				"content": "{\"entityMap\":{},\"blocks\":[{\"key\":\"6c6ct\",\"text\":\"Sorry, we are currently sold out.\",\"type\":\"header-one\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]},{\"key\":\"68t2d\",\"text\":\"We know you want macaroons, but we're at capacity for this month. Don't worry though, because we have more goodies coming next month!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[]}]}",
+				"content_html": "<h1>Sorry, we are currently sold out.</h1>\n<p>We know you want macaroons, but we're at capacity for this month. Don't worry though, because we have more goodies coming next month!</p>",
+				"button_text": "BACK TO HOMEPAGE",
+				"button_url": "/"
+			},
+			"css": {
+				"": {
+					"padding-top": "0"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+
+	],
+	"checkout": [
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Header"
+			}
+		},
+		{
+			"source": "checkout_v1",
+			"label": "Checkout",
+			"css": {
+				"": {
+					"padding-top": "0"
+				}
+			}
+		},
+		{
+			"ref": {
+				"list_name": "global",
+				"label": "Footer"
+			}
+		}
+	]
+}

@@ -1,0 +1,50 @@
+<footer id="[[COMPONENT_ID]]" class="component-footer footer">
+	<div class="container-fluid">
+		<div class="row">
+			
+			<div class="footer-subscribe flex-center text-center col-md-4 col-sm-12 col-xs-12">
+				<a type="button" class="btn btn-large btn-primary" href="{{ settings['[[COMPONENT_ID]]/button_url'] | default('#') }}">
+					{{ settings["[[COMPONENT_ID]]/button_text"] }}
+				</a>
+			</div>
+
+			<div class="footer-social flex-center text-center col-md-4 col-sm-12 col-xs-12">
+				{% if settings["[[COMPONENT_ID]]/control_variable/facebook_url"] %}
+				<a href="{{ settings["[[COMPONENT_ID]]/control_variable/facebook_url"] }}">
+					{% include "svg/facebook.html" %}
+				</a>
+				{% endif %}
+				{% if settings["[[COMPONENT_ID]]/control_variable/twitter_url"] %}
+				<a href="{{ settings["[[COMPONENT_ID]]/control_variable/twitter_url"] | default('#') }}">
+					{% include "svg/twitter.html" %}
+				</a>
+				{% endif %}
+				{% if settings["[[COMPONENT_ID]]/control_variable/pinterest_url"] %}
+				<a href="{{ settings["[[COMPONENT_ID]]/control_variable/pinterest_url"] | default('#') }}">
+					{% include "svg/pinterest.html" %}
+				</a>
+				{% endif %}
+				{% if settings["[[COMPONENT_ID]]/control_variable/instagram_url"] %}
+				<a href="{{ settings["[[COMPONENT_ID]]/control_variable/instagram_url"] | default('#') }}">
+					{% include "svg/instagram.html" %}
+				</a>
+				{% endif %}
+				{% if settings["[[COMPONENT_ID]]/control_variable/tumblr_url"] %}
+				<a href="{{ settings["[[COMPONENT_ID]]/control_variable/tumblr_url"] | default('#') }}">
+					{% include "svg/tumblr.html" %}
+				</a>
+				{% endif %}
+				{% if settings["[[COMPONENT_ID]]/control_variable/youtube_url"] %}
+				<a href="{{ settings["[[COMPONENT_ID]]/control_variable/youtube_url"] | default('#') }}">
+					{% include "svg/youtube.html" %}
+				</a>
+				{% endif %}
+			</div>
+
+			<div class="footer-contact flex-center text-center col-md-4 col-sm-12 col-xs-12">
+				{{ settings["[[COMPONENT_ID]]/content"] }}
+			</div>
+
+		</div>
+	</div>
+</footer>

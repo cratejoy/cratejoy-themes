@@ -1,0 +1,53 @@
+{
+	"label": "[[COMPONENT_LABEL]]",
+	"settings": [
+		{
+			"id": "[[COMPONENT_ID]]/product_button_text",
+			"label": "Choose Button",
+			"type": "text"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/background_color",
+			"label": "Background",
+			"type": "color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/tile_background_color",
+			"label": "Tile Background",
+			"type": "color",
+			"inherits": "page_background_color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/name/font_face",
+			"label": "Name",
+			"type": "font_face",
+			"inherits": "page_tertiary_heading/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/name/font_size",
+			"type": "font_size",
+			"inherits": "page_tertiary_heading/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/name/color",
+			"type": "color",
+			"inherits": "page_tertiary_heading/color"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/font_face",
+			"label": "Body",
+			"type": "font_face",
+			"inherits": "page_body/font_face"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/font_size",
+			"type": "font_size",
+			"inherits": "page_body/font_size"
+		},
+		{
+			"id": "[[COMPONENT_ID]]/body/color",
+			"type": "color",
+			"inherits": "page_body/color"
+		}
+	]
+}
